@@ -2,7 +2,9 @@
   "tasks": {
     "clean": "rm -rf dist/",
     "format": "deno fmt",
-    "import": "deno run --allow-read --allow-write scripts/import.ts data/ src/data/",
+    "check": "deno fmt --check",
+    "update": "deno update",
+    "import": "deno run --allow-read --allow-write tasks/import.ts data/ src/data/",
     "build": {
       "command": "deno bundle --inline-imports=true --platform=browser --sourcemap=linked --outdir dist src/index.html",
       "dependencies": ["clean", "import"]
