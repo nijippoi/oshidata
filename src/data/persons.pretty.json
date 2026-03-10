@@ -929,6 +929,7 @@
     "roles": [
       {
         "role": "solo",
+        "person_id": "18",
         "active_date_ranges": [
           {
             "start": "2002-03-13"

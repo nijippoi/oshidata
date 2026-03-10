@@ -1,13 +1,6 @@
 import * as yaml from '@std/yaml';
 import * as path from '@std/path';
-import {
-  BaseRole,
-  GroupRole,
-  Person,
-  PersonRole,
-  Persons,
-  Role,
-} from '../src/types.ts';
+import { BaseRole, GroupRole, Person, PersonRole, Persons, Role } from '../src/types.ts';
 
 async function importYaml(dataDir: string, srcDir: string): Promise<void> {
   // dirPath内のYAMLを読み込む
@@ -67,9 +60,7 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
       if (groupData.qualifier) {
         if (groupQualifiers[groupData.qualifier]) {
           console.error(
-            `Group qualifier ${groupData.qualifier} already exists as id ${
-              groupQualifiers[groupData.qualifier]
-            }`,
+            `Group qualifier ${groupData.qualifier} already exists as id ${groupQualifiers[groupData.qualifier]}`,
           );
         }
         groupQualifiers[groupData.qualifier] = groupId;

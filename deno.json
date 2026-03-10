@@ -9,8 +9,10 @@
     "@std/yaml": "jsr:@std/yaml@^1.0.12"
   },
   "fmt": {
-    "options": {
-      "singleQuote": true
-    }
+    "exclude": [
+      "src/data/*.json"
+    ],
+    "lineWidth": 120,
+    "singleQuote": true
   }
 }

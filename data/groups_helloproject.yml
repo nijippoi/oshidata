@@ -321,16 +321,16 @@ groups:
       - start: '2008-05-03'
         end: '2014-11-16'
   - names:
-    - name: 'THE ポッシボー'
-      name_kana: 'ザ ポッシボー'
-      active_date_ranges:
-        - start: '2006-08-02'
-          end: '2015-06-11'
-    - name: 'チャオ ベッラ チンクエッティ'
-      name_kana: 'チャオ ベッラ チンクエッティ'
-      active_date_ranges:
-        - start: '2006-08-02'
-          end: '2018-08-02'
+      - name: 'THE ポッシボー'
+        name_kana: 'ザ ポッシボー'
+        active_date_ranges:
+          - start: '2006-08-02'
+            end: '2015-06-11'
+      - name: 'チャオ ベッラ チンクエッティ'
+        name_kana: 'チャオ ベッラ チンクエッティ'
+        active_date_ranges:
+          - start: '2006-08-02'
+            end: '2018-08-02'
     active_date_ranges:
       - start: '2006-08-02'
         end: '2018-08-02'
