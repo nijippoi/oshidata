@@ -40,7 +40,7 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
     let groupId = groupsData.start_id;
     for (const groupData of groupsData.groups) {
       if (groupData.reserve_id_until) {
-        groupId = groupData['reserve_id_until']++;
+        groupId = ++groupData['reserve_id_until'];
         continue;
       }
 
@@ -150,7 +150,7 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
     let id = datas.start_id;
     for (const data of datas.persons) {
       if (data.reserve_id_until) {
-        id = data['reserve_id_until']++;
+        id = ++data['reserve_id_until'];
         continue;
       }
 

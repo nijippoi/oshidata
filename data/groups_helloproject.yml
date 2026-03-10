@@ -1,9 +1,12 @@
 ---
 source_type: 'groups'
-start_id: 1
-end_id: 500
+start_id: 0
+end_id: 499
 
 groups:
+  - name: '名無しグループ'
+    name_kana: 'ナナシグループ'
+
   # モーニング娘。
   - names:
       - name: 'モーニング娘。'
