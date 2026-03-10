@@ -154,7 +154,7 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
         continue;
       }
 
-      const person: Person = { id: id.toString() };
+      const person: Person = { id: id.toString(), names: [] };
 
       // 人名正規化
       if (data.names) {

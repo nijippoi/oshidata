@@ -132,22 +132,27 @@ export interface Groups {
 }
 
 /**
+ * 役職のタイプ
+ */
+export type RoleTypes =
+  | 'solo'
+  | 'member'
+  | 'trainee'
+  | 'leader'
+  | 'subleader'
+  | 'vocal'
+  | 'dancer'
+  | 'producer'
+  | 'drummer'
+  | 'guitarist'
+  | 'keyboardist';
+
+/**
  * 共通のロール情報
  */
 export interface BaseRole extends HasActiveDateRanges {
-  /** 役割名 */
-  role:
-    | 'solo'
-    | 'member'
-    | 'trainee'
-    | 'leader'
-    | 'subleader'
-    | 'vocal'
-    | 'dancer'
-    | 'producer'
-    | 'drummer'
-    | 'guitarist'
-    | 'keyboardist';
+  /** 役割のタイプ */
+  role: RoleTypes;
 }
 
 /**
@@ -206,7 +211,7 @@ export interface PersonName {
  */
 export interface Person extends HasId, HasActiveDateRanges {
   /** 名前のバリエーション（期間指定可能） */
-  names?: (PersonName & HasActiveDateRanges)[];
+  names: (PersonName & HasActiveDateRanges)[];
   /** 生年月日（ISO 8601形式: YYYY-MM-DD） */
   birth_date?: DateString;
   /** 出生地 */

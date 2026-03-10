@@ -43,6 +43,12 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true
       },
+      "[html]": {
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+      },
       "telemetry.telemetryLevel": "off"
     }
   }
