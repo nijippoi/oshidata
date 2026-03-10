@@ -1,0 +1,418 @@
+---
+source_type: 'persons'
+start_id: 360
+end_id: 399
+
+persons:
+  - family_name: '谷本'
+    family_name_kana: 'タニモト'
+    given_name: '安美'
+    given_name_kana: 'アミ'
+    birth_date: '1999-11-16'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-11-01'
+            end: '2015-04-29'
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-11-01'
+  - family_name: '山岸'
+    family_name_kana: 'ヤマギシ'
+    given_name: '理子'
+    given_name_kana: 'リコ'
+    birth_date: '1998-11-24'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+            end: '2023-11-06'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2012-06-17'
+            end: '2015-04-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2012-06-17'
+            end: '2023-11-06'
+  - family_name: '小片'
+    family_name_kana: 'オガタ'
+    given_name: 'リサ'
+    given_name_kana: 'リサ'
+    birth_date: '1998-11-05'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+            end: '2020-12-28'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-11-29'
+            end: '2015-04-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-11-29'
+            end: '2020-12-28'
+  - family_name: '新沼'
+    family_name_kana: 'ニイヌマ'
+    given_name: '希空'
+    given_name_kana: 'キソラ'
+    birth_date: '1999-10-20'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+            end: '2024-06-10'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2013-09-22'
+            end: '2015-04-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-09-22'
+            end: '2024-06-10'
+  - family_name: '岸本'
+    family_name_kana: 'キシモト'
+    given_name: 'ゆめの'
+    given_name_kana: 'ユメノ'
+    birth_date: '2000-04-01'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+            end: '2023-11-06'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2012-12-09'
+            end: '2015-04-29'
+      - role: 'trainee'
+        group: 'NICE GIRL プロジェクト!研修生'
+        active_date_ranges:
+          - start: '2010-09-01'
+            end: '2012-12-09'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2012-12-09'
+            end: '2023-11-06'
+  - family_name: '浅倉'
+    family_name_kana: 'アサクラ'
+    given_name: '樹々'
+    given_name_kana: 'キキ'
+    birth_date: '2000-09-03'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2015-04-29'
+            end: '2023-04-02'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-10-25'
+            end: '2015-04-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-10-25'
+            end: '2023-04-02'
+  - family_name: '小野'
+    family_name_kana: 'オノ'
+    given_name: '瑞歩'
+    given_name_kana: 'ミズホ'
+    birth_date: '2000-09-29'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2016-08-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-11-29'
+      - role: 'member'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-11-29'
+            end: '2016-08-13'
+  - family_name: '小野田'
+    family_name_kana: 'オノダ'
+    given_name: '紗栞'
+    given_name_kana: 'サオリ'
+    birth_date: '2001-12-17'
+    birth_place:
+      country: 'JP'
+      state: '静岡県'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2016-08-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-10-25'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-10-25'
+            end: '2016-08-13'
+  - family_name: '秋山'
+    family_name_kana: 'アキヤマ'
+    given_name: '眞緒'
+    given_name_kana: 'マオ'
+    birth_date: '2002-07-29'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2016-08-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-04-27'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-04-27'
+            end: '2016-08-13'
+  - family_name: '河西'
+    family_name_kana: 'カサイ'
+    given_name: '結心'
+    given_name_kana: 'ユウミ'
+    birth_date: '2003-07-30'
+    birth_place:
+      country: 'JP'
+      state: '山梨県'
+    hometown:
+      country: 'JP'
+      state: '山梨県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-07-07'
+  - family_name: '八木'
+    family_name_kana: 'ヤギ'
+    given_name: '栞'
+    given_name_kana: 'シオリ'
+    birth_date: '2003-09-19'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2021-07-07'
+            end: '2025-04-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-07-07'
+            end: '2025-04-30'
+  - family_name: '福田'
+    family_name_kana: 'フクダ'
+    given_name: '真琳'
+    given_name_kana: 'マリン'
+    birth_date: '2004-10-18'
+    birth_place:
+      country: 'JP'
+      state: '長崎県'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-07-07'
+  - family_name: '豫風'
+    family_name_kana: 'ヨフウ'
+    given_name: '瑠乃'
+    given_name_kana: 'ルノ'
+    birth_date: '2007-12-20'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-02'
+            end: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2019-08-02'
+  - family_name: '石井'
+    family_name_kana: 'イシイ'
+    given_name: '泉羽'
+    given_name_kana: 'ミハネ'
+    birth_date: '2008-10-20'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2024-02-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-02-07'
+  - family_name: '村田'
+    family_name_kana: 'ムラタ'
+    given_name: '結生'
+    given_name_kana: 'ユウ'
+    birth_date: '2010-03-12'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2024-02-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-02-07'
+  - family_name: '土居'
+    family_name_kana: 'ドイ'
+    given_name: '楓奏'
+    given_name_kana: 'フウカ'
+    birth_date: '2010-03-23'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2024-02-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-02-07'
+  - family_name: '西村'
+    family_name_kana: 'ニシムラ'
+    given_name: '乙輝'
+    given_name_kana: 'イツキ'
+    birth_date: '2010-10-15'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2024-02-07'
+            end: '2025-08-16'
+      - role: 'member'
+        group: 'つばきファクトリー'
+        active_date_ranges:
+          - start: '2025-08-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-02-07'

@@ -1,0 +1,457 @@
+---
+source_type: 'persons'
+start_id: 300
+end_id: 349
+
+persons:
+  - family_name: '植村'
+    family_name_kana: 'ウエムラ'
+    given_name: 'あかり'
+    given_name_kana: 'アカリ'
+    birth_date: '1998-12-30'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2012-03-31'
+            end: '2013-02-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2024-06-14'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2024-06-14'
+  - family_name: '宮崎'
+    family_name_kana: 'ミヤザキ'
+    given_name: '由加'
+    given_name_kana: 'ユカ'
+    birth_date: '1994-04-02'
+    birth_place:
+      country: 'JP'
+      state: '石川県'
+    hometown:
+      country: 'JP'
+      state: '石川県'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2019-06-17'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2019-06-17'
+  - family_name: '金澤'
+    family_name_kana: 'カナザワ'
+    given_name: '朋子'
+    given_name_kana: 'トモコ'
+    birth_date: '1995-07-02'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2012-09-01'
+            end: '2013-02-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2021-11-24'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2021-11-24'
+  - family_name: '高木'
+    family_name_kana: 'タカギ'
+    given_name: '紗友希'
+    given_name_kana: 'サユキ'
+    birth_date: '1997-04-21'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロエッグ'
+        active_date_ranges:
+          - start: '2009-11-23'
+            end: '2013-02-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2021-02-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2021-02-12'
+  - family_name: '大塚'
+    family_name_kana: 'オオツカ'
+    given_name: '愛菜'
+    given_name_kana: 'アイナ'
+    birth_date: '1998-04-03'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2011-09-11'
+            end: '2013-07-05'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2013-07-05'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2013-07-05'
+  - family_name: '宮本'
+    family_name_kana: 'ミヤモト'
+    given_name: '佳林'
+    given_name_kana: 'カリン'
+    birth_date: '1998-12-01'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロエッグ'
+        active_date_ranges:
+          - start: '2008-11-01'
+            end: '2013-02-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2020-12-10'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2013-02-25'
+            end: '2020-12-10'
+  - family_name: '梁川'
+    family_name_kana: 'ヤナガワ'
+    given_name: '奈々美'
+    given_name_kana: 'ナナミ'
+    birth_date: '2002-01-06'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-04-01'
+            end: '2017-06-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2017-06-26'
+            end: '2019-03-11'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2017-06-26'
+            end: '2019-03-11'
+  - family_name: '稲場'
+    family_name_kana: 'イナバ'
+    given_name: '愛香'
+    given_name_kana: 'マナカ'
+    birth_date: '1997-12-27'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2013-05-05'
+            end: '2018-06-13'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2018-06-13'
+            end: '2022-05-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-06-13'
+            end: '2022-05-30'
+  - family_name: '段原'
+    family_name_kana: 'ダンバラ'
+    given_name: '瑠々'
+    given_name_kana: 'ルル'
+    birth_date: '2001-05-07'
+    birth_place:
+      country: 'JP'
+      state: '広島県'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2013-09-22'
+            end: '2017-06-25'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2017-06-26'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2017-06-26'
+  - family_name: '工藤'
+    family_name_kana: 'クドウ'
+    given_name: '由愛'
+    given_name_kana: 'ユメ'
+    birth_date: '2004-09-28'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2019-06-14'
+      - role: 'trainee'
+        group: 'ハロプロ研修生北海道'
+        active_date_ranges:
+          - start: '2016-07-01'
+            end: '2019-06-14'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2019-06-14'
+  - family_name: '松永'
+    family_name_kana: 'マツナガ'
+    given_name: '里愛'
+    given_name_kana: 'リアイ'
+    birth_date: '2005-07-07'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2019-06-14'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-05-07'
+            end: '2019-06-14'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2019-06-14'
+  - family_name: '有澤'
+    family_name_kana: 'アリサワ'
+    given_name: '一華'
+    given_name_kana: 'イチカ'
+    birth_date: '2003-12-23'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2021-05-07'
+            end: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-07-07'
+  - family_name: '入江'
+    family_name_kana: 'イリエ'
+    given_name: '里咲'
+    given_name_kana: 'リサ'
+    birth_date: '2005-10-18'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-07-07'
+  - family_name: '江端'
+    family_name_kana: 'エバタ'
+    given_name: '妃咲'
+    given_name_kana: 'キサキ'
+    birth_date: '2007-01-30'
+    birth_place:
+      country: 'JP'
+      state: '京都府'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2016-01-15'
+            end: '2021-07-07'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2021-07-07'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2016-01-15'
+  - family_name: '石山'
+    family_name_kana: 'イシヤマ'
+    given_name: '咲良'
+    given_name_kana: 'サクラ'
+    birth_date: '2004-02-22'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2022-06-29'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2020-11-04'
+            end: '2022-06-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2022-06-29'
+  - family_name: '遠藤'
+    family_name_kana: 'エンドウ'
+    given_name: '彩加里'
+    given_name_kana: 'アカリ'
+    birth_date: '2008-04-26'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2022-06-29'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2022-06-29'
+  - family_name: '川嶋'
+    family_name_kana: 'カワシマ'
+    given_name: '美楓'
+    given_name_kana: 'ミフ'
+    birth_date: '2007-12-13'
+    birth_place:
+      country: 'JP'
+      state: '京都府'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2023-05-23'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2021-08-24'
+            end: '2023-05-23'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2023-05-23'
+  - family_name: '林'
+    family_name_kana: 'ハヤシ'
+    given_name: '仁愛'
+    given_name_kana: 'ニイナ'
+    birth_date: '2011-06-10'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2023-03-28'
+            end: '2025-06-23'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2025-06-23'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2023-03-28'

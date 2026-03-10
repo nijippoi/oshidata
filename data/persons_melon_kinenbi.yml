@@ -1,0 +1,94 @@
+---
+source_type: 'persons'
+start_id: 201
+end_id: 204
+
+persons:
+  - family_name: '村田'
+    family_name_kana: 'ムラタ'
+    given_name: 'めぐみ'
+    given_name_kana: 'メグミ'
+    birth_date: '1981-03-03'
+    birth_place:
+      country: 'JP'
+      state: '宮城県'
+    hometown:
+      country: 'JP'
+      state: '宮城県'
+    roles:
+      - role: 'member'
+        group: 'メロン記念日'
+        active_date_ranges:
+          - start: '2000-02-19'
+            end: '2010-05-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '1999-08-10'
+            end: '2009-03-31'
+  - family_name: '大谷'
+    family_name_kana: 'オオタニ'
+    given_name: '雅恵'
+    given_name_kana: 'マサエ'
+    birth_date: '1982-02-25'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'メロン記念日'
+        active_date_ranges:
+          - start: '2000-02-19'
+            end: '2010-05-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '1999-08-10'
+            end: '2009-03-31'
+  - family_name: '柴田'
+    family_name_kana: 'シバタ'
+    given_name: 'あゆみ'
+    given_name_kana: 'アユミ'
+    birth_date: '1984-02-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'メロン記念日'
+        active_date_ranges:
+          - start: '2000-02-19'
+            end: '2010-05-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '1999-08-10'
+            end: '2009-03-31'
+  - family_name: '斉藤'
+    family_name_kana: 'サイトウ'
+    given_name: '瞳'
+    given_name_kana: 'ヒトミ'
+    birth_date: '1981-10-31'
+    birth_place:
+      country: 'JP'
+      state: 'Unknown'
+    hometown:
+      country: 'JP'
+      state: 'Unknown'
+    roles:
+      - role: 'member'
+        group: 'メロン記念日'
+        active_date_ranges:
+          - start: '2000-02-19'
+            end: '2010-05-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '1999-08-10'
+            end: '2009-03-31'

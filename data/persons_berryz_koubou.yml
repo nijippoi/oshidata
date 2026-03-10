@@ -1,0 +1,222 @@
+---
+source_type: 'persons'
+start_id: 251
+end_id: 258
+
+persons:
+  - family_name: '清水'
+    family_name_kana: 'シミズ'
+    given_name: '佐紀'
+    given_name_kana: 'サキ'
+    birth_date: '1991-11-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '嗣永'
+    family_name_kana: 'ツグナガ'
+    given_name: '桃子'
+    given_name_kana: 'モモコ'
+    birth_date: '1992-03-06'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '徳永'
+    family_name_kana: 'トクナガ'
+    given_name: '千奈美'
+    given_name_kana: 'チナミ'
+    birth_date: '1992-05-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '須藤'
+    family_name_kana: 'スドウ'
+    given_name: '茉麻'
+    given_name_kana: 'マアサ'
+    birth_date: '1992-07-03'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '夏焼'
+    family_name_kana: 'ナツヤキ'
+    given_name: '雅'
+    given_name_kana: 'ミヤビ'
+    birth_date: '1992-08-25'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '熊井'
+    family_name_kana: 'クマイ'
+    given_name: '友理奈'
+    given_name_kana: 'ユリナ'
+    birth_date: '1993-08-03'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '菅谷'
+    family_name_kana: 'スガヤ'
+    given_name: '梨沙子'
+    given_name_kana: 'リサコ'
+    birth_date: '1994-04-04'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2015-03-03'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2015-03-03'
+  - family_name: '石村'
+    family_name_kana: 'イシムラ'
+    given_name: '舞波'
+    given_name_kana: 'マイハ'
+    birth_date: '1992-11-20'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2004-01-14'
+      - role: 'member'
+        group: 'Berryz工房'
+        active_date_ranges:
+          - start: '2004-01-14'
+            end: '2005-10-02'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-01-01'
+            end: '2005-10-02'

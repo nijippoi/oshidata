@@ -1,0 +1,348 @@
+---
+source_type: 'groups'
+start_id: 1
+end_id: 500
+
+groups:
+  # モーニング娘。
+  - names:
+      - name: 'モーニング娘。'
+        name_kana: 'モーニングムスメ'
+      - name: 'モーニング娘。''15'
+        name_kana: 'モーニングムスメワンファイブ'
+        active_date_ranges:
+          - start: '2015-01-01'
+            end: '2016-01-01'
+      - name: 'モーニング娘。''16'
+        name_kana: 'モーニングムスメワンシックス'
+        active_date_ranges:
+          - start: '2016-01-01'
+            end: '2017-01-01'
+      - name: 'モーニング娘。''17'
+        name_kana: 'モーニングムスメワンセブン'
+        active_date_ranges:
+          - start: '2017-01-01'
+            end: '2018-01-01'
+      - name: 'モーニング娘。''18'
+        name_kana: 'モーニングムスメワンエイト'
+        active_date_ranges:
+          - start: '2018-01-01'
+            end: '2019-01-01'
+      - name: 'モーニング娘。''19'
+        name_kana: 'モーニングムスメワンナイン'
+        active_date_ranges:
+          - start: '2019-01-01'
+            end: '2020-01-01'
+      - name: 'モーニング娘。''20'
+        name_kana: 'モーニングムスメツーゼロ'
+        active_date_ranges:
+          - start: '2020-01-01'
+            end: '2021-01-01'
+      - name: 'モーニング娘。''21'
+        name_kana: 'モーニングムスメツーワン'
+        active_date_ranges:
+          - start: '2021-01-01'
+            end: '2022-01-01'
+      - name: 'モーニング娘。''22'
+        name_kana: 'モーニングムスメツーツー'
+        active_date_ranges:
+          - start: '2022-01-01'
+            end: '2023-01-01'
+      - name: 'モーニング娘。''23'
+        name_kana: 'モーニングムスメツースリー'
+        active_date_ranges:
+          - start: '2023-01-01'
+            end: '2024-01-01'
+      - name: 'モーニング娘。''24'
+        name_kana: 'モーニングムスメツーフォー'
+        active_date_ranges:
+          - start: '2024-01-01'
+            end: '2025-01-01'
+      - name: 'モーニング娘。''25'
+        name_kana: 'モーニングムスメツーファイブ'
+        active_date_ranges:
+          - start: '2025-01-01'
+            end: '2026-01-01'
+      - name: 'モーニング娘。''26'
+        name_kana: 'モーニングムスメツーシックス'
+        active_date_ranges:
+          - start: '2026-01-01'
+    active_date_ranges:
+      - start: '1997-09-14'
+  - name: 'モーニング娘。1期'
+    name_kana: 'モーニングムスメダイイッキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '1997-09-14'
+  - name: 'モーニング娘。2期'
+    name_kana: 'モーニングムスメダイニキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '1998-05-03'
+  - name: 'モーニング娘。3期'
+    name_kana: 'モーニングムスメダイサンキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '1999-08-22'
+  - name: 'モーニング娘。4期'
+    name_kana: 'モーニングムスメダイヨンキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2000-04-16'
+  - name: 'モーニング娘。5期'
+    name_kana: 'モーニングムスメダイゴキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2001-08-26'
+  - name: 'モーニング娘。6期'
+    name_kana: 'モーニングムスメダイロッキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2003-01-07'
+  - name: 'モーニング娘。7期'
+    name_kana: 'モーニングムスメダイシチキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2005-05-01'
+  - name: 'モーニング娘。8期'
+    name_kana: 'モーニングムスメダイハッキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2006-12-10'
+  - name: 'モーニング娘。9期'
+    name_kana: 'モーニングムスメダイキュウキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2011-01-02'
+  - name: 'モーニング娘。10期'
+    name_kana: 'モーニングムスメダイジュッキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2011-09-29'
+  - name: 'モーニング娘。11期'
+    name_kana: 'モーニングムスメダイジュウイチキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2012-09-14'
+  - name: 'モーニング娘。12期'
+    name_kana: 'モーニングムスメダイジュウニキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2014-09-30'
+  - name: 'モーニング娘。13期'
+    name_kana: 'モーニングムスメダイジュウサンキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2016-12-12'
+  - name: 'モーニング娘。14期'
+    name_kana: 'モーニングムスメダイジュウヨンキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2017-06-26'
+  - name: 'モーニング娘。15期'
+    name_kana: 'モーニングムスメダイジュウゴキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2019-06-22'
+  # つんく♂プロデュース
+  - name: 'モーニング娘。16期'
+    name_kana: 'モーニングムスメダイジュウロッキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2022-06-29'
+  - name: 'モーニング娘。17期'
+    name_kana: 'モーニングムスメダイジュウシチキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2023-05-23'
+
+  # END モーニング娘。関連
+  - reserve_id_until: 99
+
+  # ハロー！プロジェクト
+  - name: 'ハロー！プロジェクト'
+    name_kana: 'ハロープロジェクト'
+    active_date_ranges:
+      - start: '1997-09-14'
+  - names:
+      - name: '太陽とシスコムーン'
+        name_kana: 'タイヨウトシスコムーン'
+        active_date_ranges:
+          - start: '1999-04-21'
+            end: '2000-03-01'
+      - name: 'T&Cボンバー'
+        name_kana: 'ティーアンドシーボンバー'
+        active_date_ranges:
+          - start: '2000-03-01'
+            end: '2000-10-09'
+    active_date_ranges:
+      - start: '1999-04-21'
+        end: '2000-10-09'
+  - names:
+      - name: 'カントリー娘。'
+        name_kana: 'カントリームスメ'
+        active_date_ranges:
+          - start: '1999-04-27'
+            end: '2014-11-05'
+      - name: 'カントリー・ガールズ'
+        name_kana: 'カントリーガールズ'
+        active_date_ranges:
+          - start: '2014-11-05'
+            end: '2019-12-26'
+    active_date_ranges:
+      - start: '1999-04-27'
+        end: '2019-12-26'
+  - name: 'ココナッツ娘。'
+    name_kana: 'ココナッツムスメ'
+    active_date_ranges:
+      - start: '1999-07-23'
+        end: '2008-04-30'
+  - name: 'メロン記念日'
+    name_kana: 'メロンキネンビ'
+    active_date_ranges:
+      - start: '1999-08-10'
+        end: '2010-05-03'
+  - name: 'シェキドル'
+    name_kana: 'シェキドル'
+    active_date_ranges:
+      - start: '2000-01-01'
+        end: '2002-01-31'
+  - names:
+      - name: 'ハロー!プロジェクト・キッズ'
+        name_kana: 'ハロープロジェクト キッズ'
+        active_date_ranges:
+          - start: '2001-09-01'
+            end: '2004-01-01'
+      - name: 'ハロプロエッグ'
+        name_kana: 'ハロープロエッグ'
+        active_date_ranges:
+          - start: '2004-01-01'
+            end: '2012-01-01'
+      - name: 'ハロプロ研修生'
+        name_kana: 'ハロプロケンシュウセイ'
+        active_date_ranges:
+          - start: '2012-01-01'
+    active_date_ranges:
+      - start: '2002-03-01'
+  - name: 'Berryz工房'
+    name_kana: 'ベリーズコウボウ'
+    active_date_ranges:
+      - start: '2004-01-14'
+        end: '2015-03-03'
+  - name: 'W'
+    name_kana: 'ダブルユー'
+    active_date_ranges:
+      - start: '2004-03-03'
+        end: '2007-03-26'
+  - name: '美勇伝'
+    name_kana: 'ビユウデン'
+    active_date_ranges:
+      - start: '2004-08-10'
+        end: '2008-06-29'
+  - name: '℃-ute'
+    name_kana: 'キュート'
+    active_date_ranges:
+      - start: '2005-06-11'
+        end: '2017-06-12'
+  - name: 'Buono!'
+    name_kana: 'ボーノ'
+    active_date_ranges:
+      - start: '2007-07-21'
+        end: '2017-05-22'
+  - name: 'アイスクリー娘。'
+    name_kana: 'アイスクリームスメ'
+    active_date_ranges:
+      - start: '2008-12-26'
+        end: '2009-11-30'
+  - names:
+      - name: 'スマイレージ'
+        name_kana: 'スマイレージ'
+        active_date_ranges:
+          - start: '2009-04-04'
+            end: '2014-12-17'
+      - name: 'アンジュルム'
+        name_kana: 'アンジュルム'
+        active_date_ranges:
+          - start: '2014-12-17'
+    active_date_ranges:
+      - start: '2009-04-04'
+  - name: 'Juice=Juice'
+    name_kana: 'ジュースジュース'
+    active_date_ranges:
+      - start: '2013-02-03'
+  - name: 'こぶしファクトリー'
+    name_kana: 'コブシファクトリー'
+    active_date_ranges:
+      - start: '2015-01-02'
+        end: '2020-03-30'
+  - name: 'つばきファクトリー'
+    name_kana: 'ツバキファクトリー'
+    active_date_ranges:
+      - start: '2015-04-29'
+  - name: 'ハロプロ研修生北海道'
+    name_kana: 'ハロプロケンシュウセイホッカイドウ'
+    active_date_ranges:
+      - start: '2015-05-01'
+  - name: 'BEYOOOOONDS'
+    name_kana: 'ビヨーンズ'
+    active_date_ranges:
+      - start: '2018-10-19'
+  - name: 'CHICA#TETSU'
+    name_kana: 'チカ＃テツ'
+    parent: 'BEYOOOOONDS'
+    active_date_ranges:
+      - start: '2018-10-19'
+  - name: '雨ノ森 川海'
+    name_kana: 'アメノモリ カワウミ'
+    parent: 'BEYOOOOONDS'
+    active_date_ranges:
+      - start: '2018-10-19'
+  - name: 'SeasoningS'
+    name_kana: 'シーズニングス'
+    parent: 'BEYOOOOONDS'
+    active_date_ranges:
+      - start: '2018-10-19'
+  - name: 'OCHA NORMA'
+    name_kana: 'オチャノーマ'
+    active_date_ranges:
+      - start: '2021-12-12'
+  - name: 'ロージークロニクル'
+    name_kana: 'ロージークロニクル'
+    active_date_ranges:
+      - start: '2024-06-16'
+
+  # END ハロー！プロジェクト関連
+  - reserve_id_until: 399
+
+  # つんく♂プロデュース
+  - name: 'NICE GIRL プロジェクト!'
+    name_kana: 'ナイスガールプロジェクト'
+    active_date_ranges:
+      - start: '2008-05-03'
+        end: '2014-11-16'
+  - names:
+    - name: 'THE ポッシボー'
+      name_kana: 'ザ ポッシボー'
+      active_date_ranges:
+        - start: '2006-08-02'
+          end: '2015-06-11'
+    - name: 'チャオ ベッラ チンクエッティ'
+      name_kana: 'チャオ ベッラ チンクエッティ'
+      active_date_ranges:
+        - start: '2006-08-02'
+          end: '2018-08-02'
+    active_date_ranges:
+      - start: '2006-08-02'
+        end: '2018-08-02'
+  - name: 'キャナァーリ倶楽部'
+    name_kana: 'キャナァーリクラブ'
+    active_date_ranges:
+      - start: '2007-03-03'
+  - name: 'NICE GIRL プロジェクト!研修生'
+    name_kana: 'ナイスガールプロジェクトケンシュウセイ'
+    active_date_ranges:
+      - start: '2008-05-03'
+        end: '2014-11-16'
+
+  # END つんく♂プロデュース
+  - reserve_id_until: 499

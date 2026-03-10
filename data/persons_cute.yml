@@ -1,0 +1,222 @@
+---
+source_type: 'persons'
+start_id: 261
+end_id: 270
+
+persons:
+  - family_name: '梅田'
+    family_name_kana: 'ウメダ'
+    given_name: 'えりか'
+    given_name_kana: 'エリカ'
+    birth_date: '1991-05-24'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2009-10-25'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2009-10-25'
+  - family_name: '村上'
+    family_name_kana: 'ムラカミ'
+    given_name: '愛'
+    given_name_kana: 'メグミ'
+    birth_date: '1992-06-06'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2006-10-31'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2006-10-31'
+  - family_name: '矢島'
+    family_name_kana: 'ヤジマ'
+    given_name: '舞美'
+    given_name_kana: 'マイミ'
+    birth_date: '1992-02-07'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2017-06-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2017-06-12'
+  - family_name: '鈴木'
+    family_name_kana: 'スズキ'
+    given_name: '愛理'
+    given_name_kana: 'アイリ'
+    birth_date: '1994-04-12'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2017-06-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2017-06-12'
+  - family_name: '中島'
+    family_name_kana: 'ナカジマ'
+    given_name: '早貴'
+    given_name_kana: 'サキ'
+    birth_date: '1994-02-05'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2017-06-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2017-06-12'
+  - family_name: '岡井'
+    family_name_kana: 'オカイ'
+    given_name: '千聖'
+    given_name_kana: 'チサト'
+    birth_date: '1994-06-21'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2017-06-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2017-06-12'
+  - family_name: '有原'
+    family_name_kana: 'アリハラ'
+    given_name: '栞菜'
+    given_name_kana: 'カンナ'
+    birth_date: '1993-06-15'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロエッグ'
+        active_date_ranges:
+          - start: '2004-06-01'
+            end: '2006-01-02'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2006-01-02'
+            end: '2009-07-09'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2004-06-01'
+            end: '2009-07-09'
+  - family_name: '萩原'
+    family_name_kana: 'ハギワラ'
+    given_name: '舞'
+    given_name_kana: 'マイ'
+    birth_date: '1996-02-07'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロー!プロジェクト・キッズ'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2005-06-11'
+      - role: 'member'
+        group: '℃-ute'
+        active_date_ranges:
+          - start: '2005-06-11'
+            end: '2017-06-12'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2002-06-30'
+            end: '2017-06-12'

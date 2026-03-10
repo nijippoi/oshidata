@@ -1,0 +1,10 @@
+---
+source_type: 'group_types'
+
+group_types:
+  artist:
+    name: 'アーティスト'
+  support:
+    name: 'サポート'
+  informal:
+    name: '非公式'

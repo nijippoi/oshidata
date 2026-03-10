@@ -1,0 +1,174 @@
+---
+source_type: 'persons'
+start_id: 350
+end_id: 359
+
+persons:
+  - family_name: '浜浦'
+    family_name_kana: 'ハマウラ'
+    given_name: '彩乃'
+    given_name_kana: 'アヤノ'
+    birth_date: '2000-04-26'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-02-01'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+  - family_name: '田口'
+    family_name_kana: 'タグチ'
+    given_name: '夏実'
+    given_name_kana: 'ナツミ'
+    birth_date: '1995-03-20'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-12-01'
+            end: '2015-02-25'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+  - family_name: '小川'
+    family_name_kana: 'オガワ'
+    given_name: '麗奈'
+    given_name_kana: 'レイナ'
+    birth_date: '1994-07-13'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-01-15'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+  - family_name: '野村'
+    family_name_kana: 'ノムラ'
+    given_name: 'みな美'
+    given_name_kana: 'ミナミ'
+    birth_date: '1994-12-12'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-03-01'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+  - family_name: '和田'
+    family_name_kana: 'ワダ'
+    given_name: '桜子'
+    given_name_kana: 'サクラコ'
+    birth_date: '1998-01-07'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-04-01'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+
+  - family_name: '藤井'
+    family_name_kana: 'フジイ'
+    given_name: '梨央'
+    given_name_kana: 'リオ'
+    birth_date: '1995-08-18'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-05-01'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+  - family_name: '井上'
+    family_name_kana: 'イノウエ'
+    given_name: '玲音'
+    given_name_kana: 'レイ'
+    birth_date: '2001-07-17'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NICE GIRL プロジェクト!研修生'
+        active_date_ranges:
+          - start: '2012-07-29'
+            end: '2014-11-16'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2014-11-29'
+            end: '2015-02-25'
+      - role: 'member'
+        group: 'こぶしファクトリー'
+        active_date_ranges:
+          - start: '2015-02-25'
+            end: '2020-03-30'
+      - role: 'member'
+        group: 'Juice=Juice'
+        active_date_ranges:
+          - start: '2020-04-01'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-11-29'

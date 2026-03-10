@@ -1,0 +1,16 @@
+---
+source_type: 'roles'
+
+roles:
+  solo:
+    name: 'ソロ'
+  member:
+    name: 'メンバー'
+  trainee:
+    name: '研修生'
+  leader:
+    name: 'リーダー'
+  subleader:
+    name: 'サブリーダー'
+  producer:
+    name: 'プロデューサー'
