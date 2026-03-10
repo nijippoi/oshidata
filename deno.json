@@ -3,15 +3,15 @@
     "clean": "rm -rf dist/",
     "import": "deno run --allow-read --allow-write scripts/import.ts data/ src/data/",
     "build": {
-      "command": "deno bundle --platform=browser --sourcemap=linked --outdir dist src/index.ts src/index.html",
+      "command": "deno bundle --inline-imports=true --platform=browser --sourcemap=linked --outdir dist src/index.html",
       "dependencies": ["clean", "import"]
     },
     "release": {
-      "command": "deno bundle --minify --platform=browser --sourcemap=linked --outdir dist src/index.ts src/index.html",
+      "command": "deno bundle --minify --inline-imports=true --platform=browser --sourcemap=linked --outdir dist src/index.html",
       "dependencies": ["clean", "import"]
     },
     "dev": {
-      "command": "deno bundle --watch --platform=browser --sourcemap=linked --outdir dist src/index.ts src/index.html",
+      "command": "deno bundle --watch --inline-imports=true --platform=browser --sourcemap=linked --outdir dist src/index.html",
       "dependencies": ["clean", "import"]
     }
   },
