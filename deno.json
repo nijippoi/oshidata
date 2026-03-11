@@ -1,4 +1,7 @@
 {
+  "name": "oshidata",
+  "version": "0.0.1",
+  "description": "",
   "tasks": {
     "clean": "rm -rf dist/",
     "format": "deno fmt",
