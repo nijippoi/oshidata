@@ -1,0 +1,44 @@
+import { parseArgs } from '@std/cli/parse-args';
+import { basename, join } from '@std/path';
+import { globFilesSync } from './utils.ts';
+import { existsSync } from '@std/fs';
+
+if (import.meta.main) {
+  const args = parseArgs(Deno.args, {
+    string: ['outdir'],
+    boolean: ['release'],
+    negatable: ['release'],
+    default: { outdir: join(Deno.cwd(), 'dist'), release: true },
+  });
+  try {
+    const files = globFilesSync('**/*.{ts,html}', join(Deno.cwd(), 'src'));
+    const result = await Deno.bundle({
+      outputDir: args.outdir,
+      minify: args.release,
+      entrypoints: files,
+      platform: 'browser',
+      format: 'esm',
+      // inlineImports: true,
+      codeSplitting: false,
+      keepNames: true,
+      sourcemap: 'linked',
+      write: true,
+    });
+    if (!result.success) {
+      console.error(result);
+    }
+    const distDataDir = join(args.outdir, 'data');
+    if (!existsSync(distDataDir)) {
+      Deno.mkdirSync(join(args.outdir, 'data'), { recursive: true });
+    }
+    globFilesSync('*.{json}', join(Deno.cwd(), 'src', 'data')).forEach(
+      (file) =>
+        Deno.copyFileSync(
+          file,
+          join(distDataDir, basename(file)),
+        ),
+    );
+  } catch (error) {
+    console.error(error);
+  }
+}

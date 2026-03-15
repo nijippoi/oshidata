@@ -1,6 +1,7 @@
-import * as yaml from '@std/yaml';
-import * as path from '@std/path';
-import { BaseRole, GroupRole, Person, PersonRole, Persons, Role } from '../src/types.ts';
+import { parse as parseYaml } from '@std/yaml';
+import { join } from '@std/path';
+import { parseArgs } from '@std/cli/parse-args';
+import type { GroupRole, Person, PersonRole, Persons } from '../src/types.ts';
 
 async function importYaml(dataDir: string, srcDir: string): Promise<void> {
   // dirPath内のYAMLを読み込む
@@ -9,8 +10,8 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
   for await (const entry of Deno.readDir(dataDir)) {
     if (entry.isFile && /\.(yaml|yml)$/.test(entry.name)) {
       try {
-        const filePath = path.join(dataDir, entry.name);
-        const data: any = yaml.parse(Deno.readTextFileSync(filePath));
+        const filePath = join(dataDir, entry.name);
+        const data: any = parseYaml(Deno.readTextFileSync(filePath));
         data.file = filePath;
         switch (data.source_type) {
           case 'groups':
@@ -60,7 +61,9 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
       if (groupData.qualifier) {
         if (groupQualifiers[groupData.qualifier]) {
           console.error(
-            `Group qualifier ${groupData.qualifier} already exists as id ${groupQualifiers[groupData.qualifier]}`,
+            `Group qualifier ${groupData.qualifier} already exists as id ${
+              groupQualifiers[groupData.qualifier]
+            }`,
           );
         }
         groupQualifiers[groupData.qualifier] = groupId;
@@ -108,11 +111,11 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
 
   Deno.mkdirSync(srcDir, { recursive: true });
   Deno.writeTextFileSync(
-    path.join(srcDir, 'groups.json'),
+    join(srcDir, 'groups.json'),
     JSON.stringify(groups),
   );
   Deno.writeTextFileSync(
-    path.join(srcDir, 'groups.pretty.json'),
+    join(srcDir, 'groups.pretty.json'),
     JSON.stringify(groups, null, 2),
   );
 
@@ -120,7 +123,7 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
     name?: string,
     qualifier?: string,
   ): string | undefined => {
-    if (qualifier && groupQualifiers.hasOwn(qualifier)) {
+    if (qualifier && groupQualifiers[qualifier]) {
       return groupQualifiers[qualifier].toString();
     }
     const groupIds: Set<string> = new Set();
@@ -231,18 +234,22 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
 
   Deno.mkdirSync(srcDir, { recursive: true });
   Deno.writeTextFileSync(
-    path.join(srcDir, 'persons.json'),
+    join(srcDir, 'persons.json'),
     JSON.stringify(persons),
   );
   Deno.writeTextFileSync(
-    path.join(srcDir, 'persons.pretty.json'),
+    join(srcDir, 'persons.pretty.json'),
     JSON.stringify(persons, null, 2),
   );
 }
 
 if (import.meta.main) {
-  await importYaml(
-    Deno.args[0] || path.join(Deno.cwd(), 'data'),
-    Deno.args[1] || path.join(Deno.cwd(), 'src', 'data'),
-  );
+  const args = parseArgs(Deno.args, {
+    string: ['importdir', 'datadir'],
+    default: {
+      importdir: join(Deno.cwd(), 'data'),
+      datadir: join(Deno.cwd(), 'src', 'data'),
+    },
+  });
+  await importYaml(args.importdir, args.datadir);
 }
