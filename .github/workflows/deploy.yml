@@ -17,17 +17,22 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.7.5
+      - name: bundle
+        run: deno task bundle
       - name: configure-pages
         uses: actions/configure-pages@v5
       - name: upload-pages-artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'dist'
-      - name: deploy-pages
-        id: deployment
+      - name: deploy
+        id: deploy
         uses: actions/deploy-pages@v4
