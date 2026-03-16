@@ -64,3 +64,23 @@ export function renderPersonName(
     return undefined;
   }).join(' / ');
 }
+
+export function locale() {
+  return navigator.language;
+}
+
+export function renderDate(date: Date): string {
+  return date.toLocaleString('ja-JP', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+
+export function renderPlainDate(date: Temporal.PlainDate): string {
+  return date.toLocaleString(locale(), {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}

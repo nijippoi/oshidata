@@ -1,5 +1,9 @@
 import type { Persons } from '../../types.ts';
-import { renderPersonName, resolvePersonName } from '../../utils.ts';
+import {
+  renderDate,
+  renderPersonName,
+  resolvePersonName,
+} from '../../utils.ts';
 
 let persons: Persons | undefined = undefined;
 
@@ -30,9 +34,7 @@ async function render(): Promise<void> {
     });
     rowFrag.querySelectorAll('td.person-birth-date').forEach((td) => {
       td.textContent = person.birth_date
-        ? Temporal.PlainDate.from(
-          person.birth_date,
-        ).toLocaleString()
+        ? renderDate(new Date(person.birth_date))
         : '';
     });
     rowFrag.querySelectorAll('td.person-age').forEach((td) => {
