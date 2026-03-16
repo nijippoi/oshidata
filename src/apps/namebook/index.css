@@ -1,0 +1,9 @@
+html, body {
+  font-family: sans-serif;
+}
+
+.person-id,
+.person-birth-date,
+.person-age {
+  text-align: right;
+}

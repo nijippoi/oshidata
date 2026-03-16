@@ -1,9 +1,6 @@
 import type { Persons } from '../../types.ts';
-import {
-  renderDate,
-  renderPersonName,
-  resolvePersonName,
-} from '../../utils.ts';
+import { renderDate, renderPersonName } from '../../utils.ts';
+import './index.css';
 
 let persons: Persons | undefined = undefined;
 
@@ -62,7 +59,6 @@ async function load(): Promise<void> {
     throw new Error(`Response status: ${res.status}`);
   }
   persons = await res.json();
-  console.log(persons);
   await render();
 }
 
