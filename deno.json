@@ -2,6 +2,15 @@
   "name": "oshidata",
   "version": "0.0.1",
   "description": "",
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "deno.ns",
+      "deno.window",
+      "deno.unstable",
+      "dom"
+    ]
+  },
   "tasks": {
     "clean": "deno run --allow-read --allow-write ./tasks/clean.ts",
     "update": "deno update",

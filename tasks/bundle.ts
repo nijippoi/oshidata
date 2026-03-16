@@ -11,7 +11,10 @@ if (import.meta.main) {
     default: { outdir: join(Deno.cwd(), 'dist'), release: true },
   });
   try {
-    const files = globFilesSync('**/*.{ts,html}', join(Deno.cwd(), 'src'));
+    const files = globFilesSync(
+      '**/*.{html,ts,js,tsx,jsx}',
+      join(Deno.cwd(), 'src'),
+    );
     const result = await Deno.bundle({
       outputDir: args.outdir,
       minify: args.release,

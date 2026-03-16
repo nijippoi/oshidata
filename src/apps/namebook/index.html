@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>名簿</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>名簿</h1>
+      <div id="namebook-table"></div>
+    </div>
+    <script src="./index.ts" type="module"></script>
+  </body>
+  <template id="template-table">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>名前</th>
+          <th>誕生日</th>
+          <th>年齢</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </template>
+  <template id="template-row">
+    <tr>
+      <td class="person-id">{{id}}</td>
+      <td class="person-name">{{name}}</td>
+      <td class="person-birth-date">{{birthday}}</td>
+      <td class="person-age">{{age}}</td>
+    </tr>
+  </template>
+</html>

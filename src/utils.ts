@@ -48,3 +48,19 @@ export function resolvePersonName(
   const names = resolvePersonNames(person, date);
   return names ? names[0] : undefined;
 }
+
+export function renderPersonName(
+  person: Person,
+  date?: Date | Temporal.PlainDate,
+): string | undefined {
+  const names = resolvePersonNames(person, date);
+  if (!names) return undefined;
+  return names.map((name) => {
+    if (name.family_name && name.given_name) {
+      return name.family_name + ' ' + name.given_name;
+    }
+    if (name.family_name) return name.family_name;
+    if (name.given_name) return name.given_name;
+    return undefined;
+  }).join(' / ');
+}
