@@ -1,5 +1,5 @@
 import type { Persons } from '../../types.ts';
-import { renderDate, renderPersonName } from '../../utils.ts';
+import { renderAge, renderDate, renderPersonName } from '../../utils.ts';
 import './index.css';
 
 let persons: Persons | undefined = undefined;
@@ -39,14 +39,7 @@ async function render(): Promise<void> {
         td.textContent = '';
         return;
       }
-      const age = Temporal.Now.plainDateISO().since(
-        Temporal.PlainDate.from(person.birth_date),
-        {
-          largestUnit: 'year',
-          smallestUnit: 'month',
-        },
-      );
-      td.textContent = `${age.years}年${age.months}ヶ月`;
+      td.textContent = renderAge(Temporal.PlainDate.from(person.birth_date));
     });
     table.querySelector('tbody')?.appendChild(rowFrag);
   }

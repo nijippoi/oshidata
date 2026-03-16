@@ -84,3 +84,17 @@ export function renderPlainDate(date: Temporal.PlainDate): string {
     day: 'numeric',
   });
 }
+
+export function renderAge(
+  date: Temporal.PlainDate,
+): string {
+  return Temporal.Now.plainDateISO().since(date, {
+    largestUnit: 'year',
+    smallestUnit: 'month',
+  }).toLocaleString(locale(), {
+    year: 'numeric',
+    yearsDisplay: 'always',
+    month: 'long',
+    monthsDisplay: 'always',
+  } as Intl.DurationFormatOptions);
+}
