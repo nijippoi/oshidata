@@ -266,11 +266,10 @@ export const ZODIACS: {
   },
 };
 
-export function zodiac(date: Temporal.PlainDate): string {
+export function zodiac(date: Temporal.PlainDate): string | undefined {
   const month = date.month;
   const day = date.day;
   for (const key in ZODIACS) {
-    // FIXME: 12-1月の場合はバグる
     const zodiac = ZODIACS[key];
     if (
       zodiac.from.month <= month &&
@@ -281,5 +280,13 @@ export function zodiac(date: Temporal.PlainDate): string {
       return key;
     }
   }
-  return ''; // Should not happen
+  if (
+    (ZODIACS.capricorn.from.month == month &&
+      ZODIACS.capricorn.from.day <= day) ||
+    (ZODIACS.capricorn.to.month == month &&
+      ZODIACS.capricorn.to.day >= day)
+  ) {
+    return 'capricorn';
+  }
+  return undefined;
 }
