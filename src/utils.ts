@@ -85,10 +85,11 @@ export function renderPlainDate(date: Temporal.PlainDate): string {
   });
 }
 
-export function renderAge(
-  date: Temporal.PlainDate,
+export function renderMonthDayDuration(
+  from: Temporal.PlainDate,
+  to: Temporal.PlainDate,
 ): string {
-  return Temporal.Now.plainDateISO().since(date, {
+  return to.since(from, {
     largestUnit: 'year',
     smallestUnit: 'month',
   }).toLocaleString(locale(), {
@@ -97,4 +98,42 @@ export function renderAge(
     month: 'long',
     monthsDisplay: 'always',
   } as Intl.DurationFormatOptions);
+}
+
+export function renderDayDuration(
+  from: Temporal.PlainDate,
+  to: Temporal.PlainDate,
+): string {
+  return to.since(from, {
+    largestUnit: 'day',
+    smallestUnit: 'day',
+  }).toLocaleString(locale(), {
+    day: 'numeric',
+    daysDisplay: 'always',
+  } as Intl.DurationFormatOptions);
+}
+
+export function renderAge(
+  date: Temporal.PlainDate,
+): string {
+  return renderMonthDayDuration(date, Temporal.Now.plainDateISO());
+}
+
+export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
+  const now = Temporal.Now.plainDateISO();
+  const dateNow = Temporal.PlainDate.from({
+    year: now.year,
+    month: date.month,
+    day: date.day,
+  });
+  if (
+    now.since(dateNow, { largestUnit: 'day', smallestUnit: 'day' }).days >= 0
+  ) {
+    return Temporal.PlainDate.from({
+      year: now.year + 1,
+      month: date.month,
+      day: date.day,
+    });
+  }
+  return dateNow;
 }

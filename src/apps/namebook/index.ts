@@ -1,23 +1,24 @@
 import type { Persons } from '../../types.ts';
-import { renderAge, renderDate, renderPersonName } from '../../utils.ts';
+import {
+  nextMonthDay,
+  renderAge,
+  renderDate,
+  renderDayDuration,
+  renderPersonName,
+} from '../../utils.ts';
 import './index.css';
 
 let persons: Persons | undefined = undefined;
 
 async function render(): Promise<void> {
-  const app = document.getElementById('app');
-  const namebookTable = document.getElementById(
-    'namebook-table',
-  ) as HTMLDivElement;
   const tmplTable = document.getElementById(
     'template-table',
   ) as HTMLTemplateElement;
+  const tableFrag = document.importNode(tmplTable.content, true);
+  const table = tableFrag.querySelector('table') as HTMLTableElement;
   const tmplRow = document.getElementById(
     'template-row',
   ) as HTMLTemplateElement;
-  const tableFrag = document.importNode(tmplTable.content, true);
-  const table = tableFrag.querySelector('table') as HTMLTableElement;
-  table.id = 'namebook-table';
   for (const key in persons) {
     const person = persons[key];
     const rowFrag = document.importNode(tmplRow.content, true);
@@ -41,8 +42,21 @@ async function render(): Promise<void> {
       }
       td.textContent = renderAge(Temporal.PlainDate.from(person.birth_date));
     });
+    rowFrag.querySelectorAll('td.person-next-birthday').forEach((td) => {
+      if (!person.birth_date) {
+        td.textContent = '';
+        return;
+      }
+      td.textContent = renderDayDuration(
+        Temporal.Now.plainDateISO(),
+        nextMonthDay(Temporal.PlainDate.from(person.birth_date)),
+      );
+    });
     table.querySelector('tbody')?.appendChild(rowFrag);
   }
+  const namebookTable = document.getElementById(
+    'namebook-table',
+  ) as HTMLDivElement;
   namebookTable.appendChild(table);
 }
 
