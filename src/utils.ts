@@ -16,12 +16,12 @@ export function byId(id: string): HTMLElement | null {
   return document.getElementById(id);
 }
 
-export function find(selectors: string): Element | null {
-  return document.querySelector(selectors);
+export function find(selectors: string, from?: Element): Element | null {
+  return (from || document).querySelector(selectors);
 }
 
-export function findAll(selectors: string): NodeListOf<any> {
-  return document.querySelectorAll(selectors);
+export function findAll(selectors: string, from?: Element): NodeListOf<any> {
+  return (from || document).querySelectorAll(selectors);
 }
 
 export function elem(
