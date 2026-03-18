@@ -3,13 +3,10 @@ import { basename, join } from '@std/path';
 import { globFilesSync } from './utils.ts';
 import { existsSync } from '@std/fs';
 
-if (import.meta.main) {
-  const args = parseArgs(Deno.args, {
-    string: ['outdir'],
-    boolean: ['release'],
-    negatable: ['release'],
-    default: { outdir: join(Deno.cwd(), 'dist'), release: true },
-  });
+export async function bundle(args: {
+  outdir: string;
+  release: boolean;
+}): Promise<void> {
   try {
     const files = globFilesSync(
       '**/*.{html,ts,js,tsx,jsx}',
@@ -55,4 +52,14 @@ if (import.meta.main) {
   } catch (error) {
     console.error(error);
   }
+}
+
+if (import.meta.main) {
+  const args = parseArgs(Deno.args, {
+    string: ['outdir'],
+    boolean: ['release'],
+    negatable: ['release'],
+    default: { outdir: join(Deno.cwd(), 'dist'), release: true },
+  });
+  await bundle(args);
 }
