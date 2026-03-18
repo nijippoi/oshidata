@@ -11,3 +11,7 @@ export function globFilesSync(glob: string, root: string): string[] {
     entry.isFile
   ).map((entry) => entry.path);
 }
+
+export function utcDate(): string {
+  return new Date().toISOString().slice(0, 10);
+}

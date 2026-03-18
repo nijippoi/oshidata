@@ -1,6 +1,6 @@
 import { parseArgs } from '@std/cli/parse-args';
 import { basename, join, relative } from '@std/path';
-import { globFilesSync } from './utils.ts';
+import { globFilesSync, utcDate } from './utils.ts';
 import { existsSync } from '@std/fs';
 
 export async function bundle(args: {
@@ -55,12 +55,17 @@ export async function bundle(args: {
         ),
     );
 
-    // generate manifest
+    // generate appcache
+    const mf = ['CACHE MANIFEST', `# ${utcDate()}:${Date.now()}`];
+    globFilesSync(
+      '**/*.{html,js,json,css,map}',
+      args.outdir,
+    ).map((file) => relative(args.outdir, file)).forEach((file) =>
+      mf.push(file)
+    );
     Deno.writeTextFileSync(
-      join(args.outdir, 'index.mf'),
-      globFilesSync('**/*.{html,js,json,css,map}', args.outdir).map((file) =>
-        relative(args.outdir, file)
-      ).join('\n'),
+      join(args.outdir, 'index.appcache'),
+      mf.join('\n'),
     );
   } catch (error) {
     console.error(error);
