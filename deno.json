@@ -18,19 +18,20 @@
     "check": "deno fmt --check",
     "import": "deno run --allow-read --allow-write tasks/import.ts",
     "bundle": {
-      "command": "deno run --allow-read --allow-write ./tasks/bundle.ts",
+      "command": "deno run --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts",
       "dependencies": ["clean", "import"]
     },
     "bundle-dev": {
-      "command": "deno run --allow-read --allow-write ./tasks/bundle.ts --no-release",
+      "command": "deno run --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts --no-release",
       "dependencies": ["clean", "import"]
     },
     "dev": {
-      "command": "deno run --watch=./src --allow-read --allow-write ./tasks/bundle.ts --no-release",
+      "command": "deno run --watch=./src --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts --no-release",
       "dependencies": ["clean", "import"]
     }
   },
   "imports": {
+    "material-symbols-outlined": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/cli": "jsr:@std/cli@^1.0.28",
     "@std/fs": "jsr:@std/fs@^1.0.23",

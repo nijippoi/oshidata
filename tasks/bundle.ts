@@ -41,6 +41,17 @@ if (import.meta.main) {
           join(distDataDir, basename(file)),
         ),
     );
+    const distLabelsDir = join(args.outdir, 'labels');
+    if (!existsSync(distLabelsDir)) {
+      Deno.mkdirSync(distLabelsDir, { recursive: true });
+    }
+    globFilesSync('*.{json}', join(Deno.cwd(), 'src', 'labels')).forEach(
+      (file) =>
+        Deno.copyFileSync(
+          file,
+          join(distLabelsDir, basename(file)),
+        ),
+    );
   } catch (error) {
     console.error(error);
   }

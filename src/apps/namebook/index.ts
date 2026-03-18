@@ -1,24 +1,28 @@
+import { Toolbar } from '../../components/toolbar.ts';
+import { label } from '../../label.ts';
 import type { Persons } from '../../types.ts';
 import {
+  byId,
+  clear,
+  elem,
   nextMonthDay,
   renderAge,
   renderDate,
   renderDayDuration,
   renderPersonName,
+  zodiac,
 } from '../../utils.ts';
 import './index.css';
+// NOTE: deno bundle errors on this (all css with url() fails)
+// import 'material-symbols-outlined';
 
 let persons: Persons | undefined = undefined;
 
 async function render(): Promise<void> {
-  const tmplTable = document.getElementById(
-    'template-table',
-  ) as HTMLTemplateElement;
+  const tmplTable = byId('template-table') as HTMLTemplateElement;
   const tableFrag = document.importNode(tmplTable.content, true);
   const table = tableFrag.querySelector('table') as HTMLTableElement;
-  const tmplRow = document.getElementById(
-    'template-row',
-  ) as HTMLTemplateElement;
+  const tmplRow = byId('template-row') as HTMLTemplateElement;
   for (const key in persons) {
     const person = persons[key];
     const rowFrag = document.importNode(tmplRow.content, true);
@@ -52,9 +56,27 @@ async function render(): Promise<void> {
         nextMonthDay(Temporal.PlainDate.from(person.birth_date)),
       );
     });
+    rowFrag.querySelectorAll('td.person-zodiac').forEach(async (td) => {
+      if (!person.birth_date) {
+        td.textContent = '';
+        return;
+      }
+      const thisZodiac = zodiac(Temporal.PlainDate.from(person.birth_date));
+      if (!thisZodiac) {
+        td.textContent = '';
+        return;
+      }
+      const span = elem('span', null, await label(`zodiacs.${thisZodiac}`), {
+        labelText: `zodiacs.${thisZodiac}`,
+      });
+      clear(td);
+      td.appendChild(span);
+    });
     table.querySelector('tbody')?.appendChild(rowFrag);
+    // Toolbar.setTitle(undefined, key);
+    // find('oshidata--toolbar')?.setAttribute('subtitle', key);
   }
-  const namebookTable = document.getElementById(
+  const namebookTable = byId(
     'namebook-table',
   ) as HTMLDivElement;
   namebookTable.appendChild(table);
@@ -70,5 +92,12 @@ async function load(): Promise<void> {
 }
 
 addEventListener('DOMContentLoaded', async () => {
+  // byId('app')?.appendChild(
+  //   elem(LangSelector.TAG_NAME),
+  // );
+  // byId('oshidata--toolbar')?.setAttribute('title', '名簿');
+  // byId('oshidata--toolbar')?.setAttribute('subtitle', '未処理');
+  // bind(byId('app')!!);
+  Toolbar.fireChangeTitle('名簿', '未処理');
   await load();
 });

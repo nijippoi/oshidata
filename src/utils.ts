@@ -1,5 +1,60 @@
 import type { Person, PersonName } from './types.ts';
 
+export const NAMESPACE = 'oshidata';
+
+export const LANGS = ['ja', 'en'];
+
+export function locale() {
+  return navigator.language;
+}
+
+export function lang() {
+  return locale().split('-')[0];
+}
+
+export function byId(id: string): HTMLElement | null {
+  return document.getElementById(id);
+}
+
+export function find(selectors: string): Element | null {
+  return document.querySelector(selectors);
+}
+
+export function findAll(selectors: string): NodeListOf<any> {
+  return document.querySelectorAll(selectors);
+}
+
+export function elem(
+  tagName: string,
+  classList?: string[] | null,
+  innerHTML?: string | null,
+  dataset?: DOMStringMap | null,
+  options?: ElementCreationOptions,
+): HTMLElement {
+  const e = document.createElement(tagName, options);
+  if (classList) e.classList.add(...classList);
+  if (innerHTML) e.innerHTML = innerHTML;
+  if (dataset) {
+    for (const key in dataset) {
+      e.dataset[key] = dataset[key];
+    }
+  }
+  return e;
+}
+
+export function clear<T extends Element | ShadowRoot | null | undefined>(
+  elem: T,
+): T {
+  if (!elem) return elem;
+  let child = elem.lastElementChild;
+  while (child) {
+    elem.removeChild(child);
+    child = elem.lastElementChild;
+  }
+  elem.textContent = null;
+  return elem;
+}
+
 export function resolvePersonNames(
   person: Person,
   date?: Date | Temporal.PlainDate,
@@ -63,10 +118,6 @@ export function renderPersonName(
     if (name.given_name) return name.given_name;
     return undefined;
   }).join(' / ');
-}
-
-export function locale() {
-  return navigator.language;
 }
 
 export function renderDate(date: Date): string {
@@ -272,21 +323,13 @@ export function zodiac(date: Temporal.PlainDate): string | undefined {
   for (const key in ZODIACS) {
     const zodiac = ZODIACS[key];
     if (
-      zodiac.from.month <= month &&
-      zodiac.from.day <= day &&
-      zodiac.to.month >= month &&
-      zodiac.to.day >= day
+      (zodiac.from.month == month &&
+        zodiac.from.day <= day) ||
+      (zodiac.to.month == month &&
+        zodiac.to.day >= day)
     ) {
       return key;
     }
-  }
-  if (
-    (ZODIACS.capricorn.from.month == month &&
-      ZODIACS.capricorn.from.day <= day) ||
-    (ZODIACS.capricorn.to.month == month &&
-      ZODIACS.capricorn.to.day >= day)
-  ) {
-    return 'capricorn';
   }
   return undefined;
 }
