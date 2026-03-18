@@ -7,17 +7,27 @@ import { bundle } from './bundle.ts';
 export async function serve(
   args: { root: string; port: number },
 ): Promise<void> {
+  const uuid = self.crypto.randomUUID();
   try {
     const routes: Route[] = [
       {
-        pattern: new URLPattern({ pathname: '/*' }),
-        handler: (req: Request) => serveDir(req, { fsRoot: args.root }),
+        pattern: new URLPattern({
+          pathname: '/.well-known/appspecific/com.chrome.devtools.json',
+        }),
+        handler: (req: Request) =>
+          new Response(
+            JSON.stringify({
+              workspace: {
+                uuid: uuid,
+                root: args.root,
+              },
+            }),
+            { status: 200 },
+          ),
       },
       {
-        method: ['GET', 'HEAD'],
-        pattern: new URLPattern({ pathname: '/api' }),
-        handler: (req: Request) =>
-          new Response(req.method === 'HEAD' ? null : 'ok'),
+        pattern: new URLPattern({ pathname: '/*' }),
+        handler: (req: Request) => serveDir(req, { fsRoot: args.root }),
       },
     ];
 

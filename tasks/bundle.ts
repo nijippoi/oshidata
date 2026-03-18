@@ -1,5 +1,5 @@
 import { parseArgs } from '@std/cli/parse-args';
-import { basename, join } from '@std/path';
+import { basename, join, relative } from '@std/path';
 import { globFilesSync } from './utils.ts';
 import { existsSync } from '@std/fs';
 
@@ -8,6 +8,7 @@ export async function bundle(args: {
   release: boolean;
 }): Promise<void> {
   try {
+    // bundle
     const files = globFilesSync(
       '**/*.{html,ts,js,tsx,jsx}',
       join(Deno.cwd(), 'src'),
@@ -27,6 +28,8 @@ export async function bundle(args: {
     if (!result.success) {
       console.error(result);
     }
+
+    // copy data
     const distDataDir = join(args.outdir, 'data');
     if (!existsSync(distDataDir)) {
       Deno.mkdirSync(join(args.outdir, 'data'), { recursive: true });
@@ -38,6 +41,8 @@ export async function bundle(args: {
           join(distDataDir, basename(file)),
         ),
     );
+
+    // copy labels
     const distLabelsDir = join(args.outdir, 'labels');
     if (!existsSync(distLabelsDir)) {
       Deno.mkdirSync(distLabelsDir, { recursive: true });
@@ -48,6 +53,14 @@ export async function bundle(args: {
           file,
           join(distLabelsDir, basename(file)),
         ),
+    );
+
+    // generate manifest
+    Deno.writeTextFileSync(
+      join(args.outdir, 'index.mf'),
+      globFilesSync('**/*.{html,js,json,css,map}', args.outdir).map((file) =>
+        relative(args.outdir, file)
+      ).join('\n'),
     );
   } catch (error) {
     console.error(error);
