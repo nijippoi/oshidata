@@ -2,15 +2,19 @@ import { parse as parseYaml } from '@std/yaml';
 import { join } from '@std/path';
 import { parseArgs } from '@std/cli/parse-args';
 import type { GroupRole, Person, PersonRole, Persons } from '../src/types.ts';
+import { DEFAULT_INPUT_DIR, DEFAULT_SRC_DATA_DIR } from './utils.ts';
 
-async function importYaml(dataDir: string, srcDir: string): Promise<void> {
+export async function importData(
+  inputDir: string = DEFAULT_INPUT_DIR,
+  srcDataDir: string = DEFAULT_SRC_DATA_DIR,
+): Promise<void> {
   // dirPath内のYAMLを読み込む
   const allGroupsData = [];
   const allPersonsData = [];
-  for await (const entry of Deno.readDir(dataDir)) {
+  for await (const entry of Deno.readDir(inputDir)) {
     if (entry.isFile && /\.(yaml|yml)$/.test(entry.name)) {
       try {
-        const filePath = join(dataDir, entry.name);
+        const filePath = join(inputDir, entry.name);
         const data: any = parseYaml(Deno.readTextFileSync(filePath));
         data.file = filePath;
         switch (data.source_type) {
@@ -109,13 +113,13 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
     }
   }
 
-  Deno.mkdirSync(srcDir, { recursive: true });
+  Deno.mkdirSync(srcDataDir, { recursive: true });
   Deno.writeTextFileSync(
-    join(srcDir, 'groups.json'),
+    join(srcDataDir, 'groups.json'),
     JSON.stringify(groups),
   );
   Deno.writeTextFileSync(
-    join(srcDir, 'groups.pretty.json'),
+    join(srcDataDir, 'groups.pretty.json'),
     JSON.stringify(groups, null, 2),
   );
 
@@ -232,24 +236,24 @@ async function importYaml(dataDir: string, srcDir: string): Promise<void> {
     }
   }
 
-  Deno.mkdirSync(srcDir, { recursive: true });
+  Deno.mkdirSync(srcDataDir, { recursive: true });
   Deno.writeTextFileSync(
-    join(srcDir, 'persons.json'),
+    join(srcDataDir, 'persons.json'),
     JSON.stringify(persons),
   );
   Deno.writeTextFileSync(
-    join(srcDir, 'persons.pretty.json'),
+    join(srcDataDir, 'persons.pretty.json'),
     JSON.stringify(persons, null, 2),
   );
 }
 
 if (import.meta.main) {
   const args = parseArgs(Deno.args, {
-    string: ['importdir', 'datadir'],
+    string: ['inputdir', 'srcdatadir'],
     default: {
-      importdir: join(Deno.cwd(), 'data'),
-      datadir: join(Deno.cwd(), 'src', 'data'),
+      inputdir: DEFAULT_INPUT_DIR,
+      srcdatadir: DEFAULT_SRC_DATA_DIR,
     },
   });
-  await importYaml(args.importdir, args.datadir);
+  await importData(args.inputdir, args.srcdatadir);
 }

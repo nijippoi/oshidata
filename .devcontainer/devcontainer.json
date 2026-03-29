@@ -1,14 +1,29 @@
 {
   "name": "oshidata",
   "image": "mcr.microsoft.com/devcontainers/base:trixie",
+  "mounts": [
+    {
+      "type": "volume",
+      "source": "${devcontainerId}-apt-cache",
+      "target": "/var/apt/cache"
+    },
+    {
+      "type": "volume",
+      "source": "${devcontainerId}-user-cache",
+      "target": "/home/vscode/.cache"
+    }
+  ],
   "features": {
     "ghcr.io/devcontainers-community/features/deno:1": {
-      "version": "2.7.5"
+      "version": "2.7.9"
     }
   },
+  "onCreateCommand": "sudo chown $(id -u):$(id -g) /home/$(id -u -n)/.cache",
+  "postCreateCommand": "deno task install",
   "customizations": {
     "extensions": [
-      "denoland.vscode-deno"
+      "denoland.vscode-deno",
+      "ms-vscode.live-server"
     ],
     "vscode": {
       "[css]": {
@@ -53,6 +68,9 @@
         "editor.formatOnSave": true,
         "editor.tabSize": 2,
         "editor.insertSpaces": true
+      },
+      "chat.tools.terminal.autoApprove": {
+        "deno": true
       },
       "telemetry.telemetryLevel": "off"
     }

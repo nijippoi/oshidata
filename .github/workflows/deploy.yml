@@ -25,11 +25,11 @@ jobs:
       - name: setup-deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.7.5
-      - name: bundle
-        run: deno task bundle
+          deno-version: v2.7.9
       - name: configure-pages
         uses: actions/configure-pages@v5
+      - name: bundle
+        run: deno task bundle --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: upload-pages-artifact
         uses: actions/upload-pages-artifact@v3
         with:

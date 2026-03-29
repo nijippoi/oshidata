@@ -3,25 +3,38 @@ import { basename, join, relative } from '@std/path';
 import { globFilesSync, utcDate } from './utils.ts';
 import { existsSync } from '@std/fs';
 
-export async function bundle(args: {
-  outdir: string;
-  release: boolean;
-}): Promise<void> {
+const DEFAULT_DIST_DIR = join(Deno.cwd(), 'dist');
+const SRC_DIR = join(Deno.cwd(), 'src');
+
+export async function bundle(
+  release: boolean = true,
+  distDir: string = DEFAULT_DIST_DIR,
+  baseUrl?: string,
+): Promise<void> {
+  console.log(
+    `Bundling release=${release} distDir=${distDir} baseUrl=${baseUrl}`,
+  );
+  if (baseUrl) {
+    Deno.writeTextFileSync(
+      join(SRC_DIR, 'env.json'),
+      JSON.stringify({ baseUrl }, null, 2),
+    );
+  }
   try {
     // bundle
     const files = globFilesSync(
       '**/*.{html,ts,js,tsx,jsx}',
-      join(Deno.cwd(), 'src'),
+      SRC_DIR,
     );
     const result = await Deno.bundle({
-      outputDir: args.outdir,
-      minify: args.release,
+      outputDir: distDir,
+      minify: release,
       entrypoints: files,
       platform: 'browser',
       format: 'esm',
       // inlineImports: true,
       codeSplitting: false,
-      keepNames: true,
+      keepNames: !release,
       sourcemap: 'linked',
       write: true,
     });
@@ -30,9 +43,9 @@ export async function bundle(args: {
     }
 
     // copy data
-    const distDataDir = join(args.outdir, 'data');
+    const distDataDir = join(distDir, 'data');
     if (!existsSync(distDataDir)) {
-      Deno.mkdirSync(join(args.outdir, 'data'), { recursive: true });
+      Deno.mkdirSync(join(distDir, 'data'), { recursive: true });
     }
     globFilesSync('*.{json}', join(Deno.cwd(), 'src', 'data')).forEach(
       (file) =>
@@ -43,7 +56,7 @@ export async function bundle(args: {
     );
 
     // copy labels
-    const distLabelsDir = join(args.outdir, 'labels');
+    const distLabelsDir = join(distDir, 'labels');
     if (!existsSync(distLabelsDir)) {
       Deno.mkdirSync(distLabelsDir, { recursive: true });
     }
@@ -54,19 +67,6 @@ export async function bundle(args: {
           join(distLabelsDir, basename(file)),
         ),
     );
-
-    // generate appcache
-    const mf = ['CACHE MANIFEST', `# ${utcDate()}:${Date.now()}`];
-    globFilesSync(
-      '**/*.{html,js,json,css,map}',
-      args.outdir,
-    ).map((file) => relative(args.outdir, file)).forEach((file) =>
-      mf.push(file)
-    );
-    Deno.writeTextFileSync(
-      join(args.outdir, 'index.appcache'),
-      mf.join('\n'),
-    );
   } catch (error) {
     console.error(error);
   }
@@ -74,10 +74,10 @@ export async function bundle(args: {
 
 if (import.meta.main) {
   const args = parseArgs(Deno.args, {
-    string: ['outdir'],
+    string: ['distdir', 'baseurl'],
     boolean: ['release'],
     negatable: ['release'],
-    default: { outdir: join(Deno.cwd(), 'dist'), release: true },
+    default: { release: true, distdir: DEFAULT_DIST_DIR },
   });
-  await bundle(args);
+  await bundle(args.release, args.distdir, args.baseurl);
 }

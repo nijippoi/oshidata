@@ -1,4 +1,13 @@
-import type { Person, PersonName } from './types.ts';
+import { baseUrl } from './env.json' with { type: 'json' };
+import type {
+  Group,
+  Groups,
+  Paged,
+  Person,
+  PersonName,
+  Persons,
+  Query,
+} from './types.ts';
 
 export const NAMESPACE = 'oshidata';
 
@@ -57,11 +66,8 @@ export function clear<T extends Element | ShadowRoot | null | undefined>(
 
 export function resolvePersonNames(
   person: Person,
-  date?: Date | Temporal.PlainDate,
+  date: Temporal.PlainDate,
 ): PersonName[] {
-  date = date || Temporal.Now.plainDateISO();
-  if (date instanceof Date) date = Temporal.PlainDate.from(date.toISOString());
-  const targetDate: Temporal.PlainDate = date;
   return person.names.filter((name) => {
     if (!name.active_date_ranges) return true;
     return name.active_date_ranges.some((range) => {
@@ -69,25 +75,25 @@ export function resolvePersonNames(
       if (
         range.start && range.end &&
         Temporal.PlainDate.compare(
-            targetDate,
+            date,
             Temporal.PlainDate.from(range.start),
           ) >= 0 &&
         Temporal.PlainDate.compare(
-            targetDate,
+            date,
             Temporal.PlainDate.from(range.end),
           ) <= 0
       ) return true;
       if (
         range.start &&
         Temporal.PlainDate.compare(
-            targetDate,
+            date,
             Temporal.PlainDate.from(range.start),
           ) >= 0
       ) return true;
       if (
         range.end &&
         Temporal.PlainDate.compare(
-            targetDate,
+            date,
             Temporal.PlainDate.from(range.end),
           ) <= 0
       ) return true;
@@ -332,4 +338,77 @@ export function zodiac(date: Temporal.PlainDate): string | undefined {
     }
   }
   return undefined;
+}
+
+export function getAttrs(
+  elem: Element,
+  key: string,
+  defaultValues: string[] = [],
+): string[] {
+  return elem.getAttribute(key)?.split(',') || defaultValues;
+}
+
+export function setAttrs(
+  elem: Element,
+  key: string,
+  values: string[],
+  defaultValues: string[] = [],
+) {
+  elem.setAttribute(
+    key,
+    (values.length > 0 ? values : defaultValues).join(','),
+  );
+}
+
+export async function fetchGroups(): Promise<Groups> {
+  return await fetch(`${baseUrl}/data/groups.json`).then((res) => res.json());
+}
+
+export async function fetchPersons(): Promise<Persons> {
+  return await fetch(`${baseUrl}/data/persons.json`).then((res) => res.json());
+}
+
+export async function queryGroups(query?: Query<Group>): Promise<Paged<Group>> {
+  return await fetchGroups().then((groups) => {
+    const records = [];
+    let nextOffset = undefined;
+    for (const key in groups) {
+      if (query && query.filter && query.filter(groups[key])) {
+        records.push(groups[key]);
+      }
+    }
+    if (query && query.orders && query.orders.length > 0) {
+      // TODO
+    }
+    return {
+      records,
+      nextOffset,
+    };
+  });
+}
+
+export async function queryPersons(
+  query?: Query<Person>,
+): Promise<Paged<Person>> {
+  return await fetchPersons().then((groups) => {
+    const records = [];
+    let nextOffset = undefined;
+    for (const key in groups) {
+      if (query && query.filter && !query.filter(groups[key])) {
+        continue;
+      }
+      records.push(groups[key]);
+    }
+    if (query && query.orders && query.orders.length > 0) {
+      // TODO
+    }
+    return {
+      records,
+      nextOffset,
+    };
+  });
+}
+
+export function foo(): string {
+  return 'baz';
 }

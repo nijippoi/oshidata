@@ -13,26 +13,23 @@
     ]
   },
   "tasks": {
-    "clean": "deno run --allow-read --allow-write ./tasks/clean.ts",
-    "update": "deno update",
+    "install": "deno install -I",
+    "update": "deno update -I",
     "format": "deno fmt",
     "check": "deno fmt --check",
-    "import": "deno run --allow-read --allow-write tasks/import.ts",
+    "clean": "deno run -RW ./tasks/clean.ts",
+    "import": "deno run -RW tasks/import.ts",
     "bundle": {
-      "command": "deno run --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts",
+      "command": "deno run -RWNI ./tasks/bundle.ts",
       "dependencies": ["clean", "import"]
     },
     "bundle-dev": {
-      "command": "deno run --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts --no-release",
+      "command": "deno run -RWNI ./tasks/bundle.ts --no-release --baseurl=http://localhost:3000",
       "dependencies": ["clean", "import"]
     },
     "serve": {
-      "command": "deno run --allow-read --allow-write --allow-net --allow-import ./tasks/serve.ts --watch",
-      "dependencies": ["clean", "import"]
-    },
-    "dev": {
-      "command": "deno run --watch=./src --allow-read --allow-write --allow-net --allow-import ./tasks/bundle.ts --no-release",
-      "dependencies": ["clean", "import"]
+      "command": "deno run -RWNI ./tasks/serve.ts",
+      "dependencies": []
     }
   },
   "imports": {
@@ -45,6 +42,7 @@
     "@std/yaml": "jsr:@std/yaml@^1.0.12",
     "dexie": "npm:dexie@^4.3.0"
   },
+  "entrypoint": [],
   "exports": {
     ".": "./src/mod.ts",
     "./*": "./src/*"

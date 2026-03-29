@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="/index.appcache">
+<html>
   <head>
     <meta charset="utf-8">
     <title>名簿</title>
@@ -12,37 +12,13 @@
     <div id="app">
       <oshidata--toolbar
         id="oshidata--toolbar"
-        title="名簿"
+        title="名簿2"
       ></oshidata--toolbar>
-      <div id="namebook-table"></div>
+      <oshidata--persons-table></oshidata--persons-table>
     </div>
-    <script src="./index.ts" type="module"></script>
+    <!-- <script src="./index.ts" type="module"></script> -->
     <script src="../../components/lang-selector.ts" type="module"></script>
     <script src="../../components/toolbar.ts" type="module"></script>
+    <script src="../../components/persons-table.ts" type="module"></script>
   </body>
-  <template id="template-table">
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>名前</th>
-          <th>誕生日</th>
-          <th>星座</th>
-          <th>年齢</th>
-          <th>次の誕生日まで</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </template>
-  <template id="template-row">
-    <tr>
-      <td class="person-id">{{id}}</td>
-      <td class="person-name">{{name}}</td>
-      <td class="person-birth-date">{{birthday}}</td>
-      <td class="person-zodiac">{{zodiac}}</td>
-      <td class="person-age">{{age}}</td>
-      <td class="person-next-birthday">{{next-birthday}}</td>
-    </tr>
-  </template>
 </html>

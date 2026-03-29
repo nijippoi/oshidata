@@ -228,3 +228,33 @@ export interface Person extends HasId, HasActiveDateRanges {
 export interface Persons {
   [key: Id]: Person;
 }
+
+export enum Entities {
+  Persons = 'persons',
+  Groups = 'groups',
+}
+
+export enum OrderDirections {
+  Asc = 'asc',
+  Desc = 'desc',
+}
+
+export interface QueryOrder {
+  field: string;
+  direction?: OrderDirections;
+}
+
+export interface Query<T> {
+  filter?: (record: T) => boolean;
+  active_date?: DateString;
+  active_date_range?: DateRange;
+  offset?: number;
+  limit?: number;
+  orders?: QueryOrder[];
+}
+
+export interface Paged<T> {
+  records: T[];
+  offset?: number;
+  nextOffset?: number;
+}
