@@ -248,13 +248,13 @@ export interface Query<T> {
   filter?: (record: T) => boolean;
   active_date?: DateString;
   active_date_range?: DateRange;
-  offset?: number;
+  page?: number;
   limit?: number;
   orders?: QueryOrder[];
 }
 
 export interface Paged<T> {
   records: T[];
-  offset?: number;
-  nextOffset?: number;
+  page?: number;
+  next_page?: number;
 }

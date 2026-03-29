@@ -176,6 +176,28 @@ export function renderAge(
   return renderMonthDayDuration(date, Temporal.Now.plainDateISO());
 }
 
+export function countryFlagEmoji(code: string): string {
+  const codePoints = code.toUpperCase().split('').map((c) =>
+    127397 + c.charCodeAt(0)
+  );
+  return String.fromCodePoint(...codePoints);
+}
+
+export function renderLocation(person: Person): string {
+  if (!person.hometown) return '';
+  let value = '';
+  if (person.hometown.country) {
+    value += countryFlagEmoji(person.hometown.country);
+  }
+  if (person.hometown.state) {
+    value += ` ${person.hometown.state}`;
+  }
+  if (person.hometown.city) {
+    value += ` ${person.hometown.city}`;
+  }
+  return value;
+}
+
 export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
   const now = Temporal.Now.plainDateISO();
   const dateNow = Temporal.PlainDate.from({
@@ -392,7 +414,7 @@ export async function queryPersons(
 ): Promise<Paged<Person>> {
   return await fetchPersons().then((groups) => {
     const records = [];
-    let nextOffset = undefined;
+    let nextPage = undefined;
     for (const key in groups) {
       if (query && query.filter && !query.filter(groups[key])) {
         continue;
@@ -404,7 +426,7 @@ export async function queryPersons(
     }
     return {
       records,
-      nextOffset,
+      'next_page': nextPage,
     };
   });
 }

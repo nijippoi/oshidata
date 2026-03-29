@@ -1,6 +1,17 @@
-import { Person } from '../types.ts';
-import { elem, getAttrs, NAMESPACE, queryGroups, setAttrs } from '../utils.ts';
-import './persons-table.css';
+import { label } from '../label.ts';
+import type { Person } from '../types.ts';
+import {
+  elem,
+  getAttrs,
+  NAMESPACE,
+  queryPersons,
+  renderAge,
+  renderDate,
+  renderLocation,
+  renderPersonName,
+  setAttrs,
+  zodiac,
+} from '../utils.ts';
 
 export type ColumnTypes =
   | 'id'
@@ -29,10 +40,21 @@ export class PersonsTable extends HTMLElement {
 
   query: Query;
   rows: Person[];
+  date: Temporal.PlainDate;
 
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    const shadow = this.attachShadow({ mode: 'open' });
+    const sheet = new CSSStyleSheet();
+    sheet.insertRule(`
+      td.person-id,
+      td.person-birth-date,
+      td.person-age,
+      td.person-next-birthday {
+        text-align: right;
+      }
+      `);
+    shadow.adoptedStyleSheets.push(sheet);
     setAttrs(
       this,
       'columns',
@@ -41,13 +63,14 @@ export class PersonsTable extends HTMLElement {
     );
     this.query = {};
     this.rows = [];
+    this.date = Temporal.Now.plainDateISO();
     document.addEventListener(PersonsTable.EVENT_QUERY, (evt) => {
       this.query = (evt as CustomEvent).detail;
     });
   }
 
   async connectedCallback() {
-    this.init();
+    await this.init();
   }
 
   async attributeChangedCallback(
@@ -62,12 +85,18 @@ export class PersonsTable extends HTMLElement {
     }
   }
 
-  async renderTable() {
+  async renderPersonsTable() {
     // ヘッダー
     const theadRow = elem('tr');
-    getAttrs(this, 'columns', PersonsTable.DEFAULT_COLUMNS).forEach(
-      (column) => {
-        const txt = elem('span', null, column, { labelText: column });
+    const cols = getAttrs(
+      this,
+      'columns',
+      PersonsTable.DEFAULT_COLUMNS,
+    ) as ColumnTypes[];
+    console.log(cols);
+    cols.forEach(
+      (col) => {
+        const txt = elem('span', null, col, { labelText: col });
         const th = elem('th');
         th.appendChild(txt);
         theadRow.appendChild(th);
@@ -78,7 +107,63 @@ export class PersonsTable extends HTMLElement {
 
     // レコード
     const tbody = elem('tbody');
-    const records = await queryGroups();
+    const persons = await queryPersons();
+
+    for (const person of persons.records) {
+      const tr = elem('tr');
+      const cells = await Promise.all(cols.map(
+        async (col) => {
+          const td = elem('td', [`person-${col}`]);
+          switch (col) {
+            case 'id':
+              td.textContent = person.id;
+              break;
+            case 'name':
+              td.textContent = renderPersonName(person, this.date) || '';
+              break;
+            case 'birth-date':
+              td.textContent = person.birth_date
+                ? renderDate(new Date(person.birth_date))
+                : '';
+              break;
+            case 'age':
+              td.textContent = person.birth_date
+                ? renderAge(Temporal.PlainDate.from(person.birth_date))
+                : '';
+              break;
+            case 'hometown':
+              td.textContent = renderLocation(person);
+              break;
+            case 'zodiac':
+              if (person.birth_date) {
+                const thisZodiac = zodiac(
+                  Temporal.PlainDate.from(person.birth_date),
+                );
+                if (thisZodiac) {
+                  const span = elem(
+                    'span',
+                    null,
+                    await label(`zodiacs.${thisZodiac}`),
+                    {
+                      labelText: `zodiacs.${thisZodiac}`,
+                    },
+                  );
+                  td.appendChild(span);
+                } else {
+                  td.textContent = '';
+                }
+              } else {
+                td.textContent = '';
+              }
+              break;
+            default:
+          }
+          return td;
+        },
+      ));
+      cells.forEach((td) => tr.appendChild(td));
+      tbody.append(tr);
+    }
 
     const table = elem('table', ['persons-table']);
     table.appendChild(thead);
@@ -87,11 +172,11 @@ export class PersonsTable extends HTMLElement {
   }
 
   async init(): Promise<void> {
-    await this.renderTable();
+    await this.renderPersonsTable();
   }
 
   async update(): Promise<void> {
-    await this.renderTable();
+    await this.renderPersonsTable();
   }
 }
 
