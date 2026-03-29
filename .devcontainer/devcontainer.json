@@ -23,6 +23,7 @@
   "customizations": {
     "extensions": [
       "denoland.vscode-deno",
+      "github.vscode-github-actions",
       "ms-vscode.live-server"
     ],
     "vscode": {

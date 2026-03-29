@@ -27,6 +27,7 @@ jobs:
         with:
           deno-version: v2.7.9
       - name: configure-pages
+        id: pages
         uses: actions/configure-pages@v5
       - name: bundle
         run: deno task bundle --baseurl "${{ steps.pages.outputs.base_path }}"
