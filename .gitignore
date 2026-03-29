@@ -1,2 +1,3 @@
 dist/
 .vscode/
+src/env.json

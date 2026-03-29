@@ -5,7 +5,6 @@ import {
   DEFAULT_DIST_DIR,
   DEFAULT_ENV_JSON,
   DEFAULT_INPUT_DIR,
-  DEFAULT_RELEASE,
   DEFAULT_SERVE_HOSTNAME,
   DEFAULT_SERVE_PORT,
   DEFAULT_SRC_DATA_DIR,
@@ -17,7 +16,6 @@ import { clean } from './clean.ts';
 import { importData } from './import.ts';
 import { bundle } from './bundle.ts';
 import { join } from '@std/path';
-import { glob } from '@std/path';
 
 export function serveHttp(
   hostname: string = DEFAULT_SERVE_HOSTNAME,
@@ -113,7 +111,7 @@ if (import.meta.main) {
       srcdatadir: DEFAULT_SRC_DATA_DIR,
       distdir: DEFAULT_DIST_DIR,
       watch: true,
-      release: DEFAULT_RELEASE,
+      release: false,
     },
   });
 
