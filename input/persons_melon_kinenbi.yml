@@ -77,10 +77,11 @@ persons:
     birth_date: '1981-10-31'
     birth_place:
       country: 'JP'
-      state: 'Unknown'
+      state: '新潟県'
     hometown:
       country: 'JP'
-      state: 'Unknown'
+      state: '新潟県'
+      city: '新潟市'
     roles:
       - role: 'member'
         group: 'メロン記念日'

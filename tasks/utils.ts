@@ -26,6 +26,7 @@ export function globFilesSync(glob: string, root: string): string[] {
   ).map((entry) => entry.path);
 }
 
+// deno-lint-ignore no-explicit-any
 export function isString(value: any): boolean {
   return typeof value === 'string' || value instanceof String;
 }

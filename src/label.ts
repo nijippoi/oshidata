@@ -28,7 +28,38 @@ export async function label(
       },
     );
   }
-  return LABELS[langKey][key];
+  const text = LABELS[langKey][key];
+  if (!text) {
+    console.log(`label not found for key '${key}'`);
+  }
+  return text;
+}
+
+function renderLabels(root: HTMLElement | ShadowRoot) {
+  const labelElems = root.querySelectorAll(
+    '[data-label-attr-name],[data-label-attr-key],[data-label-text]',
+  );
+  labelElems.forEach((elem) => {
+    // console.log(elem);
+    if (elem instanceof HTMLElement) {
+      if (elem.dataset.labelText) {
+        label(elem.dataset.labelText).then((text) => {
+          elem.textContent = text || '';
+        });
+      }
+      if (elem.dataset.labelAttrKey && elem.dataset.labelAttrName) {
+        const keys = elem.dataset.labelAttrKey.split(',');
+        const names = elem.dataset.labelAttrName.split(',');
+        for (let i = 0; i < Math.min(keys.length, names.length); i++) {
+          const key = keys[i];
+          const name = names[i];
+          label(key).then((text) => {
+            elem.setAttribute(name, text || '');
+          });
+        }
+      }
+    }
+  });
 }
 
 function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
@@ -37,11 +68,14 @@ function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
     switch (mutation.type) {
       case 'childList':
         mutation.addedNodes.forEach((node) => {
-          console.log('Node is added', node);
+          // console.log('Node is added', node);
+          if (node instanceof HTMLElement || node instanceof ShadowRoot) {
+            renderLabels(node);
+          }
         });
-        mutation.removedNodes.forEach((node) => {
-          console.log('Node is removed', node);
-        });
+        // mutation.removedNodes.forEach((node) => {
+        //   console.log('Node is removed', node);
+        // });
         break;
       case 'attributes':
         console.log(
@@ -49,6 +83,12 @@ function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
           mutation.attributeName,
           mutation.oldValue,
         );
+        if (
+          mutation.target instanceof HTMLElement ||
+          mutation.target instanceof ShadowRoot
+        ) {
+          renderLabels(mutation.target);
+        }
         break;
       default:
         console.log('Unhandled mutation', mutation);
@@ -76,6 +116,11 @@ class LabelObserver {
     node: Node,
     options: MutationObserverInit = {
       attributes: true,
+      attributeFilter: [
+        'data-label-text',
+        'data-label-attr-name',
+        'data-label-attr-key',
+      ],
       childList: true,
       subtree: true,
     },

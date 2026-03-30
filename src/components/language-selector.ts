@@ -1,6 +1,7 @@
-import { elem, LANGS } from '../utils.ts';
-export class LangSelector extends HTMLElement {
-  static TAG_NAME = 'lang-selector';
+import { elem, LANGS, ns } from '../utils.ts';
+
+export class LanguageSelector extends HTMLElement {
+  static NAME = ns('language-selector');
 
   shadow: ShadowRoot;
 
@@ -24,4 +25,5 @@ export class LangSelector extends HTMLElement {
   }
 }
 
-customElements.define(LangSelector.TAG_NAME, LangSelector);
+customElements.define(LanguageSelector.NAME, LanguageSelector);
+export default LanguageSelector;

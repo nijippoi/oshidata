@@ -1,8 +1,9 @@
-import { NAMESPACE } from '../utils.ts';
+import { elem, ns } from '../utils.ts';
+import HasLabel from './has-label.ts';
 
-export class Container extends HTMLElement {
-  static NAME = `${NAMESPACE}--container`;
-  static EVENT_DISABLED = `${NAMESPACE}--container-disabled`;
+export class Container extends HasLabel {
+  static NAME = ns('container');
+  static EVENT_DISABLED = ns('container-disabled');
 
   static get observedAttributes() {
     return ['disabled'];
@@ -10,7 +11,18 @@ export class Container extends HTMLElement {
 
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    const sheet = new CSSStyleSheet();
+    sheet.insertRule(`
+      :host {
+        display: block;
+        background: #ccc;
+        padding: 10px;
+      }
+      `);
+    this.shadowRoot!.adoptedStyleSheets.push(sheet);
+    while (this.children.length > 0) {
+      this.shadowRoot!.appendChild(this.children.item(0)!);
+    }
     document.addEventListener(Container.EVENT_DISABLED, (evt) => {
       const data: boolean | undefined | null = (evt as CustomEvent).detail;
       if (data === true) {
@@ -45,3 +57,4 @@ export class Container extends HTMLElement {
 }
 
 customElements.define(Container.NAME, Container);
+export default Container;

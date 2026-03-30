@@ -11,6 +11,10 @@ import type {
 
 export const NAMESPACE = 'oshidata';
 
+export function ns(value: string): string {
+  return value ? `${NAMESPACE}--${value}` : NAMESPACE;
+}
+
 export const LANGS = ['ja', 'en'];
 
 export function locale() {
@@ -29,6 +33,7 @@ export function find(selectors: string, from?: Element): Element | null {
   return (from || document).querySelector(selectors);
 }
 
+// deno-lint-ignore no-explicit-any
 export function findAll(selectors: string, from?: Element): NodeListOf<any> {
   return (from || document).querySelectorAll(selectors);
 }
@@ -64,10 +69,25 @@ export function clear<T extends Element | ShadowRoot | null | undefined>(
   return elem;
 }
 
+// deno-lint-ignore no-explicit-any
+export function isString(value: any): boolean {
+  return typeof value === 'string' || value instanceof String;
+}
+
+export function dateToPlainDate(date: Date): Temporal.PlainDate {
+  return date.toTemporalInstant().toZonedDateTimeISO(Temporal.Now.timeZoneId())
+    .toPlainDate();
+}
+
 export function resolvePersonNames(
   person: Person,
-  date: Temporal.PlainDate,
+  date?: Date | Temporal.PlainDate,
 ): PersonName[] {
+  if (!date) {
+    date = Temporal.Now.plainDateISO();
+  } else if (date instanceof Date) {
+    date = dateToPlainDate(date);
+  }
   return person.names.filter((name) => {
     if (!name.active_date_ranges) return true;
     return name.active_date_ranges.some((range) => {

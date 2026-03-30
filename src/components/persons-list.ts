@@ -1,9 +1,8 @@
-import { label } from '../label.ts';
 import type { Person } from '../types.ts';
 import {
   elem,
   getAttrs,
-  NAMESPACE,
+  ns,
   queryPersons,
   renderAge,
   renderDate,
@@ -12,6 +11,8 @@ import {
   setAttrs,
   zodiac,
 } from '../utils.ts';
+import HasLabel from './has-label.ts';
+import Toolbar from './toolbar.ts';
 
 export type ColumnTypes =
   | 'id'
@@ -21,6 +22,15 @@ export type ColumnTypes =
   | 'hometown'
   | 'zodiac';
 
+const COLUMN_LABELS = {
+  'id': 'nouns.id',
+  'name': 'nouns.person_name',
+  'birth-date': 'nouns.birth_date',
+  'age': 'nouns.age',
+  'hometown': 'nouns.hometown',
+  'zodiac': 'nouns.zodiac',
+};
+
 export interface Query {
   groupIds?: string[];
   personIds?: string[];
@@ -29,13 +39,13 @@ export interface Query {
   order?: string[];
 }
 
-export class PersonsTable extends HTMLElement {
-  static NAME = `${NAMESPACE}--persons-table`;
-  static EVENT_QUERY = `${NAMESPACE}--persons-table-query`;
+export class PersonsList extends HasLabel {
+  static NAME = ns('persons-list');
+  static EVENT_QUERY = ns('persons-list-query');
   static DEFAULT_COLUMNS = ['id', 'name'];
 
   static get observedAttributes() {
-    return ['disabled', 'page', 'limit', 'order'];
+    return ['disabled', 'page', 'limit', 'order', 'date'];
   }
 
   query: Query;
@@ -44,8 +54,14 @@ export class PersonsTable extends HTMLElement {
 
   constructor() {
     super();
-    const shadow = this.attachShadow({ mode: 'open' });
     const sheet = new CSSStyleSheet();
+    sheet.insertRule(`
+      :host {
+        display: block;
+        background: #ddd;
+        padding: 10px;
+      }
+      `);
     sheet.insertRule(`
       td.person-id,
       td.person-birth-date,
@@ -54,18 +70,25 @@ export class PersonsTable extends HTMLElement {
         text-align: right;
       }
       `);
-    shadow.adoptedStyleSheets.push(sheet);
+    this.shadowRoot!.adoptedStyleSheets.push(sheet);
     setAttrs(
       this,
       'columns',
       getAttrs(this, 'columns'),
-      PersonsTable.DEFAULT_COLUMNS,
+      PersonsList.DEFAULT_COLUMNS,
     );
     this.query = {};
     this.rows = [];
     this.date = Temporal.Now.plainDateISO();
-    document.addEventListener(PersonsTable.EVENT_QUERY, (evt) => {
+    document.addEventListener(PersonsList.EVENT_QUERY, (evt) => {
       this.query = (evt as CustomEvent).detail;
+    });
+    document.addEventListener(Toolbar.EVENT_DATE_CHANGED, (evt) => {
+      if ((evt as CustomEvent).detail?.date) {
+        this.date = Temporal.PlainDate.from(
+          (evt as CustomEvent).detail?.date as string,
+        );
+      }
     });
   }
 
@@ -85,18 +108,18 @@ export class PersonsTable extends HTMLElement {
     }
   }
 
-  async renderPersonsTable() {
+  async renderList() {
     // ヘッダー
     const theadRow = elem('tr');
     const cols = getAttrs(
       this,
       'columns',
-      PersonsTable.DEFAULT_COLUMNS,
+      PersonsList.DEFAULT_COLUMNS,
     ) as ColumnTypes[];
     console.log(cols);
     cols.forEach(
       (col) => {
-        const txt = elem('span', null, col, { labelText: col });
+        const txt = elem('span', null, col, { labelText: COLUMN_LABELS[col] });
         const th = elem('th');
         th.appendChild(txt);
         theadRow.appendChild(th);
@@ -111,8 +134,8 @@ export class PersonsTable extends HTMLElement {
 
     for (const person of persons.records) {
       const tr = elem('tr');
-      const cells = await Promise.all(cols.map(
-        async (col) => {
+      const cells = cols.map(
+        (col) => {
           const td = elem('td', [`person-${col}`]);
           switch (col) {
             case 'id':
@@ -143,7 +166,7 @@ export class PersonsTable extends HTMLElement {
                   const span = elem(
                     'span',
                     null,
-                    await label(`zodiacs.${thisZodiac}`),
+                    null,
                     {
                       labelText: `zodiacs.${thisZodiac}`,
                     },
@@ -160,7 +183,7 @@ export class PersonsTable extends HTMLElement {
           }
           return td;
         },
-      ));
+      );
       cells.forEach((td) => tr.appendChild(td));
       tbody.append(tr);
     }
@@ -172,12 +195,13 @@ export class PersonsTable extends HTMLElement {
   }
 
   async init(): Promise<void> {
-    await this.renderPersonsTable();
+    await this.renderList();
   }
 
   async update(): Promise<void> {
-    await this.renderPersonsTable();
+    await this.renderList();
   }
 }
 
-customElements.define(PersonsTable.NAME, PersonsTable);
+customElements.define(PersonsList.NAME, PersonsList);
+export default PersonsList;

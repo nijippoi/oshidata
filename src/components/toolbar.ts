@@ -1,23 +1,36 @@
-import { clear, elem, LANGS, NAMESPACE } from '../utils.ts';
+import { clear, elem, LANGS, ns } from '../utils.ts';
+import HasLabel from './has-label.ts';
 
-export class Toolbar extends HTMLElement {
-  static NAME = `${NAMESPACE}--toolbar`;
-  static EVENT_TITLE = `${NAMESPACE}--toolbar-title`;
+export class Toolbar extends HasLabel {
+  static NAME = ns('toolbar');
+  static EVENT_TITLE = ns('toolbar-title');
+  static EVENT_DATE_CHANGED = ns('toolbar-date-changed');
 
-  static fireChangeTitle(title?: string, subtitle?: string): void {
-    const event = new CustomEvent(Toolbar.EVENT_TITLE, {
+  static fireChangeTitle(
+    title?: string,
+    subtitle?: string,
+  ): void {
+    const evt = new CustomEvent(Toolbar.EVENT_TITLE, {
       detail: { title, subtitle },
     });
-    document.dispatchEvent(event);
+    document.dispatchEvent(evt);
+  }
+
+  static fireDateChanged(
+    date: string,
+  ): void {
+    const evt = new CustomEvent(Toolbar.EVENT_DATE_CHANGED, {
+      detail: { date },
+    });
+    document.dispatchEvent(evt);
   }
 
   static get observedAttributes(): string[] {
-    return ['title', 'subtitle'];
+    return ['title', 'subtitle', 'date'];
   }
 
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
     document.addEventListener(Toolbar.EVENT_TITLE, (evt) => {
       const data: { title?: string; subtitle?: string } =
         (evt as CustomEvent).detail;
@@ -40,6 +53,7 @@ export class Toolbar extends HTMLElement {
     switch (name) {
       case 'title':
       case 'subtitle':
+      case 'date':
         if (oldValue !== newValue) {
           this.update();
         }
@@ -49,15 +63,16 @@ export class Toolbar extends HTMLElement {
 
   init(): void {
     // left
-    const left = elem('div');
+    const left = elem('div', ['toolbar-left']);
     const attrTitle = this.getAttribute('title') || '';
     const attrSubtitle = this.getAttribute('subtitle') || '';
     left.append(elem('span', ['toolbar-title'], attrTitle));
     left.append(elem('span', ['toolbar-subtitle'], attrSubtitle));
 
     // right
-    const right = elem('div');
-    const langSelect = elem('select');
+    const right = elem('div', ['toolbar-right']);
+    const langSelect = elem('select') as HTMLSelectElement;
+    langSelect['name'] = 'l';
     LANGS.forEach((lang) => {
       const option = elem('option') as HTMLOptionElement;
       option.value = lang;
@@ -65,6 +80,19 @@ export class Toolbar extends HTMLElement {
       langSelect.append(option);
     });
     right.append(langSelect);
+    const datePicker = elem('input') as HTMLInputElement;
+    datePicker.setAttribute('type', 'date');
+    if (!this.getAttribute('date')) {
+      this.setAttribute('date', Temporal.Now.plainDateISO().toString());
+    }
+    datePicker.value = this.getAttribute('date')!;
+    datePicker.addEventListener('change', (evt) => {
+      const target = evt.target as HTMLInputElement | null;
+      if (target) {
+        Toolbar.fireDateChanged(target.value);
+      }
+    });
+    right.append(datePicker);
 
     const main = elem('div', ['toolbar-main']);
     main.append(left, right);
@@ -89,3 +117,4 @@ export class Toolbar extends HTMLElement {
 }
 
 customElements.define(Toolbar.NAME, Toolbar);
+export default Toolbar;

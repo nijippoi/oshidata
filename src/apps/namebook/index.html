@@ -9,18 +9,19 @@
     />
   </head>
   <body>
-    <div id="app">
+    <oshidata--container id="app">
       <oshidata--toolbar
         id="oshidata--toolbar"
-        title="名簿2"
+        title="名簿"
       ></oshidata--toolbar>
-      <oshidata--persons-table
+      <oshidata--persons-list
         columns="id,name,birth-date,age,zodiac,hometown"
-      ></oshidata--persons-table>
-    </div>
+      ></oshidata--persons-list>
+    </oshidata--container>
     <!-- <script src="./index.ts" type="module"></script> -->
-    <script src="../../components/lang-selector.ts" type="module"></script>
+    <script src="../../components/container.ts" type="module"></script>
     <script src="../../components/toolbar.ts" type="module"></script>
-    <script src="../../components/persons-table.ts" type="module"></script>
+    <script src="../../components/language-selector.ts" type="module"></script>
+    <script src="../../components/persons-list.ts" type="module"></script>
   </body>
 </html>
