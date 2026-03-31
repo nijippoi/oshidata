@@ -1337,4 +1337,35 @@ persons:
         active_date_ranges:
           - start: '2023-05-23'
 
+  # モーニング娘。18期メンバー
+  - family_name: '杉原'
+    family_name_kana: 'スギハラ'
+    given_name: '明紗'
+    given_name_kana: 'メイサ'
+    birth_date: '2011-12-20'
+    birth_place:
+      country: 'JP'
+      state: '兵庫県'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'モーニング娘。'
+        active_date_ranges:
+          - start: '2026-04-01'
+      - role: 'member'
+        group: 'モーニング娘。18期'
+        active_date_ranges:
+          - start: '2026-04-01'
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2024-02-07'
+            end: '2026-03-31'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2023-05-23'
+
   - reserve_id_until: 199

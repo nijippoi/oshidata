@@ -158,6 +158,11 @@ groups:
     parent: 'モーニング娘。'
     active_date_ranges:
       - start: '2023-05-23'
+  - name: 'モーニング娘。18期'
+    name_kana: 'モーニングムスメダイジュウシチキ'
+    parent: 'モーニング娘。'
+    active_date_ranges:
+      - start: '2026-04-01'
 
   # END モーニング娘。関連
   - reserve_id_until: 99
