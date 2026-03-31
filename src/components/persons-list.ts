@@ -3,9 +3,11 @@ import {
   elem,
   getAttrs,
   ns,
+  queryGroups,
   queryPersons,
   renderAge,
   renderDate,
+  renderGroupName,
   renderLocation,
   renderPersonName,
   setAttrs,
@@ -108,6 +110,23 @@ export class PersonsList extends HasLabel {
     }
   }
 
+  async renderFilter() {
+    const filterBox = elem('div');
+    const groupsSelect = elem('select') as HTMLSelectElement;
+    groupsSelect.name = ns('filter-groups');
+    const groups = await queryGroups({
+      filters: [],
+    });
+    groups.records.forEach((group) => {
+      const opt = elem('option') as HTMLOptionElement;
+      opt.value = group.id;
+      opt.textContent = renderGroupName(group) || '';
+      groupsSelect.appendChild(opt);
+    });
+    filterBox.appendChild(groupsSelect);
+    this.shadowRoot?.appendChild(filterBox);
+  }
+
   async renderList() {
     // ヘッダー
     const theadRow = elem('tr');
@@ -116,7 +135,6 @@ export class PersonsList extends HasLabel {
       'columns',
       PersonsList.DEFAULT_COLUMNS,
     ) as ColumnTypes[];
-    console.log(cols);
     cols.forEach(
       (col) => {
         const txt = elem('span', null, col, { labelText: COLUMN_LABELS[col] });
@@ -195,10 +213,12 @@ export class PersonsList extends HasLabel {
   }
 
   async init(): Promise<void> {
+    await this.renderFilter();
     await this.renderList();
   }
 
   async update(): Promise<void> {
+    await this.renderFilter();
     await this.renderList();
   }
 }

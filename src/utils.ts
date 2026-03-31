@@ -1,11 +1,15 @@
 import { baseUrl } from './env.json' with { type: 'json' };
 import type {
   Group,
+  GroupName,
   Groups,
+  HasActiveDateRanges,
+  Id,
   Paged,
   Person,
   PersonName,
   Persons,
+  Predicate,
   Query,
 } from './types.ts';
 
@@ -79,18 +83,18 @@ export function dateToPlainDate(date: Date): Temporal.PlainDate {
     .toPlainDate();
 }
 
-export function resolvePersonNames(
-  person: Person,
+export function resolveHasActiveDateRange(
+  records: HasActiveDateRanges[],
   date?: Date | Temporal.PlainDate,
-): PersonName[] {
+): HasActiveDateRanges[] {
   if (!date) {
     date = Temporal.Now.plainDateISO();
   } else if (date instanceof Date) {
     date = dateToPlainDate(date);
   }
-  return person.names.filter((name) => {
-    if (!name.active_date_ranges) return true;
-    return name.active_date_ranges.some((range) => {
+  return records.filter((record) => {
+    if (!record.active_date_ranges) return true;
+    return record.active_date_ranges.some((range) => {
       if (!range.start && !range.end) return true;
       if (
         range.start && range.end &&
@@ -122,19 +126,22 @@ export function resolvePersonNames(
   });
 }
 
-export function resolvePersonName(
-  person: Person,
+export function renderGroupName(
+  group: Group,
   date?: Date | Temporal.PlainDate,
-): PersonName | undefined {
-  const names = resolvePersonNames(person, date);
-  return names ? names[0] : undefined;
+): string | undefined {
+  return (resolveHasActiveDateRange(group.names, date) as GroupName[]).map(
+    (name) => {
+      return name.name;
+    },
+  ).join(' / ') || undefined;
 }
 
 export function renderPersonName(
   person: Person,
   date?: Date | Temporal.PlainDate,
 ): string | undefined {
-  const names = resolvePersonNames(person, date);
+  const names = resolveHasActiveDateRange(person.names, date) as PersonName[];
   if (!names) return undefined;
   return names.map((name) => {
     if (name.family_name && name.given_name) {
@@ -410,36 +417,39 @@ export async function fetchPersons(): Promise<Persons> {
   return await fetch(`${baseUrl}/data/persons.json`).then((res) => res.json());
 }
 
+export function isPersonInGroup(
+  groupIds: Id[],
+  date: Temporal.PlainDate,
+): Predicate<Person> {
+  return (person: Person): boolean => {
+    return person.roles?.some((role) => {
+      return role.active_date_ranges?.some((role_date) => {
+        if (role_date.start && role_date.end) {
+          return date.compare(Temporal.PlainDate.from(role_date.start)) >= 0 &&
+            date.compare(Temporal.PlainDate.from(role_date.end)) <= 0;
+        } else if (role_date.start) {
+          return date.compare(Temporal.PlainDate.from(role_date.start)) >= 0;
+        } else if (role_date.end) {
+          return date.compare(Temporal.PlainDate.from(role_date.end)) <= 0;
+        }
+        return true;
+      }) || false;
+    }) || false;
+  };
+}
+
 export async function queryGroups(query?: Query<Group>): Promise<Paged<Group>> {
   return await fetchGroups().then((groups) => {
     const records = [];
-    let nextOffset = undefined;
-    for (const key in groups) {
-      if (query && query.filter && query.filter(groups[key])) {
-        records.push(groups[key]);
-      }
-    }
-    if (query && query.orders && query.orders.length > 0) {
-      // TODO
-    }
-    return {
-      records,
-      nextOffset,
-    };
-  });
-}
-
-export async function queryPersons(
-  query?: Query<Person>,
-): Promise<Paged<Person>> {
-  return await fetchPersons().then((groups) => {
-    const records = [];
     let nextPage = undefined;
     for (const key in groups) {
-      if (query && query.filter && !query.filter(groups[key])) {
-        continue;
+      if (query && query.filters && query.filters.length > 0) {
+        if (query.filters.every((filter) => filter(groups[key]))) {
+          records.push(groups[key]);
+        }
+      } else {
+        records.push(groups[key]);
       }
-      records.push(groups[key]);
     }
     if (query && query.orders && query.orders.length > 0) {
       // TODO
@@ -451,6 +461,88 @@ export async function queryPersons(
   });
 }
 
-export function foo(): string {
-  return 'baz';
+export async function queryPersons(
+  query?: Query<Person>,
+): Promise<Paged<Person>> {
+  return await fetchPersons().then((persons) => {
+    const records = [];
+    let nextPage = undefined;
+    for (const key in persons) {
+      if (query && query.filters && query.filters.length > 0) {
+        if (query.filters.every((filter) => filter(persons[key]))) {
+          records.push(persons[key]);
+        }
+      } else {
+        records.push(persons[key]);
+      }
+    }
+    if (query && query.orders && query.orders.length > 0) {
+      // TODO
+    }
+    return {
+      records,
+      'next_page': nextPage,
+    };
+  });
+}
+
+export class Option<T> {
+  // deno-lint-ignore no-explicit-any
+  private static EMPTY = new Option<any>(undefined);
+
+  static empty<T>(): Option<T> {
+    return Option.EMPTY;
+  }
+
+  static from<T>(value: T | undefined | null): Option<T> {
+    return (value === undefined || value === null)
+      ? Option.EMPTY
+      : new Option<T>(value);
+  }
+
+  private value: T | undefined;
+
+  private constructor(value: T | undefined | null) {
+    this.value = (value === undefined || value === null) ? undefined : value;
+  }
+
+  isPresent(): boolean {
+    return this.value !== undefined;
+  }
+
+  isEmpty(): boolean {
+    return this.value === undefined;
+  }
+
+  /**
+   * @returns {T} value
+   * @throws {Error}
+   */
+  get(): T {
+    if (this.value === undefined) throw new Error('value is not present');
+    return this.value;
+  }
+
+  getOr(value: T): T {
+    return this.value === undefined ? value : this.value;
+  }
+
+  getOrElse(supplier: () => T): T {
+    return this.value === undefined ? supplier() : this.value;
+  }
+
+  map<T2>(mapper: (value: T) => T2): Option<T2> {
+    if (this.value === undefined) return Option.EMPTY;
+    else return new Option<T2>(mapper(this.value));
+  }
+
+  mapOr<T2>(mapper: (value: T) => T2, value: T2): Option<T2> {
+    if (this.value === undefined) return new Option<T2>(value);
+    else return new Option<T2>(mapper(this.value));
+  }
+
+  mapOrElse<T2>(mapper: (value: T) => T2, supplier: () => T2): Option<T2> {
+    if (this.value === undefined) return new Option<T2>(supplier());
+    else return new Option<T2>(mapper(this.value));
+  }
 }

@@ -117,7 +117,7 @@ export interface GroupName {
 /**
  * グループ定義（メイングループまたはサブグループ）
  */
-export interface Group extends GroupName, HasId, HasActiveDateRanges {
+export interface Group extends HasId, HasActiveDateRanges {
   /** グループ名の配列 */
   names: (GroupName & HasActiveDateRanges)[];
   /** サブグループの親グループ名 */
@@ -244,10 +244,10 @@ export interface QueryOrder {
   direction?: OrderDirections;
 }
 
+export type Predicate<T> = (record: T) => boolean;
+
 export interface Query<T> {
-  filter?: (record: T) => boolean;
-  active_date?: DateString;
-  active_date_range?: DateRange;
+  filters?: Predicate<T>[];
   page?: number;
   limit?: number;
   orders?: QueryOrder[];
