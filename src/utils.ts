@@ -1,4 +1,4 @@
-import { basePath, baseUrl } from './env.ts';
+import { baseUrl } from './env.ts';
 import type {
   Group,
   GroupName,
@@ -424,13 +424,13 @@ export function setAttrs(
 }
 
 export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}${basePath}${DATA_PATH}/${GROUPS_FILE}`).then((
+  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((
     res,
   ) => res.json());
 }
 
 export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}${basePath}${DATA_PATH}/${PERSONS_FILE}`)
+  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`)
     .then((
       res,
     ) => res.json());

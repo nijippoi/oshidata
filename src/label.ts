@@ -1,5 +1,5 @@
 import { LABELS_PATH, lang, LANGS } from './utils.ts';
-import { basePath, baseUrl } from './env.ts';
+import { baseUrl } from './env.ts';
 import type { Labels } from './types.ts';
 
 const LABELS: { [keyof: string]: Labels } = {};
@@ -7,9 +7,9 @@ const LABELS: { [keyof: string]: Labels } = {};
 async function load(
   langKey: string,
 ): Promise<Labels> {
-  console.log(`ラベル取得 ${langKey}`);
+  console.log(`Fetching label ${langKey}`);
   return await (await fetch(
-    `${baseUrl}${basePath}${LABELS_PATH}/${langKey}.json`,
+    `${baseUrl}${LABELS_PATH}/${langKey}.json`,
   )).json() as Labels;
 }
 
