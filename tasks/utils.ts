@@ -85,3 +85,15 @@ export function matchesGlobSync(
 export function utcDate(): string {
   return new Date().toISOString().slice(0, 10);
 }
+
+export function writeJson(
+  path: string,
+  value: any = {},
+  minify: boolean = true,
+) {
+  Deno.writeTextFileSync(
+    path,
+    minify === true ? JSON.stringify(value) : JSON.stringify(value, null, 2),
+  );
+  console.log(`Created JSON ${path}`);
+}

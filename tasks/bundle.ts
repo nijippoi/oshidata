@@ -22,7 +22,7 @@ export async function bundle(
   baseUrl: string = DEFAULT_BASE_URL,
 ): Promise<void> {
   console.log(
-    `Bundling release=${release} distDir=${distDir} baseUrl=${basePath} baseUrl=${basePath}`,
+    `Bundling release=${release} distDir=${distDir} baseUrl=${baseUrl} basePath=${basePath}`,
   );
 
   // env.json

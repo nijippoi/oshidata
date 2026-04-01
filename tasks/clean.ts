@@ -1,11 +1,11 @@
-import { exists, existsSync } from '@std/fs';
+import { existsSync } from '@std/fs';
 import {
   DEFAULT_DATA_DIR,
   DEFAULT_DIST_DIR,
   DEFAULT_LABELS_DIR,
 } from './utils.ts';
 
-export function cleanSync(paths?: string[]) {
+export function clean(paths?: string[]) {
   paths = (paths && paths.length > 0)
     ? paths
     : [DEFAULT_DIST_DIR, DEFAULT_DATA_DIR, DEFAULT_LABELS_DIR];
@@ -22,23 +22,6 @@ export function cleanSync(paths?: string[]) {
   }
 }
 
-export function clean(paths?: string[]) {
-  paths = (paths && paths.length > 0)
-    ? paths
-    : [DEFAULT_DIST_DIR, DEFAULT_DATA_DIR, DEFAULT_LABELS_DIR];
-  try {
-    paths.forEach(async (path) => {
-      console.info(`Removing '${path}'`);
-      if (await exists(path)) {
-        await Deno.remove(path, { recursive: true });
-      }
-    });
-  } catch (err) {
-    console.error(err);
-    throw err;
-  }
-}
-
 if (import.meta.main) {
-  cleanSync(Deno.args);
+  clean(Deno.args);
 }

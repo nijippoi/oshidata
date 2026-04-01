@@ -28,8 +28,8 @@ export function serveHttp(
   try {
     Deno.serve(
       {
-        hostname: hostname,
-        port: port,
+        hostname,
+        port,
         onListen: (addr) => {
           console.log(`Serving http://${addr.hostname}:${addr.port}`);
         },
@@ -41,7 +41,7 @@ export function serveHttp(
             handler: (req: Request) => serveDir(req, { fsRoot: rootDir }),
           },
         ],
-        () => new Response('not found', { status: 404 }),
+        () => new Response('NOT_FOUND', { status: 404 }),
       ),
     );
   } catch (err) {

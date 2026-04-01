@@ -10,6 +10,7 @@ import {
   globFilesSync,
   GROUPS_FILE,
   PERSONS_FILE,
+  writeJson,
 } from './utils.ts';
 import { existsSync } from '@std/fs';
 
@@ -19,6 +20,9 @@ export async function importData(
   dataDir: string = DEFAULT_DATA_DIR,
   labelsDir: string = DEFAULT_LABELS_DIR,
 ): Promise<void> {
+  console.log(
+    `Importing release=${release} resDir=${resDir} dataDir=${dataDir} labelsDir=${labelsDir}`,
+  );
   if (!existsSync(dataDir)) {
     Deno.mkdirSync(dataDir, { recursive: true });
   }
@@ -72,12 +76,7 @@ export async function importData(
   }
 
   for (const lang of labels.keys()) {
-    Deno.writeTextFileSync(
-      join(labelsDir, `${lang}.json`),
-      release === true
-        ? JSON.stringify(labels.get(lang))
-        : JSON.stringify(labels.get(lang), null, 2),
-    );
+    writeJson(join(labelsDir, `${lang}.json`), labels.get(lang), release);
   }
 
   // TODO: ID重複チェック
@@ -159,10 +158,7 @@ export async function importData(
     }
   }
 
-  Deno.writeTextFileSync(
-    join(dataDir, GROUPS_FILE),
-    release === true ? JSON.stringify(groups) : JSON.stringify(groups, null, 2),
-  );
+  writeJson(join(dataDir, GROUPS_FILE), groups, release);
 
   const resolveGroup = (
     name?: string,
@@ -275,12 +271,7 @@ export async function importData(
       id++;
     }
   }
-  Deno.writeTextFileSync(
-    join(dataDir, PERSONS_FILE),
-    release === true
-      ? JSON.stringify(persons)
-      : JSON.stringify(persons, null, 2),
-  );
+  writeJson(join(dataDir, PERSONS_FILE), persons, release);
 }
 
 if (import.meta.main) {
