@@ -11,6 +11,7 @@ import {
   GROUPS_FILE,
   PERSONS_FILE,
 } from './utils.ts';
+import { existsSync } from '@std/fs';
 
 export async function importData(
   release: boolean = DEFAULT_RELEASE,
@@ -18,8 +19,12 @@ export async function importData(
   dataDir: string = DEFAULT_DATA_DIR,
   labelsDir: string = DEFAULT_LABELS_DIR,
 ): Promise<void> {
-  Deno.mkdirSync(dataDir, { recursive: true });
-  Deno.mkdirSync(labelsDir, { recursive: true });
+  if (!existsSync(dataDir)) {
+    Deno.mkdirSync(dataDir, { recursive: true });
+  }
+  if (!existsSync(labelsDir)) {
+    Deno.mkdirSync(labelsDir, { recursive: true });
+  }
 
   // dirPath内のYAMLを読み込む
   // deno-lint-ignore no-explicit-any

@@ -60,7 +60,7 @@ export async function bundle(
     // copy data
     const distDataDir = join(distDir, 'data');
     if (!existsSync(distDataDir)) {
-      Deno.mkdirSync(join(distDir, 'data'), { recursive: true });
+      Deno.mkdirSync(distDataDir, { recursive: true });
     }
     globFilesSync('*.{json}', dataDir).forEach(
       (file) =>
