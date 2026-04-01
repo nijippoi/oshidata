@@ -1,12 +1,16 @@
-import { lang, LANGS } from './utils.ts';
+import { LABELS_PATH, lang, LANGS } from './utils.ts';
+import { basePath, baseUrl } from './env.ts';
+import type { Labels } from './types.ts';
 
-const LABELS: { [key: string]: { [key: string]: string } } = {};
+const LABELS: { [keyof: string]: Labels } = {};
 
 async function load(
   langKey: string,
-): Promise<{ [key: string]: string }> {
-  console.log(`loading labels for ${langKey}`);
-  return await import(`./labels/${langKey}.json`, { with: { type: 'json' } });
+): Promise<Labels> {
+  console.log(`ラベル取得 ${langKey}`);
+  return await (await fetch(
+    `${baseUrl}${basePath}${LABELS_PATH}/${langKey}.json`,
+  )).json() as Labels;
 }
 
 export async function label(

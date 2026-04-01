@@ -1,3 +1,5 @@
-dist/
 .vscode/
-src/env.json
+/dist
+/src/env.ts
+/data
+/labels

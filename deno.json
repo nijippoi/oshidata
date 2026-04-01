@@ -18,29 +18,26 @@
     "format": "deno fmt",
     "check": "deno fmt --check",
     "clean": "deno run -RW ./tasks/clean.ts",
-    "import": "deno run -RW tasks/import.ts",
+    "import": "deno run -RW ./tasks/import.ts",
+    "import-dev": "deno run -RW ./tasks/import.ts --no-release",
     "bundle": {
       "command": "deno run -RWNI ./tasks/bundle.ts",
       "dependencies": ["clean", "import"]
     },
     "bundle-dev": {
       "command": "deno run -RWNI ./tasks/bundle.ts --no-release --baseurl=http://localhost:3000",
-      "dependencies": ["clean", "import"]
+      "dependencies": ["clean", "import-dev"]
     },
-    "serve": {
-      "command": "deno run -RWNI ./tasks/serve.ts",
-      "dependencies": []
-    }
+    "serve": "deno run -RWNI ./tasks/serve.ts"
   },
   "imports": {
-    "@std/http": "jsr:@std/http@^1.0.25",
     "material-symbols-outlined": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined",
+    "@std/http": "jsr:@std/http@^1.0.25",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/cli": "jsr:@std/cli@^1.0.28",
     "@std/fs": "jsr:@std/fs@^1.0.23",
     "@std/path": "jsr:@std/path@^1.1.4",
-    "@std/yaml": "jsr:@std/yaml@^1.0.12",
-    "dexie": "npm:dexie@^4.3.0"
+    "@std/yaml": "jsr:@std/yaml@^1.0.12"
   },
   "entrypoint": [],
   "exports": {
@@ -51,7 +48,8 @@
   "fmt": {
     "exclude": [
       "dist/",
-      "src/data/"
+      "data/",
+      "labels/"
     ],
     "lineWidth": 80,
     "singleQuote": true

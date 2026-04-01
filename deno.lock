@@ -13,8 +13,7 @@
     "jsr:@std/net@^1.0.6": "1.0.6",
     "jsr:@std/path@^1.1.4": "1.1.4",
     "jsr:@std/streams@^1.0.17": "1.0.17",
-    "jsr:@std/yaml@^1.0.12": "1.0.12",
-    "npm:dexie@^4.3.0": "4.3.0"
+    "jsr:@std/yaml@^1.0.12": "1.0.12"
   },
   "jsr": {
     "@std/assert@1.0.19": {
@@ -80,11 +79,6 @@
     },
     "@std/yaml@1.0.12": {
       "integrity": "7deabca4545bcedd07c5f69ea53acea71b8b4c67562f224e17b90d75944cb20c"
-    }
-  },
-  "npm": {
-    "dexie@4.3.0": {
-      "integrity": "sha512-5EeoQpJvMKHe6zWt/FSIIuRa3CWlZeIl6zKXt+Lz7BU6RoRRLgX9dZEynRfXrkLcldKYCBiz7xekTEylnie1Ug=="
     }
   },
   "remote": {
@@ -168,8 +162,7 @@
       "jsr:@std/fs@^1.0.23",
       "jsr:@std/http@^1.0.25",
       "jsr:@std/path@^1.1.4",
-      "jsr:@std/yaml@^1.0.12",
-      "npm:dexie@^4.3.0"
+      "jsr:@std/yaml@^1.0.12"
     ]
   }
 }

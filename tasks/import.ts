@@ -2,19 +2,35 @@ import { parse as parseYaml } from '@std/yaml';
 import { join } from '@std/path';
 import { parseArgs } from '@std/cli/parse-args';
 import type { GroupRole, Person, PersonRole, Persons } from '../src/types.ts';
-import { DEFAULT_INPUT_DIR, DEFAULT_SRC_DATA_DIR } from './utils.ts';
+import {
+  DEFAULT_DATA_DIR,
+  DEFAULT_LABELS_DIR,
+  DEFAULT_RELEASE,
+  DEFAULT_RES_DIR,
+  globFilesSync,
+  GROUPS_FILE,
+  PERSONS_FILE,
+} from './utils.ts';
 
 export async function importData(
-  inputDir: string = DEFAULT_INPUT_DIR,
-  srcDataDir: string = DEFAULT_SRC_DATA_DIR,
+  release: boolean = DEFAULT_RELEASE,
+  resDir: string = DEFAULT_RES_DIR,
+  dataDir: string = DEFAULT_DATA_DIR,
+  labelsDir: string = DEFAULT_LABELS_DIR,
 ): Promise<void> {
+  Deno.mkdirSync(dataDir, { recursive: true });
+  Deno.mkdirSync(labelsDir, { recursive: true });
+
   // dirPath内のYAMLを読み込む
-  const allGroupsData = [];
-  const allPersonsData = [];
-  for await (const entry of Deno.readDir(inputDir)) {
-    if (entry.isFile && /\.(yaml|yml)$/.test(entry.name)) {
+  // deno-lint-ignore no-explicit-any
+  const allGroupsData: any[] = [];
+  // deno-lint-ignore no-explicit-any
+  const allPersonsData: any[] = [];
+  // deno-lint-ignore no-explicit-any
+  const allLabelsData: any[] = [];
+  globFilesSync('**/*.{yml,yaml}', resDir).forEach(
+    (filePath) => {
       try {
-        const filePath = join(inputDir, entry.name);
         const data: any = parseYaml(Deno.readTextFileSync(filePath));
         data.file = filePath;
         switch (data.source_type) {
@@ -24,13 +40,39 @@ export async function importData(
           case 'persons':
             allPersonsData.push(data);
             break;
+          case 'labels':
+            if (!data.lang) {
+              console.warn(`Ignored ${filePath}`);
+            } else {
+              allLabelsData.push(data);
+            }
+            break;
           default:
-            console.warn(`Ignoring ${filePath}`);
+            console.warn(`Ignored ${filePath}`);
         }
       } catch (error) {
-        console.error(`Error parsing ${entry.name}:`, error);
+        console.error(`Read error ${filePath}:`, error);
       }
+    },
+  );
+
+  // ラベルデータを作成
+  const labels = new Map<string, { [keyof: string]: string }>();
+  for (const labelsData of allLabelsData) {
+    const lang: string = labelsData.lang;
+    const values = labels.getOrInsert(lang, {});
+    for (const key in labelsData.labels) {
+      values[key] = labelsData.labels[key];
     }
+  }
+
+  for (const lang of labels.keys()) {
+    Deno.writeTextFileSync(
+      join(labelsDir, `${lang}.json`),
+      release === true
+        ? JSON.stringify(labels.get(lang))
+        : JSON.stringify(labels.get(lang), null, 2),
+    );
   }
 
   // TODO: ID重複チェック
@@ -84,7 +126,6 @@ export async function importData(
         );
       }
 
-      // console.log(groupData);
       groups[groupId.toString(10)] = group;
       groupId++;
     }
@@ -113,14 +154,9 @@ export async function importData(
     }
   }
 
-  Deno.mkdirSync(srcDataDir, { recursive: true });
   Deno.writeTextFileSync(
-    join(srcDataDir, 'groups.json'),
-    JSON.stringify(groups),
-  );
-  Deno.writeTextFileSync(
-    join(srcDataDir, 'groups.pretty.json'),
-    JSON.stringify(groups, null, 2),
+    join(dataDir, GROUPS_FILE),
+    release === true ? JSON.stringify(groups) : JSON.stringify(groups, null, 2),
   );
 
   const resolveGroup = (
@@ -230,30 +266,29 @@ export async function importData(
         }
       }
 
-      // console.log(groupData);
       persons[id.toString(10)] = person;
       id++;
     }
   }
-
-  Deno.mkdirSync(srcDataDir, { recursive: true });
   Deno.writeTextFileSync(
-    join(srcDataDir, 'persons.json'),
-    JSON.stringify(persons),
-  );
-  Deno.writeTextFileSync(
-    join(srcDataDir, 'persons.pretty.json'),
-    JSON.stringify(persons, null, 2),
+    join(dataDir, PERSONS_FILE),
+    release === true
+      ? JSON.stringify(persons)
+      : JSON.stringify(persons, null, 2),
   );
 }
 
 if (import.meta.main) {
   const args = parseArgs(Deno.args, {
-    string: ['inputdir', 'srcdatadir'],
+    string: ['resdir', 'datadir', 'labelsdir'],
+    boolean: ['release'],
+    negatable: ['release'],
     default: {
-      inputdir: DEFAULT_INPUT_DIR,
-      srcdatadir: DEFAULT_SRC_DATA_DIR,
+      release: DEFAULT_RELEASE,
+      resdir: DEFAULT_RES_DIR,
+      datadir: DEFAULT_DATA_DIR,
+      labelsdir: DEFAULT_LABELS_DIR,
     },
   });
-  await importData(args.inputdir, args.srcdatadir);
+  await importData(args.release, args.resdir, args.datadir, args.labelsdir);
 }

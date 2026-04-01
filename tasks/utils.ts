@@ -1,17 +1,25 @@
 import { expandGlob, expandGlobSync } from '@std/fs';
 import { join, normalize } from '@std/path';
 
+export const ENV_FILE = 'env.ts';
+export const GROUPS_FILE = 'groups.json';
+export const PERSONS_FILE = 'persons.json';
+
 export const DEFAULT_RELEASE = true;
 export const DEFAULT_SERVE_PORT = 3000;
 export const DEFAULT_SERVE_HOSTNAME = '127.0.0.1';
+export const DEFAULT_BASE_PATH = '/';
+export const DEFAULT_BASE_URL =
+  `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`;
 export const DEFAULT_DIST_DIR = join(Deno.cwd(), 'dist');
-export const DEFAULT_INPUT_DIR = join(Deno.cwd(), 'input');
+export const DEFAULT_RES_DIR = join(Deno.cwd(), 'res');
+export const DEFAULT_DATA_DIR = join(Deno.cwd(), 'data');
+export const DEFAULT_LABELS_DIR = join(Deno.cwd(), 'labels');
 export const DEFAULT_SRC_DIR = join(Deno.cwd(), 'src');
-export const DEFAULT_SRC_DATA_DIR = join(DEFAULT_SRC_DIR, 'data');
-export const DEFAULT_ENV_JSON = join(DEFAULT_SRC_DIR, 'env.json');
+export const DEFAULT_TASKS_DIR = join(Deno.cwd(), 'tasks');
 export const DEFAULT_WATCH_EXCLUDES = [
-  join(DEFAULT_SRC_DATA_DIR, '**', '*'),
-  DEFAULT_ENV_JSON,
+  join(DEFAULT_DATA_DIR, '**', '*'),
+  join(DEFAULT_SRC_DIR, ENV_FILE),
 ];
 
 export async function globFiles(glob: string, root: string): Promise<string[]> {

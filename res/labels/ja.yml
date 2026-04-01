@@ -1,0 +1,60 @@
+---
+source_type: 'labels'
+lang: ja
+
+labels:
+  app_name: 推しデータ
+  nouns.person: 人物
+  nouns.group: グループ
+  nouns.role: 役割
+  nouns.member: メンバー
+  nouns.leader: リーダー
+  nouns.subleader: サブリーダー
+  nouns.manager: マネージャー
+  nouns.date: 日付
+  nouns.month_day: 月日
+  nouns.language: 言語
+  nouns.id: ID
+  nouns.person_id: 人物ID
+  nouns.group_id: グループID
+  nouns.role_id: 役割ID
+  nouns.group_name: グループ名
+  nouns.group_name_kana: グループ名(カナ)
+  nouns.person_name: お名前
+  nouns.person_name_kana: お名前(カナ)
+  nouns.full_name: フルネーム
+  nouns.full_name_kana: フルネーム(カナ)
+  nouns.family_name: 姓
+  nouns.family_name_kana: 姓(カナ)
+  nouns.middle_name: ミドルネーム
+  nouns.middle_name_kana: ミドルネーム(カナ)
+  nouns.given_name: 名
+  nouns.given_name_kana: 名(カナ)
+  nouns.sex: 性別
+  nouns.place_of_birth: 出生地
+  nouns.hometown: 出身地
+  nouns.country: 国
+  nouns.state: 都道府県
+  nouns.nationality: 国籍
+  nouns.birth_date: 生年月日
+  nouns.birth_day: 誕生日
+  nouns.age: 年齢
+  nouns.zodiac: 星座
+  nouns.blood_type: 血液型
+  nouns.height: 身長
+  nouns.weight: 体重
+  nouns.auto: 自動
+  langs.en: English
+  langs.ja: 日本語
+  zodiacs.aries: 牡羊座
+  zodiacs.taurus: 牡牛座
+  zodiacs.gemini: 双子座
+  zodiacs.cancer: 蟹座
+  zodiacs.leo: 獅子座
+  zodiacs.virgo: 乙女座
+  zodiacs.libra: 天秤座
+  zodiacs.scorpio: 蠍座
+  zodiacs.sagittarius: 射手座
+  zodiacs.capricorn: 山羊座
+  zodiacs.aquarius: 水瓶座
+  zodiacs.pisces: 魚座

@@ -1,8 +1,14 @@
 import { exists, existsSync } from '@std/fs';
-import { DEFAULT_DIST_DIR } from './utils.ts';
+import {
+  DEFAULT_DATA_DIR,
+  DEFAULT_DIST_DIR,
+  DEFAULT_LABELS_DIR,
+} from './utils.ts';
 
 export function cleanSync(paths?: string[]) {
-  paths = (paths && paths.length > 0) ? paths : [DEFAULT_DIST_DIR];
+  paths = (paths && paths.length > 0)
+    ? paths
+    : [DEFAULT_DIST_DIR, DEFAULT_DATA_DIR, DEFAULT_LABELS_DIR];
   try {
     paths.forEach((path) => {
       console.info(`Removing '${path}'`);
@@ -17,7 +23,9 @@ export function cleanSync(paths?: string[]) {
 }
 
 export function clean(paths?: string[]) {
-  paths = (paths && paths.length > 0) ? paths : [DEFAULT_DIST_DIR];
+  paths = (paths && paths.length > 0)
+    ? paths
+    : [DEFAULT_DIST_DIR, DEFAULT_DATA_DIR, DEFAULT_LABELS_DIR];
   try {
     paths.forEach(async (path) => {
       console.info(`Removing '${path}'`);

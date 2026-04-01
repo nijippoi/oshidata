@@ -1,4 +1,4 @@
-import dataEnv from './env.json' with { type: 'json' };
+import { basePath, baseUrl } from './env.ts';
 import type {
   Group,
   GroupName,
@@ -13,9 +13,12 @@ import type {
   Query,
 } from './types.ts';
 
-export const baseUrl = dataEnv.baseUrl;
-
 export const NAMESPACE = 'oshidata';
+export const ENV_FILE = 'env.json';
+export const GROUPS_FILE = 'groups.json';
+export const PERSONS_FILE = 'persons.json';
+export const DATA_PATH = '/data';
+export const LABELS_PATH = '/labels';
 
 export function ns(value: string): string {
   return value ? `${NAMESPACE}--${value}` : NAMESPACE;
@@ -421,11 +424,16 @@ export function setAttrs(
 }
 
 export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}/data/groups.json`).then((res) => res.json());
+  return await fetch(`${baseUrl}${basePath}${DATA_PATH}/${GROUPS_FILE}`).then((
+    res,
+  ) => res.json());
 }
 
 export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}/data/persons.json`).then((res) => res.json());
+  return await fetch(`${baseUrl}${basePath}${DATA_PATH}/${PERSONS_FILE}`)
+    .then((
+      res,
+    ) => res.json());
 }
 
 export function isPersonInGroup(

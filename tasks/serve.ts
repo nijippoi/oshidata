@@ -2,14 +2,17 @@ import { serveDir } from '@std/http/file-server';
 import { route } from '@std/http/unstable-route';
 import { parseArgs } from '@std/cli';
 import {
+  DEFAULT_BASE_PATH,
+  DEFAULT_DATA_DIR,
   DEFAULT_DIST_DIR,
-  DEFAULT_ENV_JSON,
-  DEFAULT_INPUT_DIR,
+  DEFAULT_LABELS_DIR,
+  DEFAULT_RES_DIR,
   DEFAULT_SERVE_HOSTNAME,
   DEFAULT_SERVE_PORT,
-  DEFAULT_SRC_DATA_DIR,
   DEFAULT_SRC_DIR,
+  DEFAULT_TASKS_DIR,
   DEFAULT_WATCH_EXCLUDES,
+  ENV_FILE,
   matchesGlobSync,
 } from './utils.ts';
 import { clean } from './clean.ts';
@@ -48,18 +51,26 @@ export function serveHttp(
 
 export async function watch(
   release: boolean = true,
-  inputDir: string = DEFAULT_INPUT_DIR,
+  resDir: string = DEFAULT_RES_DIR,
+  dataDir: string = DEFAULT_DATA_DIR,
+  labelsDir: string = DEFAULT_LABELS_DIR,
   srcDir: string = DEFAULT_SRC_DIR,
-  srcDataDir: string = DEFAULT_SRC_DATA_DIR,
   distDir: string = DEFAULT_DIST_DIR,
   excludes: string[] = DEFAULT_WATCH_EXCLUDES,
+  basePath: string = DEFAULT_BASE_PATH,
   baseUrl: string = `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`,
 ): Promise<Deno.FsWatcher> {
   try {
+    const paths = [srcDir, resDir, DEFAULT_TASKS_DIR];
     console.log(
-      `Watching srcDir=${srcDir} srcDir=${inputDir} excludes=${excludes}`,
+      `Watching paths=${paths} excludes=${excludes}`,
     );
-    const watcher = Deno.watchFs([srcDir, inputDir], { recursive: true });
+    const watcher = Deno.watchFs(
+      paths,
+      {
+        recursive: true,
+      },
+    );
     for await (const evt of watcher) {
       if (
         !evt ||
@@ -69,11 +80,12 @@ export async function watch(
       ) continue;
       await rebundle(
         release,
-        inputDir,
+        resDir,
+        dataDir,
+        labelsDir,
         srcDir,
-        srcDataDir,
         distDir,
-        excludes,
+        basePath,
         baseUrl,
       );
     }
@@ -86,30 +98,42 @@ export async function watch(
 
 async function rebundle(
   release: boolean = true,
-  inputDir: string = DEFAULT_INPUT_DIR,
+  resDir: string = DEFAULT_RES_DIR,
+  dataDir: string = DEFAULT_DATA_DIR,
+  labelsDir: string = DEFAULT_LABELS_DIR,
   srcDir: string = DEFAULT_SRC_DIR,
-  srcDataDir: string = DEFAULT_SRC_DATA_DIR,
   distDir: string = DEFAULT_DIST_DIR,
-  excludes: string[] = DEFAULT_WATCH_EXCLUDES,
+  basePath: string = DEFAULT_BASE_PATH,
   baseUrl: string = `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`,
 ): Promise<void> {
   clean();
-  await importData(inputDir, srcDataDir);
-  await bundle(release, distDir, baseUrl);
+  await importData(release, resDir, dataDir, labelsDir);
+  await bundle(release, dataDir, labelsDir, srcDir, distDir, basePath, baseUrl);
 }
 
 if (import.meta.main) {
   const args = parseArgs(Deno.args, {
-    string: ['hostname', 'port', 'inputdir', 'srcdir', 'srcdatadir', 'distdir'],
+    string: [
+      'hostname',
+      'port',
+      'resdir',
+      'srcdir',
+      'datadir',
+      'labelsdir',
+      'distdir',
+      'basepath',
+    ],
     boolean: ['watch', 'release'],
     negatable: ['watch', 'release'],
     default: {
       hostname: DEFAULT_SERVE_HOSTNAME,
       port: DEFAULT_SERVE_PORT.toString(),
-      inputdir: DEFAULT_INPUT_DIR,
+      resdir: DEFAULT_RES_DIR,
       srcdir: DEFAULT_SRC_DIR,
-      srcdatadir: DEFAULT_SRC_DATA_DIR,
+      datadir: DEFAULT_DATA_DIR,
+      labelsdir: DEFAULT_LABELS_DIR,
       distdir: DEFAULT_DIST_DIR,
+      basepath: DEFAULT_BASE_PATH,
       watch: true,
       release: false,
     },
@@ -118,20 +142,23 @@ if (import.meta.main) {
   try {
     await rebundle(
       args.release,
-      args.inputdir,
+      args.resdir,
+      args.datadir,
+      args.labelsdir,
       args.srcdir,
-      args.srcdatadir,
       args.distdir,
-      [join(args.srcdatadir, '**', '*'), DEFAULT_ENV_JSON],
+      args.basepath,
       `http://${args.hostname}:${args.port}`,
     );
     watch(
       args.release,
-      args.inputdir,
+      args.resdir,
+      args.datadir,
+      args.labelsdir,
       args.srcdir,
-      args.srcdatadir,
       args.distdir,
-      [join(args.srcdatadir, '**', '*'), DEFAULT_ENV_JSON],
+      [join(args.datadir, '**', '*'), join(args.srcdir, ENV_FILE)],
+      args.basepath,
       `http://${args.hostname}:${args.port}`,
     );
     serveHttp(args.hostname, parseInt(args.port), args.distdir);

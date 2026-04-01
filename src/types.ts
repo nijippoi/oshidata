@@ -13,50 +13,7 @@ export type Id = string;
 /**
  * ISO 8601形式の文字列 (YYYY-MM-DD)
  */
-export type DateString = `${number}${number}${number}${number}-${
-  | '01'
-  | '02'
-  | '03'
-  | '04'
-  | '05'
-  | '06'
-  | '07'
-  | '08'
-  | '09'
-  | '10'
-  | '11'
-  | '12'}-${
-  | '01'
-  | '02'
-  | '03'
-  | '04'
-  | '05'
-  | '06'
-  | '07'
-  | '08'
-  | '09'
-  | '10'
-  | '11'
-  | '12'
-  | '13'
-  | '14'
-  | '15'
-  | '16'
-  | '17'
-  | '18'
-  | '19'
-  | '20'
-  | '21'
-  | '22'
-  | '23'
-  | '24'
-  | '25'
-  | '26'
-  | '27'
-  | '28'
-  | '29'
-  | '30'
-  | '31'}`;
+export type DateString = string; // TODO: 正規表現で絞る？
 
 /**
  * 開始日と終了日を含む期間
@@ -257,4 +214,8 @@ export interface Paged<T> {
   records: T[];
   page?: number;
   next_page?: number;
+}
+
+export interface Labels {
+  [key: string]: string;
 }
