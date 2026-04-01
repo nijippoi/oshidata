@@ -1,4 +1,4 @@
-import { baseUrl } from './env.json' with { type: 'json' };
+import dataEnv from './env.json' with { type: 'json' };
 import type {
   Group,
   GroupName,
@@ -12,6 +12,8 @@ import type {
   Predicate,
   Query,
 } from './types.ts';
+
+export const baseUrl = dataEnv.baseUrl;
 
 export const NAMESPACE = 'oshidata';
 
@@ -83,8 +85,28 @@ export function dateToPlainDate(date: Date): Temporal.PlainDate {
     .toPlainDate();
 }
 
-export function resolveHasActiveDateRange(
-  records: HasActiveDateRanges[],
+export function isDateInRange(
+  date: Temporal.PlainDate,
+  start?: Temporal.PlainDate,
+  end?: Temporal.PlainDate,
+  options?: {
+    startExclusive?: boolean; // default: false
+    endExclusive?: boolean; // default: false
+  },
+): boolean {
+  if (start && end) {
+    return Temporal.PlainDate.compare(date, start) >= 0 &&
+      Temporal.PlainDate.compare(date, end) <= 0;
+  } else if (start) {
+    return Temporal.PlainDate.compare(date, start) >= 0;
+  } else if (end) {
+    return Temporal.PlainDate.compare(date, end) >= 0;
+  }
+  return false;
+}
+
+export function resolveActiveDateRange(
+  values: HasActiveDateRanges[],
   date?: Date | Temporal.PlainDate,
 ): HasActiveDateRanges[] {
   if (!date) {
@@ -92,65 +114,54 @@ export function resolveHasActiveDateRange(
   } else if (date instanceof Date) {
     date = dateToPlainDate(date);
   }
-  return records.filter((record) => {
-    if (!record.active_date_ranges) return true;
-    return record.active_date_ranges.some((range) => {
+  return values.filter((value) => {
+    if (!value.active_date_ranges) return true;
+    return value.active_date_ranges.some((range) => {
       if (!range.start && !range.end) return true;
-      if (
-        range.start && range.end &&
-        Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(range.start),
-          ) >= 0 &&
-        Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(range.end),
-          ) <= 0
-      ) return true;
-      if (
-        range.start &&
-        Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(range.start),
-          ) >= 0
-      ) return true;
-      if (
-        range.end &&
-        Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(range.end),
-          ) <= 0
-      ) return true;
-      return false;
+      else {
+        return isDateInRange(
+          date,
+          range.start ? Temporal.PlainDate.from(range.start) : undefined,
+          range.end ? Temporal.PlainDate.from(range.end) : undefined,
+        );
+      }
     });
   });
+}
+
+export function formatGroupName(name: GroupName): string {
+  return name.name;
 }
 
 export function renderGroupName(
   group: Group,
   date?: Date | Temporal.PlainDate,
-): string | undefined {
-  return (resolveHasActiveDateRange(group.names, date) as GroupName[]).map(
-    (name) => {
-      return name.name;
-    },
-  ).join(' / ') || undefined;
+): string {
+  const names = resolveActiveDateRange(group.names, date) as GroupName[];
+  if (names.length > 0) {
+    return names.map(formatGroupName).join(' / ');
+  } else {
+    return group.names.map(formatGroupName).join(' / ');
+  }
+}
+
+export function formatPersonName(name: PersonName): string {
+  const parts = [];
+  if (name.family_name) parts.push(name.family_name);
+  if (name.given_name) parts.push(name.given_name);
+  return parts.join(' ');
 }
 
 export function renderPersonName(
   person: Person,
   date?: Date | Temporal.PlainDate,
-): string | undefined {
-  const names = resolveHasActiveDateRange(person.names, date) as PersonName[];
-  if (!names) return undefined;
-  return names.map((name) => {
-    if (name.family_name && name.given_name) {
-      return name.family_name + ' ' + name.given_name;
-    }
-    if (name.family_name) return name.family_name;
-    if (name.given_name) return name.given_name;
-    return undefined;
-  }).join(' / ');
+): string {
+  const names = resolveActiveDateRange(person.names, date) as PersonName[];
+  if (names.length > 0) {
+    return names.map(formatPersonName).join(' / ');
+  } else {
+    return person.names.map(formatPersonName).join(' / ');
+  }
 }
 
 export function renderDate(date: Date): string {
@@ -425,12 +436,24 @@ export function isPersonInGroup(
     return person.roles?.some((role) => {
       return role.active_date_ranges?.some((role_date) => {
         if (role_date.start && role_date.end) {
-          return date.compare(Temporal.PlainDate.from(role_date.start)) >= 0 &&
-            date.compare(Temporal.PlainDate.from(role_date.end)) <= 0;
+          return Temporal.PlainDate.compare(
+                date,
+                Temporal.PlainDate.from(role_date.start),
+              ) >= 0 &&
+            Temporal.PlainDate.compare(
+                date,
+                Temporal.PlainDate.from(role_date.end),
+              ) <= 0;
         } else if (role_date.start) {
-          return date.compare(Temporal.PlainDate.from(role_date.start)) >= 0;
+          return Temporal.PlainDate.compare(
+            date,
+            Temporal.PlainDate.from(role_date.start),
+          ) >= 0;
         } else if (role_date.end) {
-          return date.compare(Temporal.PlainDate.from(role_date.end)) <= 0;
+          return Temporal.PlainDate.compare(
+            date,
+            Temporal.PlainDate.from(role_date.end),
+          ) <= 0;
         }
         return true;
       }) || false;

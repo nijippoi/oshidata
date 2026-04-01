@@ -21,20 +21,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: setup-deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.7.9
+          deno-version: v2.7.10
       - name: configure-pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: bundle
         run: deno task bundle --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: upload-pages-artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: 'dist'
       - name: deploy
         id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

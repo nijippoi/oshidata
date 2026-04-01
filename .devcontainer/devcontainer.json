@@ -15,7 +15,7 @@
   ],
   "features": {
     "ghcr.io/devcontainers-community/features/deno:1": {
-      "version": "2.7.9"
+      "version": "2.7.10"
     }
   },
   "onCreateCommand": "sudo chown $(id -u):$(id -g) /home/$(id -u -n)/.cache",

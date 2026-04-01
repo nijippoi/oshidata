@@ -4,11 +4,11 @@
   "description": "",
   "compilerOptions": {
     "lib": [
-      "esnext",
       "deno",
       "deno.ns",
       "deno.window",
       "deno.unstable",
+      "esnext",
       "dom"
     ]
   },
