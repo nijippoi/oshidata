@@ -424,16 +424,15 @@ export function setAttrs(
 }
 
 export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((
-    res,
-  ) => res.json());
+  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) =>
+    res.json()
+  );
 }
 
 export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`)
-    .then((
-      res,
-    ) => res.json());
+  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) =>
+    res.json()
+  );
 }
 
 export function isPersonInGroup(
