@@ -1,4 +1,4 @@
-import { clear, elem, LANGS, ns } from '../utils.ts';
+import { elem, LANGS, ns } from '../utils.ts';
 import Component from './component.ts';
 
 export class Toolbar extends Component {
@@ -31,14 +31,6 @@ export class Toolbar extends Component {
 
   constructor() {
     super();
-    document.addEventListener(Toolbar.EVENT_TITLE, (evt) => {
-      const data: { title?: string; subtitle?: string } =
-        (evt as CustomEvent).detail;
-      if (typeof data.title == 'string') this.setAttribute('title', data.title);
-      if (typeof data.subtitle == 'string') {
-        this.setAttribute('subtitle', data.subtitle);
-      }
-    });
   }
 
   connectedCallback() {
@@ -62,15 +54,30 @@ export class Toolbar extends Component {
   }
 
   init(): void {
+    this.insertRule(`
+      .toolbar-main {
+        justify-content: space-between;
+      }
+      `);
+
+    document.addEventListener(Toolbar.EVENT_TITLE, (evt) => {
+      const data: { title?: string; subtitle?: string } =
+        (evt as CustomEvent).detail;
+      if (typeof data.title == 'string') this.setAttribute('title', data.title);
+      if (typeof data.subtitle == 'string') {
+        this.setAttribute('subtitle', data.subtitle);
+      }
+    });
+
     // left
-    const left = elem('div', ['toolbar-left']);
+    const left = elem('div', ['toolbar-left', 'flex']);
     const attrTitle = this.getAttribute('title') || '';
     const attrSubtitle = this.getAttribute('subtitle') || '';
     left.append(elem('span', ['toolbar-title'], attrTitle));
     left.append(elem('span', ['toolbar-subtitle'], attrSubtitle));
 
     // right
-    const right = elem('div', ['toolbar-right']);
+    const right = elem('div', ['toolbar-right', 'flex']);
     const langSelect = elem('select') as HTMLSelectElement;
     langSelect['name'] = 'l';
     LANGS.forEach((lang) => {
@@ -108,9 +115,37 @@ export class Toolbar extends Component {
           newMetaColorScheme.content = value;
           document.head.appendChild(newMetaColorScheme);
         }
+        this.shadow.querySelectorAll('.color-scheme-button-group button')
+          .forEach((btn) => {
+            btn.classList.remove('selected');
+            btn.classList.add('deselected');
+          });
+        switch (value) {
+          case 'light dark': {
+            const btn = this.shadow.querySelector('.auto-mode-button');
+            btn?.classList.remove('deselected');
+            btn?.classList.add('selected');
+            break;
+          }
+          case 'light': {
+            const btn = this.shadow.querySelector('.light-mode-button');
+            btn?.classList.remove('deselected');
+            btn?.classList.add('selected');
+            break;
+          }
+          case 'dark': {
+            const btn = this.shadow.querySelector('.dark-mode-button');
+            btn?.classList.remove('deselected');
+            btn?.classList.add('selected');
+            break;
+          }
+          default:
+            break;
+        }
       };
     };
     const lightDarkAuto = elem('button', [
+      'auto-mode-button',
       'inline-button',
       'material-symbols-outlined',
     ]) as HTMLButtonElement;
@@ -122,6 +157,7 @@ export class Toolbar extends Component {
       changeMetaColorScheme('light dark'),
     );
     const lightDarkLight = elem('button', [
+      'light-mode-button',
       'inline-button',
       'material-symbols-outlined',
     ]) as HTMLButtonElement;
@@ -130,6 +166,7 @@ export class Toolbar extends Component {
     lightDarkLight.textContent = 'light_mode';
     lightDarkLight.addEventListener('click', changeMetaColorScheme('light'));
     const lightDarkDark = elem('button', [
+      'dark-mode-button',
       'inline-button',
       'material-symbols-outlined',
     ]) as HTMLButtonElement;
@@ -137,14 +174,17 @@ export class Toolbar extends Component {
     lightDarkDark.value = 'dark';
     lightDarkDark.textContent = 'dark_mode';
     lightDarkDark.addEventListener('click', changeMetaColorScheme('dark'));
-    const lightDarkSection = elem('section', ['inline-block']);
+    const lightDarkSection = elem('section', [
+      'button-group',
+      'color-scheme-button-group',
+    ]);
     lightDarkSection.ariaLabel = 'ライト・ダーク切り替え';
     lightDarkSection.appendChild(lightDarkAuto);
     lightDarkSection.appendChild(lightDarkLight);
     lightDarkSection.appendChild(lightDarkDark);
     right.append(lightDarkSection);
 
-    const main = elem('div', ['toolbar-main']);
+    const main = elem('div', ['toolbar-main', 'flex']);
     main.append(left, right);
     // clear(this.shadow);
     this.shadow.appendChild(main);
