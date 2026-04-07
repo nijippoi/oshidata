@@ -38,7 +38,7 @@ export async function bundle(
 
     // bundle
     const files = globFilesSync(
-      '**/*.{html,ts,js,tsx,jsx}',
+      '**/*.{html,ts,js,tsx,jsx,css}',
       srcDir,
     );
     const result = await Deno.bundle({

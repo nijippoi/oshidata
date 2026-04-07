@@ -13,7 +13,7 @@ import {
   setAttrs,
   zodiac,
 } from '../utils.ts';
-import HasLabel from './has-label.ts';
+import Component from './component.ts';
 import Toolbar from './toolbar.ts';
 
 export type ColumnTypes =
@@ -41,7 +41,7 @@ export interface Query {
   order?: string[];
 }
 
-export class PersonsList extends HasLabel {
+export class PersonsList extends Component {
   static NAME = ns('persons-list');
   static EVENT_QUERY = ns('persons-list-query');
   static DEFAULT_COLUMNS = ['id', 'name'];
@@ -60,7 +60,7 @@ export class PersonsList extends HasLabel {
     sheet.insertRule(`
       :host {
         display: block;
-        background: #ddd;
+        background-color: var(--bg-2-color);
         padding: 10px;
       }
       `);
@@ -72,7 +72,7 @@ export class PersonsList extends HasLabel {
         text-align: right;
       }
       `);
-    this.shadowRoot!.adoptedStyleSheets.push(sheet);
+    this.shadow.adoptedStyleSheets.push(sheet);
     setAttrs(
       this,
       'columns',
@@ -124,7 +124,7 @@ export class PersonsList extends HasLabel {
       groupsSelect.appendChild(opt);
     });
     filterBox.appendChild(groupsSelect);
-    this.shadowRoot?.appendChild(filterBox);
+    this.shadow.appendChild(filterBox);
   }
 
   async renderList() {
@@ -209,7 +209,7 @@ export class PersonsList extends HasLabel {
     const table = elem('table', ['persons-table']);
     table.appendChild(thead);
     table.appendChild(tbody);
-    this.shadowRoot?.appendChild(table);
+    this.shadow.appendChild(table);
   }
 
   async init(): Promise<void> {

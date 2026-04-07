@@ -1,7 +1,7 @@
 import { clear, elem, LANGS, ns } from '../utils.ts';
-import HasLabel from './has-label.ts';
+import Component from './component.ts';
 
-export class Toolbar extends HasLabel {
+export class Toolbar extends Component {
   static NAME = ns('toolbar');
   static EVENT_TITLE = ns('toolbar-title');
   static EVENT_DATE_CHANGED = ns('toolbar-date-changed');
@@ -81,7 +81,8 @@ export class Toolbar extends HasLabel {
     });
     right.append(langSelect);
     const datePicker = elem('input') as HTMLInputElement;
-    datePicker.setAttribute('type', 'date');
+    datePicker.name = ns('toolbar-datepicker');
+    datePicker.type = 'date';
     if (!this.getAttribute('date')) {
       this.setAttribute('date', Temporal.Now.plainDateISO().toString());
     }
@@ -94,20 +95,69 @@ export class Toolbar extends HasLabel {
     });
     right.append(datePicker);
 
+    const changeMetaColorScheme = (value: string) => {
+      return (evt: Event) => {
+        const metaColorScheme = document.querySelector(
+          'meta[name=color-scheme]',
+        );
+        if (metaColorScheme) {
+          (metaColorScheme as HTMLMetaElement).content = value;
+        } else {
+          const newMetaColorScheme = elem('meta') as HTMLMetaElement;
+          newMetaColorScheme.name = 'color-scheme';
+          newMetaColorScheme.content = value;
+          document.head.appendChild(newMetaColorScheme);
+        }
+      };
+    };
+    const lightDarkAuto = elem('button', [
+      'inline-button',
+      'material-symbols-outlined',
+    ]) as HTMLButtonElement;
+    lightDarkAuto.ariaPressed = 'true';
+    lightDarkAuto.value = 'light dark';
+    lightDarkAuto.textContent = 'brightness_auto';
+    lightDarkAuto.addEventListener(
+      'click',
+      changeMetaColorScheme('light dark'),
+    );
+    const lightDarkLight = elem('button', [
+      'inline-button',
+      'material-symbols-outlined',
+    ]) as HTMLButtonElement;
+    lightDarkLight.ariaPressed = 'false';
+    lightDarkLight.value = 'light';
+    lightDarkLight.textContent = 'light_mode';
+    lightDarkLight.addEventListener('click', changeMetaColorScheme('light'));
+    const lightDarkDark = elem('button', [
+      'inline-button',
+      'material-symbols-outlined',
+    ]) as HTMLButtonElement;
+    lightDarkDark.ariaPressed = 'false';
+    lightDarkDark.value = 'dark';
+    lightDarkDark.textContent = 'dark_mode';
+    lightDarkDark.addEventListener('click', changeMetaColorScheme('dark'));
+    const lightDarkSection = elem('section', ['inline-block']);
+    lightDarkSection.ariaLabel = 'ライト・ダーク切り替え';
+    lightDarkSection.appendChild(lightDarkAuto);
+    lightDarkSection.appendChild(lightDarkLight);
+    lightDarkSection.appendChild(lightDarkDark);
+    right.append(lightDarkSection);
+
     const main = elem('div', ['toolbar-main']);
     main.append(left, right);
-    clear(this.shadowRoot);
-    this.shadowRoot?.appendChild(main);
+    // clear(this.shadow);
+    this.shadow.appendChild(main);
   }
 
   update(): void {
-    const toolbarTitle = this.shadowRoot?.querySelector(
+    const toolbarTitle = this.shadow.querySelector(
       '.toolbar-title',
     ) as HTMLElement | null;
     if (toolbarTitle) {
       toolbarTitle.textContent = this.getAttribute('title') || '';
     }
-    const toolbarSubtitle = this.shadowRoot?.querySelector(
+    const toolbarSubtitle = this.shadow.querySelector(
       '.toolbar-subtitle',
     ) as HTMLElement | null;
     if (toolbarSubtitle) {

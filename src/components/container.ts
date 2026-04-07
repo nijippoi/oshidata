@@ -1,7 +1,7 @@
-import { elem, ns } from '../utils.ts';
-import HasLabel from './has-label.ts';
+import { ns } from '../utils.ts';
+import Component from './component.ts';
 
-export class Container extends HasLabel {
+export class Container extends Component {
   static NAME = ns('container');
   static EVENT_DISABLED = ns('container-disabled');
 
@@ -15,13 +15,13 @@ export class Container extends HasLabel {
     sheet.insertRule(`
       :host {
         display: block;
-        background: #ccc;
+        background: var(--bg-1-color);
         padding: 10px;
       }
       `);
-    this.shadowRoot!.adoptedStyleSheets.push(sheet);
+    this.shadow.adoptedStyleSheets.push(sheet);
     while (this.children.length > 0) {
-      this.shadowRoot!.appendChild(this.children.item(0)!);
+      this.shadow.appendChild(this.children.item(0)!);
     }
     document.addEventListener(Container.EVENT_DISABLED, (evt) => {
       const data: boolean | undefined | null = (evt as CustomEvent).detail;

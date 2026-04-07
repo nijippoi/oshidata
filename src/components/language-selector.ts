@@ -1,13 +1,11 @@
 import { elem, LANGS, ns } from '../utils.ts';
+import Component from './component.ts';
 
-export class LanguageSelector extends HTMLElement {
+export class LanguageSelector extends Component {
   static NAME = ns('language-selector');
-
-  shadow: ShadowRoot;
 
   constructor() {
     super();
-    this.shadow = this.attachShadow({ mode: 'open' });
   }
 
   render() {

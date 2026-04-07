@@ -1,3 +1,34 @@
+:root {
+  color-scheme: light dark;
+
+  --text-0-color: light-dark(#000, #fff);
+  --text-1-color: light-dark(#222, #ddd);
+  --text-2-color: light-dark(#444, #ccc);
+  --border-color: light-dark(#000, #fff);
+  --bg-0-color: light-dark(#fff, #000);
+  --bg-1-color: light-dark(#ddd, #222);
+  --bg-2-color: light-dark(#ccc, #444);
+}
+
+
+:root {
+  &:has(meta[name="color-scheme"][content="light dark"]) {
+    color-scheme: light dark;
+  }
+  &:has(meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
+  &:has(meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+}
+
 html, body {
-  font-family: sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+  color: var(--text-0-color);
+  background-color: var(--bg-0-color);
+}
+
+button {
+  display: inline-block;
 }
