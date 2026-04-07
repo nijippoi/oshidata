@@ -6,12 +6,14 @@ export class RadioIcons extends Component {
 
   choices: Map<string, string>;
   name: string;
+  checked?: string;
 
-  constructor(name?: string, choices?: Map<string, string>) {
+  constructor(name?: string, choices?: Map<string, string>, checked?: string) {
     super();
     if (!name && !this.getAttribute('name')) throw new Error('nameは必須です');
     this.name = name || this.getAttribute('name')!;
     this.choices = choices || new Map();
+    this.checked = checked;
     this.setAttribute('name', this.name);
   }
 
@@ -63,6 +65,7 @@ export class RadioIcons extends Component {
       input.type = 'radio';
       input.name = this.name;
       input.value = key;
+      if (this.checked === key) input.checked = true;
       const label = elem('label', [
         'material-symbols-outlined',
       ]) as HTMLLabelElement;

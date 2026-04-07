@@ -81,7 +81,7 @@ export class Toolbar extends Component {
     choices.set('auto', 'brightness_auto');
     choices.set('light', 'light_mode');
     choices.set('dark', 'dark_mode');
-    // left.append(new RadioIcons('color-scheme-radio', choices));
+    // left.append(new RadioIcons('color-scheme-radio', choices, 'auto'));
 
     // right
     const right = elem('div', ['toolbar-right', 'flex']);
