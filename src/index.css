@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   color-scheme: light dark;
 
@@ -17,6 +19,7 @@
 }
 
 :root {
+  color-scheme: light dark;
   &:has(meta[name='color-scheme'][content='light dark']) {
     color-scheme: light dark;
   }

@@ -56,23 +56,6 @@ export class PersonsList extends Component {
 
   constructor() {
     super();
-    const sheet = new CSSStyleSheet();
-    sheet.insertRule(`
-      :host {
-        display: block;
-        background-color: var(--bg-2-color);
-        padding: 10px;
-      }
-      `);
-    sheet.insertRule(`
-      td.person-id,
-      td.person-birth-date,
-      td.person-age,
-      td.person-next-birthday {
-        text-align: right;
-      }
-      `);
-    this.shadow.adoptedStyleSheets.push(sheet);
     setAttrs(
       this,
       'columns',
@@ -213,6 +196,27 @@ export class PersonsList extends Component {
   }
 
   async init(): Promise<void> {
+    this.insertRule(`
+      :host {
+        display: block;
+        background-color: var(--bg-2-color);
+        padding: 10px;
+      }
+      `);
+    this.insertRule(`
+      .persons-table {
+        width: stretch;
+      }
+      `);
+    this.insertRule(`
+      .persons-table td.person-id,
+      .persons-table td.person-birth-date,
+      .persons-table td.person-age,
+      .persons-table td.person-next-birthday,
+      .persons-table td.person-zodiac {
+        text-align: right;
+      }
+      `);
     await this.renderFilter();
     await this.renderList();
   }

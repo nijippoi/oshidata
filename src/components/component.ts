@@ -3,8 +3,8 @@ import { bind } from '../label.ts';
 const commonCss = new CSSStyleSheet();
 commonCss.insertRule(`
 :host {
-  background: var(--bg-0-color);
-  color: var(--text-0-color);
+  /* background: var(--bg-0-color); */
+  /* color: var(--text-0-color); */
 }
 `);
 commonCss.insertRule(`

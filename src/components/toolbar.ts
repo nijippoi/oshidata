@@ -1,5 +1,6 @@
 import { elem, LANGS, ns } from '../utils.ts';
 import Component from './component.ts';
+import RadioIcons from './radio-icons.ts';
 
 export class Toolbar extends Component {
   static NAME = ns('toolbar');
@@ -75,6 +76,12 @@ export class Toolbar extends Component {
     const attrSubtitle = this.getAttribute('subtitle') || '';
     left.append(elem('span', ['toolbar-title'], attrTitle));
     left.append(elem('span', ['toolbar-subtitle'], attrSubtitle));
+
+    const choices = new Map<string, string>();
+    choices.set('auto', 'brightness_auto');
+    choices.set('light', 'light_mode');
+    choices.set('dark', 'dark_mode');
+    // left.append(new RadioIcons('color-scheme-radio', choices));
 
     // right
     const right = elem('div', ['toolbar-right', 'flex']);
