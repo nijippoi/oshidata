@@ -30,256 +30,241 @@ export async function importData(
     Deno.mkdirSync(labelsDir, { recursive: true });
   }
 
-  // dirPath内のYAMLを読み込む
-  // deno-lint-ignore no-explicit-any
-  const allGroupsData: any[] = [];
-  // deno-lint-ignore no-explicit-any
-  const allPersonsData: any[] = [];
-  // deno-lint-ignore no-explicit-any
-  const allLabelsData: any[] = [];
-  globFilesSync('**/*.{yml,yaml}', resDir).forEach(
-    (filePath) => {
-      try {
-        const data: any = parseYaml(Deno.readTextFileSync(filePath));
-        data.file = filePath;
-        switch (data.source_type) {
-          case 'groups':
-            allGroupsData.push(data);
-            break;
-          case 'persons':
-            allPersonsData.push(data);
-            break;
-          case 'labels':
-            if (!data.lang) {
-              console.warn(`Ignored ${filePath}`);
-            } else {
-              allLabelsData.push(data);
-            }
-            break;
-          default:
-            console.warn(`Ignored ${filePath}`);
-        }
-      } catch (error) {
-        console.error(`Read error ${filePath}:`, error);
-      }
-    },
-  );
+  const { groupsData, personsData, labelsData } = loadYamlFiles(resDir);
+  writeLabelsJson(labelsDir, labelsData, release);
+  const { groups, groupQualifiers } = processGroups(groupsData);
+  writeJson(join(dataDir, GROUPS_FILE), groups, release);
+  const persons = processPersons(personsData, groups, groupQualifiers);
+  writeJson(join(dataDir, PERSONS_FILE), persons, release);
+}
 
-  // ラベルデータを作成
-  const labels = new Map<string, { [keyof: string]: string }>();
-  for (const labelsData of allLabelsData) {
-    const lang: string = labelsData.lang;
+/** ラベルJSONを生成 */
+function writeLabelsJson(
+  labelsDir: string,
+  labelsData: any[],
+  release: boolean,
+): void {
+  const labels = new Map<string, Record<string, string>>();
+  for (const ld of labelsData) {
+    const lang = ld.lang;
     const values = labels.getOrInsert(lang, {});
-    for (const key in labelsData.labels) {
-      values[key] = labelsData.labels[key];
+    for (const key in ld.labels) {
+      values[key] = ld.labels[key];
     }
   }
-
   for (const lang of labels.keys()) {
     writeJson(join(labelsDir, `${lang}.json`), labels.get(lang), release);
   }
+}
 
-  // TODO: ID重複チェック
+/** ソースのYAMLファイルを読み込む */
+function loadYamlFiles(resDir: string) {
+  const groupsData: any[] = [];
+  const personsData: any[] = [];
+  const labelsData: any[] = [];
+  globFilesSync('**/*.{yml,yaml}', resDir).forEach((filePath) => {
+    try {
+      const data: any = parseYaml(Deno.readTextFileSync(filePath));
+      data.file = filePath;
+      switch (data.source_type) {
+        case 'groups':
+          groupsData.push(data);
+          break;
+        case 'persons':
+          personsData.push(data);
+          break;
+        case 'labels':
+          if (!data.lang) {
+            console.warn(`Ignored ${filePath}`);
+          } else {
+            labelsData.push(data);
+          }
+          break;
+        default:
+          console.warn(`Ignored ${filePath}`);
+      }
+    } catch (error) {
+      console.error(`Read error ${filePath}:`, error);
+    }
+  });
+  return { groupsData, personsData, labelsData };
+}
 
-  const groups: { [key: string]: any } = {};
-  const groupQualifiers: { [key: string]: number } = {};
-  const groupParents: { [key: string]: string } = {};
-  const groupParentQualifiers: { [key: string]: string } = {};
-
-  // グループにIDを付与
-  for (const groupsData of allGroupsData) {
-    let groupId = groupsData.start_id;
-    for (const groupData of groupsData.groups) {
-      if (groupData.reserve_id_until) {
-        groupId = ++groupData['reserve_id_until'];
+/** グループデータを生成 */
+function processGroups(groupsData: any[]) {
+  const groups: Record<string, any> = {};
+  const groupQualifiers: Record<string, number> = {};
+  const groupParents: Record<string, string> = {};
+  const groupParentQualifiers: Record<string, string> = {};
+  for (const data of groupsData) {
+    let gid = data.start_id;
+    for (const item of data.groups) {
+      if (item.reserve_id_until) {
+        gid = ++item['reserve_id_until'];
         continue;
       }
-
-      let group: any = {
-        id: groupId.toString(),
-      };
-
-      // グループ名を正規化
-      if (groupData.names) {
-        group.names = structuredClone(groupData.names);
+      const group: any = { id: gid.toString() };
+      if (item.names) {
+        group.names = structuredClone(item.names);
       } else {
         group.names = [{
-          name: groupData.name,
-          ...(groupData.name_kana && { name_kana: groupData.name_kana }),
+          name: item.name,
+          ...(item.name_kana && { name_kana: item.name_kana }),
         }];
       }
-      if (groupData.qualifier) {
-        if (groupQualifiers[groupData.qualifier]) {
+      if (item.qualifier) {
+        if (groupQualifiers[item.qualifier]) {
           console.error(
-            `Group qualifier ${groupData.qualifier} already exists as id ${
-              groupQualifiers[groupData.qualifier]
+            `Group qualifier ${item.qualifier} already exists as id ${
+              groupQualifiers[item.qualifier]
             }`,
           );
         }
-        groupQualifiers[groupData.qualifier] = groupId;
+        groupQualifiers[item.qualifier] = gid;
       }
-      if (groupData.parent && !groupData.parent_qualifier) {
-        groupParents[groupId] = groupData.parent;
+      if (item.parent && !item.parent_qualifier) {
+        groupParents[gid] = item.parent;
       }
-      if (!groupData.parent && groupData.parent_qualifier) {
-        groupParentQualifiers[groupId] = groupData.parent_qualifier;
+      if (!item.parent && item.parent_qualifier) {
+        groupParentQualifiers[gid] = item.parent_qualifier;
       }
-      if (groupData.active_date_ranges) {
-        group.active_date_ranges = structuredClone(
-          groupData.active_date_ranges,
-        );
+      if (item.active_date_ranges) {
+        group.active_date_ranges = structuredClone(item.active_date_ranges);
       }
-
-      groups[groupId.toString(10)] = group;
-      groupId++;
+      groups[gid.toString(10)] = group;
+      gid++;
     }
   }
-  // 親グループを解決
-  for (const groupId in groupParents) {
-    const parentName = groupParents[groupId];
-    const parentIds: Set<string> = new Set();
-    for (const parentId in groups) {
-      for (const name of groups[parentId].names) {
-        if (parentName == name.name) parentIds.add(parentId);
+  // Resolve parent groups
+  for (const gid in groupParents) {
+    const parentName = groupParents[gid];
+    const parentIds = new Set<string>();
+    for (const pid in groups) {
+      for (const name of groups[pid].names) {
+        if (parentName === name.name) parentIds.add(pid);
       }
     }
     if (parentIds.size === 1) {
-      groups[groupId].parent_id = parentIds.values().next().value;
+      groups[gid].parent_id = parentIds.values().next().value;
     } else if (parentIds.size === 0) {
       console.error(
-        `Group parent ${parentName} not found for ${groups[groupId].names[0]}`,
+        `Group parent ${parentName} not found for ${groups[gid].names[0]}`,
       );
     } else {
       console.error(
         `Group parent ${parentName} has multiple candidates for ${
-          groups[groupId].names[0]
+          groups[gid].names[0]
         }. Use parent_qualifier instead.`,
       );
     }
   }
+  return { groups, groupQualifiers };
+}
 
-  writeJson(join(dataDir, GROUPS_FILE), groups, release);
-
-  const resolveGroup = (
-    name?: string,
-    qualifier?: string,
-  ): string | undefined => {
-    if (qualifier && groupQualifiers[qualifier]) {
-      return groupQualifiers[qualifier].toString();
-    }
-    const groupIds: Set<string> = new Set();
-    for (const groupId in groups) {
-      for (const groupName of groups[groupId].names) {
-        if (name == groupName.name) groupIds.add(groupId);
-      }
-    }
-    if (groupIds.size === 1) {
-      return groupIds.values().next().value;
-    } else if (groupIds.size === 0) {
-      console.error(
-        `Group ${name} not found`,
-      );
-    } else {
-      console.error(
-        `Group ${name} has multiple candidates. Use group_qualifier instead.`,
-      );
-    }
-    return undefined;
-  };
-
-  const persons: Persons = {};
-
-  // 人物にIDを付与
-  for (const datas of allPersonsData) {
-    let id = datas.start_id;
-    for (const data of datas.persons) {
-      if (data.reserve_id_until) {
-        id = ++data['reserve_id_until'];
-        continue;
-      }
-
-      const person: Person = { id: id.toString(), names: [] };
-
-      // 人名正規化
-      if (data.names) {
-        person.names = structuredClone(data.names);
-      } else {
-        person.names = [{
-          ...(data.full_name && { full_name: data.full_name }),
-          ...(data.full_name_kana &&
-            { full_name_kana: data.full_name_kana }),
-          ...(data.family_name && { family_name: data.family_name }),
-          ...(data.family_name_kana &&
-            { family_name_kana: data.family_name_kana }),
-          ...(data.given_name && { given_name: data.given_name }),
-          ...(data.given_name_kana &&
-            { given_name_kana: data.given_name_kana }),
-          ...(data.middle_name && { middle_name: data.middle_name }),
-          ...(data.middle_name_kana &&
-            { middle_name_kana: data.middle_name_kana }),
-        }];
-      }
-      if (data.birth_date) {
-        person.birth_date = data.birth_date;
-      }
-      if (data.birth_place) {
-        person.birth_place = structuredClone(data.birth_place);
-      }
-      if (data.hometown) {
-        person.hometown = structuredClone(data.hometown);
-      }
-      if (data.roles) {
-        person.roles = [];
-        for (const roleData of data.roles) {
-          if (!roleData.role) {
-            console.error(`Role is not set on person id ${id}`);
-            continue;
-          }
-          if (roleData.group || roleData.group_qualifier) {
-            const groupId = resolveGroup(
-              roleData.group,
-              roleData.group_qualifier,
-            );
-            if (groupId) {
-              const role: GroupRole = {
-                role: roleData.role,
-                group_id: groupId,
-              };
-              if (roleData.active_date_ranges) {
-                role.active_date_ranges = structuredClone(
-                  roleData.active_date_ranges,
-                );
-              }
-              person.roles.push(role);
-            }
-          } else {
-            const role: PersonRole = {
-              role: roleData.role,
-              person_id: id.toString(),
-            };
-            if (roleData.active_date_ranges) {
-              role.active_date_ranges = structuredClone(
-                roleData.active_date_ranges,
-              );
-            }
-            person.roles.push(role);
-          }
-        }
-      }
-      if (data.tags && data.tags.length > 0) {
-        const tags = data.tags.map((tag: string) => tag.trim()).filter((tag) =>
-          tag.length > 0
-        );
-        if (tags.length > 0) {
-          person.tags = tags;
-        }
-      }
-
-      persons[id.toString(10)] = person;
-      id++;
+/** グループIDと識別子を解決 */
+function resolveGroup(
+  name: string | undefined,
+  qualifier: string | undefined,
+  groupQualifiers: Record<string, number>,
+  groups: Record<string, any>,
+): string | undefined {
+  if (qualifier && groupQualifiers[qualifier]) {
+    return groupQualifiers[qualifier].toString();
+  }
+  const ids = new Set<string>();
+  for (const gid in groups) {
+    for (const gn of groups[gid].names) {
+      if (name === gn.name) ids.add(gid);
     }
   }
-  writeJson(join(dataDir, PERSONS_FILE), persons, release);
+  if (ids.size === 1) return ids.values().next().value;
+  if (ids.size === 0) console.error(`Group ${name} not found`);
+  else {console.error(
+      `Group ${name} has multiple candidates. Use group_qualifier instead.`,
+    );}
+  return undefined;
+}
+
+/** 人物データを生成 */
+function processPersons(
+  personsData: any[],
+  groups: Record<string, any>,
+  groupQualifiers: Record<string, number>,
+): Persons {
+  const persons: Persons = {};
+  for (const data of personsData) {
+    let pid = data.start_id;
+    for (const item of data.persons) {
+      if (item.reserve_id_until) {
+        pid = ++item['reserve_id_until'];
+        continue;
+      }
+      const person: Person = { id: pid.toString(), names: [] };
+      if (item.names) {
+        person.names = structuredClone(item.names);
+      } else {
+        person.names = [{
+          ...(item.full_name && { full_name: item.full_name }),
+          ...(item.full_name_kana &&
+            { full_name_kana: item.full_name_kana }),
+          ...(item.family_name && { family_name: item.family_name }),
+          ...(item.family_name_kana &&
+            { family_name_kana: item.family_name_kana }),
+          ...(item.given_name && { given_name: item.given_name }),
+          ...(item.given_name_kana &&
+            { given_name_kana: item.given_name_kana }),
+          ...(item.middle_name && { middle_name: item.middle_name }),
+          ...(item.middle_name_kana &&
+            { middle_name_kana: item.middle_name_kana }),
+        }];
+      }
+      if (item.birth_date) person.birth_date = item.birth_date;
+      if (item.birth_place) {
+        person.birth_place = structuredClone(item.birth_place);
+      }
+      if (item.hometown) person.hometown = structuredClone(item.hometown);
+      if (item.roles) {
+        person.roles = [];
+        for (const role of item.roles) {
+          if (!role.role) {
+            console.error(`Role is not set on person id ${pid}`);
+            continue;
+          }
+          if (role.group || role.group_qualifier) {
+            const gid = resolveGroup(
+              role.group,
+              role.group_qualifier,
+              groupQualifiers,
+              groups,
+            );
+            if (gid) {
+              const r: GroupRole = { role: role.role, group_id: gid };
+              if (role.active_date_ranges) {
+                r.active_date_ranges = structuredClone(role.active_date_ranges);
+              }
+              person.roles.push(r);
+            }
+          } else {
+            const r: PersonRole = {
+              role: role.role,
+              person_id: pid.toString(),
+            };
+            if (role.active_date_ranges) {
+              r.active_date_ranges = structuredClone(role.active_date_ranges);
+            }
+            person.roles.push(r);
+          }
+        }
+      }
+      if (item.tags && item.tags.length > 0) {
+        const tags = item.tags.map((t: string) => t.trim()).filter(Boolean);
+        if (tags.length > 0) person.tags = tags;
+      }
+      persons[pid.toString(10)] = person;
+      pid++;
+    }
+  }
+  return persons;
 }
 
 if (import.meta.main) {
