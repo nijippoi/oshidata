@@ -266,6 +266,14 @@ export async function importData(
           }
         }
       }
+      if (data.tags && data.tags.length > 0) {
+        const tags = data.tags.map((tag: string) => tag.trim()).filter((tag) =>
+          tag.length > 0
+        );
+        if (tags.length > 0) {
+          person.tags = tags;
+        }
+      }
 
       persons[id.toString(10)] = person;
       id++;

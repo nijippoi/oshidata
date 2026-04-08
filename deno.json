@@ -25,7 +25,7 @@
       "dependencies": ["clean", "import"]
     },
     "bundle-dev": {
-      "command": "deno run -RWNI ./tasks/bundle.ts --no-release --baseurl=http://localhost:3000",
+      "command": "deno run -RWNI ./tasks/bundle.ts --no-release --baseurl=http://127.0.0.1:3000",
       "dependencies": ["clean", "import-dev"]
     },
     "serve": "deno run -RWNI ./tasks/serve.ts"

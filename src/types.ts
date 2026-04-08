@@ -75,10 +75,12 @@ export interface GroupName {
  * グループ定義（メイングループまたはサブグループ）
  */
 export interface Group extends HasId, HasActiveDateRanges {
-  /** グループ名の配列 */
+  /** グループ名一覧 */
   names: (GroupName & HasActiveDateRanges)[];
   /** サブグループの親グループ名 */
   parent_id?: Id;
+  /** タグ一覧 */
+  tags?: string[];
 }
 
 /**
@@ -175,8 +177,10 @@ export interface Person extends HasId, HasActiveDateRanges {
   birth_place?: Location;
   /** 故郷 */
   hometown?: Location;
-  /** 役割の配列 */
+  /** 役割一覧 */
   roles?: Role[];
+  /** タグ一覧 */
+  tags?: string[];
 }
 
 /**

@@ -35,15 +35,12 @@ persons:
           - start: '1997-09-14'
             end: '1999-04-18'
       - role: 'member'
-        group: 'モーニング娘。1期'
-        active_date_ranges:
-          - start: '1997-09-14'
-            end: '1999-04-18'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1997-09-14'
             end: '1999-04-18'
+    tags:
+      - 'モーニング娘。1期'
   - family_name: '石黒'
     family_name_kana: 'イシグロ'
     given_name: '彩'
@@ -62,15 +59,12 @@ persons:
           - start: '1997-09-14'
             end: '2000-01-07'
       - role: 'member'
-        group: 'モーニング娘。1期'
-        active_date_ranges:
-          - start: '1997-09-14'
-            end: '2000-01-07'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1997-09-14'
             end: '2000-01-07'
+    tags:
+      - 'モーニング娘。1期'
   - family_name: '飯田'
     family_name_kana: 'イイダ'
     given_name: '圭織'
@@ -91,15 +85,12 @@ persons:
           - start: '1997-09-14'
             end: '2005-01-30'
       - role: 'member'
-        group: 'モーニング娘。1期'
-        active_date_ranges:
-          - start: '1997-09-14'
-            end: '2005-01-30'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1997-09-14'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。1期'
   - family_name: '安倍'
     family_name_kana: 'アベ'
     given_name: 'なつみ'
@@ -120,15 +111,12 @@ persons:
           - start: '1997-09-14'
             end: '2004-01-25'
       - role: 'member'
-        group: 'モーニング娘。1期'
-        active_date_ranges:
-          - start: '1997-09-14'
-            end: '2004-01-25'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1997-09-14'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。1期'
   - family_name: '中澤'
     family_name_kana: 'ナカザワ'
     given_name: '裕子'
@@ -147,15 +135,12 @@ persons:
           - start: '1997-09-14'
             end: '2001-04-15'
       - role: 'member'
-        group: 'モーニング娘。1期'
-        active_date_ranges:
-          - start: '1997-09-14'
-            end: '2001-04-15'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1997-09-14'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。1期'
 
   # モーニング娘。2期メンバー
   - family_name: '市井'
@@ -176,15 +161,12 @@ persons:
           - start: '1998-05-03'
             end: '2000-05-21'
       - role: 'member'
-        group: 'モーニング娘。2期'
-        active_date_ranges:
-          - start: '1998-05-03'
-            end: '2000-05-21'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1998-05-03'
             end: '2000-05-21'
+    tags:
+      - 'モーニング娘。2期'
   - family_name: '保田'
     family_name_kana: 'ヤスダ'
     given_name: '圭'
@@ -203,15 +185,12 @@ persons:
           - start: '1998-05-03'
             end: '2003-05-05'
       - role: 'member'
-        group: 'モーニング娘。2期'
-        active_date_ranges:
-          - start: '1998-05-03'
-            end: '2003-05-05'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1998-05-03'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。2期'
   - family_name: '矢口'
     family_name_kana: 'ヤグチ'
     given_name: '真里'
@@ -230,15 +209,12 @@ persons:
           - start: '1998-05-03'
             end: '2005-04-14'
       - role: 'member'
-        group: 'モーニング娘。2期'
-        active_date_ranges:
-          - start: '1998-05-03'
-            end: '2005-04-14'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1998-05-03'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。2期'
 
   # モーニング娘。3期メンバー
   - family_name: '後藤'
@@ -259,15 +235,12 @@ persons:
           - start: '1999-08-22'
             end: '2002-09-23'
       - role: 'member'
-        group: 'モーニング娘。3期'
-        active_date_ranges:
-          - start: '1999-08-22'
-            end: '2002-09-23'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '1999-08-22'
             end: '2007-10-28'
+    tags:
+      - 'モーニング娘。3期'
 
   # モーニング娘。4期メンバー
   - family_name: '石川'
@@ -288,15 +261,12 @@ persons:
           - start: '2000-04-16'
             end: '2005-05-07'
       - role: 'member'
-        group: 'モーニング娘。4期'
-        active_date_ranges:
-          - start: '2000-04-16'
-            end: '2005-05-07'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2000-04-16'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。4期'
   - family_name: '吉澤'
     family_name_kana: 'ヨシザワ'
     given_name: 'ひとみ'
@@ -315,15 +285,12 @@ persons:
           - start: '2000-04-16'
             end: '2007-05-06'
       - role: 'member'
-        group: 'モーニング娘。4期'
-        active_date_ranges:
-          - start: '2000-04-16'
-            end: '2007-05-06'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2000-04-16'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。4期'
   - family_name: '辻'
     family_name_kana: 'ツジ'
     given_name: '希美'
@@ -342,15 +309,12 @@ persons:
           - start: '2000-04-16'
             end: '2004-08-01'
       - role: 'member'
-        group: 'モーニング娘。4期'
-        active_date_ranges:
-          - start: '2000-04-16'
-            end: '2004-08-01'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2000-04-16'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。4期'
   - family_name: '加護'
     family_name_kana: 'カゴ'
     given_name: '亜依'
@@ -369,15 +333,12 @@ persons:
           - start: '2000-04-16'
             end: '2004-08-01'
       - role: 'member'
-        group: 'モーニング娘。4期'
-        active_date_ranges:
-          - start: '2000-04-16'
-            end: '2004-08-01'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2000-04-16'
             end: '2007-03-01'
+    tags:
+      - 'モーニング娘。4期'
 
   # モーニング娘。5期メンバー
   - family_name: '高橋'
@@ -398,15 +359,12 @@ persons:
           - start: '2001-08-26'
             end: '2011-09-30'
       - role: 'member'
-        group: 'モーニング娘。5期'
-        active_date_ranges:
-          - start: '2001-08-26'
-            end: '2011-09-30'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2001-08-26'
             end: '2011-09-30'
+    tags:
+      - 'モーニング娘。5期'
   - family_name: '紺野'
     family_name_kana: 'コンノ'
     given_name: 'あさ美'
@@ -425,15 +383,12 @@ persons:
           - start: '2001-08-26'
             end: '2006-07-23'
       - role: 'member'
-        group: 'モーニング娘。5期'
-        active_date_ranges:
-          - start: '2001-08-26'
-            end: '2006-07-23'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2001-08-26'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。5期'
   - family_name: '小川'
     family_name_kana: 'オガワ'
     given_name: '麻琴'
@@ -452,15 +407,12 @@ persons:
           - start: '2001-08-26'
             end: '2006-08-27'
       - role: 'member'
-        group: 'モーニング娘。5期'
-        active_date_ranges:
-          - start: '2001-08-26'
-            end: '2006-08-27'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2001-08-26'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。5期'
   - family_name: '新垣'
     family_name_kana: 'ニイガキ'
     given_name: '里沙'
@@ -479,15 +431,12 @@ persons:
           - start: '2001-08-26'
             end: '2012-05-18'
       - role: 'member'
-        group: 'モーニング娘。5期'
-        active_date_ranges:
-          - start: '2001-08-26'
-            end: '2012-05-18'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2001-08-26'
             end: '2012-05-18'
+    tags:
+      - 'モーニング娘。5期'
 
   # モーニング娘。6期メンバー
   - family_name: '藤本'
@@ -511,15 +460,12 @@ persons:
           - start: '2003-01-07'
             end: '2007-06-01'
       - role: 'member'
-        group: 'モーニング娘。6期'
-        active_date_ranges:
-          - start: '2003-01-07'
-            end: '2007-06-01'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2003-01-07'
             end: '2009-03-31'
+    tags:
+      - 'モーニング娘。6期'
   - family_name: '亀井'
     family_name_kana: 'カメイ'
     given_name: '絵里'
@@ -538,15 +484,12 @@ persons:
           - start: '2003-01-19'
             end: '2010-12-15'
       - role: 'member'
-        group: 'モーニング娘。6期'
-        active_date_ranges:
-          - start: '2003-01-19'
-            end: '2010-12-15'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2003-01-19'
             end: '2010-12-15'
+    tags:
+      - 'モーニング娘。6期'
   - family_name: '道重'
     family_name_kana: 'ミチシゲ'
     given_name: 'さゆみ'
@@ -565,15 +508,12 @@ persons:
           - start: '2003-01-19'
             end: '2014-11-26'
       - role: 'member'
-        group: 'モーニング娘。6期'
-        active_date_ranges:
-          - start: '2003-01-19'
-            end: '2014-11-26'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2003-01-19'
             end: '2014-11-26'
+    tags:
+      - 'モーニング娘。6期'
   - family_name: '田中'
     family_name_kana: 'タナカ'
     given_name: 'れいな'
@@ -592,15 +532,12 @@ persons:
           - start: '2003-01-19'
             end: '2013-05-21'
       - role: 'member'
-        group: 'モーニング娘。6期'
-        active_date_ranges:
-          - start: '2003-01-19'
-            end: '2013-05-21'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2003-01-19'
             end: '2013-05-21'
+    tags:
+      - 'モーニング娘。6期'
 
   # モーニング娘。7期メンバー
   - family_name: '久住'
@@ -621,15 +558,12 @@ persons:
           - start: '2005-05-01'
             end: '2009-12-06'
       - role: 'member'
-        group: 'モーニング娘。7期'
-        active_date_ranges:
-          - start: '2005-05-01'
-            end: '2009-12-06'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2005-05-01'
             end: '2009-12-06'
+    tags:
+      - 'モーニング娘。7期'
 
   # モーニング娘。8期メンバー
   - family_name: '光井'
@@ -650,15 +584,12 @@ persons:
           - start: '2006-12-10'
             end: '2012-05-18'
       - role: 'member'
-        group: 'モーニング娘。8期'
-        active_date_ranges:
-          - start: '2006-12-10'
-            end: '2012-05-18'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2006-12-10'
             end: '2018-11-03'
+    tags:
+      - 'モーニング娘。8期'
   - given_name: 'ジュンジュン'
     given_name_kana: 'ジュンジュン'
     birth_date: '1988-01-11'
@@ -675,15 +606,12 @@ persons:
           - start: '2007-03-15'
             end: '2010-12-15'
       - role: 'member'
-        group: 'モーニング娘。8期'
-        active_date_ranges:
-          - start: '2007-03-15'
-            end: '2010-12-15'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2007-03-15'
             end: '2010-12-15'
+    tags:
+      - 'モーニング娘。8期'
   - given_name: 'リンリン'
     given_name_kana: 'リンリン'
     birth_date: '1991-03-11'
@@ -700,15 +628,12 @@ persons:
           - start: '2007-03-15'
             end: '2010-12-15'
       - role: 'member'
-        group: 'モーニング娘。8期'
-        active_date_ranges:
-          - start: '2007-03-15'
-            end: '2010-12-15'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2007-03-15'
             end: '2010-12-15'
+    tags:
+      - 'モーニング娘。8期'
 
   # モーニング娘。9期メンバー
   - family_name: '譜久村'
@@ -734,15 +659,12 @@ persons:
           - start: '2011-01-02'
             end: '2023-11-29'
       - role: 'member'
-        group: 'モーニング娘。9期'
-        active_date_ranges:
-          - start: '2011-01-02'
-            end: '2023-11-29'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-01-02'
             end: '2023-11-29'
+    tags:
+      - 'モーニング娘。9期'
   - family_name: '生田'
     family_name_kana: 'イクタ'
     given_name: '衣梨奈'
@@ -761,15 +683,12 @@ persons:
           - start: '2011-01-02'
             end: '2025-07-08'
       - role: 'member'
-        group: 'モーニング娘。9期'
-        active_date_ranges:
-          - start: '2011-01-02'
-            end: '2025-07-08'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-01-02'
             end: '2025-07-08'
+    tags:
+      - 'モーニング娘。9期'
   - family_name: '鞘師'
     family_name_kana: 'サヤシ'
     given_name: '里保'
@@ -788,15 +707,12 @@ persons:
           - start: '2011-01-02'
             end: '2015-12-31'
       - role: 'member'
-        group: 'モーニング娘。9期'
-        active_date_ranges:
-          - start: '2011-01-02'
-            end: '2015-12-31'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-01-02'
             end: '2018-11-30'
+    tags:
+      - 'モーニング娘。9期'
   - family_name: '鈴木'
     family_name_kana: 'スズキ'
     given_name: '香音'
@@ -815,14 +731,11 @@ persons:
           - start: '2011-01-02'
             end: '2016-05-31'
       - role: 'member'
-        group: 'モーニング娘。9期'
-        active_date_ranges:
-          - start: '2011-01-02'
-            end: '2016-05-31'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-01-02'
+    tags:
+      - 'モーニング娘。9期'
 
   # モーニング娘。10期メンバー
   - family_name: '飯窪'
@@ -843,15 +756,12 @@ persons:
           - start: '2011-09-29'
             end: '2018-12-16'
       - role: 'member'
-        group: 'モーニング娘。10期'
-        active_date_ranges:
-          - start: '2011-09-29'
-            end: '2018-12-16'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-09-29'
             end: '2018-12-16'
+    tags:
+      - 'モーニング娘。10期'
   - family_name: '石田'
     family_name_kana: 'イシダ'
     given_name: '亜佑美'
@@ -870,15 +780,12 @@ persons:
           - start: '2011-09-29'
             end: '2024-12-06'
       - role: 'member'
-        group: 'モーニング娘。10期'
-        active_date_ranges:
-          - start: '2011-09-29'
-            end: '2024-12-06'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-09-29'
             end: '2024-12-06'
+    tags:
+      - 'モーニング娘。10期'
   - family_name: '佐藤'
     family_name_kana: 'サトウ'
     given_name: '優樹'
@@ -897,15 +804,12 @@ persons:
           - start: '2011-09-29'
             end: '2021-12-13'
       - role: 'member'
-        group: 'モーニング娘。10期'
-        active_date_ranges:
-          - start: '2011-09-29'
-            end: '2021-12-13'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-09-29'
             end: '2021-12-13'
+    tags:
+      - 'モーニング娘。10期'
   - family_name: '工藤'
     family_name_kana: 'クドウ'
     given_name: '遥'
@@ -929,15 +833,12 @@ persons:
           - start: '2011-09-29'
             end: '2017-12-11'
       - role: 'member'
-        group: 'モーニング娘。10期'
-        active_date_ranges:
-          - start: '2011-09-29'
-            end: '2017-12-11'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2011-09-29'
             end: '2017-12-11'
+    tags:
+      - 'モーニング娘。10期'
 
   # モーニング娘。11期メンバー
   - family_name: '小田'
@@ -962,13 +863,11 @@ persons:
         active_date_ranges:
           - start: '2012-09-14'
       - role: 'member'
-        group: 'モーニング娘。11期'
-        active_date_ranges:
-          - start: '2012-09-14'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2012-09-14'
+    tags:
+      - 'モーニング娘。11期'
 
   # モーニング娘。12期メンバー
   - family_name: '尾形'
@@ -989,15 +888,12 @@ persons:
           - start: '2014-09-30'
             end: '2018-06-20'
       - role: 'member'
-        group: 'モーニング娘。12期'
-        active_date_ranges:
-          - start: '2014-09-30'
-            end: '2018-06-20'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2014-09-30'
             end: '2018-06-20'
+    tags:
+      - 'モーニング娘。12期'
   - family_name: '野中'
     family_name_kana: 'ノナカ'
     given_name: '美希'
@@ -1015,13 +911,11 @@ persons:
         active_date_ranges:
           - start: '2014-09-30'
       - role: 'member'
-        group: 'モーニング娘。12期'
-        active_date_ranges:
-          - start: '2014-09-30'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2014-09-30'
+    tags:
+      - 'モーニング娘。12期'
   - family_name: '牧野'
     family_name_kana: 'マキノ'
     given_name: '真莉愛'
@@ -1044,13 +938,11 @@ persons:
         active_date_ranges:
           - start: '2014-09-30'
       - role: 'member'
-        group: 'モーニング娘。12期'
-        active_date_ranges:
-          - start: '2014-09-30'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2014-09-30'
+    tags:
+      - 'モーニング娘。12期'
   - family_name: '羽賀'
     family_name_kana: 'ハガ'
     given_name: '朱音'
@@ -1074,15 +966,12 @@ persons:
           - start: '2014-09-30'
             end: '2025-12-05'
       - role: 'member'
-        group: 'モーニング娘。12期'
-        active_date_ranges:
-          - start: '2014-09-30'
-            end: '2025-12-05'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2014-09-30'
             end: '2025-12-05'
+    tags:
+      - 'モーニング娘。12期'
 
   # モーニング娘。13期メンバー
   - family_name: '加賀'
@@ -1108,15 +997,12 @@ persons:
           - start: '2016-12-12'
             end: '2022-12-10'
       - role: 'member'
-        group: 'モーニング娘。13期'
-        active_date_ranges:
-          - start: '2016-12-12'
-            end: '2022-12-10'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2016-12-12'
             end: '2022-12-10'
+    tags:
+      - 'モーニング娘。13期'
   - family_name: '横山'
     family_name_kana: 'ヨコヤマ'
     given_name: '玲奈'
@@ -1140,15 +1026,12 @@ persons:
           - start: '2016-12-12'
             end: '2025-12-27'
       - role: 'member'
-        group: 'モーニング娘。13期'
-        active_date_ranges:
-          - start: '2016-12-12'
-            end: '2025-12-27'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2016-12-12'
             end: '2025-12-27'
+    tags:
+      - 'モーニング娘。13期'
 
   # モーニング娘。14期メンバー
   - family_name: '森戸'
@@ -1169,15 +1052,12 @@ persons:
           - start: '2017-06-26'
             end: '2022-06-20'
       - role: 'member'
-        group: 'モーニング娘。14期'
-        active_date_ranges:
-          - start: '2017-06-26'
-            end: '2022-06-20'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2017-06-26'
             end: '2022-06-20'
+    tags:
+      - 'モーニング娘。14期'
 
   # モーニング娘。15期メンバー
   - family_name: '北川'
@@ -1198,15 +1078,12 @@ persons:
           - start: '2019-06-22'
             end: '2025-12-27'
       - role: 'member'
-        group: 'モーニング娘。15期'
-        active_date_ranges:
-          - start: '2019-06-22'
-            end: '2025-12-27'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2019-06-22'
             end: '2025-12-27'
+    tags:
+      - 'モーニング娘。15期'
   - family_name: '岡村'
     family_name_kana: 'オカムラ'
     given_name: 'ほまれ'
@@ -1224,13 +1101,11 @@ persons:
         active_date_ranges:
           - start: '2019-06-22'
       - role: 'member'
-        group: 'モーニング娘。15期'
-        active_date_ranges:
-          - start: '2019-06-22'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2019-06-22'
+    tags:
+      - 'モーニング娘。15期'
   - family_name: '山﨑'
     family_name_kana: 'ヤマザキ'
     given_name: '愛生'
@@ -1247,10 +1122,6 @@ persons:
         group: 'モーニング娘。'
         active_date_ranges:
           - start: '2019-06-22'
-      - role: 'member'
-        group: 'モーニング娘。15期'
-        active_date_ranges:
-          - start: '2019-06-22'
       - role: 'trainee'
         group: 'ハロプロ研修生北海道'
         active_date_ranges:
@@ -1260,6 +1131,8 @@ persons:
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2016-07-30'
+    tags:
+      - 'モーニング娘。15期'
 
   # モーニング娘。16期メンバー
   - family_name: '櫻井'
@@ -1279,13 +1152,11 @@ persons:
         active_date_ranges:
           - start: '2022-06-29'
       - role: 'member'
-        group: 'モーニング娘。16期'
-        active_date_ranges:
-          - start: '2022-06-29'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2022-06-29'
+    tags:
+      - 'モーニング娘。16期'
 
   # モーニング娘。17期メンバー
   - family_name: '井上'
@@ -1305,13 +1176,11 @@ persons:
         active_date_ranges:
           - start: '2023-05-23'
       - role: 'member'
-        group: 'モーニング娘。17期'
-        active_date_ranges:
-          - start: '2023-05-23'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2023-05-23'
+    tags:
+      - 'モーニング娘。17期'
   - family_name: '弓桁'
     family_name_kana: 'ユミゲタ'
     given_name: '朱琴'
@@ -1329,13 +1198,11 @@ persons:
         active_date_ranges:
           - start: '2023-05-23'
       - role: 'member'
-        group: 'モーニング娘。17期'
-        active_date_ranges:
-          - start: '2023-05-23'
-      - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2023-05-23'
+    tags:
+      - 'モーニング娘。17期'
 
   # モーニング娘。18期メンバー
   - family_name: '杉原'
@@ -1354,10 +1221,6 @@ persons:
         group: 'モーニング娘。'
         active_date_ranges:
           - start: '2026-04-01'
-      - role: 'member'
-        group: 'モーニング娘。18期'
-        active_date_ranges:
-          - start: '2026-04-01'
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
@@ -1367,5 +1230,8 @@ persons:
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2023-05-23'
+    tags:
+      - 'モーニング娘。18期'
 
+  # END
   - reserve_id_until: 199
