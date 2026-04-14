@@ -1,12 +1,12 @@
 import type { Group, GroupRole, Groups, Person } from '../types.ts';
 import {
   elb,
+  formatDate,
   getAttrs,
   ns,
   queryGroups,
   queryPersons,
   renderAge,
-  renderDate,
   renderDateRange,
   renderGroupName,
   renderLocation,
@@ -156,7 +156,7 @@ export class PersonsList extends Component {
             case 'birth-date':
               td.txt(
                 person.birth_date
-                  ? renderDate(new Date(person.birth_date))
+                  ? formatDate(new Date(person.birth_date))
                   : '',
               );
               break;

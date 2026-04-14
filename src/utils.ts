@@ -175,9 +175,13 @@ export function isString(value: any): boolean {
   return typeof value === 'string' || value instanceof String;
 }
 
-export function dateToPlainDate(date: Date): Temporal.PlainDate {
+export function toPlainDate(date: Date): Temporal.PlainDate {
   return date.toTemporalInstant().toZonedDateTimeISO(Temporal.Now.timeZoneId())
     .toPlainDate();
+}
+
+export function toDate(date: Temporal.PlainDate): Date {
+  return new Date(date.toString());
 }
 
 export function isDateInRange(
@@ -207,7 +211,7 @@ export function resolveActiveDateRange(
   if (!date) {
     date = Temporal.Now.plainDateISO();
   } else if (date instanceof Date) {
-    date = dateToPlainDate(date);
+    date = toPlainDate(date);
   }
   return values.filter((value) => {
     if (!value.active_date_ranges) return true;
@@ -229,30 +233,23 @@ export function renderDateRange(
   baseDate: Temporal.PlainDate = Temporal.Now.plainDateISO(),
   showDuration: boolean = false,
 ): string {
-  const start = value.start
-    ? renderPlainDate(Temporal.PlainDate.from(value.start))
-    : '';
-  const end = value.end
-    ? renderPlainDate(Temporal.PlainDate.from(value.end))
-    : '';
+  const start = value.start ? Temporal.PlainDate.from(value.start) : undefined;
+  const end = value.end ? Temporal.PlainDate.from(value.end) : undefined;
+  const range = formatRange(start, end);
   if (showDuration) {
-    if (value.start && value.end) {
-      const duration = renderDayDuration(
-        Temporal.PlainDate.from(value.start),
-        Temporal.PlainDate.from(value.end),
-        false,
-      );
-      return `${start}〜${end} (${duration})`;
+    if (start && end) {
+      const duration = renderDayDuration(start, end, false);
+      return `${range} (${duration})`;
     } else if (value.start || value.end) {
       const duration = renderDayDuration(
-        value.start ? Temporal.PlainDate.from(value.start) : baseDate,
-        value.end ? Temporal.PlainDate.from(value.end) : baseDate,
+        start || baseDate,
+        end || baseDate,
         false,
       );
-      return `${start}〜${end} (${duration})`;
+      return `${range} (${duration})`;
     }
   }
-  return `${start}〜${end}`;
+  return range;
 }
 
 export function formatGroupName(name: GroupName): string {
@@ -290,22 +287,57 @@ export function renderPersonName(
   }
 }
 
-export function renderDate(date: Date): string {
-  return date.toLocaleString(locale(), {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+const dateFormats: Map<string, Intl.DateTimeFormat> = new Map(
+  [
+    [
+      'ja',
+      new Intl.DateTimeFormat('ja', {
+        dateStyle: 'long',
+      }),
+    ],
+    [
+      'ja-JP',
+      new Intl.DateTimeFormat('ja-JP', {
+        dateStyle: 'long',
+      }),
+    ],
+  ],
+);
+
+export function dateFormat(localeKey: string = locale()) {
+  return dateFormats.getOrInsertComputed(
+    localeKey,
+    (key) =>
+      new Intl.DateTimeFormat(key, {
+        dateStyle: 'long',
+      }),
+  );
 }
 
-export function renderPlainDate(date: Temporal.PlainDate): string {
-  // return date.toLocaleString(locale(), {
-  //   year: 'numeric',
-  //   month: 'long',
-  //   day: 'numeric',
-  // });
+export function formatDate(date: Date | Temporal.PlainDate): string {
   // Temporal型はIntl.DateTimeFormatに未対応（対応が不完全）なのでDateに一旦変換する
-  return renderDate(new Date(date.toString()));
+  return dateFormat().format(
+    date instanceof Temporal.PlainDate ? toDate(date) : date,
+  );
+}
+
+export function formatRange(
+  start?: Date | Temporal.PlainDate,
+  end?: Date | Temporal.PlainDate,
+): string {
+  if (start && end) {
+    // formatRangeが返す形式がformatの形式と違う
+    // return dateFormat(locale()).formatRange(
+    //   start instanceof Temporal.PlainDate ? toDate(start) : start,
+    //   end instanceof Temporal.PlainDate ? toDate(end) : end,
+    // );
+    return formatDate(start) + '〜' + formatDate(end);
+  } else if (start) {
+    return formatDate(start) + '〜';
+  } else if (end) {
+    return '〜' + formatDate(end);
+  }
+  return '';
 }
 
 export function renderDuration(
