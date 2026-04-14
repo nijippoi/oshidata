@@ -1,12 +1,13 @@
-import type { Person } from '../types.ts';
+import type { Group, GroupRole, Groups, Person } from '../types.ts';
 import {
-  elem,
+  elb,
   getAttrs,
   ns,
   queryGroups,
   queryPersons,
   renderAge,
   renderDate,
+  renderDateRange,
   renderGroupName,
   renderLocation,
   renderPersonName,
@@ -22,23 +23,25 @@ export type ColumnTypes =
   | 'birth-date'
   | 'age'
   | 'hometown'
+  | 'groups'
   | 'zodiac';
 
-const COLUMN_LABELS = {
+const COLUMN_LABELS: Record<ColumnTypes, string> = {
   'id': 'nouns.id',
   'name': 'nouns.person_name',
   'birth-date': 'nouns.birth_date',
   'age': 'nouns.age',
   'hometown': 'nouns.hometown',
+  'groups': 'nouns.groups',
   'zodiac': 'nouns.zodiac',
 };
 
 export interface Query {
-  groupIds?: string[];
-  personIds?: string[];
   page?: number;
   limit?: number;
   order?: string[];
+  groupIds?: string[];
+  personIds?: string[];
 }
 
 export class PersonsList extends Component {
@@ -47,7 +50,15 @@ export class PersonsList extends Component {
   static DEFAULT_COLUMNS = ['id', 'name'];
 
   static get observedAttributes() {
-    return ['disabled', 'page', 'limit', 'order', 'date'];
+    return [
+      'disabled',
+      'page',
+      'limit',
+      'order',
+      'date',
+      'group-ids',
+      'person-ids',
+    ];
   }
 
   query: Query;
@@ -94,25 +105,21 @@ export class PersonsList extends Component {
   }
 
   async renderFilter() {
-    const filterBox = elem('div');
-    const groupsSelect = elem('select') as HTMLSelectElement;
-    groupsSelect.name = ns('filter-groups');
+    const groupsSelect = elb('select').attr('name', ns('filter-groups'))
+      .elem() as HTMLSelectElement;
     const groups = await queryGroups({
       filters: [],
     });
     groups.records.forEach((group) => {
-      const opt = elem('option') as HTMLOptionElement;
-      opt.value = group.id;
-      opt.textContent = renderGroupName(group) || '';
-      groupsSelect.appendChild(opt);
+      elb('option').attr('value', group.id).txt(renderGroupName(group) || '')
+        .attach(groupsSelect);
     });
-    filterBox.appendChild(groupsSelect);
-    this.shadow.appendChild(filterBox);
+    elb('div').add(groupsSelect).attach(this.shadow);
   }
 
   async renderList() {
     // ヘッダー
-    const theadRow = elem('tr');
+    const theadRow = elb('tr').elem();
     const cols = getAttrs(
       this,
       'columns',
@@ -120,43 +127,70 @@ export class PersonsList extends Component {
     ) as ColumnTypes[];
     cols.forEach(
       (col) => {
-        const txt = elem('span', null, col, { labelText: COLUMN_LABELS[col] });
-        const th = elem('th');
-        th.appendChild(txt);
-        theadRow.appendChild(th);
+        elb('th').add(
+          elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).elem(),
+        ).attach(theadRow);
       },
     );
-    const thead = elem('thead');
-    thead.appendChild(theadRow);
+    const thead = elb('thead').add(theadRow).elem();
 
     // レコード
-    const tbody = elem('tbody');
-    const persons = await queryPersons();
+    const [persons, groups] = await Promise.all([
+      queryPersons(),
+      queryGroups(),
+    ]);
 
+    const tbody = elb('tbody').elem();
     for (const person of persons.records) {
-      const tr = elem('tr');
+      const tr = elb('tr');
       const cells = cols.map(
         (col) => {
-          const td = elem('td', [`person-${col}`]);
+          const td = elb('td').cls(`person-${col}`);
           switch (col) {
             case 'id':
-              td.textContent = person.id;
+              td.txt(person.id);
               break;
             case 'name':
-              td.textContent = renderPersonName(person, this.date) || '';
+              td.txt(renderPersonName(person, this.date) || '');
               break;
             case 'birth-date':
-              td.textContent = person.birth_date
-                ? renderDate(new Date(person.birth_date))
-                : '';
+              td.txt(
+                person.birth_date
+                  ? renderDate(new Date(person.birth_date))
+                  : '',
+              );
               break;
             case 'age':
-              td.textContent = person.birth_date
-                ? renderAge(Temporal.PlainDate.from(person.birth_date))
-                : '';
+              td.txt(
+                person.birth_date
+                  ? renderAge(Temporal.PlainDate.from(person.birth_date))
+                  : '',
+              );
               break;
             case 'hometown':
-              td.textContent = renderLocation(person);
+              td.add(elb('span').txt(renderLocation(person)).elem());
+              break;
+            case 'groups':
+              {
+                const roles = (person.roles || []).filter((role) =>
+                  role.role === 'member'
+                ) as GroupRole[];
+                for (const role of roles) {
+                  const group = groups.records.find((grp) =>
+                    grp.id === role.group_id
+                  );
+                  if (group) {
+                    const groupName = renderGroupName(group, this.date);
+                    td.add(elb('div').txt(groupName).elem());
+                    role.active_date_ranges?.forEach((range) => {
+                      td.add(
+                        elb('div').txt(renderDateRange(range, this.date, true))
+                          .elem(),
+                      );
+                    });
+                  }
+                }
+              }
               break;
             case 'zodiac':
               if (person.birth_date) {
@@ -164,20 +198,15 @@ export class PersonsList extends Component {
                   Temporal.PlainDate.from(person.birth_date),
                 );
                 if (thisZodiac) {
-                  const span = elem(
-                    'span',
-                    null,
-                    null,
-                    {
-                      labelText: `zodiacs.${thisZodiac}`,
-                    },
+                  td.add(
+                    elb('span').data('label-text', `zodiacs.${thisZodiac}`)
+                      .elem(),
                   );
-                  td.appendChild(span);
                 } else {
-                  td.textContent = '';
+                  td.txt('');
                 }
               } else {
-                td.textContent = '';
+                td.txt('');
               }
               break;
             default:
@@ -185,14 +214,11 @@ export class PersonsList extends Component {
           return td;
         },
       );
-      cells.forEach((td) => tr.appendChild(td));
-      tbody.append(tr);
+      cells.forEach((td) => tr.add(td.elem()));
+      tbody.append(tr.elem());
     }
 
-    const table = elem('table', ['persons-table']);
-    table.appendChild(thead);
-    table.appendChild(tbody);
-    this.shadow.appendChild(table);
+    elb('table').cls('persons-table').add(thead, tbody).attach(this.shadow);
   }
 
   async init(): Promise<void> {

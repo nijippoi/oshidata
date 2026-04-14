@@ -1,5 +1,6 @@
 import { baseUrl } from './env.ts';
 import type {
+  DateRange,
   Group,
   GroupName,
   Groups,
@@ -19,6 +20,10 @@ export const GROUPS_FILE = 'groups.json';
 export const PERSONS_FILE = 'persons.json';
 export const DATA_PATH = '/data';
 export const LABELS_PATH = '/labels';
+
+export const PT1D = Temporal.Duration.from({ days: 1 });
+export const PT1M = Temporal.Duration.from({ months: 1 });
+export const PT1Y = Temporal.Duration.from({ years: 1 });
 
 export function ns(value: string): string {
   return value ? `${NAMESPACE}--${value}` : NAMESPACE;
@@ -47,7 +52,94 @@ export function findAll(selectors: string, from?: Element): NodeListOf<any> {
   return (from || document).querySelectorAll(selectors);
 }
 
-export function elem(
+export class ElemBuilder {
+  private tag: string;
+  private opts?: ElementCreationOptions;
+  private classes: Set<string>;
+  private children: (ElemBuilder | Node | string)[];
+  private dataset: Map<string, string>;
+  private attrs: Map<string, string>;
+  private listeners: Map<string, EventListener>;
+
+  constructor(tag: string, options?: ElementCreationOptions) {
+    this.tag = tag;
+    this.opts = options;
+    this.classes = new Set();
+    this.dataset = new Map();
+    this.attrs = new Map();
+    this.listeners = new Map();
+    this.children = [];
+  }
+
+  cls(...values: string[]): this {
+    values.forEach((value) => this.classes.add(value));
+    return this;
+  }
+
+  txt(value: string): this {
+    this.children.push(value);
+    return this;
+  }
+
+  evt(name: string, listener: EventListener): this {
+    this.listeners.set(name, listener);
+    return this;
+  }
+
+  add(...values: (ElemBuilder | Node | string)[]): this {
+    this.children.push(...values);
+    return this;
+  }
+
+  data(key: string, value?: string) {
+    if (value === undefined || value === null) {
+      this.dataset.delete(key);
+    } else {
+      this.dataset.set(key, value);
+    }
+    return this;
+  }
+
+  attr(key: string, value?: string) {
+    if (value === undefined || value === null) {
+      this.attrs.delete(key);
+    } else {
+      this.attrs.set(key, value);
+    }
+    return this;
+  }
+
+  elem(): HTMLElement {
+    const el = document.createElement(this.tag, this.opts);
+    el.classList.add(...this.classes);
+    this.dataset.entries().forEach(([key, value]) =>
+      el.setAttribute(`data-${key}`, value)
+    );
+    this.attrs.entries().forEach(([key, value]) => el.setAttribute(key, value));
+    this.children.forEach((child) => {
+      child instanceof ElemBuilder ? el.append(child.elem()) : el.append(child);
+    });
+    this.listeners.entries().forEach(([key, value]) =>
+      el.addEventListener(key, value)
+    );
+    return el;
+  }
+
+  attach(value: ElemBuilder | Node): HTMLElement {
+    const el = this.elem();
+    value instanceof ElemBuilder ? value.add(this) : value.appendChild(el);
+    return el;
+  }
+}
+
+export function elb(
+  tag: string,
+  options?: ElementCreationOptions,
+): ElemBuilder {
+  return new ElemBuilder(tag, options);
+}
+
+export function el(
   tagName: string,
   classList?: string[] | null,
   innerHTML?: string | null,
@@ -132,6 +224,37 @@ export function resolveActiveDateRange(
   });
 }
 
+export function renderDateRange(
+  value: DateRange,
+  baseDate: Temporal.PlainDate = Temporal.Now.plainDateISO(),
+  showDuration: boolean = false,
+): string {
+  const start = value.start
+    ? renderPlainDate(Temporal.PlainDate.from(value.start))
+    : '';
+  const end = value.end
+    ? renderPlainDate(Temporal.PlainDate.from(value.end))
+    : '';
+  if (showDuration) {
+    if (value.start && value.end) {
+      const duration = renderDayDuration(
+        Temporal.PlainDate.from(value.start),
+        Temporal.PlainDate.from(value.end),
+        false,
+      );
+      return `${start}〜${end} (${duration})`;
+    } else if (value.start || value.end) {
+      const duration = renderDayDuration(
+        value.start ? Temporal.PlainDate.from(value.start) : baseDate,
+        value.end ? Temporal.PlainDate.from(value.end) : baseDate,
+        false,
+      );
+      return `${start}〜${end} (${duration})`;
+    }
+  }
+  return `${start}〜${end}`;
+}
+
 export function formatGroupName(name: GroupName): string {
   return name.name;
 }
@@ -168,14 +291,6 @@ export function renderPersonName(
 }
 
 export function renderDate(date: Date): string {
-  return date.toLocaleString('ja-JP', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-}
-
-export function renderPlainDate(date: Temporal.PlainDate): string {
   return date.toLocaleString(locale(), {
     year: 'numeric',
     month: 'long',
@@ -183,7 +298,17 @@ export function renderPlainDate(date: Temporal.PlainDate): string {
   });
 }
 
-export function renderMonthDayDuration(
+export function renderPlainDate(date: Temporal.PlainDate): string {
+  // return date.toLocaleString(locale(), {
+  //   year: 'numeric',
+  //   month: 'long',
+  //   day: 'numeric',
+  // });
+  // Temporal型はIntl.DateTimeFormatに未対応（対応が不完全）なのでDateに一旦変換する
+  return renderDate(new Date(date.toString()));
+}
+
+export function renderDuration(
   from: Temporal.PlainDate,
   to: Temporal.PlainDate,
 ): string {
@@ -201,20 +326,35 @@ export function renderMonthDayDuration(
 export function renderDayDuration(
   from: Temporal.PlainDate,
   to: Temporal.PlainDate,
+  inclusive: boolean = false,
 ): string {
-  return to.since(from, {
-    largestUnit: 'day',
-    smallestUnit: 'day',
-  }).toLocaleString(locale(), {
-    day: 'numeric',
-    daysDisplay: 'always',
-  } as Intl.DurationFormatOptions);
+  if (inclusive) {
+    return to
+      .since(from, {
+        largestUnit: 'day',
+        smallestUnit: 'day',
+      })
+      .add(PT1D)
+      .toLocaleString(locale(), {
+        day: 'numeric',
+        daysDisplay: 'always',
+      } as Intl.DurationFormatOptions);
+  }
+  return to
+    .since(from, {
+      largestUnit: 'day',
+      smallestUnit: 'day',
+    })
+    .toLocaleString(locale(), {
+      day: 'numeric',
+      daysDisplay: 'always',
+    } as Intl.DurationFormatOptions);
 }
 
 export function renderAge(
   date: Temporal.PlainDate,
 ): string {
-  return renderMonthDayDuration(date, Temporal.Now.plainDateISO());
+  return renderDuration(date, Temporal.Now.plainDateISO());
 }
 
 export function countryFlagEmoji(code: string): string {

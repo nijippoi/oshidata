@@ -5,7 +5,9 @@ lang: ja
 labels:
   app_name: 推しデータ
   nouns.person: 人物
+  nouns.persons: 人物
   nouns.group: グループ
+  nouns.groups: グループ
   nouns.role: 役割
   nouns.member: メンバー
   nouns.leader: リーダー
@@ -44,6 +46,8 @@ labels:
   nouns.height: 身長
   nouns.weight: 体重
   nouns.auto: 自動
+  nouns.now: 現在
+  nouns.today: 今日
   langs.en: English
   langs.ja: 日本語
   zodiacs.aries: 牡羊座

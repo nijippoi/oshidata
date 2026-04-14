@@ -1,4 +1,4 @@
-import { elem, LANGS, ns } from '../utils.ts';
+import { elb, LANGS, ns } from '../utils.ts';
 import Component from './component.ts';
 
 export class LanguageSelector extends Component {
@@ -9,11 +9,9 @@ export class LanguageSelector extends Component {
   }
 
   render() {
-    const ul = elem('ul');
+    const ul = elb('ul').elem();
     LANGS.forEach((lang) => {
-      const li = elem('li');
-      li.textContent = lang;
-      ul.append(li);
+      elb('li').txt(lang).attach(ul);
     });
     this.shadow.append(ul);
   }

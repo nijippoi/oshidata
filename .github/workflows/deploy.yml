@@ -25,7 +25,7 @@ jobs:
       - name: setup-deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.7.11
+          deno-version: v2.7.12
       - name: configure-pages
         id: pages
         uses: actions/configure-pages@v6

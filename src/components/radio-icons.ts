@@ -1,4 +1,4 @@
-import { elem, ns } from '../utils.ts';
+import { elb, ns } from '../utils.ts';
 import Component from './component.ts';
 
 export class RadioIcons extends Component {
@@ -59,22 +59,19 @@ export class RadioIcons extends Component {
         opacity:1;
       }
       `);
-    const group = elem('div', ['radio-icons']);
+    const group = elb('div').cls('radio-icons').elem();
     this.choices.keys().forEach((key) => {
-      const input = elem('input', []) as HTMLInputElement;
+      const input = elb('input').elem() as HTMLInputElement;
       input.type = 'radio';
       input.name = this.name;
       input.value = key;
       if (this.checked === key) input.checked = true;
-      const label = elem('label', [
-        'material-symbols-outlined',
-      ]) as HTMLLabelElement;
-      label.textContent = this.choices.get(key)!;
-      label.appendChild(input);
-      label.addEventListener('click', (evt) => {
+      elb('label').cls('material-symbols-outlined').add(
+        this.choices.get(key)!,
+        input,
+      ).evt('click', (evt) => {
         input.checked = true;
-      });
-      group.appendChild(label);
+      }).attach(group);
     });
     this.shadow.appendChild(group);
   }

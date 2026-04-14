@@ -1,4 +1,4 @@
-import { elem, LANGS, ns } from '../utils.ts';
+import { elb, LANGS, ns } from '../utils.ts';
 import Component from './component.ts';
 import RadioIcons from './radio-icons.ts';
 
@@ -71,42 +71,36 @@ export class Toolbar extends Component {
     });
 
     // left
-    const left = elem('div', ['toolbar-left', 'flex']);
     const attrTitle = this.getAttribute('title') || '';
     const attrSubtitle = this.getAttribute('subtitle') || '';
-    left.append(elem('span', ['toolbar-title'], attrTitle));
-    left.append(elem('span', ['toolbar-subtitle'], attrSubtitle));
-
-    const choices = new Map<string, string>();
-    choices.set('auto', 'brightness_auto');
-    choices.set('light', 'light_mode');
-    choices.set('dark', 'dark_mode');
-    // left.append(new RadioIcons('color-scheme-radio', choices, 'auto'));
+    const left = elb('div').cls('toolbar-left', 'flex').add(
+      elb('span').cls('toolbar-title').txt(attrTitle).elem(),
+      elb('span').cls('toolbar-subtitle').txt(attrSubtitle).elem(),
+    ).elem();
 
     // right
-    const right = elem('div', ['toolbar-right', 'flex']);
-    const langSelect = elem('select') as HTMLSelectElement;
-    langSelect['name'] = 'l';
+    const right = elb('div').cls('toolbar-right', 'flex').elem();
+    const langSelect = elb('select').elem() as HTMLSelectElement;
+    langSelect.name = 'l';
     LANGS.forEach((lang) => {
-      const option = elem('option') as HTMLOptionElement;
+      const option = elb('option').txt(lang).attach(
+        langSelect,
+      ) as HTMLOptionElement;
       option.value = lang;
-      option.textContent = lang;
-      langSelect.append(option);
     });
     right.append(langSelect);
-    const datePicker = elem('input') as HTMLInputElement;
+    const datePicker = elb('input').evt('change', (evt) => {
+      const target = evt.target as HTMLInputElement | null;
+      if (target) {
+        Toolbar.fireDateChanged(target.value);
+      }
+    }).elem() as HTMLInputElement;
     datePicker.name = ns('toolbar-datepicker');
     datePicker.type = 'date';
     if (!this.getAttribute('date')) {
       this.setAttribute('date', Temporal.Now.plainDateISO().toString());
     }
     datePicker.value = this.getAttribute('date')!;
-    datePicker.addEventListener('change', (evt) => {
-      const target = evt.target as HTMLInputElement | null;
-      if (target) {
-        Toolbar.fireDateChanged(target.value);
-      }
-    });
     right.append(datePicker);
 
     const changeMetaColorScheme = (value: string) => {
@@ -117,7 +111,7 @@ export class Toolbar extends Component {
         if (metaColorScheme) {
           (metaColorScheme as HTMLMetaElement).content = value;
         } else {
-          const newMetaColorScheme = elem('meta') as HTMLMetaElement;
+          const newMetaColorScheme = elb('meta').elem() as HTMLMetaElement;
           newMetaColorScheme.name = 'color-scheme';
           newMetaColorScheme.content = value;
           document.head.appendChild(newMetaColorScheme);
@@ -151,50 +145,41 @@ export class Toolbar extends Component {
         }
       };
     };
-    const lightDarkAuto = elem('button', [
+    const lightDarkAuto = elb('button').txt('brightness_auto').cls(
       'auto-mode-button',
       'inline-button',
       'material-symbols-outlined',
-    ]) as HTMLButtonElement;
-    lightDarkAuto.ariaPressed = 'true';
-    lightDarkAuto.value = 'light dark';
-    lightDarkAuto.textContent = 'brightness_auto';
-    lightDarkAuto.addEventListener(
+    ).attr('aria-pressed', 'true').attr('value', 'light dark').evt(
       'click',
       changeMetaColorScheme('light dark'),
-    );
-    const lightDarkLight = elem('button', [
+    ).elem() as HTMLButtonElement;
+    const lightDarkLight = elb('button').txt('light_mode').cls(
       'light-mode-button',
       'inline-button',
       'material-symbols-outlined',
-    ]) as HTMLButtonElement;
-    lightDarkLight.ariaPressed = 'false';
-    lightDarkLight.value = 'light';
-    lightDarkLight.textContent = 'light_mode';
-    lightDarkLight.addEventListener('click', changeMetaColorScheme('light'));
-    const lightDarkDark = elem('button', [
+    ).attr('aria-pressed', 'false').attr('value', 'light').evt(
+      'click',
+      changeMetaColorScheme('light'),
+    ).elem() as HTMLButtonElement;
+    const lightDarkDark = elb('button').txt('dark_mode').cls(
       'dark-mode-button',
       'inline-button',
       'material-symbols-outlined',
-    ]) as HTMLButtonElement;
-    lightDarkDark.ariaPressed = 'false';
-    lightDarkDark.value = 'dark';
-    lightDarkDark.textContent = 'dark_mode';
-    lightDarkDark.addEventListener('click', changeMetaColorScheme('dark'));
-    const lightDarkSection = elem('section', [
+    ).attr('aria-pressed', 'false').attr('value', 'dark').evt(
+      'click',
+      changeMetaColorScheme('dark'),
+    ).elem() as HTMLButtonElement;
+    const lightDarkSection = elb('section').cls(
       'button-group',
       'color-scheme-button-group',
-    ]);
-    lightDarkSection.ariaLabel = 'ライト・ダーク切り替え';
-    lightDarkSection.appendChild(lightDarkAuto);
-    lightDarkSection.appendChild(lightDarkLight);
-    lightDarkSection.appendChild(lightDarkDark);
-    right.append(lightDarkSection);
+    ).add(lightDarkAuto, lightDarkLight, lightDarkDark).attr(
+      'aria-label',
+      'ライト・ダーク切り替え',
+    ).attach(right);
 
-    const main = elem('div', ['toolbar-main', 'flex']);
-    main.append(left, right);
-    // clear(this.shadow);
-    this.shadow.appendChild(main);
+    elb('div').cls('toolbar-main', 'flex').add(left, right).attach(
+      this.shadow,
+    );
   }
 
   update(): void {

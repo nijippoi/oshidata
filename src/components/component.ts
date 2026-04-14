@@ -37,6 +37,11 @@ commonCss.insertRule(`
 }
 `);
 commonCss.insertRule(`
+td, th {
+  vertical-align: top;
+}
+`);
+commonCss.insertRule(`
 .flex {
   display: flex;
 }
