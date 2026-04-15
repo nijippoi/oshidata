@@ -200,7 +200,10 @@ export class PersonsList extends Component {
               break;
             case 'groups':
               {
-                const roles = (person.roles || []).filter((role) => role.role === 'member') as GroupRole[];
+                const roles = (person.roles || []).filter((role) =>
+                  (role as GroupRole).group_id !== undefined &&
+                  (selectedGroupId ? (role as GroupRole).group_id === selectedGroupId : true)
+                ) as GroupRole[];
                 for (const role of roles) {
                   const group = groups.records.find((grp) => grp.id === role.group_id);
                   if (group) {
