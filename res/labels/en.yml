@@ -3,9 +3,55 @@ source_type: 'labels'
 lang: en
 
 labels:
+  app_name: Oshidata
+  nouns.person: Person
+  nouns.persons: Persons
+  nouns.group: Group
+  nouns.groups: Groups
+  nouns.role: Role
+  nouns.member: Member
+  nouns.leader: Leader
+  nouns.subleader: Sub-leader
+  nouns.manager: Manager
+  nouns.date: Date
+  nouns.month_day: Month/Day
+  nouns.language: Language
+  nouns.id: ID
+  nouns.person_id: Person ID
+  nouns.group_id: Group ID
+  nouns.role_id: Role ID
+  nouns.group_name: Group Name
+  nouns.group_name_kana: Group Name (Kana)
+  nouns.person_name: Name
+  nouns.person_name_kana: Name (Kana)
+  nouns.full_name: Full Name
+  nouns.full_name_kana: Full Name (Kana)
+  nouns.family_name: Family Name
+  nouns.family_name_kana: Family Name (Kana)
+  nouns.middle_name: Middle Name
+  nouns.middle_name_kana: Middle Name (Kana)
+  nouns.given_name: Given Name
+  nouns.given_name_kana: Given Name (Kana)
+  nouns.sex: Sex
+  nouns.place_of_birth: Place of Birth
+  nouns.hometown: Hometown
+  nouns.country: Country
+  nouns.state: State/Prefecture
+  nouns.nationality: Nationality
+  nouns.birth_date: Birth Date
+  nouns.birth_day: Birthday
+  nouns.age: Age
+  nouns.zodiac: Zodiac
+  nouns.blood_type: Blood Type
+  nouns.height: Height
+  nouns.weight: Weight
   nouns.auto: Auto
+  nouns.now: Now
+  nouns.today: Today
+  message.select: Please select
+  message.unselected: Unselected
   langs.en: English
-  langs.ja: 日本語
+  langs.ja: Japanese
   zodiacs.aries: Aries
   zodiacs.taurus: Taurus
   zodiacs.gemini: Gemini
