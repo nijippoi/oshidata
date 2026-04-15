@@ -29,16 +29,18 @@ export function ns(value: string): string {
   return value ? `${NAMESPACE}--${value}` : NAMESPACE;
 }
 
+export const STORAGE_KEY_LOCALE = ns('locale');
+
 export const LANGS = ['ja', 'en'];
 export const LOCALES = ['ja-JP', 'en-US', 'en-UK'];
 
 export function locale() {
-  const local = localStorage.getItem(ns('locale'));
+  const local = localStorage.getItem(STORAGE_KEY_LOCALE);
   if (local) {
     if (LOCALES.indexOf(local) >= 0) {
       return local;
     } else {
-      localStorage.removeItem(ns('locale'));
+      localStorage.removeItem(STORAGE_KEY_LOCALE);
     }
   }
   if (LOCALES.indexOf(navigator.language) >= 0) {
@@ -68,6 +70,23 @@ export function findAll(selectors: string, from?: Element): NodeListOf<any> {
   return (from || document).querySelectorAll(selectors);
 }
 
+export function recordToMap<K extends string | number | symbol, V>(record: Record<K, V>): Map<K, V> {
+  const m = new Map();
+  Object.entries(record).forEach(([k, v]) => {
+    if (v !== undefined) m.set(k, v);
+  });
+  return m;
+}
+
+export interface ElemBuilderInit {
+  options?: ElementCreationOptions;
+  classes?: Set<string> | string[];
+  dataset?: Map<string, string | undefined> | Record<string, string | undefined>;
+  attributes?: Map<string, string | undefined> | Record<string, string | undefined>;
+  listeners?: Map<string, EventListener> | Record<string, EventListener>;
+  children?: (ElemBuilder | Node | string)[];
+}
+
 export class ElemBuilder {
   private tag: string;
   private opts?: ElementCreationOptions;
@@ -77,14 +96,20 @@ export class ElemBuilder {
   private attrs: Map<string, string>;
   private listeners: Map<string, EventListener>;
 
-  constructor(tag: string, options?: ElementCreationOptions) {
+  constructor(tag: string, init?: ElemBuilderInit) {
     this.tag = tag;
-    this.opts = options;
-    this.classes = new Set();
-    this.dataset = new Map();
-    this.attrs = new Map();
-    this.listeners = new Map();
-    this.children = [];
+    this.opts = init?.options;
+    this.classes = init?.classes ? (Array.isArray(init?.classes) ? new Set(init?.classes) : init?.classes) : new Set();
+    this.dataset = init?.dataset
+      ? (init?.dataset instanceof Map ? init?.dataset : recordToMap(init?.dataset))
+      : new Map();
+    this.attrs = init?.attributes
+      ? (init?.attributes instanceof Map ? init?.attributes : recordToMap(init?.attributes))
+      : new Map();
+    this.listeners = init?.listeners
+      ? (init?.listeners instanceof Map ? init?.listeners : recordToMap(init?.listeners))
+      : new Map();
+    this.children = init?.children || [];
   }
 
   cls(...values: string[]): this {
@@ -144,29 +169,12 @@ export class ElemBuilder {
   }
 }
 
-export function elb(
-  tag: string,
-  options?: ElementCreationOptions,
-): ElemBuilder {
-  return new ElemBuilder(tag, options);
+export function elb(tag: string, init?: ElemBuilderInit): ElemBuilder {
+  return new ElemBuilder(tag, init);
 }
 
-export function el(
-  tagName: string,
-  classList?: string[] | null,
-  innerHTML?: string | null,
-  dataset?: DOMStringMap | null,
-  options?: ElementCreationOptions,
-): HTMLElement {
-  const e = document.createElement(tagName, options);
-  if (classList) e.classList.add(...classList);
-  if (innerHTML) e.innerHTML = innerHTML;
-  if (dataset) {
-    for (const key in dataset) {
-      e.dataset[key] = dataset[key];
-    }
-  }
-  return e;
+export function el(tag: string, init?: ElemBuilderInit): HTMLElement {
+  return new ElemBuilder(tag, init).elem();
 }
 
 export function clear<T extends Element | ShadowRoot | null | undefined>(
@@ -250,10 +258,10 @@ export function renderDateRange(
   const range = formatRange(start, end);
   if (showDuration) {
     if (start && end) {
-      const duration = renderDayDuration(start, end, false);
+      const duration = formatDayDuration(start, end, false);
       return `${range} (${duration})`;
     } else if (value.start || value.end) {
-      const duration = renderDayDuration(
+      const duration = formatDayDuration(
         start || baseDate,
         end || baseDate,
         false,
@@ -380,7 +388,7 @@ export function dayDurationFormat(localeKey: string = locale()) {
   );
 }
 
-export function renderYearMonthDuration(
+export function formatYearMonthDuration(
   from: Temporal.PlainDate,
   to: Temporal.PlainDate,
 ): string {
@@ -390,7 +398,7 @@ export function renderYearMonthDuration(
   }));
 }
 
-export function renderDayDuration(
+export function formatDayDuration(
   from: Temporal.PlainDate,
   to: Temporal.PlainDate,
   inclusive: boolean = false,
@@ -402,10 +410,11 @@ export function renderDayDuration(
   return inclusive ? dayDurationFormat().format(dur.add(PT1D)) : dayDurationFormat().format(dur);
 }
 
-export function renderAge(
+export function formatAge(
   date: Temporal.PlainDate,
+  baseDate: Temporal.PlainDate = Temporal.Now.plainDateISO(),
 ): string {
-  return renderYearMonthDuration(date, Temporal.Now.plainDateISO());
+  return formatYearMonthDuration(date, baseDate);
 }
 
 export function countryFlagEmoji(code: string): string {

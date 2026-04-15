@@ -1,4 +1,4 @@
-import { LABELS_PATH, lang, LANGS } from './utils.ts';
+import { formatAge, formatDate, formatDayDuration, formatRange, LABELS_PATH, lang, LANGS, ns } from './utils.ts';
 import { baseUrl } from './env.ts';
 import type { Labels } from './types.ts';
 
@@ -37,10 +37,22 @@ export async function label(
   return text;
 }
 
+const LABEL_DATA_ATTRS = [
+  'text',
+  'attr-name',
+  'attr-key',
+  'date',
+  'age',
+  'age-base',
+  'date-range-start',
+  'date-range-end',
+  'date-range-base',
+  'date-range-show-duration',
+].map((a) => `data-label-${a}`);
+const LABEL_DATA_SELECTORS = LABEL_DATA_ATTRS.map((a) => `[${a}]`).join(',');
+
 function renderLabels(root: HTMLElement | ShadowRoot) {
-  const labelElems = root.querySelectorAll(
-    '[data-label-attr-name],[data-label-attr-key],[data-label-text]',
-  );
+  const labelElems = root.querySelectorAll(LABEL_DATA_SELECTORS);
   labelElems.forEach((elem) => {
     // console.log(elem);
     if (elem instanceof HTMLElement) {
@@ -60,11 +72,74 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
           });
         }
       }
+      if (elem.dataset.labelDateRangeStart || elem.dataset.labelDateRangeEnd) {
+        const start = elem.dataset.labelDateRangeStart
+          ? Temporal.PlainDate.from(elem.dataset.labelDateRangeStart)
+          : undefined;
+        const end = elem.dataset.labelDateRangeEnd
+          ? Temporal.PlainDate.from(elem.dataset.labelDateRangeEnd)
+          : undefined;
+        const range = formatRange(start, end);
+        if (
+          elem.dataset.labelDateRangeShowDuration !== undefined && elem.dataset.labelDateRangeShowDuration !== 'false'
+        ) {
+          if (start && end) {
+            const duration = formatDayDuration(start, end, false);
+            elem.textContent = `${range} (${duration})`;
+          } else if (start || end) {
+            const baseDate = elem.dataset.labelDateRangeBase
+              ? Temporal.PlainDate.from(elem.dataset.labelDateRangeBase)
+              : Temporal.Now.plainDateISO();
+            const duration = formatDayDuration(
+              start || baseDate,
+              end || baseDate,
+              false,
+            );
+            elem.textContent = `${range} (${duration})`;
+          }
+        } else {
+          elem.textContent = range;
+        }
+      }
+      if (elem.hasAttribute('data-label-date')) {
+        elem.textContent = elem.dataset.labelDate ? formatDate(Temporal.PlainDate.from(elem.dataset.labelDate)) : '';
+      }
+      if (elem.hasAttribute('data-label-age')) {
+        elem.textContent = elem.dataset.labelAge
+          ? formatAge(
+            Temporal.PlainDate.from(elem.dataset.labelAge),
+            elem.dataset.labelAgeBase
+              ? Temporal.PlainDate.from(elem.dataset.labelAgeBase)
+              : Temporal.Now.plainDateISO(),
+          )
+          : '';
+      }
     }
   });
 }
 
-function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
+export const EVENT_LOCALE_CHANGED = ns('locale-changed');
+
+export function listenLocaleChanged(node: HTMLElement | ShadowRoot) {
+  document.addEventListener(EVENT_LOCALE_CHANGED, (evt) => {
+    // console.log('onLocaleChanged', evt, node);
+    renderLabels(node);
+  });
+}
+
+export function fireLocaleChanged(newValue?: string, oldValue?: string) {
+  // console.log('fireLocaleChanged', newValue, oldValue);
+  document.dispatchEvent(
+    new CustomEvent(EVENT_LOCALE_CHANGED, {
+      bubbles: true,
+      cancelable: true,
+      composed: true,
+      detail: { newValue, oldValue },
+    }),
+  );
+}
+
+function handleMutation(mutations: MutationRecord[], observer: MutationObserver) {
   for (const mutation of mutations) {
     // console.log('Mutation found', mutation.target);
     switch (mutation.type) {
@@ -73,6 +148,7 @@ function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
           // console.log('Node is added', node);
           if (node instanceof HTMLElement || node instanceof ShadowRoot) {
             renderLabels(node);
+            listenLocaleChanged(node);
           }
         });
         // mutation.removedNodes.forEach((node) => {
@@ -90,10 +166,11 @@ function observeNode(mutations: MutationRecord[], observer: MutationObserver) {
           mutation.target instanceof ShadowRoot
         ) {
           renderLabels(mutation.target);
+          listenLocaleChanged(mutation.target);
         }
         break;
       default:
-        console.log('Unhandled mutation', mutation);
+        console.warn('Unhandled mutation', mutation);
     }
   }
 }
@@ -106,7 +183,7 @@ class LabelObserver {
     if (LabelObserver.instance) {
       return LabelObserver.instance;
     }
-    this.observer = new MutationObserver(observeNode);
+    this.observer = new MutationObserver(handleMutation);
     LabelObserver.instance = this;
   }
 
@@ -118,11 +195,7 @@ class LabelObserver {
     node: Node,
     options: MutationObserverInit = {
       attributes: true,
-      attributeFilter: [
-        'data-label-text',
-        'data-label-attr-name',
-        'data-label-attr-key',
-      ],
+      attributeFilter: LABEL_DATA_ATTRS,
       childList: true,
       subtree: true,
     },

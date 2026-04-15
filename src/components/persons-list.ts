@@ -1,13 +1,10 @@
 import type { Group, GroupRole, Groups, Person } from '../types.ts';
 import {
   elb,
-  formatDate,
   getAttrs,
   ns,
   queryGroups,
   queryPersons,
-  renderAge,
-  renderDateRange,
   renderGroupName,
   renderLocation,
   renderPersonName,
@@ -157,14 +154,10 @@ export class PersonsList extends Component {
               td.txt(renderPersonName(person, this.date) || '');
               break;
             case 'birth-date':
-              td.txt(
-                person.birth_date ? formatDate(new Date(person.birth_date)) : '',
-              );
+              td.data('label-date', person.birth_date || '');
               break;
             case 'age':
-              td.txt(
-                person.birth_date ? renderAge(Temporal.PlainDate.from(person.birth_date)) : '',
-              );
+              td.data('label-age', person.birth_date || '');
               break;
             case 'hometown':
               td.add(elb('span').txt(renderLocation(person)).elem());
@@ -179,8 +172,13 @@ export class PersonsList extends Component {
                     td.add(elb('div').txt(groupName).elem());
                     role.active_date_ranges?.forEach((range) => {
                       td.add(
-                        elb('div').txt(renderDateRange(range, this.date, true))
-                          .elem(),
+                        elb('div', {
+                          dataset: {
+                            'label-date-range-start': range.start || undefined,
+                            'label-date-range-end': range.end || undefined,
+                            'label-date-range-show-duration': '',
+                          },
+                        }),
                       );
                     });
                   }

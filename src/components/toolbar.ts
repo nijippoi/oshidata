@@ -1,4 +1,5 @@
-import { elb, LANGS, locale, LOCALES, ns } from '../utils.ts';
+import { fireLocaleChanged } from '../label.ts';
+import { elb, LANGS, locale, LOCALES, ns, STORAGE_KEY_LOCALE } from '../utils.ts';
 import Component from './component.ts';
 import RadioIcons from './radio-icons.ts';
 
@@ -80,18 +81,28 @@ export class Toolbar extends Component {
     // right
     const right = elb('div').cls('toolbar-right', 'flex');
     const localeSelect = elb('select').attr('name', 'locale').evt('change', (evt) => {
+      const oldValue = locale();
       const newValue = (evt.target as HTMLSelectElement).value;
       if (newValue) {
-        localStorage.setItem(ns('locale'), (evt.target as HTMLSelectElement).value);
+        localStorage.setItem(STORAGE_KEY_LOCALE, (evt.target as HTMLSelectElement).value);
       } else {
-        localStorage.removeItem(ns('locale'));
+        localStorage.removeItem(STORAGE_KEY_LOCALE);
       }
-      globalThis.location.reload();
+      if (oldValue !== newValue) fireLocaleChanged(newValue, oldValue);
     });
-    elb('option').data('label-text', 'nouns.auto').attr('value', '').attach(localeSelect);
+    const storedLocale = localStorage.getItem(STORAGE_KEY_LOCALE) || '';
+    elb('option', {
+      dataset: {
+        'label-text': 'nouns.auto',
+      },
+      attributes: {
+        value: '',
+        ...(storedLocale === '' && { selected: '' }),
+      },
+    }).attach(localeSelect);
     LOCALES.forEach((key) => {
       const opt = elb('option').txt(key).attr('value', key);
-      if (locale() === key) {
+      if (storedLocale === key) {
         opt.attr('selected', '');
       }
       opt.attach(localeSelect);
