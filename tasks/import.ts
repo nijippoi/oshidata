@@ -251,6 +251,30 @@ function processPersons(
             person.roles.push(r);
           }
         }
+        person.roles.sort((l, r) => {
+          if (
+            l.active_date_ranges && l.active_date_ranges.length > 0 && r.active_date_ranges &&
+            r.active_date_ranges.length > 0
+          ) {
+            const lStarts = l.active_date_ranges.map((range) => range.start).filter((date) => date !== undefined)
+              .toSorted();
+            const rStarts = r.active_date_ranges.map((range) => range.start).filter((date) => date !== undefined)
+              .toSorted();
+            if (lStarts.length > 0 && rStarts.length > 0) {
+              return lStarts[0].localeCompare(rStarts[0]);
+            } else if (lStarts.length > 0) {
+              return -1;
+            } else if (rStarts.length > 0) {
+              return +1;
+            }
+            return 0;
+          } else if (l.active_date_ranges && l.active_date_ranges.length > 0) {
+            return -1;
+          } else if (r.active_date_ranges && r.active_date_ranges.length > 0) {
+            return +1;
+          }
+          return 0;
+        });
       }
       if (item.tags && item.tags.length > 0) {
         const tags = item.tags.map((t: string) => t.trim()).filter(Boolean);
