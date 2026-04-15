@@ -1,4 +1,4 @@
-import { elb, LANGS, ns } from '../utils.ts';
+import { elb, LANGS, locale, LOCALES, ns } from '../utils.ts';
 import Component from './component.ts';
 import RadioIcons from './radio-icons.ts';
 
@@ -62,8 +62,7 @@ export class Toolbar extends Component {
       `);
 
     document.addEventListener(Toolbar.EVENT_TITLE, (evt) => {
-      const data: { title?: string; subtitle?: string } =
-        (evt as CustomEvent).detail;
+      const data: { title?: string; subtitle?: string } = (evt as CustomEvent).detail;
       if (typeof data.title == 'string') this.setAttribute('title', data.title);
       if (typeof data.subtitle == 'string') {
         this.setAttribute('subtitle', data.subtitle);
@@ -74,21 +73,30 @@ export class Toolbar extends Component {
     const attrTitle = this.getAttribute('title') || '';
     const attrSubtitle = this.getAttribute('subtitle') || '';
     const left = elb('div').cls('toolbar-left', 'flex').add(
-      elb('span').cls('toolbar-title').txt(attrTitle).elem(),
-      elb('span').cls('toolbar-subtitle').txt(attrSubtitle).elem(),
-    ).elem();
+      elb('span').cls('toolbar-title').txt(attrTitle),
+      elb('span').cls('toolbar-subtitle').txt(attrSubtitle),
+    );
 
     // right
-    const right = elb('div').cls('toolbar-right', 'flex').elem();
-    const langSelect = elb('select').elem() as HTMLSelectElement;
-    langSelect.name = 'l';
-    LANGS.forEach((lang) => {
-      const option = elb('option').txt(lang).attach(
-        langSelect,
-      ) as HTMLOptionElement;
-      option.value = lang;
+    const right = elb('div').cls('toolbar-right', 'flex');
+    const localeSelect = elb('select').attr('name', 'locale').evt('change', (evt) => {
+      const newValue = (evt.target as HTMLSelectElement).value;
+      if (newValue) {
+        localStorage.setItem(ns('locale'), (evt.target as HTMLSelectElement).value);
+      } else {
+        localStorage.removeItem(ns('locale'));
+      }
+      globalThis.location.reload();
     });
-    right.append(langSelect);
+    elb('option').data('label-text', 'nouns.auto').attr('value', '').attach(localeSelect);
+    LOCALES.forEach((key) => {
+      const opt = elb('option').txt(key).attr('value', key);
+      if (locale() === key) {
+        opt.attr('selected', '');
+      }
+      opt.attach(localeSelect);
+    });
+    right.add(localeSelect);
     const datePicker = elb('input').evt('change', (evt) => {
       const target = evt.target as HTMLInputElement | null;
       if (target) {
@@ -101,7 +109,7 @@ export class Toolbar extends Component {
       this.setAttribute('date', Temporal.Now.plainDateISO().toString());
     }
     datePicker.value = this.getAttribute('date')!;
-    right.append(datePicker);
+    right.add(datePicker);
 
     const changeMetaColorScheme = (value: string) => {
       return (evt: Event) => {
@@ -152,7 +160,7 @@ export class Toolbar extends Component {
     ).attr('aria-pressed', 'true').attr('value', 'light dark').evt(
       'click',
       changeMetaColorScheme('light dark'),
-    ).elem() as HTMLButtonElement;
+    );
     const lightDarkLight = elb('button').txt('light_mode').cls(
       'light-mode-button',
       'inline-button',
@@ -160,7 +168,7 @@ export class Toolbar extends Component {
     ).attr('aria-pressed', 'false').attr('value', 'light').evt(
       'click',
       changeMetaColorScheme('light'),
-    ).elem() as HTMLButtonElement;
+    );
     const lightDarkDark = elb('button').txt('dark_mode').cls(
       'dark-mode-button',
       'inline-button',
@@ -168,8 +176,8 @@ export class Toolbar extends Component {
     ).attr('aria-pressed', 'false').attr('value', 'dark').evt(
       'click',
       changeMetaColorScheme('dark'),
-    ).elem() as HTMLButtonElement;
-    const lightDarkSection = elb('section').cls(
+    );
+    elb('section').cls(
       'button-group',
       'color-scheme-button-group',
     ).add(lightDarkAuto, lightDarkLight, lightDarkDark).attr(

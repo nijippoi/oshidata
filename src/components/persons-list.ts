@@ -57,12 +57,10 @@ export class PersonsList extends Component {
       'order',
       'date',
       'group-ids',
-      'person-ids',
     ];
   }
 
   query: Query;
-  rows: Person[];
   date: Temporal.PlainDate;
 
   constructor() {
@@ -73,8 +71,13 @@ export class PersonsList extends Component {
       getAttrs(this, 'columns'),
       PersonsList.DEFAULT_COLUMNS,
     );
+    setAttrs(
+      this,
+      'group-ids',
+      getAttrs(this, 'group-ids'),
+      [],
+    );
     this.query = {};
-    this.rows = [];
     this.date = Temporal.Now.plainDateISO();
     document.addEventListener(PersonsList.EVENT_QUERY, (evt) => {
       this.query = (evt as CustomEvent).detail;
@@ -107,11 +110,11 @@ export class PersonsList extends Component {
   async renderFilter() {
     const groupsSelect = elb('select').attr('name', ns('filter-groups'))
       .elem() as HTMLSelectElement;
-    const groups = await queryGroups({
-      filters: [],
-    });
+    const groups = await queryGroups();
+    elb('option').attr('value', '').data('label-text', 'message.unselected')
+      .attach(groupsSelect);
     groups.records.forEach((group) => {
-      elb('option').attr('value', group.id).txt(renderGroupName(group) || '')
+      elb('option').attr('value', group.id).txt(renderGroupName(group))
         .attach(groupsSelect);
     });
     elb('div').add(groupsSelect).attach(this.shadow);
@@ -155,16 +158,12 @@ export class PersonsList extends Component {
               break;
             case 'birth-date':
               td.txt(
-                person.birth_date
-                  ? formatDate(new Date(person.birth_date))
-                  : '',
+                person.birth_date ? formatDate(new Date(person.birth_date)) : '',
               );
               break;
             case 'age':
               td.txt(
-                person.birth_date
-                  ? renderAge(Temporal.PlainDate.from(person.birth_date))
-                  : '',
+                person.birth_date ? renderAge(Temporal.PlainDate.from(person.birth_date)) : '',
               );
               break;
             case 'hometown':
@@ -172,13 +171,9 @@ export class PersonsList extends Component {
               break;
             case 'groups':
               {
-                const roles = (person.roles || []).filter((role) =>
-                  role.role === 'member'
-                ) as GroupRole[];
+                const roles = (person.roles || []).filter((role) => role.role === 'member') as GroupRole[];
                 for (const role of roles) {
-                  const group = groups.records.find((grp) =>
-                    grp.id === role.group_id
-                  );
+                  const group = groups.records.find((grp) => grp.id === role.group_id);
                   if (group) {
                     const groupName = renderGroupName(group, this.date);
                     td.add(elb('div').txt(groupName).elem());

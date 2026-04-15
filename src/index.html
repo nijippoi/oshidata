@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>推しデータ</title>
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="推しデータ">
+    <meta property="og:title" content="推しデータ">
+    <meta property="og:description" content="推しデータ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="thumbnail.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="推しデータ">
+    <meta name="twitter:description" content="推しデータ">
+    <meta name="twitter:image" content="thumbnail.jpg">
+    <meta name="description" content="推しデータ">
+    <title>アーティスト一覧</title>
   </head>
   <body>
-    <div id="app">
-      <ul>
-        <li><a href="./apps/namebook">名簿</a></li>
-      </ul>
-    </div>
-    <script src="./index.ts" type="module"></script>
+    <oshidata--container id="app">
+      <oshidata--toolbar title="アーティスト一覧"></oshidata--toolbar>
+      <oshidata--persons-list columns="id,name,birth-date,age,zodiac,hometown,groups"></oshidata--persons-list>
+    </oshidata--container>
   </body>
+  <script src="./index.ts" type="module"></script>
+  <script src="./components/mod.ts" type="module"></script>
 </html>

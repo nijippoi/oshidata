@@ -48,6 +48,8 @@ labels:
   nouns.auto: 自動
   nouns.now: 現在
   nouns.today: 今日
+  message.select: 選択してください
+  message.unselected: 未選択
   langs.en: English
   langs.ja: 日本語
   zodiacs.aries: 牡羊座

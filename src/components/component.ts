@@ -1,4 +1,5 @@
 import { bind } from '../label.ts';
+import { ns } from '../utils.ts';
 
 const commonCss = new CSSStyleSheet();
 commonCss.insertRule(`
@@ -27,6 +28,7 @@ commonCss.insertRule(`
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
+    document.head.appendChild(link);
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
@@ -95,6 +97,19 @@ commonCss.insertRule(`
 }
 `);
 
+function addMaterialSymbolsLink(): void {
+  const materialSymbolsLinkId = ns('material-symbols-css-link');
+  const materialSymbolsLink = document.getElementById(materialSymbolsLinkId);
+  if (!materialSymbolsLink) {
+    const link = document.createElement('link') as HTMLLinkElement;
+    link.id = materialSymbolsLinkId;
+    link.rel = 'stylesheet';
+    link.crossOrigin = '';
+    link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined';
+    document.head.appendChild(link);
+  }
+}
+
 export class Component extends HTMLElement {
   shadow: ShadowRoot;
   sheet: CSSStyleSheet;
@@ -105,16 +120,12 @@ export class Component extends HTMLElement {
       bind?: boolean;
     };
   }) {
+    addMaterialSymbolsLink();
     super();
     this.sheet = init?.css || new CSSStyleSheet();
     this.shadow = this.attachShadow(init?.shadow || { mode: 'open' });
     this.shadow.adoptedStyleSheets.push(commonCss);
     this.shadow.adoptedStyleSheets.push(this.sheet);
-    // const link = elem('link') as HTMLLinkElement;
-    // link.rel = 'stylesheet';
-    // link.href =
-    //   'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined';
-    // this.shadow.appendChild(link);
     if (!(init?.label?.bind === false)) bind(this.shadow);
   }
   insertRule(rule: string, index?: number) {

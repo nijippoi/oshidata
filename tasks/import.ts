@@ -115,9 +115,7 @@ function processGroups(groupsData: any[]) {
       if (item.qualifier) {
         if (groupQualifiers[item.qualifier]) {
           console.error(
-            `Group qualifier ${item.qualifier} already exists as id ${
-              groupQualifiers[item.qualifier]
-            }`,
+            `Group qualifier ${item.qualifier} already exists as id ${groupQualifiers[item.qualifier]}`,
           );
         }
         groupQualifiers[item.qualifier] = gid;
@@ -152,9 +150,7 @@ function processGroups(groupsData: any[]) {
       );
     } else {
       console.error(
-        `Group parent ${parentName} has multiple candidates for ${
-          groups[gid].names[0]
-        }. Use parent_qualifier instead.`,
+        `Group parent ${parentName} has multiple candidates for ${groups[gid].names[0]}. Use parent_qualifier instead.`,
       );
     }
   }

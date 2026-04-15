@@ -30,13 +30,29 @@ export function ns(value: string): string {
 }
 
 export const LANGS = ['ja', 'en'];
+export const LOCALES = ['ja-JP', 'en-US', 'en-UK'];
 
 export function locale() {
-  return navigator.language;
+  const local = localStorage.getItem(ns('locale'));
+  if (local) {
+    if (LOCALES.indexOf(local) >= 0) {
+      return local;
+    } else {
+      localStorage.removeItem(ns('locale'));
+    }
+  }
+  if (LOCALES.indexOf(navigator.language) >= 0) {
+    return navigator.language;
+  }
+  return LOCALES[0];
 }
 
 export function lang() {
   return locale().split('-')[0];
+}
+
+export function init() {
+  document.getElementsByTagName('html')[0].setAttribute('lang', lang());
 }
 
 export function byId(id: string): HTMLElement | null {
@@ -112,16 +128,12 @@ export class ElemBuilder {
   elem(): HTMLElement {
     const el = document.createElement(this.tag, this.opts);
     el.classList.add(...this.classes);
-    this.dataset.entries().forEach(([key, value]) =>
-      el.setAttribute(`data-${key}`, value)
-    );
+    this.dataset.entries().forEach(([key, value]) => el.setAttribute(`data-${key}`, value));
     this.attrs.entries().forEach(([key, value]) => el.setAttribute(key, value));
     this.children.forEach((child) => {
       child instanceof ElemBuilder ? el.append(child.elem()) : el.append(child);
     });
-    this.listeners.entries().forEach(([key, value]) =>
-      el.addEventListener(key, value)
-    );
+    this.listeners.entries().forEach(([key, value]) => el.addEventListener(key, value));
     return el;
   }
 
@@ -340,19 +352,42 @@ export function formatRange(
   return '';
 }
 
-export function renderDuration(
+const yearMonthDurationFormats: Map<string, Intl.DurationFormat> = new Map();
+
+export function yearMonthDurationFormat(localeKey: string = locale()) {
+  return yearMonthDurationFormats.getOrInsertComputed(
+    localeKey,
+    (key) =>
+      new Intl.DurationFormat(key, {
+        year: 'numeric',
+        yearsDisplay: 'always',
+        month: 'long',
+        monthsDisplay: 'always',
+      } as Intl.DurationFormatOptions),
+  );
+}
+
+const dayDurationFormats: Map<string, Intl.DurationFormat> = new Map();
+
+export function dayDurationFormat(localeKey: string = locale()) {
+  return dayDurationFormats.getOrInsertComputed(
+    localeKey,
+    (key) =>
+      new Intl.DurationFormat(key, {
+        day: 'numeric',
+        daysDisplay: 'always',
+      } as Intl.DurationFormatOptions),
+  );
+}
+
+export function renderYearMonthDuration(
   from: Temporal.PlainDate,
   to: Temporal.PlainDate,
 ): string {
-  return to.since(from, {
+  return yearMonthDurationFormat().format(to.since(from, {
     largestUnit: 'year',
     smallestUnit: 'month',
-  }).toLocaleString(locale(), {
-    year: 'numeric',
-    yearsDisplay: 'always',
-    month: 'long',
-    monthsDisplay: 'always',
-  } as Intl.DurationFormatOptions);
+  }));
 }
 
 export function renderDayDuration(
@@ -360,39 +395,21 @@ export function renderDayDuration(
   to: Temporal.PlainDate,
   inclusive: boolean = false,
 ): string {
-  if (inclusive) {
-    return to
-      .since(from, {
-        largestUnit: 'day',
-        smallestUnit: 'day',
-      })
-      .add(PT1D)
-      .toLocaleString(locale(), {
-        day: 'numeric',
-        daysDisplay: 'always',
-      } as Intl.DurationFormatOptions);
-  }
-  return to
-    .since(from, {
-      largestUnit: 'day',
-      smallestUnit: 'day',
-    })
-    .toLocaleString(locale(), {
-      day: 'numeric',
-      daysDisplay: 'always',
-    } as Intl.DurationFormatOptions);
+  const dur = to.since(from, {
+    largestUnit: 'day',
+    smallestUnit: 'day',
+  });
+  return inclusive ? dayDurationFormat().format(dur.add(PT1D)) : dayDurationFormat().format(dur);
 }
 
 export function renderAge(
   date: Temporal.PlainDate,
 ): string {
-  return renderDuration(date, Temporal.Now.plainDateISO());
+  return renderYearMonthDuration(date, Temporal.Now.plainDateISO());
 }
 
 export function countryFlagEmoji(code: string): string {
-  const codePoints = code.toUpperCase().split('').map((c) =>
-    127397 + c.charCodeAt(0)
-  );
+  const codePoints = code.toUpperCase().split('').map((c) => 127397 + c.charCodeAt(0));
   return String.fromCodePoint(...codePoints);
 }
 
@@ -596,15 +613,11 @@ export function setAttrs(
 }
 
 export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) =>
-    res.json()
-  );
+  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json());
 }
 
 export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) =>
-    res.json()
-  );
+  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) => res.json());
 }
 
 export function isPersonInGroup(
@@ -697,9 +710,7 @@ export class Option<T> {
   }
 
   static from<T>(value: T | undefined | null): Option<T> {
-    return (value === undefined || value === null)
-      ? Option.EMPTY
-      : new Option<T>(value);
+    return (value === undefined || value === null) ? Option.EMPTY : new Option<T>(value);
   }
 
   private value: T | undefined;

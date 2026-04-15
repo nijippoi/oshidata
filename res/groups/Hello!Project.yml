@@ -1,13 +1,15 @@
 ---
 source_type: 'groups'
 start_id: 0
-end_id: 499
+end_id: 199
 
 groups:
   - name: '名無しグループ'
     name_kana: 'ナナシグループ'
-
-  # モーニング娘。
+  - name: 'ハロー！プロジェクト'
+    name_kana: 'ハロープロジェクト'
+    active_date_ranges:
+      - start: '1997-09-14'
   - names:
       - name: 'モーニング娘。'
         name_kana: 'モーニングムスメ'
@@ -70,15 +72,6 @@ groups:
         name_kana: 'モーニングムスメツーシックス'
         active_date_ranges:
           - start: '2026-01-01'
-    active_date_ranges:
-      - start: '1997-09-14'
-
-  # END モーニング娘。関連
-  - reserve_id_until: 99
-
-  # ハロー！プロジェクト
-  - name: 'ハロー！プロジェクト'
-    name_kana: 'ハロープロジェクト'
     active_date_ranges:
       - start: '1997-09-14'
   - names:
@@ -229,7 +222,7 @@ groups:
       - start: '2024-06-16'
 
   # END ハロー！プロジェクト関連
-  - reserve_id_until: 399
+  - reserve_id_until: 99
 
   # つんく♂プロデュース
   - name: 'NICE GIRL プロジェクト!'
@@ -262,4 +255,4 @@ groups:
         end: '2014-11-16'
 
   # END つんく♂プロデュース
-  - reserve_id_until: 499
+  - reserve_id_until: 199

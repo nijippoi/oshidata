@@ -9,8 +9,7 @@ export const DEFAULT_RELEASE = true;
 export const DEFAULT_SERVE_PORT = 3000;
 export const DEFAULT_SERVE_HOSTNAME = '127.0.0.1';
 export const DEFAULT_BASE_PATH = '/';
-export const DEFAULT_BASE_URL =
-  `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`;
+export const DEFAULT_BASE_URL = `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`;
 export const DEFAULT_DIST_DIR = join(Deno.cwd(), 'dist');
 export const DEFAULT_RES_DIR = join(Deno.cwd(), 'res');
 export const DEFAULT_DATA_DIR = join(Deno.cwd(), 'data');
@@ -29,9 +28,7 @@ export async function globFiles(glob: string, root: string): Promise<string[]> {
 }
 
 export function globFilesSync(glob: string, root: string): string[] {
-  return Array.from(expandGlobSync(glob, { root })).filter((entry) =>
-    entry.isFile
-  ).map((entry) => entry.path);
+  return Array.from(expandGlobSync(glob, { root })).filter((entry) => entry.isFile).map((entry) => entry.path);
 }
 
 // deno-lint-ignore no-explicit-any
