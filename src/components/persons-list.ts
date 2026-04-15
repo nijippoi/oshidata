@@ -1,5 +1,6 @@
 import type { Group, GroupRole, Groups, Person } from '../types.ts';
 import {
+  el,
   elb,
   getAttrs,
   ns,
@@ -105,21 +106,34 @@ export class PersonsList extends Component {
   }
 
   async renderFilter() {
-    const groupsSelect = elb('select').attr('name', ns('filter-groups'))
-      .elem() as HTMLSelectElement;
+    const groupsSelect = el('select', {
+      attributes: {
+        name: ns('filter-groups'),
+      },
+    }) as HTMLSelectElement;
     const groups = await queryGroups();
-    elb('option').attr('value', '').data('label-text', 'message.unselected')
-      .attach(groupsSelect);
+    groupsSelect.appendChild(el('option', {
+      attributes: {
+        value: '',
+      },
+      dataset: {
+        'label-text': 'message.unselected',
+      },
+    }));
     groups.records.forEach((group) => {
-      elb('option').attr('value', group.id).txt(renderGroupName(group))
-        .attach(groupsSelect);
+      groupsSelect.appendChild(el('option', {
+        attributes: {
+          value: group.id,
+        },
+        children: [renderGroupName(group)],
+      }));
     });
     elb('div').add(groupsSelect).attach(this.shadow);
   }
 
   async renderList() {
     // ヘッダー
-    const theadRow = elb('tr').elem();
+    const theadRow = el('tr');
     const cols = getAttrs(
       this,
       'columns',
@@ -140,7 +154,7 @@ export class PersonsList extends Component {
       queryGroups(),
     ]);
 
-    const tbody = elb('tbody').elem();
+    const tbody = el('tbody');
     for (const person of persons.records) {
       const tr = elb('tr');
       const cells = cols.map(

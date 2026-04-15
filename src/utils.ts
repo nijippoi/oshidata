@@ -309,28 +309,15 @@ export function renderPersonName(
 
 const dateFormats: Map<string, Intl.DateTimeFormat> = new Map(
   [
-    [
-      'ja',
-      new Intl.DateTimeFormat('ja', {
-        dateStyle: 'long',
-      }),
-    ],
-    [
-      'ja-JP',
-      new Intl.DateTimeFormat('ja-JP', {
-        dateStyle: 'long',
-      }),
-    ],
+    ['ja', new Intl.DateTimeFormat('ja', { dateStyle: 'long' })],
+    ['ja-JP', new Intl.DateTimeFormat('ja-JP', { dateStyle: 'long' })],
   ],
 );
 
 export function dateFormat(localeKey: string = locale()) {
   return dateFormats.getOrInsertComputed(
     localeKey,
-    (key) =>
-      new Intl.DateTimeFormat(key, {
-        dateStyle: 'long',
-      }),
+    (key) => new Intl.DateTimeFormat(key, { dateStyle: 'long' }),
   );
 }
 
@@ -367,11 +354,11 @@ export function yearMonthDurationFormat(localeKey: string = locale()) {
     localeKey,
     (key) =>
       new Intl.DurationFormat(key, {
-        year: 'numeric',
+        years: 'long',
         yearsDisplay: 'always',
-        month: 'long',
+        months: 'long',
         monthsDisplay: 'always',
-      } as Intl.DurationFormatOptions),
+      }),
   );
 }
 
@@ -382,9 +369,9 @@ export function dayDurationFormat(localeKey: string = locale()) {
     localeKey,
     (key) =>
       new Intl.DurationFormat(key, {
-        day: 'numeric',
+        days: 'long',
         daysDisplay: 'always',
-      } as Intl.DurationFormatOptions),
+      }),
   );
 }
 
@@ -462,126 +449,18 @@ export const ZODIACS: {
     to: { month: number; day: number };
   };
 } = {
-  aries: {
-    from: {
-      month: 3,
-      day: 21,
-    },
-    to: {
-      month: 4,
-      day: 19,
-    },
-  },
-  taurus: {
-    from: {
-      month: 4,
-      day: 20,
-    },
-    to: {
-      month: 5,
-      day: 20,
-    },
-  },
-  gemini: {
-    from: {
-      month: 5,
-      day: 21,
-    },
-    to: {
-      month: 6,
-      day: 20,
-    },
-  },
-  cancer: {
-    from: {
-      month: 6,
-      day: 21,
-    },
-    to: {
-      month: 7,
-      day: 22,
-    },
-  },
-  leo: {
-    from: {
-      month: 7,
-      day: 23,
-    },
-    to: {
-      month: 8,
-      day: 22,
-    },
-  },
-  virgo: {
-    from: {
-      month: 8,
-      day: 23,
-    },
-    to: {
-      month: 9,
-      day: 22,
-    },
-  },
-  libra: {
-    from: {
-      month: 9,
-      day: 23,
-    },
-    to: {
-      month: 10,
-      day: 22,
-    },
-  },
-  scorpio: {
-    from: {
-      month: 10,
-      day: 23,
-    },
-    to: {
-      month: 11,
-      day: 21,
-    },
-  },
-  sagittarius: {
-    from: {
-      month: 11,
-      day: 22,
-    },
-    to: {
-      month: 12,
-      day: 21,
-    },
-  },
-  capricorn: {
-    from: {
-      month: 12,
-      day: 22,
-    },
-    to: {
-      month: 1,
-      day: 19,
-    },
-  },
-  aquarius: {
-    from: {
-      month: 1,
-      day: 20,
-    },
-    to: {
-      month: 2,
-      day: 18,
-    },
-  },
-  pisces: {
-    from: {
-      month: 2,
-      day: 19,
-    },
-    to: {
-      month: 3,
-      day: 20,
-    },
-  },
+  aries: { from: { month: 3, day: 21 }, to: { month: 4, day: 19 } },
+  taurus: { from: { month: 4, day: 20 }, to: { month: 5, day: 20 } },
+  gemini: { from: { month: 5, day: 21 }, to: { month: 6, day: 20 } },
+  cancer: { from: { month: 6, day: 21 }, to: { month: 7, day: 22 } },
+  leo: { from: { month: 7, day: 23 }, to: { month: 8, day: 22 } },
+  virgo: { from: { month: 8, day: 23 }, to: { month: 9, day: 22 } },
+  libra: { from: { month: 9, day: 23 }, to: { month: 10, day: 22 } },
+  scorpio: { from: { month: 10, day: 23 }, to: { month: 11, day: 21 } },
+  sagittarius: { from: { month: 11, day: 22 }, to: { month: 12, day: 21 } },
+  capricorn: { from: { month: 12, day: 22 }, to: { month: 1, day: 19 } },
+  aquarius: { from: { month: 1, day: 20 }, to: { month: 2, day: 18 } },
+  pisces: { from: { month: 2, day: 19 }, to: { month: 3, day: 20 } },
 };
 
 export function zodiac(date: Temporal.PlainDate): string | undefined {
