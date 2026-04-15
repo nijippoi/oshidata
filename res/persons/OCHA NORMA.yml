@@ -1,0 +1,243 @@
+---
+source_type: 'persons'
+start_id: 420
+end_id: 427
+
+persons:
+  - family_name: '斉藤'
+    family_name_kana: 'サイトウ'
+    given_name: '円香'
+    given_name_kana: 'マドカ'
+    birth_date: '2002-10-28'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2018-11-01'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '広本'
+    family_name_kana: 'ヒロモト'
+    given_name: '瑠璃'
+    given_name_kana: 'ルリ'
+    birth_date: '2003-06-18'
+    birth_place:
+      country: 'JP'
+      state: '広島県'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-02'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '米村'
+    family_name_kana: 'ヨネムラ'
+    given_name: '姫良々'
+    given_name_kana: 'キララ'
+    birth_date: '2004-04-30'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2016-01-15'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '窪田'
+    family_name_kana: 'クボタ'
+    given_name: '七海'
+    given_name_kana: 'ナナミ'
+    birth_date: '2004-07-23'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2017-12-11'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '中山'
+    family_name_kana: 'ナカヤマ'
+    given_name: '夏月姫'
+    given_name_kana: 'ナツメ'
+    birth_date: '2005-07-20'
+    birth_place:
+      country: 'JP'
+      state: '石川県'
+    hometown:
+      country: 'JP'
+      state: '石川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2017-03-06'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '西﨑'
+    family_name_kana: 'ニシザキ'
+    given_name: '美空'
+    given_name_kana: 'ミク'
+    birth_date: '2006-04-17'
+    birth_place:
+      country: 'JP'
+      state: '岡山県'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-02'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '北原'
+    family_name_kana: 'キタハラ'
+    given_name: 'もも'
+    given_name_kana: 'モモ'
+    birth_date: '2006-08-30'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '筒井'
+    family_name_kana: 'ツツイ'
+    given_name: '澪心'
+    given_name_kana: 'ロコ'
+    birth_date: '2007-08-10'
+    birth_place:
+      country: 'JP'
+      state: '佐賀県'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+
+  - family_name: '石栗'
+    family_name_kana: 'イシグリ'
+    given_name: '奏美'
+    given_name_kana: 'カナミ'
+    birth_date: '2004-04-20'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+            end: '2025-03-21'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+            end: '2025-03-21'
+
+  - family_name: '田代'
+    family_name_kana: 'タシロ'
+    given_name: 'すみれ'
+    given_name_kana: 'スミレ'
+    birth_date: '2005-06-16'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'OCHA NORMA'
+        active_date_ranges:
+          - start: '2021-12-13'
+            end: '2025-03-11'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2021-12-13'
+            end: '2025-03-11'

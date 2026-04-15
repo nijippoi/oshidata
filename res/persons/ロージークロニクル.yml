@@ -1,0 +1,215 @@
+---
+source_type: 'persons'
+start_id: 400
+end_id: 419
+
+persons:
+  - family_name: '橋田'
+    family_name_kana: 'ハシダ'
+    given_name: '歩果'
+    given_name_kana: 'ホノカ'
+    birth_date: '2005-10-17'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-02'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '吉田'
+    family_name_kana: 'ヨシダ'
+    given_name: '姫杷'
+    given_name_kana: 'ヒノハ'
+    birth_date: '2007-07-08'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '小野田'
+    family_name_kana: 'オノダ'
+    given_name: '華凜'
+    given_name_kana: 'カリン'
+    birth_date: '2008-01-23'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2023-05-23'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '村越'
+    family_name_kana: 'ムラコシ'
+    given_name: '彩菜'
+    given_name_kana: 'アヤナ'
+    birth_date: '2008-02-11'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '植村'
+    family_name_kana: 'ウエムラ'
+    given_name: '葉純'
+    given_name_kana: 'ハスミ'
+    birth_date: '2008-02-25'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '松原'
+    family_name_kana: 'マツバラ'
+    given_name: 'ユリヤ'
+    given_name_kana: 'ユリヤ'
+    birth_date: '2008-02-26'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2023-05-23'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '島川'
+    family_name_kana: 'シマカワ'
+    given_name: '波菜'
+    given_name_kana: 'ハナ'
+    birth_date: '2008-04-18'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2024-06-15'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '上村'
+    family_name_kana: 'カミムラ'
+    given_name: '麗菜'
+    given_name_kana: 'レナ'
+    birth_date: '2009-06-15'
+    birth_place:
+      country: 'JP'
+      state: '鹿児島県'
+    hometown:
+      country: 'JP'
+      state: '鹿児島県'
+    roles:
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-06-16'
+
+  - family_name: '相馬'
+    family_name_kana: 'ソウマ'
+    given_name: '優芽'
+    given_name_kana: 'ユメ'
+    birth_date: '2011-02-04'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2024-06-15'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'ロージークロニクル'
+        active_date_ranges:
+          - start: '2024-06-16'

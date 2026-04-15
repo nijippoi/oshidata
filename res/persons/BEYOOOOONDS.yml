@@ -1,0 +1,327 @@
+---
+source_type: 'persons'
+start_id: 410
+end_id: 421
+
+persons:
+  - family_name: '西田'
+    family_name_kana: 'ニシダ'
+    given_name: '汐里'
+    given_name_kana: 'シオリ'
+    birth_date: '2003-06-07'
+    birth_place:
+      country: 'JP'
+      state: '京都府'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2016-08-17'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '江口'
+    family_name_kana: 'エグチ'
+    given_name: '紗耶'
+    given_name_kana: 'サヤ'
+    birth_date: '2003-08-01'
+    birth_place:
+      country: 'JP'
+      state: '兵庫県'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2017-03-06'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '高瀬'
+    family_name_kana: 'タカセ'
+    given_name: 'くるみ'
+    given_name_kana: 'クルミ'
+    birth_date: '1999-03-16'
+    birth_place:
+      country: 'JP'
+      state: '栃木県'
+    hometown:
+      country: 'JP'
+      state: '栃木県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-03-01'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '前田'
+    family_name_kana: 'マエダ'
+    given_name: 'こころ'
+    given_name_kana: 'ココロ'
+    birth_date: '2002-06-23'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2015-04-27'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '岡村'
+    family_name_kana: 'オカムラ'
+    given_name: '美波'
+    given_name_kana: 'ミナミ'
+    birth_date: '2004-10-20'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2017-03-06'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '清野'
+    family_name_kana: 'キヨノ'
+    given_name: '桃々姫'
+    given_name_kana: 'モモヒメ'
+    birth_date: '2004-12-22'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2016-01-15'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '平井'
+    family_name_kana: 'ヒライ'
+    given_name: '美葉'
+    given_name_kana: 'ミヨ'
+    birth_date: '1999-12-11'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '小林'
+    family_name_kana: 'コバヤシ'
+    given_name: '萌花'
+    given_name_kana: 'ホノカ'
+    birth_date: '2000-08-16'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '里吉'
+    family_name_kana: 'サトヨシ'
+    given_name: 'うたの'
+    given_name_kana: 'ウタノ'
+    birth_date: '2000-09-22'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+
+  - family_name: '一岡'
+    family_name_kana: 'イチオカ'
+    given_name: '伶奈'
+    given_name_kana: 'レイナ'
+    birth_date: '1999-02-25'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2012-12-09'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-03-01'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-03-01'
+      - role: 'member'
+        group: 'CHICA#TETSU'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-03-01'
+
+  - family_name: '山﨑'
+    family_name_kana: 'ヤマサキ'
+    given_name: '夢羽'
+    given_name_kana: 'ユハネ'
+    birth_date: '2002-11-05'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2016-08-17'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-06-27'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-06-27'
+      - role: 'member'
+        group: '雨ノ森 川海'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2024-06-27'
+
+  - family_name: '島倉'
+    family_name_kana: 'シマクラ'
+    given_name: 'りか'
+    given_name_kana: 'リカ'
+    birth_date: '2000-08-20'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2017-03-06'
+            end: '2018-10-18'
+      - role: 'member'
+        group: 'BEYOOOOONDS'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2025-06-09'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2025-06-09'
+      - role: 'member'
+        group: 'CHICA#TETSU'
+        active_date_ranges:
+          - start: '2018-10-19'
+            end: '2025-06-09'
