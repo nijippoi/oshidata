@@ -1,5 +1,6 @@
 import type { Group, GroupRole, Groups, Person } from '../types.ts';
 import {
+  clear,
   el,
   elb,
   getAttrs,
@@ -100,6 +101,7 @@ export class PersonsList extends Component {
   ) {
     switch (name) {
       case 'disabled':
+      case 'group-ids':
         await this.update();
         break;
     }
@@ -128,6 +130,12 @@ export class PersonsList extends Component {
         children: [renderGroupName(group)],
       }));
     });
+
+    // Add event listener for filtering
+    groupsSelect.addEventListener('change', () => {
+      this.update();
+    });
+
     elb('div').add(groupsSelect).attach(this.shadow);
   }
 
@@ -154,8 +162,22 @@ export class PersonsList extends Component {
       queryGroups(),
     ]);
 
+    // Get selected group ID from filter
+    const groupsSelect = this.shadow.querySelector('select[name="oshidata--filter-groups"]') as HTMLSelectElement;
+    const selectedGroupId = groupsSelect?.value || '';
+
+    // Filter persons based on selected group
+    let filteredPersons = persons.records;
+    if (selectedGroupId) {
+      filteredPersons = persons.records.filter((person) =>
+        person.roles?.some((role) =>
+          role.role === 'member' && (role as GroupRole).group_id && (role as GroupRole).group_id === selectedGroupId
+        )
+      );
+    }
+
     const tbody = el('tbody');
-    for (const person of persons.records) {
+    for (const person of filteredPersons) {
       const tr = elb('tr');
       const cells = cols.map(
         (col) => {
@@ -225,7 +247,8 @@ export class PersonsList extends Component {
       tbody.append(tr.elem());
     }
 
-    elb('table').cls('persons-table').add(thead, tbody).attach(this.shadow);
+    const tbl = this.shadow.querySelector('.persons-table')!;
+    clear(tbl).append(thead, tbody);
   }
 
   async init(): Promise<void> {
@@ -251,11 +274,11 @@ export class PersonsList extends Component {
       }
       `);
     await this.renderFilter();
+    elb('table').cls('persons-table').attach(this.shadow);
     await this.renderList();
   }
 
   async update(): Promise<void> {
-    await this.renderFilter();
     await this.renderList();
   }
 }

@@ -110,7 +110,7 @@ function addMaterialSymbolsLink(): void {
   }
 }
 
-export class Component extends HTMLElement {
+export abstract class Component extends HTMLElement {
   shadow: ShadowRoot;
   sheet: CSSStyleSheet;
   constructor(init?: {
