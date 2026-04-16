@@ -292,8 +292,8 @@ persons:
     given_name_kana: 'マリン'
     birth_date: '2004-10-18'
     birth_place:
-      country: 'JP'
-      state: '長崎県'
+      country: 'CN'
+      state: '上海市'
     hometown:
       country: 'JP'
       state: '長崎県'
