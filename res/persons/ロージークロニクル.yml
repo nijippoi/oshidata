@@ -28,7 +28,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2019-08-02'
 
   - family_name: '吉田'
     family_name_kana: 'ヨシダ'
@@ -54,7 +54,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2021-08-01'
 
   - family_name: '小野田'
     family_name_kana: 'オノダ'
@@ -80,7 +80,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2018-11-01'
 
   - family_name: '村越'
     family_name_kana: 'ムラコシ'
@@ -106,7 +106,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2019-08-02'
 
   - family_name: '植村'
     family_name_kana: 'ウエムラ'
@@ -132,7 +132,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2019-08-01'
 
   - family_name: '松原'
     family_name_kana: 'マツバラ'
@@ -158,7 +158,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2017-12-01'
 
   - family_name: '島川'
     family_name_kana: 'シマカワ'
@@ -184,7 +184,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2024-02-07'
 
   - family_name: '上村'
     family_name_kana: 'カミムラ'
@@ -210,7 +210,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2024-06-16'
+          - start: '2022-08-01'
 
   - family_name: '相馬'
     family_name_kana: 'ソウマ'
@@ -233,3 +233,7 @@ persons:
         group: 'ロージークロニクル'
         active_date_ranges:
           - start: '2024-06-16'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2024-02-07'
