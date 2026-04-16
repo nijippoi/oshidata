@@ -42,6 +42,11 @@ persons:
       country: 'JP'
       state: '埼玉県'
     roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2021-08-01'
+            end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
         active_date_ranges:
@@ -66,7 +71,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2023-05-23'
+          - start: '2018-11-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
@@ -89,6 +94,11 @@ persons:
       country: 'JP'
       state: '千葉県'
     roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-02'
+            end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
         active_date_ranges:
@@ -110,6 +120,11 @@ persons:
       country: 'JP'
       state: '大阪府'
     roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2019-08-01'
+            end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
         active_date_ranges:
@@ -134,7 +149,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2023-05-23'
+          - start: '2017-12-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
@@ -160,7 +175,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2024-06-15'
+          - start: '2024-02-07'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
@@ -183,6 +198,11 @@ persons:
       country: 'JP'
       state: '鹿児島県'
     roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        active_date_ranges:
+          - start: '2022-08-01'
+            end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
         active_date_ranges:
@@ -207,7 +227,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2024-06-15'
+          - start: '2024-02-07'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
