@@ -14,7 +14,7 @@
   },
   "tasks": {
     "install": "deno install -I",
-    "update": "deno update -I",
+    "update": "deno update",
     "format": "deno fmt",
     "check": "deno fmt --check",
     "clean": "deno run -RW ./tasks/clean.ts",
