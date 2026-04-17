@@ -68,7 +68,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2012-09-01'
+          - start: '2012-11-01'
             end: '2013-02-25'
       - role: 'member'
         group: 'Juice=Juice'
@@ -78,7 +78,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2013-02-25'
+          - start: '2012-11-01'
             end: '2021-11-24'
   - family_name: '高木'
     family_name_kana: 'タカギ'
@@ -122,7 +122,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2011-09-11'
+          - start: '2011-07-01'
             end: '2013-07-05'
       - role: 'member'
         group: 'Juice=Juice'
@@ -132,7 +132,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2013-02-25'
+          - start: '2011-07-01'
             end: '2013-07-05'
   - family_name: '宮本'
     family_name_kana: 'ミヤモト'
@@ -284,12 +284,12 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2019-05-07'
+          - start: '2017-03-01'
             end: '2019-06-14'
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2019-06-14'
+          - start: '2017-03-01'
   - family_name: '有澤'
     family_name_kana: 'アリサワ'
     given_name: '一華'
@@ -350,7 +350,7 @@ persons:
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2016-01-15'
+          - start: '2019-08-01'
             end: '2021-07-07'
       - role: 'member'
         group: 'Juice=Juice'
@@ -359,7 +359,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2016-01-15'
+          - start: '2019-08-01'
   - family_name: '石山'
     family_name_kana: 'イシヤマ'
     given_name: '咲良'

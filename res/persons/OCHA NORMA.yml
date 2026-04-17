@@ -28,7 +28,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2018-11-01'
 
   - family_name: '広本'
     family_name_kana: 'ヒロモト'
@@ -54,7 +54,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2019-08-02'
 
   - family_name: '米村'
     family_name_kana: 'ヨネムラ'
@@ -80,7 +80,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2016-01-15'
 
   - family_name: '窪田'
     family_name_kana: 'クボタ'
@@ -106,7 +106,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2017-12-11'
 
   - family_name: '中山'
     family_name_kana: 'ナカヤマ'
@@ -132,7 +132,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2017-03-06'
 
   - family_name: '西﨑'
     family_name_kana: 'ニシザキ'
@@ -158,7 +158,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2021-12-13'
+          - start: '2019-08-02'
 
   - family_name: '北原'
     family_name_kana: 'キタハラ'

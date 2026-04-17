@@ -28,7 +28,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2016-08-17'
 
   - family_name: '江口'
     family_name_kana: 'エグチ'
@@ -54,7 +54,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2017-03-06'
 
   - family_name: '高瀬'
     family_name_kana: 'タカセ'
@@ -80,7 +80,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2015-03-01'
 
   - family_name: '前田'
     family_name_kana: 'マエダ'
@@ -106,7 +106,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2015-04-27'
 
   - family_name: '岡村'
     family_name_kana: 'オカムラ'
@@ -132,7 +132,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2017-03-06'
 
   - family_name: '清野'
     family_name_kana: 'キヨノ'
@@ -158,7 +158,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2016-01-15'
 
   - family_name: '平井'
     family_name_kana: 'ヒライ'
@@ -247,12 +247,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
-            end: '2024-03-01'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2012-12-09'
             end: '2024-03-01'
       - role: 'member'
         group: 'CHICA#TETSU'
@@ -285,7 +280,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2016-08-17'
             end: '2024-06-27'
       - role: 'member'
         group: '雨ノ森 川海'
@@ -318,7 +313,7 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2018-10-19'
+          - start: '2017-03-06'
             end: '2025-06-09'
       - role: 'member'
         group: 'CHICA#TETSU'

@@ -26,6 +26,11 @@ persons:
         active_date_ranges:
           - start: '2015-02-25'
             end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-02-01'
+            end: '2020-03-30'
   - family_name: '田口'
     family_name_kana: 'タグチ'
     given_name: '夏実'
@@ -47,6 +52,11 @@ persons:
         group: 'こぶしファクトリー'
         active_date_ranges:
           - start: '2015-02-25'
+            end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2014-12-01'
             end: '2020-03-30'
   - family_name: '小川'
     family_name_kana: 'オガワ'
@@ -70,6 +80,11 @@ persons:
         active_date_ranges:
           - start: '2015-02-25'
             end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-01-15'
+            end: '2020-03-30'
   - family_name: '野村'
     family_name_kana: 'ノムラ'
     given_name: 'みな美'
@@ -91,6 +106,11 @@ persons:
         group: 'こぶしファクトリー'
         active_date_ranges:
           - start: '2015-02-25'
+            end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-03-01'
             end: '2020-03-30'
   - family_name: '和田'
     family_name_kana: 'ワダ'
@@ -114,6 +134,11 @@ persons:
         active_date_ranges:
           - start: '2015-02-25'
             end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-04-01'
+            end: '2020-03-30'
 
   - family_name: '藤井'
     family_name_kana: 'フジイ'
@@ -136,6 +161,11 @@ persons:
         group: 'こぶしファクトリー'
         active_date_ranges:
           - start: '2015-02-25'
+            end: '2020-03-30'
+      - role: 'member'
+        group: 'ハロー！プロジェクト'
+        active_date_ranges:
+          - start: '2015-05-01'
             end: '2020-03-30'
   - family_name: '井上'
     family_name_kana: 'イノウエ'

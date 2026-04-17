@@ -188,11 +188,11 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2014-11-29'
+          - start: '2015-04-01'
       - role: 'member'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2014-11-29'
+          - start: '2015-04-01'
             end: '2016-08-13'
   - family_name: '小野田'
     family_name_kana: 'オノダ'
@@ -238,11 +238,11 @@ persons:
       - role: 'member'
         group: 'ハロー！プロジェクト'
         active_date_ranges:
-          - start: '2015-04-27'
+          - start: '2015-04-01'
       - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
-          - start: '2015-04-27'
+          - start: '2015-04-01'
             end: '2016-08-13'
   - family_name: '河西'
     family_name_kana: 'カサイ'
