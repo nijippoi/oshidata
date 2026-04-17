@@ -1,15 +1,25 @@
-import { elb, ns } from '../utils.ts';
+import { cssRules, elb, ns } from '../utils.ts';
 import Component from './component.ts';
-
+const SHEET = cssRules(
+  '.radio-icons { display: inline-block; }',
+  '.radio-icons input[type="radio"] { display: none; }',
+  '.radio-icons > label { vertical-align: bottom; }',
+  '.radio-icons > label:has(input[type="radio"]) { opacity: 0.2; }',
+  '.radio-icons > label:has(input[type="radio"]:checked) { opacity: 1; }',
+);
 export class RadioIcons extends Component {
   static NAME = ns('radio-icons');
+
+  static register(): void {
+    Component.registerComponent(RadioIcons.NAME, RadioIcons);
+  }
 
   choices: Map<string, string>;
   name: string;
   checked?: string;
 
   constructor(name?: string, choices?: Map<string, string>, checked?: string) {
-    super();
+    super({ css: SHEET });
     if (!name && !this.getAttribute('name')) throw new Error('nameは必須です');
     this.name = name || this.getAttribute('name')!;
     this.choices = choices || new Map();
@@ -34,31 +44,6 @@ export class RadioIcons extends Component {
   }
 
   init(): void {
-    this.insertRule(`
-      .radio-icons {
-        display: inline-block;
-      }
-      `);
-    this.insertRule(`
-      .radio-icons input[type="radio"] {
-        display: none;
-      }
-      `);
-    this.insertRule(`
-      .radio-icons > label {
-        vertical-align: bottom;
-      }
-      `);
-    this.insertRule(`
-      .radio-icons > label:has(input[type="radio"]) {
-        opacity:0.2;
-      }
-      `);
-    this.insertRule(`
-      .radio-icons > label:has(input[type="radio"]:checked) {
-        opacity:1;
-      }
-      `);
     const group = elb('div').cls('radio-icons').elem();
     this.choices.keys().forEach((key) => {
       const input = elb('input').elem() as HTMLInputElement;
@@ -80,5 +65,4 @@ export class RadioIcons extends Component {
   }
 }
 
-customElements.define(RadioIcons.NAME, RadioIcons);
 export default RadioIcons;

@@ -1,7 +1,17 @@
-import '../index.css';
-export { Component } from './component.ts';
-export { Container } from './container.ts';
-export { LocaleSelector as LanguageSelector } from './locale-selector.ts';
-export { PersonsList } from './persons-list.ts';
-export { RadioIcons } from './radio-icons.ts';
-export { Toolbar } from './toolbar.ts';
+import Component, { addMaterialSymbolsLink } from './component.ts';
+import Container from './container.ts';
+import LocaleSelector from './locale-selector.ts';
+import PersonsList from './persons-list.ts';
+import RadioIcons from './radio-icons.ts';
+import Toolbar from './toolbar.ts';
+
+export { Component, Container, LocaleSelector, PersonsList, RadioIcons, Toolbar };
+
+export function registerAll(): void {
+  addMaterialSymbolsLink();
+  Container.register();
+  LocaleSelector.register();
+  PersonsList.register();
+  RadioIcons.register();
+  Toolbar.register();
+}

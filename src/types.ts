@@ -190,36 +190,63 @@ export interface Persons {
   [key: Id]: Person;
 }
 
-export enum Entities {
-  Persons = 'persons',
-  Groups = 'groups',
-}
+/**
+ * エンティティ種類
+ */
+export type EntityType = 'person' | 'group';
 
+/**
+ * エンティティ一覧種類
+ */
+export type EntitiesType = 'persons' | 'groups';
+
+/**
+ * ソート方向
+ */
 export enum OrderDirections {
   Asc = 'asc',
   Desc = 'desc',
 }
 
-export interface QueryOrder {
+/**
+ * ソート順
+ */
+export interface Order {
   field: string;
   direction?: OrderDirections;
 }
 
 export type Predicate<T> = (record: T) => boolean;
 
+/**
+ * クエリ
+ */
 export interface Query<T> {
   filters?: Predicate<T>[];
   page?: number;
   limit?: number;
-  orders?: QueryOrder[];
+  orders?: Order[];
 }
 
+/**
+ * ページ
+ */
 export interface Paged<T> {
   records: T[];
   page?: number;
   next_page?: number;
 }
 
+/**
+ * ラベル
+ */
 export interface Labels {
   [key: string]: string;
 }
+
+/**
+ * タグ
+ */
+export type Tags = {
+  [key in EntityType]: string[];
+};

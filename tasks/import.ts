@@ -1,7 +1,7 @@
 import { parse as parseYaml } from '@std/yaml';
 import { join } from '@std/path';
 import { parseArgs } from '@std/cli/parse-args';
-import type { GroupRole, Person, PersonRole, Persons } from '../src/types.ts';
+import type { GroupRole, Groups, Person, PersonRole, Persons, Tags } from '../src/types.ts';
 import {
   DEFAULT_DATA_DIR,
   DEFAULT_LABELS_DIR,
@@ -10,6 +10,7 @@ import {
   globFilesSync,
   GROUPS_FILE,
   PERSONS_FILE,
+  TAGS_FILE,
   writeJson,
 } from './utils.ts';
 import { existsSync } from '@std/fs';
@@ -36,6 +37,22 @@ export async function importData(
   writeJson(join(dataDir, GROUPS_FILE), groups, release);
   const persons = processPersons(personsData, groups, groupQualifiers);
   writeJson(join(dataDir, PERSONS_FILE), persons, release);
+  const groupTags = Array.from(
+    new Set(
+      Object.entries(groups).map(([key, item]) => item.tags).filter((tags) => tags && tags.length > 0).flat().filter((
+        tag,
+      ) => tag && tag.length > 0),
+    ),
+  ).sort() as string[];
+  const personTags = Array.from(
+    new Set(
+      Object.entries(persons).map(([key, item]) => item.tags).filter((tags) => tags && tags.length > 0).flat().filter((
+        tag,
+      ) => tag && tag.length > 0),
+    ),
+  ).sort() as string[];
+  const tags: Tags = { group: groupTags, person: personTags };
+  writeJson(join(dataDir, TAGS_FILE), tags, release);
 }
 
 /** ラベルJSONを生成 */
@@ -91,7 +108,10 @@ function loadYamlFiles(resDir: string) {
 }
 
 /** グループデータを生成 */
-function processGroups(groupsData: any[]) {
+function processGroups(groupsData: any[]): {
+  groups: Groups;
+  groupQualifiers: Record<string, number>;
+} {
   const groups: Record<string, any> = {};
   const groupQualifiers: Record<string, number> = {};
   const groupParents: Record<string, string> = {};
@@ -128,6 +148,12 @@ function processGroups(groupsData: any[]) {
       }
       if (item.active_date_ranges) {
         group.active_date_ranges = structuredClone(item.active_date_ranges);
+      }
+      if (item.tags && item.tags.length > 0) {
+        const tags = item.tags.map((tag: string) => tag.trim()).filter((tag: string) => tag.length > 0);
+        if (tags.length > 0) {
+          group.tags = tags;
+        }
       }
       groups[gid.toString(10)] = group;
       gid++;
@@ -277,8 +303,10 @@ function processPersons(
         });
       }
       if (item.tags && item.tags.length > 0) {
-        const tags = item.tags.map((t: string) => t.trim()).filter(Boolean);
-        if (tags.length > 0) person.tags = tags;
+        const tags = item.tags.map((tag: string) => tag.trim()).filter((tag: string) => tag.length > 0);
+        if (tags.length > 0) {
+          person.tags = tags;
+        }
       }
       persons[pid.toString(10)] = person;
       pid++;

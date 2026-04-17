@@ -4,6 +4,7 @@ import { join, normalize } from '@std/path';
 export const ENV_FILE = 'env.ts';
 export const GROUPS_FILE = 'groups.json';
 export const PERSONS_FILE = 'persons.json';
+export const TAGS_FILE = 'tags.json';
 
 export const DEFAULT_RELEASE = true;
 export const DEFAULT_SERVE_PORT = 3000;

@@ -1,18 +1,18 @@
-import type { Group, GroupRole, Groups, Person } from '../types.ts';
+import type { GroupRole } from '../types.ts';
+import { queryGroups, queryPersons } from '../data.ts';
 import {
   clear,
+  cssRules,
   el,
   elb,
   getAttrs,
   ns,
-  queryGroups,
-  queryPersons,
   renderGroupName,
   renderLocation,
   renderPersonName,
   setAttrs,
-  zodiac,
 } from '../utils.ts';
+import { zodiac } from '../zodiac.ts';
 import Component from './component.ts';
 import Toolbar from './toolbar.ts';
 
@@ -43,10 +43,20 @@ export interface Query {
   personIds?: string[];
 }
 
+const SHEET = cssRules(
+  ':host { display: block; background-color: var(--bg-2-color); padding: 10px; }',
+  '.persons-table { width: stretch; }',
+  '.persons-table td.person-id, .persons-table td.person-birth-date, .persons-table td.person-age, .persons-table td.person-next-birthday, .persons-table td.person-zodiac { text-align: right; }',
+);
+
 export class PersonsList extends Component {
   static NAME = ns('persons-list');
   static EVENT_QUERY = ns('persons-list-query');
   static DEFAULT_COLUMNS = ['id', 'name'];
+
+  static register(): void {
+    Component.registerComponent(PersonsList.NAME, PersonsList);
+  }
 
   static get observedAttributes() {
     return [
@@ -63,7 +73,7 @@ export class PersonsList extends Component {
   date: Temporal.PlainDate;
 
   constructor() {
-    super();
+    super({ css: SHEET });
     setAttrs(
       this,
       'columns',
@@ -255,27 +265,6 @@ export class PersonsList extends Component {
   }
 
   async init(): Promise<void> {
-    this.insertRule(`
-      :host {
-        display: block;
-        background-color: var(--bg-2-color);
-        padding: 10px;
-      }
-      `);
-    this.insertRule(`
-      .persons-table {
-        width: stretch;
-      }
-      `);
-    this.insertRule(`
-      .persons-table td.person-id,
-      .persons-table td.person-birth-date,
-      .persons-table td.person-age,
-      .persons-table td.person-next-birthday,
-      .persons-table td.person-zodiac {
-        text-align: right;
-      }
-      `);
     await this.renderFilter();
     elb('table').cls('persons-table').attach(this.shadow);
     await this.renderList();
@@ -286,5 +275,4 @@ export class PersonsList extends Component {
   }
 }
 
-customElements.define(PersonsList.NAME, PersonsList);
 export default PersonsList;

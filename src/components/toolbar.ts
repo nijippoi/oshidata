@@ -1,12 +1,17 @@
-import { fireLocaleChanged } from '../label.ts';
-import { elb, LANGS, locale, LOCALES, ns, STORAGE_KEY_LOCALE } from '../utils.ts';
+import { cssRules, elb, ns } from '../utils.ts';
 import Component from './component.ts';
-import RadioIcons from './radio-icons.ts';
+import LocaleSelector from './locale-selector.ts';
+
+const SHEET = cssRules('.toolbar-main { justify-content: space-between; }');
 
 export class Toolbar extends Component {
   static NAME = ns('toolbar');
   static EVENT_TITLE = ns('toolbar-title');
   static EVENT_DATE_CHANGED = ns('toolbar-date-changed');
+
+  static register(): void {
+    Component.registerComponent(Toolbar.NAME, Toolbar);
+  }
 
   static fireChangeTitle(
     title?: string,
@@ -32,7 +37,7 @@ export class Toolbar extends Component {
   }
 
   constructor() {
-    super();
+    super({ css: SHEET });
   }
 
   connectedCallback() {
@@ -56,12 +61,6 @@ export class Toolbar extends Component {
   }
 
   init(): void {
-    this.insertRule(`
-      .toolbar-main {
-        justify-content: space-between;
-      }
-      `);
-
     document.addEventListener(Toolbar.EVENT_TITLE, (evt) => {
       const data: { title?: string; subtitle?: string } = (evt as CustomEvent).detail;
       if (typeof data.title == 'string') this.setAttribute('title', data.title);
@@ -80,34 +79,11 @@ export class Toolbar extends Component {
 
     // right
     const right = elb('div').cls('toolbar-right', 'flex');
-    const localeSelect = elb('select').attr('name', 'locale').evt('change', (evt) => {
-      const oldValue = locale();
-      const newValue = (evt.target as HTMLSelectElement).value;
-      if (newValue) {
-        localStorage.setItem(STORAGE_KEY_LOCALE, (evt.target as HTMLSelectElement).value);
-      } else {
-        localStorage.removeItem(STORAGE_KEY_LOCALE);
-      }
-      if (oldValue !== newValue) fireLocaleChanged(newValue, oldValue);
-    });
-    const storedLocale = localStorage.getItem(STORAGE_KEY_LOCALE) || '';
-    elb('option', {
-      dataset: {
-        'label-text': 'nouns.auto',
-      },
-      attributes: {
-        value: '',
-        ...(storedLocale === '' && { selected: '' }),
-      },
-    }).attach(localeSelect);
-    LOCALES.forEach((key) => {
-      const opt = elb('option').txt(key).attr('value', key);
-      if (storedLocale === key) {
-        opt.attr('selected', '');
-      }
-      opt.attach(localeSelect);
-    });
-    right.add(localeSelect);
+
+    const localeSelector = new LocaleSelector();
+    localeSelector.classList.add('inline-flex');
+    right.add(localeSelector);
+
     const datePicker = elb('input').evt('change', (evt) => {
       const target = evt.target as HTMLInputElement | null;
       if (target) {
@@ -217,5 +193,4 @@ export class Toolbar extends Component {
   }
 }
 
-customElements.define(Toolbar.NAME, Toolbar);
 export default Toolbar;

@@ -1,23 +1,11 @@
-import { baseUrl } from './env.ts';
-import type {
-  DateRange,
-  Group,
-  GroupName,
-  Groups,
-  HasActiveDateRanges,
-  Id,
-  Paged,
-  Person,
-  PersonName,
-  Persons,
-  Predicate,
-  Query,
-} from './types.ts';
+import type { DateRange, Group, GroupName, HasActiveDateRanges, Person, PersonName } from './types.ts';
 
 export const NAMESPACE = 'oshidata';
-export const ENV_FILE = 'env.json';
+
 export const GROUPS_FILE = 'groups.json';
 export const PERSONS_FILE = 'persons.json';
+export const TAGS_FILE = 'tags.json';
+
 export const DATA_PATH = '/data';
 export const LABELS_PATH = '/labels';
 
@@ -188,6 +176,32 @@ export function clear<T extends Element | ShadowRoot | null | undefined>(
   }
   elem.textContent = null;
   return elem;
+}
+
+export function getAttrs(
+  elem: Element,
+  key: string,
+  defaultValues: string[] = [],
+): string[] {
+  return elem.getAttribute(key)?.split(',') || defaultValues;
+}
+
+export function setAttrs(
+  elem: Element,
+  key: string,
+  values: string[],
+  defaultValues: string[] = [],
+) {
+  elem.setAttribute(
+    key,
+    (values.length > 0 ? values : defaultValues).join(','),
+  );
+}
+
+export function cssRules(...rules: string[]): CSSStyleSheet {
+  const sheet = new CSSStyleSheet();
+  rules.forEach((rule) => sheet.insertRule(rule));
+  return sheet;
 }
 
 // deno-lint-ignore no-explicit-any
@@ -441,209 +455,4 @@ export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
     });
   }
   return dateNow;
-}
-
-export const ZODIACS: {
-  [key: string]: {
-    from: { month: number; day: number };
-    to: { month: number; day: number };
-  };
-} = {
-  aries: { from: { month: 3, day: 21 }, to: { month: 4, day: 19 } },
-  taurus: { from: { month: 4, day: 20 }, to: { month: 5, day: 20 } },
-  gemini: { from: { month: 5, day: 21 }, to: { month: 6, day: 20 } },
-  cancer: { from: { month: 6, day: 21 }, to: { month: 7, day: 22 } },
-  leo: { from: { month: 7, day: 23 }, to: { month: 8, day: 22 } },
-  virgo: { from: { month: 8, day: 23 }, to: { month: 9, day: 22 } },
-  libra: { from: { month: 9, day: 23 }, to: { month: 10, day: 22 } },
-  scorpio: { from: { month: 10, day: 23 }, to: { month: 11, day: 21 } },
-  sagittarius: { from: { month: 11, day: 22 }, to: { month: 12, day: 21 } },
-  capricorn: { from: { month: 12, day: 22 }, to: { month: 1, day: 19 } },
-  aquarius: { from: { month: 1, day: 20 }, to: { month: 2, day: 18 } },
-  pisces: { from: { month: 2, day: 19 }, to: { month: 3, day: 20 } },
-};
-
-export function zodiac(date: Temporal.PlainDate): string | undefined {
-  const month = date.month;
-  const day = date.day;
-  for (const key in ZODIACS) {
-    const zodiac = ZODIACS[key];
-    if (
-      (zodiac.from.month == month &&
-        zodiac.from.day <= day) ||
-      (zodiac.to.month == month &&
-        zodiac.to.day >= day)
-    ) {
-      return key;
-    }
-  }
-  return undefined;
-}
-
-export function getAttrs(
-  elem: Element,
-  key: string,
-  defaultValues: string[] = [],
-): string[] {
-  return elem.getAttribute(key)?.split(',') || defaultValues;
-}
-
-export function setAttrs(
-  elem: Element,
-  key: string,
-  values: string[],
-  defaultValues: string[] = [],
-) {
-  elem.setAttribute(
-    key,
-    (values.length > 0 ? values : defaultValues).join(','),
-  );
-}
-
-export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json());
-}
-
-export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) => res.json());
-}
-
-export function isPersonInGroup(
-  groupIds: Id[],
-  date: Temporal.PlainDate,
-): Predicate<Person> {
-  return (person: Person): boolean => {
-    return person.roles?.some((role) => {
-      return role.active_date_ranges?.some((role_date) => {
-        if (role_date.start && role_date.end) {
-          return Temporal.PlainDate.compare(
-                date,
-                Temporal.PlainDate.from(role_date.start),
-              ) >= 0 &&
-            Temporal.PlainDate.compare(
-                date,
-                Temporal.PlainDate.from(role_date.end),
-              ) <= 0;
-        } else if (role_date.start) {
-          return Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(role_date.start),
-          ) >= 0;
-        } else if (role_date.end) {
-          return Temporal.PlainDate.compare(
-            date,
-            Temporal.PlainDate.from(role_date.end),
-          ) <= 0;
-        }
-        return true;
-      }) || false;
-    }) || false;
-  };
-}
-
-export async function queryGroups(query?: Query<Group>): Promise<Paged<Group>> {
-  return await fetchGroups().then((groups) => {
-    const records = [];
-    let nextPage = undefined;
-    for (const key in groups) {
-      if (query && query.filters && query.filters.length > 0) {
-        if (query.filters.every((filter) => filter(groups[key]))) {
-          records.push(groups[key]);
-        }
-      } else {
-        records.push(groups[key]);
-      }
-    }
-    if (query && query.orders && query.orders.length > 0) {
-      // TODO
-    }
-    return {
-      records,
-      'next_page': nextPage,
-    };
-  });
-}
-
-export async function queryPersons(
-  query?: Query<Person>,
-): Promise<Paged<Person>> {
-  return await fetchPersons().then((persons) => {
-    const records = [];
-    let nextPage = undefined;
-    for (const key in persons) {
-      if (query && query.filters && query.filters.length > 0) {
-        if (query.filters.every((filter) => filter(persons[key]))) {
-          records.push(persons[key]);
-        }
-      } else {
-        records.push(persons[key]);
-      }
-    }
-    if (query && query.orders && query.orders.length > 0) {
-      // TODO
-    }
-    return {
-      records,
-      'next_page': nextPage,
-    };
-  });
-}
-
-export class Option<T> {
-  // deno-lint-ignore no-explicit-any
-  private static EMPTY = new Option<any>(undefined);
-
-  static empty<T>(): Option<T> {
-    return Option.EMPTY;
-  }
-
-  static from<T>(value: T | undefined | null): Option<T> {
-    return (value === undefined || value === null) ? Option.EMPTY : new Option<T>(value);
-  }
-
-  private value: T | undefined;
-
-  private constructor(value: T | undefined | null) {
-    this.value = (value === undefined || value === null) ? undefined : value;
-  }
-
-  isPresent(): boolean {
-    return this.value !== undefined;
-  }
-
-  isEmpty(): boolean {
-    return this.value === undefined;
-  }
-
-  /**
-   * @returns {T} value
-   * @throws {Error}
-   */
-  get(): T {
-    if (this.value === undefined) throw new Error('value is not present');
-    return this.value;
-  }
-
-  getOr(value: T): T {
-    return this.value === undefined ? value : this.value;
-  }
-
-  getOrElse(supplier: () => T): T {
-    return this.value === undefined ? supplier() : this.value;
-  }
-
-  map<T2>(mapper: (value: T) => T2): Option<T2> {
-    if (this.value === undefined) return Option.EMPTY;
-    else return new Option<T2>(mapper(this.value));
-  }
-
-  mapOr<T2>(mapper: (value: T) => T2, value: T2): Option<T2> {
-    if (this.value === undefined) return new Option<T2>(value);
-    else return new Option<T2>(mapper(this.value));
-  }
-
-  mapOrElse<T2>(mapper: (value: T) => T2, supplier: () => T2): Option<T2> {
-    if (this.value === undefined) return new Option<T2>(supplier());
-    else return new Option<T2>(mapper(this.value));
-  }
 }
