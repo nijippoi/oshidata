@@ -1,0 +1,25 @@
+name: check
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+      - name: setup-deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.7.12
+      - name: deno-install
+        run: deno task install
+      - name: deno-check
+        run: deno check
+      - name: deno-fmt-check
+        run: deno fmt --check
+      - name: deno-bundle
+        run: deno task bundle

@@ -4,7 +4,6 @@
   "description": "",
   "compilerOptions": {
     "lib": [
-      "deno",
       "deno.ns",
       "deno.window",
       "deno.unstable",
