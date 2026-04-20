@@ -1,11 +1,9 @@
 ---
 source_type: 'groups'
-start_id: 0
+start_id: 1
 end_id: 199
 
 groups:
-  - name: '名無しグループ'
-    name_kana: 'ナナシグループ'
   - name: 'ハロー！プロジェクト'
     name_kana: 'ハロープロジェクト'
     active_date_ranges:
@@ -222,7 +220,7 @@ groups:
       - start: '2024-06-16'
 
   # END ハロー！プロジェクト関連
-  - reserve_id_until: 99
+  - reserve_id_until: 100
 
   # つんく♂プロデュース
   - name: 'NICE GIRL プロジェクト!'

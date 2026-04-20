@@ -1,21 +1,9 @@
 ---
 source_type: 'persons'
-start_id: 0
+start_id: 1
 end_id: 199
 
 persons:
-  - family_name: '名無し'
-    family_name_kana: 'ナナシ'
-    given_name: 'いっちー'
-    given_name_kana: 'イッチー'
-    birth_date: '1970-01-01'
-    birth_place:
-      country: 'JP'
-      state: '東京都'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-
   # モーニング娘。1期メンバー
   - family_name: '福田'
     family_name_kana: 'フクダ'
