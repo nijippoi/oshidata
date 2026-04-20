@@ -21,7 +21,7 @@ export async function label(
   }
   if (!LABELS[langKey]) {
     await navigator.locks.request(
-      'label_load',
+      `label_load_${langKey}`,
       { mode: 'exclusive' },
       async (_lock) => {
         if (!LABELS[langKey]) {

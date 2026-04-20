@@ -62,15 +62,8 @@ export async function watch(
 ): Promise<Deno.FsWatcher> {
   try {
     const paths = [srcDir, resDir, DEFAULT_TASKS_DIR];
-    console.log(
-      `Watching paths=${paths} excludes=${excludes}`,
-    );
-    const watcher = Deno.watchFs(
-      paths,
-      {
-        recursive: true,
-      },
-    );
+    console.log(`Watching paths=${paths} excludes=${excludes}`);
+    const watcher = Deno.watchFs(paths, { recursive: true });
     for await (const evt of watcher) {
       if (
         !evt ||
