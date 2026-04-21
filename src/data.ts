@@ -1,6 +1,6 @@
 import { baseUrl } from './env.ts';
 import type { Group, Groups, Id, Paged, Person, Persons, Predicate, Query, Tags } from './types.ts';
-import { DATA_PATH, GROUPS_FILE, PERSONS_FILE, TAGS_FILE } from './utils.ts';
+import { DATA_PATH, GROUPS_FILE, parsePlainDate, PERSONS_FILE, TAGS_FILE } from './utils.ts';
 
 export async function fetchGroups(): Promise<Groups> {
   return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json());
@@ -24,21 +24,21 @@ export function isPersonInGroup(
         if (role_date.start && role_date.end) {
           return Temporal.PlainDate.compare(
                 date,
-                Temporal.PlainDate.from(role_date.start),
+                parsePlainDate(role_date.start),
               ) >= 0 &&
             Temporal.PlainDate.compare(
                 date,
-                Temporal.PlainDate.from(role_date.end),
+                parsePlainDate(role_date.end),
               ) <= 0;
         } else if (role_date.start) {
           return Temporal.PlainDate.compare(
             date,
-            Temporal.PlainDate.from(role_date.start),
+            parsePlainDate(role_date.start),
           ) >= 0;
         } else if (role_date.end) {
           return Temporal.PlainDate.compare(
             date,
-            Temporal.PlainDate.from(role_date.end),
+            parsePlainDate(role_date.end),
           ) <= 0;
         }
         return true;

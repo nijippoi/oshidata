@@ -1,4 +1,4 @@
-import { cssRules, elb, ns } from '../utils.ts';
+import { cssRules, currentPlainDate, elb, formatDate, ns } from '../utils.ts';
 import Component from './component.ts';
 import LocaleSelector from './locale-selector.ts';
 
@@ -93,7 +93,7 @@ export class Toolbar extends Component {
     datePicker.name = ns('toolbar-datepicker');
     datePicker.type = 'date';
     if (!this.getAttribute('date')) {
-      this.setAttribute('date', Temporal.Now.plainDateISO().toString());
+      this.setAttribute('date', formatDate(currentPlainDate()));
     }
     datePicker.value = this.getAttribute('date')!;
     right.add(datePicker);

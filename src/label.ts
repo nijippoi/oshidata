@@ -1,4 +1,15 @@
-import { formatAge, formatDate, formatDayDuration, formatRange, LABELS_PATH, lang, LANGS, ns } from './utils.ts';
+import {
+  currentPlainDate,
+  formatAge,
+  formatDate,
+  formatDayDuration,
+  formatRange,
+  LABELS_PATH,
+  lang,
+  LANGS,
+  ns,
+  parsePlainDate,
+} from './utils.ts';
 import { baseUrl } from './env.ts';
 import type { Labels } from './types.ts';
 
@@ -74,12 +85,8 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
         }
       }
       if (elem.dataset.labelDateRangeStart || elem.dataset.labelDateRangeEnd) {
-        const start = elem.dataset.labelDateRangeStart
-          ? Temporal.PlainDate.from(elem.dataset.labelDateRangeStart)
-          : undefined;
-        const end = elem.dataset.labelDateRangeEnd
-          ? Temporal.PlainDate.from(elem.dataset.labelDateRangeEnd)
-          : undefined;
+        const start = elem.dataset.labelDateRangeStart ? parsePlainDate(elem.dataset.labelDateRangeStart) : undefined;
+        const end = elem.dataset.labelDateRangeEnd ? parsePlainDate(elem.dataset.labelDateRangeEnd) : undefined;
         const range = formatRange(start, end);
         if (
           elem.dataset.labelDateRangeShowDuration !== undefined && elem.dataset.labelDateRangeShowDuration !== 'false'
@@ -89,8 +96,8 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
             elem.textContent = `${range} (${duration})`;
           } else if (start || end) {
             const baseDate = elem.dataset.labelDateRangeBase
-              ? Temporal.PlainDate.from(elem.dataset.labelDateRangeBase)
-              : Temporal.Now.plainDateISO();
+              ? parsePlainDate(elem.dataset.labelDateRangeBase)
+              : currentPlainDate();
             const duration = formatDayDuration(
               start || baseDate,
               end || baseDate,
@@ -103,15 +110,13 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
         }
       }
       if (elem.hasAttribute('data-label-date')) {
-        elem.textContent = elem.dataset.labelDate ? formatDate(Temporal.PlainDate.from(elem.dataset.labelDate)) : '';
+        elem.textContent = elem.dataset.labelDate ? formatDate(parsePlainDate(elem.dataset.labelDate)) : '';
       }
       if (elem.hasAttribute('data-label-age')) {
         elem.textContent = elem.dataset.labelAge
           ? formatAge(
-            Temporal.PlainDate.from(elem.dataset.labelAge),
-            elem.dataset.labelAgeBase
-              ? Temporal.PlainDate.from(elem.dataset.labelAgeBase)
-              : Temporal.Now.plainDateISO(),
+            parsePlainDate(elem.dataset.labelAge),
+            elem.dataset.labelAgeBase ? parsePlainDate(elem.dataset.labelAgeBase) : currentPlainDate(),
           )
           : '';
       }

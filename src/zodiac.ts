@@ -28,7 +28,7 @@ export interface ZodiacData {
 /**
  * 黄道十二星座のデータ
  */
-export const ZODIACS: Record<ZodiacKey, ZodiacData> = {
+export const ZODIACS: Readonly<Record<ZodiacKey, ZodiacData>> = Object.freeze({
   aries: { from: { month: 3, day: 21 }, to: { month: 4, day: 19 } },
   taurus: { from: { month: 4, day: 20 }, to: { month: 5, day: 20 } },
   gemini: { from: { month: 5, day: 21 }, to: { month: 6, day: 20 } },
@@ -41,14 +41,20 @@ export const ZODIACS: Record<ZodiacKey, ZodiacData> = {
   capricorn: { from: { month: 12, day: 22 }, to: { month: 1, day: 19 } },
   aquarius: { from: { month: 1, day: 20 }, to: { month: 2, day: 18 } },
   pisces: { from: { month: 2, day: 19 }, to: { month: 3, day: 20 } },
-};
+});
+
+const GREGORYLIKE_CALENDARS = new Set(['gregory', 'iso8601', 'japanese', 'buddhist', 'roc']);
 
 /**
  * 黄道十二星座を取得する
  * @param date - 日付
  * @returns 星座のキー
  */
-export function zodiac(date: Temporal.PlainDate): string | undefined {
+export function zodiac(date: Temporal.PlainDate): ZodiacKey | undefined {
+  if (!GREGORYLIKE_CALENDARS.has(date.calendarId)) {
+    console.warn(`zodiac: date is not in a Gregorian-like calendar: ${date.calendarId}`);
+    return undefined;
+  }
   const month = date.month;
   const day = date.day;
   for (const key in ZODIACS) {
@@ -59,7 +65,7 @@ export function zodiac(date: Temporal.PlainDate): string | undefined {
       (zodiac.to.month == month &&
         zodiac.to.day >= day)
     ) {
-      return key;
+      return key as ZodiacKey;
     }
   }
   return undefined;

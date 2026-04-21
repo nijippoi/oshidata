@@ -3,11 +3,13 @@ import { queryGroups, queryPersons } from '../data.ts';
 import {
   clear,
   cssRules,
+  currentPlainDate,
   el,
   elb,
   type ElemBuilder,
   getNonEmptyAttrs,
   ns,
+  parsePlainDate,
   renderGroupName,
   renderLocation,
   renderPersonName,
@@ -101,7 +103,7 @@ export class PersonsList extends Component {
       [],
     );
     this.query = {};
-    this.date = Temporal.Now.plainDateISO();
+    this.date = currentPlainDate();
     this.selectedGroupIds = new Set(getNonEmptyAttrs(this, 'group-ids'));
     this.columns = getNonEmptyAttrs(this, 'columns', PersonsList.DEFAULT_COLUMNS) as ColumnTypes[];
     document.addEventListener(PersonsList.EVENT_QUERY, (evt) => {
@@ -109,7 +111,7 @@ export class PersonsList extends Component {
     });
     document.addEventListener(Toolbar.EVENT_DATE_CHANGED, (evt) => {
       if ((evt as CustomEvent).detail?.date) {
-        this.date = Temporal.PlainDate.from(
+        this.date = parsePlainDate(
           (evt as CustomEvent).detail?.date as string,
         );
       }
@@ -292,7 +294,7 @@ export class PersonsList extends Component {
         break;
       case 'zodiac':
         if (person.birth_date) {
-          const sign = zodiac(Temporal.PlainDate.from(person.birth_date));
+          const sign = zodiac(parsePlainDate(person.birth_date));
           td.add(sign ? elb('span').data('label-text', `zodiacs.${sign}`).elem() : '');
         }
         break;

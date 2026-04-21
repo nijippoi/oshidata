@@ -226,13 +226,22 @@ export function isString(value: any): boolean {
   return typeof value === 'string' || value instanceof String;
 }
 
+export function currentPlainDate(): Temporal.PlainDate {
+  return Temporal.Now.plainDateISO();
+}
+
+export function parsePlainDate(date: Temporal.PlainDateLike): Temporal.PlainDate {
+  return Temporal.PlainDate.from(date).withCalendar('iso8601');
+}
+
 export function toPlainDate(date: Date): Temporal.PlainDate {
   return date.toTemporalInstant().toZonedDateTimeISO(Temporal.Now.timeZoneId())
     .toPlainDate();
 }
 
 export function toDate(date: Temporal.PlainDate): Date {
-  return new Date(date.toString());
+  date = date.withCalendar('iso8601');
+  return new Date(date.year, date.month - 1, date.day, 0, 0, 0, 0);
 }
 
 export function isDateInRange(
@@ -260,7 +269,7 @@ export function resolveActiveDateRange(
   date?: Date | Temporal.PlainDate,
 ): HasActiveDateRanges[] {
   if (!date) {
-    date = Temporal.Now.plainDateISO();
+    date = currentPlainDate();
   } else if (date instanceof Date) {
     date = toPlainDate(date);
   }
@@ -271,8 +280,8 @@ export function resolveActiveDateRange(
       else {
         return isDateInRange(
           date,
-          range.start ? Temporal.PlainDate.from(range.start) : undefined,
-          range.end ? Temporal.PlainDate.from(range.end) : undefined,
+          range.start ? parsePlainDate(range.start) : undefined,
+          range.end ? parsePlainDate(range.end) : undefined,
         );
       }
     });
@@ -281,11 +290,11 @@ export function resolveActiveDateRange(
 
 export function renderDateRange(
   value: DateRange,
-  baseDate: Temporal.PlainDate = Temporal.Now.plainDateISO(),
+  baseDate: Temporal.PlainDate = currentPlainDate(),
   showDuration: boolean = false,
 ): string {
-  const start = value.start ? Temporal.PlainDate.from(value.start) : undefined;
-  const end = value.end ? Temporal.PlainDate.from(value.end) : undefined;
+  const start = value.start ? parsePlainDate(value.start) : undefined;
+  const end = value.end ? parsePlainDate(value.end) : undefined;
   const range = formatRange(start, end);
   if (showDuration) {
     if (start && end) {
@@ -353,7 +362,6 @@ export function dateFormat(localeKey: string = locale()) {
 }
 
 export function formatDate(date: Date | Temporal.PlainDate): string {
-  // Temporal型はIntl.DateTimeFormatに未対応（対応が不完全）なのでDateに一旦変換する
   return dateFormat().format(
     date instanceof Temporal.PlainDate ? toDate(date) : date,
   );
@@ -369,6 +377,8 @@ export function formatRange(
     //   start instanceof Temporal.PlainDate ? toDate(start) : start,
     //   end instanceof Temporal.PlainDate ? toDate(end) : end,
     // );
+    // Issue: https://unicode-org.atlassian.net/browse/CLDR-14993
+    // Issue: https://github.com/tc39/proposal-temporal/issues/3062
     return formatDate(start) + '〜' + formatDate(end);
   } else if (start) {
     return formatDate(start) + '〜';
@@ -430,7 +440,7 @@ export function formatDayDuration(
 
 export function formatAge(
   date: Temporal.PlainDate,
-  baseDate: Temporal.PlainDate = Temporal.Now.plainDateISO(),
+  baseDate: Temporal.PlainDate = currentPlainDate(),
 ): string {
   return formatYearMonthDuration(date, baseDate);
 }
@@ -456,8 +466,8 @@ export function renderLocation(person: Person): string {
 }
 
 export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
-  const now = Temporal.Now.plainDateISO();
-  const dateNow = Temporal.PlainDate.from({
+  const now = currentPlainDate();
+  const dateNow = parsePlainDate({
     year: now.year,
     month: date.month,
     day: date.day,
@@ -465,7 +475,7 @@ export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
   if (
     now.since(dateNow, { largestUnit: 'day', smallestUnit: 'day' }).days >= 0
   ) {
-    return Temporal.PlainDate.from({
+    return parsePlainDate({
       year: now.year + 1,
       month: date.month,
       day: date.day,
