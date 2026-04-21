@@ -48,6 +48,7 @@ const LABEL_DATA_ATTRS = [
   'date-range-end',
   'date-range-base',
   'date-range-show-duration',
+  'placeholder',
 ].map((a) => `data-label-${a}`);
 const LABEL_DATA_SELECTORS = LABEL_DATA_ATTRS.map((a) => `[${a}]`).join(',');
 
@@ -113,6 +114,11 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
               : Temporal.Now.plainDateISO(),
           )
           : '';
+      }
+      if (elem.hasAttribute('data-label-placeholder')) {
+        label(elem.dataset.labelPlaceholder!).then((text) => {
+          elem.setAttribute('placeholder', text || '');
+        });
       }
     }
   });

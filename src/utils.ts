@@ -186,6 +186,14 @@ export function getAttrs(
   return elem.getAttribute(key)?.split(',') || defaultValues;
 }
 
+export function getNonEmptyAttrs(
+  elem: Element,
+  key: string,
+  defaultValues: string[] = [],
+): string[] {
+  return getAttrs(elem, key, defaultValues).filter((value) => value && value.trim().length > 0);
+}
+
 export function setAttrs(
   elem: Element,
   key: string,
@@ -196,6 +204,15 @@ export function setAttrs(
     key,
     (values.length > 0 ? values : defaultValues).join(','),
   );
+}
+
+export function setNonEmptyAttrs(
+  elem: Element,
+  key: string,
+  values: string[],
+  defaultValues: string[] = [],
+) {
+  setAttrs(elem, key, values.filter((value) => value && value.trim().length > 0), defaultValues);
 }
 
 export function cssRules(...rules: string[]): CSSStyleSheet {

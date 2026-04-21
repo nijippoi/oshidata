@@ -1,11 +1,12 @@
 import type { GroupRole } from '../types.ts';
-import { queryGroups, queryPersons } from '../data.ts';
+import { queryGroups, queryGroupTags, queryPersons, queryPersonTags } from '../data.ts';
 import {
   clear,
   cssRules,
   el,
   elb,
   getAttrs,
+  getNonEmptyAttrs,
   ns,
   renderGroupName,
   renderLocation,
@@ -47,6 +48,17 @@ const SHEET = cssRules(
   ':host { display: block; background-color: var(--bg-2-color); padding: 10px; }',
   '.persons-table { width: stretch; }',
   '.persons-table td.person-id, .persons-table td.person-birth-date, .persons-table td.person-age, .persons-table td.person-next-birthday, .persons-table td.person-zodiac { text-align: right; }',
+  '.group-filter { margin-bottom: 8px; }',
+  '.group-filter-chips { display: flex; flex-wrap: wrap; gap: 4px; min-height: 24px; margin-bottom: 4px; }',
+  '.group-filter-chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 6px; background-color: var(--bg-0-color); border: 1px solid var(--border-color); font-size: 0.85em; }',
+  '.group-filter-chip button { border: none; background: none; cursor: pointer; padding: 0 2px; color: var(--text-2-color); font-size: 1em; line-height: 1; }',
+  '.group-filter-chip button:hover { color: var(--text-0-color); }',
+  '.group-filter-input { width: 100%; box-sizing: border-box; padding: 4px 6px; border: 1px solid var(--border-color); background-color: var(--bg-0-color); color: var(--text-0-color); font-size: 1em; }',
+  '.group-filter-list { max-height: 180px; overflow-y: auto; border: 1px solid var(--border-color); border-top: none; background-color: var(--bg-0-color); }',
+  '.group-filter-list:empty { display: none; }',
+  '.group-filter-list label { display: flex; align-items: center; gap: 6px; padding: 4px 8px; cursor: pointer; }',
+  '.group-filter-list label:hover { background-color: var(--bg-1-color); }',
+  '.group-filter-list label input[type="checkbox"] { cursor: pointer; }',
 );
 
 export class PersonsList extends Component {
@@ -71,23 +83,25 @@ export class PersonsList extends Component {
 
   query: Query;
   date: Temporal.PlainDate;
+  selectedGroupIds: Set<string>;
 
   constructor() {
     super({ css: SHEET });
     setAttrs(
       this,
       'columns',
-      getAttrs(this, 'columns'),
+      getNonEmptyAttrs(this, 'columns'),
       PersonsList.DEFAULT_COLUMNS,
     );
     setAttrs(
       this,
       'group-ids',
-      getAttrs(this, 'group-ids'),
+      getNonEmptyAttrs(this, 'group-ids'),
       [],
     );
     this.query = {};
     this.date = Temporal.Now.plainDateISO();
+    this.selectedGroupIds = new Set(getNonEmptyAttrs(this, 'group-ids'));
     document.addEventListener(PersonsList.EVENT_QUERY, (evt) => {
       this.query = (evt as CustomEvent).detail;
     });
@@ -98,6 +112,18 @@ export class PersonsList extends Component {
         );
       }
     });
+  }
+
+  addSelectedGroupId(id: string) {
+    if (id && id.trim().length > 0) {
+      this.selectedGroupIds.add(id);
+    }
+  }
+
+  removeSelectedGroupId(id: string) {
+    if (id && id.trim().length > 0) {
+      this.selectedGroupIds.delete(id);
+    }
   }
 
   async connectedCallback() {
@@ -118,35 +144,75 @@ export class PersonsList extends Component {
   }
 
   async renderFilter() {
-    const groupsSelect = el('select', {
-      attributes: {
-        name: ns('filter-groups'),
-      },
-    }) as HTMLSelectElement;
     const groups = await queryGroups();
-    groupsSelect.appendChild(el('option', {
-      attributes: {
-        value: '',
-      },
-      dataset: {
-        'label-text': 'message.unselected',
-      },
-    }));
-    groups.records.forEach((group) => {
-      groupsSelect.appendChild(el('option', {
-        attributes: {
-          value: group.id,
+    const groupList = el('div', { classes: ['group-filter-list'] });
+    const filterContainer = el('div', { classes: ['group-filter'] });
+    const chipsContainer = el('div', { classes: ['group-filter-chips'] });
+
+    const renderChips = () => {
+      clear(chipsContainer);
+      this.selectedGroupIds.forEach((id) => {
+        const group = groups.records.find((g) => g.id === id);
+        if (!group) return;
+        const removeBtn = el('button', {
+          children: ['×'],
+          listeners: {
+            'click': () => {
+              this.removeSelectedGroupId(id);
+              renderOptions((searchInput as HTMLInputElement).value);
+              renderChips();
+              this.update();
+            },
+          },
+        });
+        const chip = el('span', {
+          classes: ['group-filter-chip'],
+          children: [renderGroupName(group, this.date), removeBtn],
+        });
+        chipsContainer.appendChild(chip);
+      });
+    };
+
+    const renderOptions = (filter: string) => {
+      clear(groupList);
+      const lowerFilter = filter.toLowerCase();
+      const matched = groups.records.filter((g) =>
+        !filter || renderGroupName(g, this.date).toLowerCase().includes(lowerFilter)
+      );
+      matched.forEach((group) => {
+        const checkbox = el('input', {
+          attributes: { 'type': 'checkbox', 'value': group.id },
+          listeners: {
+            'change': (evt) => {
+              if ((evt.target as HTMLInputElement).checked) {
+                this.addSelectedGroupId(group.id);
+              } else {
+                this.removeSelectedGroupId(group.id);
+              }
+              renderChips();
+              this.update();
+            },
+          },
+        }) as HTMLInputElement;
+        const nameSpan = el('span', { children: [renderGroupName(group, this.date)] });
+        groupList.appendChild(el('label', { children: [checkbox, nameSpan] }));
+      });
+    };
+
+    const searchInput = el('input', {
+      classes: ['group-filter-input'],
+      attributes: { 'type': 'text', 'data-label-placeholder': 'message.type_to_filter_groups' },
+      listeners: {
+        'input': (evt) => {
+          renderOptions((evt.target as HTMLInputElement | null)?.value || '');
         },
-        children: [renderGroupName(group)],
-      }));
+      },
     });
 
-    // Add event listener for filtering
-    groupsSelect.addEventListener('change', () => {
-      this.update();
-    });
+    renderOptions('');
 
-    elb('div').add(groupsSelect).attach(this.shadow);
+    filterContainer.append(chipsContainer, searchInput, groupList);
+    this.shadow.appendChild(filterContainer);
   }
 
   async renderList() {
@@ -167,21 +233,22 @@ export class PersonsList extends Component {
     const thead = elb('thead').add(theadRow).elem();
 
     // レコード
-    const [persons, groups] = await Promise.all([
+    const [persons, groups, personTags, groupTags] = await Promise.all([
       queryPersons(),
       queryGroups(),
+      queryPersonTags(),
+      queryGroupTags(),
     ]);
 
-    // Get selected group ID from filter
-    const groupsSelect = this.shadow.querySelector('select[name="oshidata--filter-groups"]') as HTMLSelectElement;
-    const selectedGroupId = groupsSelect?.value || '';
-
-    // Filter persons based on selected group
+    // Filter persons based on selected groups
     let filteredPersons = persons.records;
-    if (selectedGroupId) {
+    if (this.selectedGroupIds.size > 0) {
+      console.log(this.selectedGroupIds);
       filteredPersons = persons.records.filter((person) =>
         person.roles?.some((role) =>
-          role.role === 'member' && (role as GroupRole).group_id && (role as GroupRole).group_id === selectedGroupId
+          role.role === 'member' &&
+          (role as GroupRole).group_id &&
+          this.selectedGroupIds.has((role as GroupRole).group_id)
         )
       );
     }
@@ -212,7 +279,7 @@ export class PersonsList extends Component {
               {
                 const roles = (person.roles || []).filter((role) =>
                   (role as GroupRole).group_id !== undefined &&
-                  (selectedGroupId ? (role as GroupRole).group_id === selectedGroupId : true)
+                  (this.selectedGroupIds.size > 0 ? this.selectedGroupIds.has((role as GroupRole).group_id) : true)
                 ) as GroupRole[];
                 for (const role of roles) {
                   const group = groups.records.find((grp) => grp.id === role.group_id);

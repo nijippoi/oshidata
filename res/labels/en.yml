@@ -50,6 +50,7 @@ labels:
   nouns.today: Today
   message.select: Please select
   message.unselected: Unselected
+  message.type_to_filter_groups: Type to filter groups
   langs.en: English
   langs.ja: Japanese
   zodiacs.aries: Aries

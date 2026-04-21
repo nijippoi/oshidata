@@ -50,6 +50,7 @@ labels:
   nouns.today: 今日
   message.select: 選択してください
   message.unselected: 未選択
+  message.type_to_filter_groups: グループ名を入力して絞り込む
   langs.en: English
   langs.ja: 日本語
   zodiacs.aries: 牡羊座
