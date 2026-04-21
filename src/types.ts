@@ -86,9 +86,7 @@ export interface Group extends HasId, HasActiveDateRanges {
 /**
  * グループ一覧
  */
-export interface Groups {
-  [key: Id]: Group;
-}
+export type Groups = Record<Id, Group>;
 
 /**
  * 役職のタイプ
@@ -186,9 +184,7 @@ export interface Person extends HasId, HasActiveDateRanges {
 /**
  * 人物一覧
  */
-export interface Persons {
-  [key: Id]: Person;
-}
+export type Persons = Record<Id, Person>;
 
 /**
  * エンティティ種類
@@ -240,13 +236,9 @@ export interface Paged<T> {
 /**
  * ラベル
  */
-export interface Labels {
-  [key: string]: string;
-}
+export type Labels = Record<string, string>;
 
 /**
  * タグ
  */
-export type Tags = {
-  [key in EntityType]: string[];
-};
+export type Tags = Record<EntityType, string[]>;

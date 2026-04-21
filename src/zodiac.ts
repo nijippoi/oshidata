@@ -1,9 +1,34 @@
-export const ZODIACS: {
-  [key: string]: {
-    from: { month: number; day: number };
-    to: { month: number; day: number };
-  };
-} = {
+/**
+ * 黄道十二星座のキー
+ */
+export type ZodiacKey =
+  | 'aries'
+  | 'taurus'
+  | 'gemini'
+  | 'cancer'
+  | 'leo'
+  | 'virgo'
+  | 'libra'
+  | 'scorpio'
+  | 'sagittarius'
+  | 'capricorn'
+  | 'aquarius'
+  | 'pisces';
+
+/**
+ * 黄道十二星座のデータ型
+ */
+export interface ZodiacData {
+  /** 開始月日(含む) */
+  from: { month: number; day: number };
+  /** 終了月日(含む) */
+  to: { month: number; day: number };
+}
+
+/**
+ * 黄道十二星座のデータ
+ */
+export const ZODIACS: Record<ZodiacKey, ZodiacData> = {
   aries: { from: { month: 3, day: 21 }, to: { month: 4, day: 19 } },
   taurus: { from: { month: 4, day: 20 }, to: { month: 5, day: 20 } },
   gemini: { from: { month: 5, day: 21 }, to: { month: 6, day: 20 } },
@@ -18,11 +43,16 @@ export const ZODIACS: {
   pisces: { from: { month: 2, day: 19 }, to: { month: 3, day: 20 } },
 };
 
+/**
+ * 黄道十二星座を取得する
+ * @param date - 日付
+ * @returns 星座のキー
+ */
 export function zodiac(date: Temporal.PlainDate): string | undefined {
   const month = date.month;
   const day = date.day;
   for (const key in ZODIACS) {
-    const zodiac = ZODIACS[key];
+    const zodiac = ZODIACS[key as ZodiacKey];
     if (
       (zodiac.from.month == month &&
         zodiac.from.day <= day) ||

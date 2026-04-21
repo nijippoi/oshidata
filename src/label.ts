@@ -2,7 +2,7 @@ import { formatAge, formatDate, formatDayDuration, formatRange, LABELS_PATH, lan
 import { baseUrl } from './env.ts';
 import type { Labels } from './types.ts';
 
-const LABELS: { [keyof: string]: Labels } = {};
+const LABELS: Record<string, Labels> = {};
 
 async function load(
   langKey: string,
@@ -13,7 +13,7 @@ async function load(
 
 export async function label(
   key: string,
-  params?: { [key: string]: string },
+  params?: Record<string, string>,
 ): Promise<string | undefined> {
   let langKey = lang();
   if (LANGS.indexOf(langKey) < 0) {

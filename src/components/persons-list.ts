@@ -1,11 +1,11 @@
-import type { GroupRole } from '../types.ts';
-import { queryGroups, queryGroupTags, queryPersons, queryPersonTags } from '../data.ts';
+import type { Group, GroupRole, Person } from '../types.ts';
+import { queryGroups, queryPersons } from '../data.ts';
 import {
   clear,
   cssRules,
   el,
   elb,
-  getAttrs,
+  type ElemBuilder,
   getNonEmptyAttrs,
   ns,
   renderGroupName,
@@ -84,6 +84,7 @@ export class PersonsList extends Component {
   query: Query;
   date: Temporal.PlainDate;
   selectedGroupIds: Set<string>;
+  columns: ColumnTypes[];
 
   constructor() {
     super({ css: SHEET });
@@ -102,6 +103,7 @@ export class PersonsList extends Component {
     this.query = {};
     this.date = Temporal.Now.plainDateISO();
     this.selectedGroupIds = new Set(getNonEmptyAttrs(this, 'group-ids'));
+    this.columns = getNonEmptyAttrs(this, 'columns', PersonsList.DEFAULT_COLUMNS) as ColumnTypes[];
     document.addEventListener(PersonsList.EVENT_QUERY, (evt) => {
       this.query = (evt as CustomEvent).detail;
     });
@@ -114,14 +116,10 @@ export class PersonsList extends Component {
     });
   }
 
-  addSelectedGroupId(id: string) {
-    if (id && id.trim().length > 0) {
+  toggleSelectedGroupId(id: string, selected: boolean) {
+    if (selected) {
       this.selectedGroupIds.add(id);
-    }
-  }
-
-  removeSelectedGroupId(id: string) {
-    if (id && id.trim().length > 0) {
+    } else {
       this.selectedGroupIds.delete(id);
     }
   }
@@ -132,42 +130,70 @@ export class PersonsList extends Component {
 
   async attributeChangedCallback(
     name: string,
-    oldValue?: string | null,
-    newValue?: string | null,
+    _oldValue?: string | null,
+    _newValue?: string | null,
   ) {
+    let updated = false;
     switch (name) {
       case 'disabled':
-      case 'group-ids':
-        await this.update();
+        updated = true;
         break;
+      case 'columns': {
+        const newColumns = getNonEmptyAttrs(this, 'columns', PersonsList.DEFAULT_COLUMNS) as ColumnTypes[];
+        if (
+          newColumns.length !== this.columns.length ||
+          newColumns.some((col, i) => this.columns[i] !== col)
+        ) {
+          this.columns = newColumns;
+          updated = true;
+        }
+        break;
+      }
+      case 'group-ids': {
+        const newGroupIds = new Set(getNonEmptyAttrs(this, 'group-ids'));
+        if (
+          newGroupIds.size !== this.selectedGroupIds.size ||
+          newGroupIds.difference(this.selectedGroupIds).size > 0
+        ) {
+          this.selectedGroupIds = newGroupIds;
+          updated = true;
+        }
+        break;
+      }
+    }
+    if (updated) {
+      await this.update();
     }
   }
 
   async renderFilter() {
     const groups = await queryGroups();
-    const groupList = el('div', { classes: ['group-filter-list'] });
+
     const filterContainer = el('div', { classes: ['group-filter'] });
     const chipsContainer = el('div', { classes: ['group-filter-chips'] });
+    const groupList = el('div', { classes: ['group-filter-list'] });
 
     const renderChips = () => {
       clear(chipsContainer);
       this.selectedGroupIds.forEach((id) => {
         const group = groups.records.find((g) => g.id === id);
         if (!group) return;
-        const removeBtn = el('button', {
-          children: ['×'],
-          listeners: {
-            'click': () => {
-              this.removeSelectedGroupId(id);
-              renderOptions((searchInput as HTMLInputElement).value);
-              renderChips();
-              this.update();
-            },
-          },
-        });
         const chip = el('span', {
           classes: ['group-filter-chip'],
-          children: [renderGroupName(group, this.date), removeBtn],
+          children: [
+            renderGroupName(group, this.date),
+            el('button', {
+              children: ['×'],
+              listeners: {
+                'click': () => {
+                  this.toggleSelectedGroupId(id, false);
+                  renderOptions((searchInput as HTMLInputElement).value);
+                  renderChips();
+                  this.update();
+                },
+              },
+            }),
+          ],
         });
         chipsContainer.appendChild(chip);
       });
@@ -176,159 +202,134 @@ export class PersonsList extends Component {
     const renderOptions = (filter: string) => {
       clear(groupList);
       const lowerFilter = filter.toLowerCase();
-      const matched = groups.records.filter((g) =>
-        !filter || renderGroupName(g, this.date).toLowerCase().includes(lowerFilter)
-      );
-      matched.forEach((group) => {
-        const checkbox = el('input', {
-          attributes: { 'type': 'checkbox', 'value': group.id },
-          listeners: {
-            'change': (evt) => {
-              if ((evt.target as HTMLInputElement).checked) {
-                this.addSelectedGroupId(group.id);
-              } else {
-                this.removeSelectedGroupId(group.id);
-              }
-              renderChips();
-              this.update();
+      groups.records
+        .filter((g) => !filter || renderGroupName(g, this.date).toLowerCase().includes(lowerFilter))
+        .forEach((group) => {
+          const checkbox = el('input', {
+            attributes: { 'type': 'checkbox', 'value': group.id },
+            listeners: {
+              'change': (evt) => {
+                this.toggleSelectedGroupId(group.id, (evt.target as HTMLInputElement).checked);
+                renderChips();
+                this.update();
+              },
             },
-          },
-        }) as HTMLInputElement;
-        const nameSpan = el('span', { children: [renderGroupName(group, this.date)] });
-        groupList.appendChild(el('label', { children: [checkbox, nameSpan] }));
-      });
+          }) as HTMLInputElement;
+          checkbox.checked = this.selectedGroupIds.has(group.id);
+          groupList.appendChild(el('label', {
+            children: [checkbox, el('span', { children: [renderGroupName(group, this.date)] })],
+          }));
+        });
     };
 
     const searchInput = el('input', {
       classes: ['group-filter-input'],
-      attributes: { 'type': 'text', 'data-label-placeholder': 'message.type_to_filter_groups' },
+      attributes: {
+        'name': 'group-filter-input',
+        'type': 'text',
+        'data-label-placeholder': 'message.type_to_filter_groups',
+      },
       listeners: {
-        'input': (evt) => {
-          renderOptions((evt.target as HTMLInputElement | null)?.value || '');
-        },
+        'input': (evt) => renderOptions((evt.target as HTMLInputElement | null)?.value || ''),
       },
     });
 
     renderOptions('');
-
     filterContainer.append(chipsContainer, searchInput, groupList);
     this.shadow.appendChild(filterContainer);
   }
 
+  private renderGroupsCell(
+    td: ElemBuilder,
+    person: Person,
+    groupsById: Map<string, Group>,
+  ) {
+    const roles = (person.roles || []).filter((role) =>
+      (role as GroupRole).group_id !== undefined &&
+      (this.selectedGroupIds.size > 0 ? this.selectedGroupIds.has((role as GroupRole).group_id) : true)
+    ) as GroupRole[];
+
+    for (const role of roles) {
+      const group = groupsById.get(role.group_id);
+      if (!group) continue;
+      td.add(elb('div').txt(renderGroupName(group, this.date)).elem());
+      role.active_date_ranges?.forEach((range) => {
+        td.add(elb('div', {
+          dataset: {
+            'label-date-range-start': range.start || undefined,
+            'label-date-range-end': range.end || undefined,
+            'label-date-range-show-duration': '',
+          },
+        }));
+      });
+    }
+  }
+
+  private renderCell(
+    col: ColumnTypes,
+    person: Person,
+    groupsById: Map<string, Group>,
+  ): ElemBuilder {
+    const td = elb('td').cls(`person-${col}`);
+    switch (col) {
+      case 'id':
+        td.txt(person.id);
+        break;
+      case 'name':
+        td.txt(renderPersonName(person, this.date) || '');
+        break;
+      case 'birth-date':
+        td.data('label-date', person.birth_date || '');
+        break;
+      case 'age':
+        td.data('label-age', person.birth_date || '');
+        break;
+      case 'hometown':
+        td.add(elb('span').txt(renderLocation(person)).elem());
+        break;
+      case 'groups':
+        this.renderGroupsCell(td, person, groupsById);
+        break;
+      case 'zodiac':
+        if (person.birth_date) {
+          const sign = zodiac(Temporal.PlainDate.from(person.birth_date));
+          td.add(sign ? elb('span').data('label-text', `zodiacs.${sign}`).elem() : '');
+        }
+        break;
+    }
+    return td;
+  }
+
   async renderList() {
-    // ヘッダー
     const theadRow = el('tr');
-    const cols = getAttrs(
-      this,
-      'columns',
-      PersonsList.DEFAULT_COLUMNS,
-    ) as ColumnTypes[];
-    cols.forEach(
-      (col) => {
-        elb('th').add(
-          elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).elem(),
-        ).attach(theadRow);
-      },
-    );
-    const thead = elb('thead').add(theadRow).elem();
+    this.columns.forEach((col) => {
+      elb('th').add(
+        elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).elem(),
+      ).attach(theadRow);
+    });
 
-    // レコード
-    const [persons, groups, personTags, groupTags] = await Promise.all([
-      queryPersons(),
-      queryGroups(),
-      queryPersonTags(),
-      queryGroupTags(),
-    ]);
+    const [persons, groups] = await Promise.all([queryPersons(), queryGroups()]);
+    const groupsById = new Map(groups.records.map((g) => [g.id, g]));
 
-    // Filter persons based on selected groups
-    let filteredPersons = persons.records;
-    if (this.selectedGroupIds.size > 0) {
-      console.log(this.selectedGroupIds);
-      filteredPersons = persons.records.filter((person) =>
+    const filteredPersons = this.selectedGroupIds.size > 0
+      ? persons.records.filter((person) =>
         person.roles?.some((role) =>
           role.role === 'member' &&
           (role as GroupRole).group_id &&
           this.selectedGroupIds.has((role as GroupRole).group_id)
         )
-      );
-    }
+      )
+      : persons.records;
 
     const tbody = el('tbody');
     for (const person of filteredPersons) {
       const tr = elb('tr');
-      const cells = cols.map(
-        (col) => {
-          const td = elb('td').cls(`person-${col}`);
-          switch (col) {
-            case 'id':
-              td.txt(person.id);
-              break;
-            case 'name':
-              td.txt(renderPersonName(person, this.date) || '');
-              break;
-            case 'birth-date':
-              td.data('label-date', person.birth_date || '');
-              break;
-            case 'age':
-              td.data('label-age', person.birth_date || '');
-              break;
-            case 'hometown':
-              td.add(elb('span').txt(renderLocation(person)).elem());
-              break;
-            case 'groups':
-              {
-                const roles = (person.roles || []).filter((role) =>
-                  (role as GroupRole).group_id !== undefined &&
-                  (this.selectedGroupIds.size > 0 ? this.selectedGroupIds.has((role as GroupRole).group_id) : true)
-                ) as GroupRole[];
-                for (const role of roles) {
-                  const group = groups.records.find((grp) => grp.id === role.group_id);
-                  if (group) {
-                    const groupName = renderGroupName(group, this.date);
-                    td.add(elb('div').txt(groupName).elem());
-                    role.active_date_ranges?.forEach((range) => {
-                      td.add(
-                        elb('div', {
-                          dataset: {
-                            'label-date-range-start': range.start || undefined,
-                            'label-date-range-end': range.end || undefined,
-                            'label-date-range-show-duration': '',
-                          },
-                        }),
-                      );
-                    });
-                  }
-                }
-              }
-              break;
-            case 'zodiac':
-              if (person.birth_date) {
-                const thisZodiac = zodiac(
-                  Temporal.PlainDate.from(person.birth_date),
-                );
-                if (thisZodiac) {
-                  td.add(
-                    elb('span').data('label-text', `zodiacs.${thisZodiac}`)
-                      .elem(),
-                  );
-                } else {
-                  td.txt('');
-                }
-              } else {
-                td.txt('');
-              }
-              break;
-            default:
-          }
-          return td;
-        },
-      );
-      cells.forEach((td) => tr.add(td.elem()));
+      this.columns.forEach((col) => tr.add(this.renderCell(col, person, groupsById).elem()));
       tbody.append(tr.elem());
     }
 
     const tbl = this.shadow.querySelector('.persons-table')!;
-    clear(tbl).append(thead, tbody);
+    clear(tbl).append(elb('thead').add(theadRow).elem(), tbody);
   }
 
   async init(): Promise<void> {
