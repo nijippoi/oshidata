@@ -120,6 +120,11 @@ export class ElemBuilder {
     return this;
   }
 
+  clear(): this {
+    this.children = [];
+    return this;
+  }
+
   data(key: string, value?: string) {
     if (value === undefined || value === null) {
       this.dataset.delete(key);
@@ -154,6 +159,14 @@ export class ElemBuilder {
     const elem = this.el();
     value instanceof ElemBuilder ? value.add(this) : value.appendChild(elem);
     return elem;
+  }
+
+  root(tag: string, init?: ElemBuilderInit): ElemBuilder {
+    return new ElemBuilder(tag, init).add(this.el());
+  }
+
+  rootb(tag: string, init?: ElemBuilderInit): HTMLElement {
+    return this.root(tag, init).el();
   }
 }
 

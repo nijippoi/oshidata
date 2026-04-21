@@ -172,9 +172,7 @@ export class Toolbar extends Component {
       'ライト・ダーク切り替え',
     ).attach(right);
 
-    elb('div').cls('toolbar-main', 'flex').add(left, right).attach(
-      this.shadow,
-    );
+    elb('div').cls('toolbar-main', 'flex').add(left, right).attach(this.shadow);
   }
 
   update(): void {

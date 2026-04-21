@@ -1,4 +1,4 @@
-import { cssRules, elb, ns } from '../utils.ts';
+import { cssRules, el, elb, ns } from '../utils.ts';
 import Component from './component.ts';
 const SHEET = cssRules(
   '.radio-icons { display: inline-block; }',
@@ -44,7 +44,7 @@ export class RadioIcons extends Component {
   }
 
   init(): void {
-    const group = elb('div').cls('radio-icons').el();
+    const group = el('div', { classes: ['radio-icons'] });
     this.choices.keys().forEach((key) => {
       const input = elb('input').el() as HTMLInputElement;
       input.type = 'radio';
