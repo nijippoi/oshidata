@@ -1,4 +1,5 @@
 import type { Group, GroupRole, Person } from '../types.ts';
+import type { ElemBuilder } from '../utils.ts';
 import { queryGroups, queryPersons } from '../data.ts';
 import {
   clear,
@@ -6,7 +7,6 @@ import {
   currentPlainDate,
   el,
   elb,
-  type ElemBuilder,
   getNonEmptyAttrs,
   ns,
   parsePlainDate,
@@ -254,7 +254,7 @@ export class PersonsList extends Component {
     for (const role of roles) {
       const group = groupsById.get(role.group_id);
       if (!group) continue;
-      td.add(elb('div').txt(renderGroupName(group, this.date)).elem());
+      td.add(elb('div').txt(renderGroupName(group, this.date)).el());
       role.active_date_ranges?.forEach((range) => {
         td.add(elb('div', {
           dataset: {
@@ -287,7 +287,7 @@ export class PersonsList extends Component {
         td.data('label-age', person.birth_date || '');
         break;
       case 'hometown':
-        td.add(elb('span').txt(renderLocation(person)).elem());
+        td.add(elb('span').txt(renderLocation(person)).el());
         break;
       case 'groups':
         this.renderGroupsCell(td, person, groupsById);
@@ -295,7 +295,7 @@ export class PersonsList extends Component {
       case 'zodiac':
         if (person.birth_date) {
           const sign = zodiac(parsePlainDate(person.birth_date));
-          td.add(sign ? elb('span').data('label-text', `zodiacs.${sign}`).elem() : '');
+          td.add(sign ? elb('span').data('label-text', `zodiacs.${sign}`).el() : '');
         }
         break;
     }
@@ -306,7 +306,7 @@ export class PersonsList extends Component {
     const theadRow = el('tr');
     this.columns.forEach((col) => {
       elb('th').add(
-        elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).elem(),
+        elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).el(),
       ).attach(theadRow);
     });
 
@@ -326,12 +326,12 @@ export class PersonsList extends Component {
     const tbody = el('tbody');
     for (const person of filteredPersons) {
       const tr = elb('tr');
-      this.columns.forEach((col) => tr.add(this.renderCell(col, person, groupsById).elem()));
-      tbody.append(tr.elem());
+      this.columns.forEach((col) => tr.add(this.renderCell(col, person, groupsById).el()));
+      tbody.append(tr.el());
     }
 
     const tbl = this.shadow.querySelector('.persons-table')!;
-    clear(tbl).append(elb('thead').add(theadRow).elem(), tbody);
+    clear(tbl).append(elb('thead').add(theadRow).el(), tbody);
   }
 
   async init(): Promise<void> {

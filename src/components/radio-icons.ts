@@ -44,9 +44,9 @@ export class RadioIcons extends Component {
   }
 
   init(): void {
-    const group = elb('div').cls('radio-icons').elem();
+    const group = elb('div').cls('radio-icons').el();
     this.choices.keys().forEach((key) => {
-      const input = elb('input').elem() as HTMLInputElement;
+      const input = elb('input').el() as HTMLInputElement;
       input.type = 'radio';
       input.name = this.name;
       input.value = key;

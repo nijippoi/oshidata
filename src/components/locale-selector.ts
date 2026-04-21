@@ -38,7 +38,7 @@ export class LocaleSelector extends Component {
       }
       opt.attach(select);
     });
-    this.shadow.append(select.elem());
+    this.shadow.append(select.el());
   }
 }
 

@@ -1,5 +1,5 @@
-import { baseUrl } from './env.ts';
 import type { Group, Groups, Id, Paged, Person, Persons, Predicate, Query, Tags } from './types.ts';
+import { baseUrl } from './env.ts';
 import { DATA_PATH, GROUPS_FILE, parsePlainDate, PERSONS_FILE, TAGS_FILE } from './utils.ts';
 
 export async function fetchGroups(): Promise<Groups> {

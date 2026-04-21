@@ -138,22 +138,22 @@ export class ElemBuilder {
     return this;
   }
 
-  elem(): HTMLElement {
-    const el = document.createElement(this.tag, this.opts);
-    el.classList.add(...this.classes);
-    this.dataset.entries().forEach(([key, value]) => el.setAttribute(`data-${key}`, value));
-    this.attrs.entries().forEach(([key, value]) => el.setAttribute(key, value));
+  el(): HTMLElement {
+    const elem = document.createElement(this.tag, this.opts);
+    elem.classList.add(...this.classes);
+    this.dataset.entries().forEach(([key, value]) => elem.setAttribute(`data-${key}`, value));
+    this.attrs.entries().forEach(([key, value]) => elem.setAttribute(key, value));
     this.children.forEach((child) => {
-      child instanceof ElemBuilder ? el.append(child.elem()) : el.append(child);
+      child instanceof ElemBuilder ? elem.append(child.el()) : elem.append(child);
     });
-    this.listeners.entries().forEach(([key, value]) => el.addEventListener(key, value));
-    return el;
+    this.listeners.entries().forEach(([key, value]) => elem.addEventListener(key, value));
+    return elem;
   }
 
   attach(value: ElemBuilder | Node): HTMLElement {
-    const el = this.elem();
-    value instanceof ElemBuilder ? value.add(this) : value.appendChild(el);
-    return el;
+    const elem = this.el();
+    value instanceof ElemBuilder ? value.add(this) : value.appendChild(elem);
+    return elem;
   }
 }
 
@@ -162,7 +162,7 @@ export function elb(tag: string, init?: ElemBuilderInit): ElemBuilder {
 }
 
 export function el(tag: string, init?: ElemBuilderInit): HTMLElement {
-  return new ElemBuilder(tag, init).elem();
+  return new ElemBuilder(tag, init).el();
 }
 
 export function clear<T extends Element | ShadowRoot | null | undefined>(

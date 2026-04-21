@@ -89,7 +89,7 @@ export class Toolbar extends Component {
       if (target) {
         Toolbar.fireDateChanged(target.value);
       }
-    }).elem() as HTMLInputElement;
+    }).el() as HTMLInputElement;
     datePicker.name = ns('toolbar-datepicker');
     datePicker.type = 'date';
     if (!this.getAttribute('date')) {
@@ -106,7 +106,7 @@ export class Toolbar extends Component {
         if (metaColorScheme) {
           (metaColorScheme as HTMLMetaElement).content = value;
         } else {
-          const newMetaColorScheme = elb('meta').elem() as HTMLMetaElement;
+          const newMetaColorScheme = elb('meta').el() as HTMLMetaElement;
           newMetaColorScheme.name = 'color-scheme';
           newMetaColorScheme.content = value;
           document.head.appendChild(newMetaColorScheme);
