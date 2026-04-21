@@ -189,7 +189,7 @@ persons:
         group: 'ハロー！プロジェクト'
         active_date_ranges:
           - start: '2015-04-01'
-      - role: 'member'
+      - role: 'trainee'
         group: 'ハロプロ研修生'
         active_date_ranges:
           - start: '2015-04-01'
