@@ -9,16 +9,16 @@
     },
     {
       "type": "volume",
-      "source": "${devcontainerId}-user-cache",
-      "target": "/home/vscode/.cache"
+      "source": "${devcontainerId}-deno-cache",
+      "target": "/home/vscode/.cache/deno"
     }
   ],
   "features": {
     "ghcr.io/devcontainers-community/features/deno:1": {
-      "version": "2.7.12"
+      "version": "2.7.13"
     }
   },
-  "onCreateCommand": "sudo chown $(id -u):$(id -g) /home/$(id -u -n)/.cache",
+  "onCreateCommand": "sudo chown $(id -u):$(id -g) /home/$(id -u -n)/.cache/deno",
   "postCreateCommand": "deno task install",
   "customizations": {
     "extensions": [
