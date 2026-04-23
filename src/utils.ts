@@ -174,7 +174,10 @@ export function elb(tag: string, init?: ElemBuilderInit): ElemBuilder {
   return new ElemBuilder(tag, init);
 }
 
-export function el(tag: string, init?: ElemBuilderInit): HTMLElement {
+export function el(tag: string, init?: ElemBuilderInit & { attach?: ElemBuilder | Node }): HTMLElement {
+  if (init?.attach) {
+    return new ElemBuilder(tag, init).attach(init.attach);
+  }
   return new ElemBuilder(tag, init).el();
 }
 

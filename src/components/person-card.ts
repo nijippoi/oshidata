@@ -6,7 +6,6 @@ import {
   cssRules,
   currentPlainDate,
   el,
-  elb,
   ns,
   parsePlainDate,
   renderGroupName,
@@ -82,39 +81,44 @@ export class PersonCard extends Component {
     for (const role of roles) {
       const group = groupsById.get(role.group_id);
       if (!group) continue;
-      box.appendChild(
-        elb('div')
-          .txt(`${renderGroupName(group, this.date)} (${(role as GroupRole).role})`)
-          .el(),
-      );
+      el('div', {
+        children: [`${renderGroupName(group, this.date)} (${(role as GroupRole).role})`],
+        attach: box,
+      });
       for (const period of role.periods || []) {
-        const pb = elb('div');
-        if (period.start) pb.data('label-period-start', period.start);
-        if (period.end) pb.data('label-period-end', period.end);
-        if (period.start || period.end) {
-          box.appendChild(pb.el());
-        }
+        el('div', {
+          dataset: {
+            ...(period.start ? { 'label-period-start': period.start } : {}),
+            ...(period.end ? { 'label-period-end': period.end } : {}),
+          },
+          attach: box,
+        });
       }
     }
     if (!box.firstChild) {
-      return elb('span').data('label-text', 'message.unselected').el();
+      return el('span', { dataset: { 'label-text': 'message.unselected' } });
     }
     return box;
   }
 
   private zodiacNode(birth: string | undefined): HTMLElement {
     if (!birth) {
-      return elb('span').el();
+      return el('span');
     }
     const sign = zodiac(parsePlainDate(birth));
-    return sign ? elb('span').data('label-text', `zodiacs.${sign}`).el() : elb('span').el();
+    return sign ? el('span', { dataset: { 'label-text': `zodiacs.${sign}` } }) : el('span');
   }
 
   async render(): Promise<void> {
     clear(this.shadow);
     const pid = this.personId;
     if (!pid) {
-      elb('div').cls('person-card-notice').data('label-text', 'message.missing_person_id').attach(this.shadow);
+      this.shadow.appendChild(
+        el('div', {
+          classes: ['person-card-notice'],
+          dataset: { 'label-text': 'message.missing_person_id' },
+        }),
+      );
       Toolbar.fireChangeTitle('人物', '—');
       document.title = '人物 | 推しデータ';
       return;
@@ -122,7 +126,11 @@ export class PersonCard extends Component {
 
     const [person, groupPage] = await Promise.all([getPerson(pid), queryGroups()]);
     if (!person) {
-      elb('div').cls('person-card-notice').data('label-text', 'message.person_not_found').attach(this.shadow);
+      el('div', {
+        classes: ['person-card-notice'],
+        dataset: { 'label-text': 'message.person_not_found' },
+        attach: this.shadow,
+      });
       Toolbar.fireChangeTitle('人物', `ID: ${pid}`);
       document.title = `人物 (ID: ${pid}) | 推しデータ`;
       return;
@@ -135,100 +143,113 @@ export class PersonCard extends Component {
     Toolbar.fireChangeTitle(name, person.id);
     document.title = `${name} | 推しデータ`;
 
-    const header = elb('div', { classes: ['person-card-header'] });
+    const headerChildren: Node[] = [];
     if (portrait) {
-      header.add(
-        elb('img')
-          .cls('person-card-header-image')
-          .attr('alt', name)
-          .attr('src', portrait)
-          .el(),
+      headerChildren.push(
+        el('img', {
+          classes: ['person-card-header-image'],
+          attributes: { alt: name, src: portrait },
+        }),
       );
     }
-    header.add(
-      elb('div', { classes: ['person-card-header-content'] }).add(
-        elb('div', { classes: ['person-card-header-content-name'] }).txt(name).el(),
-        elb('div', { classes: ['person-card-id'] })
-          .add(
-            elb('span').data('label-text', 'nouns.id').el(),
-            elb('span').txt(' ' + person.id).el(),
-          )
-          .el(),
-      ).el(),
+    headerChildren.push(
+      el('div', {
+        classes: ['person-card-header-content'],
+        children: [el('div', { classes: ['person-card-header-content-name'], children: [name] })],
+      }),
     );
+    const header = el('div', { classes: ['person-card-header'], children: headerChildren });
 
-    const root = elb('div', { classes: ['person-card'] });
-    root.add(header.el());
-    const fields = elb('div', { classes: ['person-fields'] });
-
-    fields.add(
-      elb('div', { classes: ['person-field'] }).add(
-        elb('span').data('label-text', 'nouns.birth_date').el(),
-        person.birth_date
-          ? elb('time').data('label-date', person.birth_date).el()
-          : elb('span').data('label-text', 'message.unselected').el(),
-      ).el(),
-    );
+    const fieldRows: HTMLElement[] = [
+      el('div', {
+        classes: ['person-field'],
+        children: [
+          el('span', { dataset: { 'label-text': 'nouns.id' } }),
+          ` ${person.id}`,
+        ],
+      }),
+      el('div', {
+        classes: ['person-field'],
+        children: [
+          el('span', { dataset: { 'label-text': 'nouns.birth_date' } }),
+          person.birth_date
+            ? el('time', { dataset: { 'label-date': person.birth_date } })
+            : el('span', { dataset: { 'label-text': 'message.unselected' } }),
+        ],
+      }),
+    ];
 
     if (person.birth_date) {
-      fields.add(
-        elb('div', { classes: ['person-field'] }).add(
-          elb('span').data('label-text', 'nouns.age').el(),
-          elb('span')
-            .data('label-age', person.birth_date)
-            .data('label-age-base', this.date.toString())
-            .el(),
-        ).el(),
-        elb('div', { classes: ['person-field'] }).add(
-          elb('span').data('label-text', 'nouns.zodiac').el(),
-          this.zodiacNode(person.birth_date),
-        ).el(),
+      fieldRows.push(
+        el('div', {
+          classes: ['person-field'],
+          children: [
+            el('span', { dataset: { 'label-text': 'nouns.age' } }),
+            el('span', {
+              dataset: {
+                'label-age': person.birth_date,
+                'label-age-base': this.date.toString(),
+              },
+            }),
+          ],
+        }),
+        el('div', {
+          classes: ['person-field'],
+          children: [
+            el('span', { dataset: { 'label-text': 'nouns.zodiac' } }),
+            this.zodiacNode(person.birth_date),
+          ],
+        }),
       );
     }
 
     const home = renderLocation(person);
     if (home) {
-      fields.add(
-        elb('div', { classes: ['person-field'] }).add(
-          elb('span').data('label-text', 'nouns.hometown').el(),
-          elb('span').txt(home).el(),
-        ).el(),
+      fieldRows.push(
+        el('div', {
+          classes: ['person-field'],
+          children: [el('span', { dataset: { 'label-text': 'nouns.hometown' } }), home],
+        }),
       );
     }
 
     if (person.birth_place) {
       const place = formatLocationShort(person.birth_place);
       if (place) {
-        fields.add(
-          elb('div', { classes: ['person-field'] }).add(
-            elb('span').data('label-text', 'nouns.place_of_birth').el(),
-            elb('span').txt(place).el(),
-          ).el(),
+        fieldRows.push(
+          el('div', {
+            classes: ['person-field'],
+            children: [el('span', { dataset: { 'label-text': 'nouns.place_of_birth' } }), place],
+          }),
         );
       }
     }
 
-    fields.add(
-      elb('div', { classes: ['person-field'] }).add(
-        elb('span').data('label-text', 'nouns.groups').el(),
-        this.renderGroups(person, groupsById),
-      ).el(),
+    fieldRows.push(
+      el('div', {
+        classes: ['person-field'],
+        children: [el('span', { dataset: { 'label-text': 'nouns.groups' } }), this.renderGroups(person, groupsById)],
+      }),
     );
 
     if (person.tags && person.tags.length > 0) {
-      const tagWrap = elb('div', { classes: ['person-tags'] });
-      for (const t of person.tags) {
-        tagWrap.add(elb('span').cls('person-tag').txt(t).el());
-      }
-      fields.add(
-        elb('div', { classes: ['person-field'] }).add(
-          elb('span').data('label-text', 'nouns.tags').el(),
-          tagWrap.el(),
-        ).el(),
+      const tagEls = person.tags.map((t) => el('span', { classes: ['person-tag'], children: [t] }));
+      fieldRows.push(
+        el('div', {
+          classes: ['person-field'],
+          children: [
+            el('span', { dataset: { 'label-text': 'nouns.tags' } }),
+            el('div', { classes: ['person-tags'], children: tagEls }),
+          ],
+        }),
       );
     }
 
-    root.add(fields.el()).attach(this.shadow);
+    el('div', {
+      classes: ['person-card'],
+      children: [header, el('div', { classes: ['person-fields'], children: fieldRows })],
+      attach: this.shadow,
+    });
   }
 
   async connectedCallback() {
