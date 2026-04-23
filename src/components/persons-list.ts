@@ -255,12 +255,12 @@ export class PersonsList extends Component {
       const group = groupsById.get(role.group_id);
       if (!group) continue;
       td.add(elb('div').txt(renderGroupName(group, this.date)).el());
-      role.active_date_ranges?.forEach((range) => {
+      role.periods?.forEach((period) => {
         td.add(elb('div', {
           dataset: {
-            'label-date-range-start': range.start || undefined,
-            'label-date-range-end': range.end || undefined,
-            'label-date-range-show-duration': '',
+            'label-period-start': period.start || undefined,
+            'label-period-end': period.end || undefined,
+            'label-period-show-duration': '',
           },
         }));
       });

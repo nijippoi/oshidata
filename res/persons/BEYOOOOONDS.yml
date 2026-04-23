@@ -18,16 +18,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2016-08-17'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2016-08-17'
 
   - family_name: '江口'
@@ -44,16 +44,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
 
   - family_name: '高瀬'
@@ -70,16 +70,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2015-03-01'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2015-03-01'
 
   - family_name: '前田'
@@ -96,16 +96,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2015-04-27'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2015-04-27'
 
   - family_name: '岡村'
@@ -122,16 +122,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
 
   - family_name: '清野'
@@ -148,16 +148,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2016-01-15'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2016-01-15'
 
   - family_name: '平井'
@@ -174,11 +174,11 @@ persons:
     roles:
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
 
   - family_name: '小林'
@@ -195,11 +195,11 @@ persons:
     roles:
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
 
   - family_name: '里吉'
@@ -216,11 +216,11 @@ persons:
     roles:
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
 
   - family_name: '一岡'
@@ -237,21 +237,21 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2012-12-09'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2012-12-09'
             end: '2024-03-01'
       - role: 'member'
         group: 'CHICA#TETSU'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
             end: '2024-03-01'
 
@@ -269,22 +269,22 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2016-08-17'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
             end: '2024-06-27'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2016-08-17'
             end: '2024-06-27'
       - role: 'member'
         group: '雨ノ森 川海'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
             end: '2024-06-27'
 
@@ -302,21 +302,21 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
             end: '2018-10-18'
       - role: 'member'
         group: 'BEYOOOOONDS'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
             end: '2025-06-09'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
             end: '2025-06-09'
       - role: 'member'
         group: 'CHICA#TETSU'
-        active_date_ranges:
+        periods:
           - start: '2018-10-19'
             end: '2025-06-09'

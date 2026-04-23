@@ -18,12 +18,12 @@ persons:
     roles:
       - role: 'member'
         group: 'メロン記念日'
-        active_date_ranges:
+        periods:
           - start: '2000-02-19'
             end: '2010-05-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '1999-08-10'
             end: '2009-03-31'
   - family_name: '大谷'
@@ -40,12 +40,12 @@ persons:
     roles:
       - role: 'member'
         group: 'メロン記念日'
-        active_date_ranges:
+        periods:
           - start: '2000-02-19'
             end: '2010-05-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '1999-08-10'
             end: '2009-03-31'
   - family_name: '柴田'
@@ -62,12 +62,12 @@ persons:
     roles:
       - role: 'member'
         group: 'メロン記念日'
-        active_date_ranges:
+        periods:
           - start: '2000-02-19'
             end: '2010-05-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '1999-08-10'
             end: '2009-03-31'
   - family_name: '斉藤'
@@ -85,11 +85,11 @@ persons:
     roles:
       - role: 'member'
         group: 'メロン記念日'
-        active_date_ranges:
+        periods:
           - start: '2000-02-19'
             end: '2010-05-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '1999-08-10'
             end: '2009-03-31'

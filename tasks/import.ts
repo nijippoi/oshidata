@@ -55,6 +55,59 @@ export async function importData(
   writeJson(join(dataDir, TAGS_FILE), tags, release);
 }
 
+type ReservedIdRange = {
+  start_id: number;
+  end_id: number;
+  file: string;
+};
+
+function assertNoOverlappingReservedIdRanges(
+  data: any[],
+  sourceTypeLabel: string,
+): void {
+  const ranges: ReservedIdRange[] = data
+    .map((d) => {
+      const start_id = Number(d.start_id);
+      const end_id = Number(d.end_id);
+      if (!Number.isFinite(start_id) || !Number.isFinite(end_id)) return undefined;
+      return {
+        start_id,
+        end_id,
+        file: d.file ?? '(unknown file)',
+      } satisfies ReservedIdRange;
+    })
+    .filter((r): r is ReservedIdRange => r !== undefined);
+
+  for (const r of ranges) {
+    if (r.end_id < r.start_id) {
+      throw new Error(
+        `${sourceTypeLabel}: invalid reserved id range in ${r.file}: start_id(${r.start_id}) > end_id(${r.end_id})`,
+      );
+    }
+  }
+
+  ranges.sort((a, b) => a.start_id - b.start_id || a.end_id - b.end_id);
+  ranges.forEach((r) => {
+    console.log(
+      `${sourceTypeLabel}: id range [${r.start_id.toFixed(0).padStart(5, ' ')}, ${
+        r.end_id.toFixed(0).padStart(5, ' ')
+      }]: ${r.file}`,
+    );
+  });
+
+  for (let i = 1; i < ranges.length; i++) {
+    const prev = ranges[i - 1];
+    const curr = ranges[i];
+    if (curr.start_id <= prev.end_id) {
+      throw new Error(
+        `${sourceTypeLabel}: overlapping reserved id ranges:\n` +
+          `- ${prev.file}: [${prev.start_id}, ${prev.end_id}]\n` +
+          `- ${curr.file}: [${curr.start_id}, ${curr.end_id}]`,
+      );
+    }
+  }
+}
+
 /** ラベルJSONを生成 */
 function writeLabelsJson(
   labelsDir: string,
@@ -112,6 +165,7 @@ function processGroups(groupsData: any[]): {
   groups: Groups;
   groupQualifiers: Record<string, number>;
 } {
+  assertNoOverlappingReservedIdRanges(groupsData, 'groups');
   const groups: Record<string, any> = {};
   const groupQualifiers: Record<string, number> = {};
   const groupParents: Record<string, string> = {};
@@ -146,8 +200,8 @@ function processGroups(groupsData: any[]): {
       if (!item.parent && item.parent_qualifier) {
         groupParentQualifiers[gid] = item.parent_qualifier;
       }
-      if (item.active_date_ranges) {
-        group.active_date_ranges = structuredClone(item.active_date_ranges);
+      if (item.periods) {
+        group.periods = structuredClone(item.periods);
       }
       if (item.tags && item.tags.length > 0) {
         const tags = item.tags.map((tag: string) => tag.trim()).filter((tag: string) => tag.length > 0);
@@ -213,6 +267,7 @@ function processPersons(
   groups: Record<string, any>,
   groupQualifiers: Record<string, number>,
 ): Persons {
+  assertNoOverlappingReservedIdRanges(personsData, 'persons');
   const persons: Persons = {};
   for (const data of personsData) {
     let pid = data.start_id;
@@ -261,8 +316,8 @@ function processPersons(
             );
             if (gid) {
               const r: GroupRole = { role: role.role, group_id: gid };
-              if (role.active_date_ranges) {
-                r.active_date_ranges = structuredClone(role.active_date_ranges);
+              if (role.periods) {
+                r.periods = structuredClone(role.periods);
               }
               person.roles.push(r);
             }
@@ -271,20 +326,20 @@ function processPersons(
               role: role.role,
               person_id: pid.toString(),
             };
-            if (role.active_date_ranges) {
-              r.active_date_ranges = structuredClone(role.active_date_ranges);
+            if (role.periods) {
+              r.periods = structuredClone(role.periods);
             }
             person.roles.push(r);
           }
         }
         person.roles.sort((l, r) => {
           if (
-            l.active_date_ranges && l.active_date_ranges.length > 0 && r.active_date_ranges &&
-            r.active_date_ranges.length > 0
+            l.periods && l.periods.length > 0 && r.periods &&
+            r.periods.length > 0
           ) {
-            const lStarts = l.active_date_ranges.map((range) => range.start).filter((date) => date !== undefined)
+            const lStarts = l.periods.map((period) => period.start).filter((date) => date !== undefined)
               .toSorted();
-            const rStarts = r.active_date_ranges.map((range) => range.start).filter((date) => date !== undefined)
+            const rStarts = r.periods.map((period) => period.start).filter((date) => date !== undefined)
               .toSorted();
             if (lStarts.length > 0 && rStarts.length > 0) {
               return lStarts[0].localeCompare(rStarts[0]);
@@ -294,9 +349,9 @@ function processPersons(
               return +1;
             }
             return 0;
-          } else if (l.active_date_ranges && l.active_date_ranges.length > 0) {
+          } else if (l.periods && l.periods.length > 0) {
             return -1;
-          } else if (r.active_date_ranges && r.active_date_ranges.length > 0) {
+          } else if (r.periods && r.periods.length > 0) {
             return +1;
           }
           return 0;

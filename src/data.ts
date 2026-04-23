@@ -2,16 +2,48 @@ import type { Group, Groups, Id, Paged, Person, Persons, Predicate, Query, Tags 
 import { baseUrl } from './env.ts';
 import { DATA_PATH, GROUPS_FILE, parsePlainDate, PERSONS_FILE, TAGS_FILE } from './utils.ts';
 
-export async function fetchGroups(): Promise<Groups> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json());
-}
+class RawData {
+  private static persons: Persons | undefined;
+  private static groups: Groups | undefined;
+  private static tags: Tags | undefined;
 
-export async function fetchPersons(): Promise<Persons> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) => res.json());
-}
+  constructor() {}
 
-export async function fetchTags(): Promise<Tags> {
-  return await fetch(`${baseUrl}${DATA_PATH}/${TAGS_FILE}`).then((res) => res.json());
+  static async getPersons(): Promise<Persons> {
+    if (RawData.persons === undefined) {
+      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+        if (RawData.persons === undefined) {
+          RawData.persons = await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) => res.json()) as Persons;
+        }
+        return RawData.persons;
+      });
+    }
+    return RawData.persons;
+  }
+
+  static async getGroups(): Promise<Groups> {
+    if (RawData.groups === undefined) {
+      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+        if (RawData.groups === undefined) {
+          RawData.groups = await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json()) as Groups;
+        }
+        return RawData.groups;
+      });
+    }
+    return RawData.groups;
+  }
+
+  static async getTags(): Promise<Tags> {
+    if (RawData.tags === undefined) {
+      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+        if (RawData.tags === undefined) {
+          RawData.tags = await fetch(`${baseUrl}${DATA_PATH}/${TAGS_FILE}`).then((res) => res.json()) as Tags;
+        }
+        return RawData.tags;
+      });
+    }
+    return RawData.tags;
+  }
 }
 
 export function isPersonInGroup(
@@ -20,7 +52,7 @@ export function isPersonInGroup(
 ): Predicate<Person> {
   return (person: Person): boolean => {
     return person.roles?.some((role) => {
-      return role.active_date_ranges?.some((role_date) => {
+      return role.periods?.some((role_date) => {
         if (role_date.start && role_date.end) {
           return Temporal.PlainDate.compare(
                 date,
@@ -48,7 +80,7 @@ export function isPersonInGroup(
 }
 
 export async function queryGroups(query?: Query<Group>): Promise<Paged<Group>> {
-  return await fetchGroups().then((items) => {
+  return await RawData.getGroups().then((items) => {
     const records = [];
     let nextPage = undefined;
     for (const key in items) {
@@ -73,7 +105,7 @@ export async function queryGroups(query?: Query<Group>): Promise<Paged<Group>> {
 export async function queryPersons(
   query?: Query<Person>,
 ): Promise<Paged<Person>> {
-  return await fetchPersons().then((items) => {
+  return await RawData.getPersons().then((items) => {
     const records = [];
     let nextPage = undefined;
     for (const key in items) {
@@ -96,7 +128,7 @@ export async function queryPersons(
 }
 
 export async function queryGroupTags(query?: Query<string>): Promise<Paged<string>> {
-  return await fetchTags().then((items) => {
+  return await RawData.getTags().then((items) => {
     const records = [];
     let nextPage = undefined;
     for (const item in items.group) {
@@ -119,7 +151,7 @@ export async function queryGroupTags(query?: Query<string>): Promise<Paged<strin
 }
 
 export async function queryPersonTags(query?: Query<string>): Promise<Paged<string>> {
-  return await fetchTags().then((items) => {
+  return await RawData.getTags().then((items) => {
     const records = [];
     let nextPage = undefined;
     for (const item in items.person) {
@@ -138,5 +170,17 @@ export async function queryPersonTags(query?: Query<string>): Promise<Paged<stri
       records,
       'next_page': nextPage,
     };
+  });
+}
+
+export async function getPerson(id: Id): Promise<Person | undefined> {
+  return await RawData.getPersons().then((items) => {
+    return items[id];
+  });
+}
+
+export async function getGroup(id: Id): Promise<Group | undefined> {
+  return await RawData.getGroups().then((items) => {
+    return items[id];
   });
 }

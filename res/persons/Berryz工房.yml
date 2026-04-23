@@ -18,17 +18,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '嗣永'
@@ -45,17 +45,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '徳永'
@@ -72,17 +72,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '須藤'
@@ -99,17 +99,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '夏焼'
@@ -126,17 +126,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '熊井'
@@ -153,17 +153,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '菅谷'
@@ -180,17 +180,17 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2015-03-03'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2015-03-03'
   - family_name: '石村'
@@ -207,16 +207,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロー!プロジェクト・キッズ'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2004-01-14'
       - role: 'member'
         group: 'Berryz工房'
-        active_date_ranges:
+        periods:
           - start: '2004-01-14'
             end: '2005-10-02'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2002-01-01'
             end: '2005-10-02'

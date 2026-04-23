@@ -18,16 +18,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2018-11-01'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2018-11-01'
 
   - family_name: '広本'
@@ -44,16 +44,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
 
   - family_name: '米村'
@@ -70,16 +70,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2016-01-15'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2016-01-15'
 
   - family_name: '窪田'
@@ -96,16 +96,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-12-11'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-12-11'
 
   - family_name: '中山'
@@ -122,16 +122,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-03-06'
 
   - family_name: '西﨑'
@@ -148,16 +148,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
             end: '2021-12-12'
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
 
   - family_name: '北原'
@@ -174,11 +174,11 @@ persons:
     roles:
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
 
   - family_name: '筒井'
@@ -195,11 +195,11 @@ persons:
     roles:
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
 
   - family_name: '石栗'
@@ -213,12 +213,12 @@ persons:
     roles:
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
             end: '2025-03-21'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
             end: '2025-03-21'
 
@@ -233,11 +233,11 @@ persons:
     roles:
       - role: 'member'
         group: 'OCHA NORMA'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
             end: '2025-03-11'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-12-13'
             end: '2025-03-11'

@@ -18,16 +18,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2014-11-01'
             end: '2015-04-29'
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2014-11-01'
   - family_name: '山岸'
     family_name_kana: 'ヤマギシ'
@@ -43,17 +43,17 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
             end: '2023-11-06'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2012-06-17'
             end: '2015-04-29'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2012-06-17'
             end: '2023-11-06'
   - family_name: '小片'
@@ -70,17 +70,17 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
             end: '2020-12-28'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2014-11-29'
             end: '2015-04-29'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2014-11-29'
             end: '2020-12-28'
   - family_name: '新沼'
@@ -97,17 +97,17 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
             end: '2024-06-10'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2013-09-22'
             end: '2015-04-29'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2013-09-22'
             end: '2024-06-10'
   - family_name: '岸本'
@@ -124,22 +124,22 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
             end: '2023-11-06'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2012-12-09'
             end: '2015-04-29'
       - role: 'trainee'
         group: 'NICE GIRL プロジェクト!研修生'
-        active_date_ranges:
+        periods:
           - start: '2010-09-01'
             end: '2012-12-09'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2012-12-09'
             end: '2023-11-06'
   - family_name: '浅倉'
@@ -156,17 +156,17 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2015-04-29'
             end: '2023-04-02'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2014-10-25'
             end: '2015-04-29'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2014-10-25'
             end: '2023-04-02'
   - family_name: '小野'
@@ -183,15 +183,15 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2016-08-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2015-04-01'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2015-04-01'
             end: '2016-08-13'
   - family_name: '小野田'
@@ -208,15 +208,15 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2016-08-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2014-10-25'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2014-10-25'
             end: '2016-08-13'
   - family_name: '秋山'
@@ -233,15 +233,15 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2016-08-13'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2015-04-01'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2015-04-01'
             end: '2016-08-13'
   - family_name: '河西'
@@ -258,11 +258,11 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
   - family_name: '八木'
     family_name_kana: 'ヤギ'
@@ -278,12 +278,12 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
             end: '2025-04-30'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
             end: '2025-04-30'
   - family_name: '福田'
@@ -300,11 +300,11 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
   - family_name: '豫風'
     family_name_kana: 'ヨフウ'
@@ -320,16 +320,16 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2021-07-07'
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
             end: '2021-07-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
   - family_name: '石井'
     family_name_kana: 'イシイ'
@@ -345,11 +345,11 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
   - family_name: '村田'
     family_name_kana: 'ムラタ'
@@ -365,11 +365,11 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
   - family_name: '土居'
     family_name_kana: 'ドイ'
@@ -385,11 +385,11 @@ persons:
     roles:
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
   - family_name: '西村'
     family_name_kana: 'ニシムラ'
@@ -405,14 +405,14 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
             end: '2025-08-16'
       - role: 'member'
         group: 'つばきファクトリー'
-        active_date_ranges:
+        periods:
           - start: '2025-08-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'

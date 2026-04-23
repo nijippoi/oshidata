@@ -99,9 +99,13 @@ async function rebundle(
   basePath: string = DEFAULT_BASE_PATH,
   baseUrl: string = `http://${DEFAULT_SERVE_HOSTNAME}:${DEFAULT_SERVE_PORT}`,
 ): Promise<void> {
-  clean();
-  await importData(release, resDir, dataDir, labelsDir);
-  await bundle(release, dataDir, labelsDir, srcDir, distDir, basePath, baseUrl);
+  try {
+    clean();
+    await importData(release, resDir, dataDir, labelsDir);
+    await bundle(release, dataDir, labelsDir, srcDir, distDir, basePath, baseUrl);
+  } catch (err) {
+    console.error('Rebundle error', err);
+  }
 }
 
 if (import.meta.main) {

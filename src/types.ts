@@ -18,7 +18,7 @@ export type DateString = string; // TODO: 正規表現で絞る？
 /**
  * 開始日と終了日を含む期間
  */
-export interface DateRange {
+export interface Period {
   /** 開始日(含む): ISO 8601形式 (YYYY-MM-DD) */
   start?: DateString;
   /** 終了日(含む): ISO 8601形式 (YYYY-MM-DD) */
@@ -26,11 +26,11 @@ export interface DateRange {
 }
 
 /**
- * 活動期間を持つエンティティのインターフェース
+ * 期間を持つエンティティのインターフェース
  */
-export interface HasActiveDateRanges {
+export interface HasPeriods {
   /** 有効期間の配列 */
-  active_date_ranges?: DateRange[];
+  periods?: Period[];
 }
 
 /**
@@ -74,9 +74,9 @@ export interface GroupName {
 /**
  * グループ定義（メイングループまたはサブグループ）
  */
-export interface Group extends HasId, HasActiveDateRanges {
+export interface Group extends HasId, HasPeriods {
   /** グループ名一覧 */
-  names: (GroupName & HasActiveDateRanges)[];
+  names: (GroupName & HasPeriods)[];
   /** サブグループの親グループ名 */
   parent_id?: Id;
   /** タグ一覧 */
@@ -107,7 +107,7 @@ export type RoleTypes =
 /**
  * 共通のロール情報
  */
-export interface BaseRole extends HasActiveDateRanges {
+export interface BaseRole extends HasPeriods {
   /** 役割のタイプ */
   role: RoleTypes;
 }
@@ -166,9 +166,9 @@ export interface PersonName {
 /**
  * 人物情報
  */
-export interface Person extends HasId, HasActiveDateRanges {
+export interface Person extends HasId, HasPeriods {
   /** 名前のバリエーション（期間指定可能） */
-  names: (PersonName & HasActiveDateRanges)[];
+  names: (PersonName & HasPeriods)[];
   /** 生年月日（ISO 8601形式: YYYY-MM-DD） */
   birth_date?: DateString;
   /** 出生地 */

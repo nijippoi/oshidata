@@ -1,4 +1,4 @@
-import type { DateRange, Group, GroupName, HasActiveDateRanges, Person, PersonName } from './types.ts';
+import type { Group, GroupName, HasPeriods, Period, Person, PersonName } from './types.ts';
 
 export const NAMESPACE = 'oshidata';
 
@@ -277,32 +277,32 @@ export function isDateInRange(
   return false;
 }
 
-export function resolveActiveDateRange(
-  values: HasActiveDateRanges[],
+export function resolvePeriod(
+  values: HasPeriods[],
   date?: Date | Temporal.PlainDate,
-): HasActiveDateRanges[] {
+): HasPeriods[] {
   if (!date) {
     date = currentPlainDate();
   } else if (date instanceof Date) {
     date = toPlainDate(date);
   }
   return values.filter((value) => {
-    if (!value.active_date_ranges) return true;
-    return value.active_date_ranges.some((range) => {
-      if (!range.start && !range.end) return true;
+    if (!value.periods) return true;
+    return value.periods.some((period) => {
+      if (!period.start && !period.end) return true;
       else {
         return isDateInRange(
           date,
-          range.start ? parsePlainDate(range.start) : undefined,
-          range.end ? parsePlainDate(range.end) : undefined,
+          period.start ? parsePlainDate(period.start) : undefined,
+          period.end ? parsePlainDate(period.end) : undefined,
         );
       }
     });
   });
 }
 
-export function renderDateRange(
-  value: DateRange,
+export function renderPeriod(
+  value: Period,
   baseDate: Temporal.PlainDate = currentPlainDate(),
   showDuration: boolean = false,
 ): string {
@@ -333,7 +333,7 @@ export function renderGroupName(
   group: Group,
   date?: Date | Temporal.PlainDate,
 ): string {
-  const names = resolveActiveDateRange(group.names, date) as GroupName[];
+  const names = resolvePeriod(group.names, date) as GroupName[];
   if (names.length > 0) {
     return names.map(formatGroupName).join(' / ');
   } else {
@@ -352,7 +352,7 @@ export function renderPersonName(
   person: Person,
   date?: Date | Temporal.PlainDate,
 ): string {
-  const names = resolveActiveDateRange(person.names, date) as PersonName[];
+  const names = resolvePeriod(person.names, date) as PersonName[];
   if (names.length > 0) {
     return names.map(formatPersonName).join(' / ');
   } else {

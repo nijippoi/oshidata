@@ -33,7 +33,7 @@ export async function label(
   if (!LABELS[langKey]) {
     await navigator.locks.request(
       `label_load_${langKey}`,
-      { mode: 'exclusive' },
+      { mode: 'shared' },
       async (_lock) => {
         if (!LABELS[langKey]) {
           LABELS[langKey] = await load(langKey);
@@ -55,10 +55,10 @@ const LABEL_DATA_ATTRS = [
   'date',
   'age',
   'age-base',
-  'date-range-start',
-  'date-range-end',
-  'date-range-base',
-  'date-range-show-duration',
+  'period-start',
+  'period-end',
+  'period-base',
+  'period-show-duration',
   'placeholder',
 ].map((a) => `data-label-${a}`);
 const LABEL_DATA_SELECTORS = LABEL_DATA_ATTRS.map((a) => `[${a}]`).join(',');
@@ -84,19 +84,19 @@ function renderLabels(root: HTMLElement | ShadowRoot) {
           });
         }
       }
-      if (elem.dataset.labelDateRangeStart || elem.dataset.labelDateRangeEnd) {
-        const start = elem.dataset.labelDateRangeStart ? parsePlainDate(elem.dataset.labelDateRangeStart) : undefined;
-        const end = elem.dataset.labelDateRangeEnd ? parsePlainDate(elem.dataset.labelDateRangeEnd) : undefined;
+      if (elem.dataset.labelPeriodStart || elem.dataset.labelPeriodEnd) {
+        const start = elem.dataset.labelPeriodStart ? parsePlainDate(elem.dataset.labelPeriodStart) : undefined;
+        const end = elem.dataset.labelPeriodEnd ? parsePlainDate(elem.dataset.labelPeriodEnd) : undefined;
         const range = formatRange(start, end);
         if (
-          elem.dataset.labelDateRangeShowDuration !== undefined && elem.dataset.labelDateRangeShowDuration !== 'false'
+          elem.dataset.labelPeriodShowDuration !== undefined && elem.dataset.labelPeriodShowDuration !== 'false'
         ) {
           if (start && end) {
             const duration = formatDayDuration(start, end, false);
             elem.textContent = `${range} (${duration})`;
           } else if (start || end) {
-            const baseDate = elem.dataset.labelDateRangeBase
-              ? parsePlainDate(elem.dataset.labelDateRangeBase)
+            const baseDate = elem.dataset.labelPeriodBase
+              ? parsePlainDate(elem.dataset.labelPeriodBase)
               : currentPlainDate();
             const duration = formatDayDuration(
               start || baseDate,

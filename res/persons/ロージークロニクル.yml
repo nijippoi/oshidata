@@ -18,16 +18,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
 
   - family_name: '吉田'
@@ -44,16 +44,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2021-08-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2021-08-01'
 
   - family_name: '小野田'
@@ -70,16 +70,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2018-11-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2018-11-01'
 
   - family_name: '村越'
@@ -96,16 +96,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-02'
 
   - family_name: '植村'
@@ -122,16 +122,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2019-08-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2019-08-01'
 
   - family_name: '松原'
@@ -148,16 +148,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2017-12-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2017-12-01'
 
   - family_name: '島川'
@@ -174,16 +174,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
 
   - family_name: '上村'
@@ -200,16 +200,16 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2022-08-01'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2022-08-01'
 
   - family_name: '相馬'
@@ -226,14 +226,14 @@ persons:
     roles:
       - role: 'trainee'
         group: 'ハロプロ研修生'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
             end: '2024-06-15'
       - role: 'member'
         group: 'ロージークロニクル'
-        active_date_ranges:
+        periods:
           - start: '2024-06-16'
       - role: 'member'
         group: 'ハロー！プロジェクト'
-        active_date_ranges:
+        periods:
           - start: '2024-02-07'
