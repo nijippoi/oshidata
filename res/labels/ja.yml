@@ -45,12 +45,15 @@ labels:
   nouns.blood_type: 血液型
   nouns.height: 身長
   nouns.weight: 体重
+  nouns.tags: タグ
   nouns.auto: 自動
   nouns.now: 現在
   nouns.today: 今日
   message.select: 選択してください
   message.unselected: 未選択
   message.type_to_filter_groups: グループ名を入力して絞り込む
+  message.missing_person_id: URLの ?id= または # に人物IDを付けて開いてください。
+  message.person_not_found: 人物が見つかりません。
   langs.en: English
   langs.ja: 日本語
   zodiacs.aries: 牡羊座

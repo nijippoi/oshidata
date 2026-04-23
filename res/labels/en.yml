@@ -45,12 +45,15 @@ labels:
   nouns.blood_type: Blood Type
   nouns.height: Height
   nouns.weight: Weight
+  nouns.tags: Tags
   nouns.auto: Auto
   nouns.now: Now
   nouns.today: Today
   message.select: Please select
   message.unselected: Unselected
   message.type_to_filter_groups: Type to filter groups
+  message.missing_person_id: Add a person id in the query (?id=) or the URL hash (#).
+  message.person_not_found: No person was found.
   langs.en: English
   langs.ja: Japanese
   zodiacs.aries: Aries
