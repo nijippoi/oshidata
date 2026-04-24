@@ -9,6 +9,7 @@ labels:
   nouns.group: グループ
   nouns.groups: グループ
   nouns.role: 役割
+  nouns.roles: 役割
   nouns.member: メンバー
   nouns.leader: リーダー
   nouns.subleader: サブリーダー
@@ -56,6 +57,12 @@ labels:
   message.person_not_found: 人物が見つかりません。
   langs.en: English
   langs.ja: 日本語
+  roles.solo: ソロ
+  roles.member: メンバー
+  roles.trainee: 研修生
+  roles.leader: リーダー
+  roles.subleader: サブリーダー
+  roles.producer: プロデューサー
   zodiacs.aries: 牡羊座
   zodiacs.taurus: 牡牛座
   zodiacs.gemini: 双子座

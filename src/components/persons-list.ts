@@ -1,6 +1,6 @@
 import type { Group, GroupRole, Person } from '../types.ts';
 import type { ElemBuilder } from '../utils.ts';
-import { queryGroups, queryPersons } from '../data.ts';
+import { queryGroups, queryGroupTags, queryPersons, queryPersonTags } from '../data.ts';
 import {
   clear,
   cssRules,
@@ -27,6 +27,7 @@ export type ColumnTypes =
   | 'age'
   | 'hometown'
   | 'groups'
+  | 'roles'
   | 'zodiac';
 
 const COLUMN_LABELS: Record<ColumnTypes, string> = {
@@ -36,6 +37,7 @@ const COLUMN_LABELS: Record<ColumnTypes, string> = {
   'age': 'nouns.age',
   'hometown': 'nouns.hometown',
   'groups': 'nouns.groups',
+  'roles': 'nouns.roles',
   'zodiac': 'nouns.zodiac',
 };
 
@@ -242,7 +244,7 @@ export class PersonsList extends Component {
     this.shadow.appendChild(filterContainer);
   }
 
-  private renderGroupsCell(
+  private renderRolesCell(
     td: ElemBuilder,
     person: Person,
     groupsById: Map<string, Group>,
@@ -255,7 +257,15 @@ export class PersonsList extends Component {
     for (const role of roles) {
       const group = groupsById.get(role.group_id);
       if (!group) continue;
-      td.add(elb('div').txt(renderGroupName(group, this.date)).el());
+      el('div', {
+        children: [
+          el('span', { children: [renderGroupName(group, this.date)] }),
+          ' (',
+          el('span', { dataset: { 'label-text': `roles.${(role as GroupRole).role}` } }),
+          ')',
+        ],
+        attach: td,
+      });
       role.periods?.forEach((period) => {
         td.add(elb('div', {
           dataset: {
@@ -291,7 +301,11 @@ export class PersonsList extends Component {
         td.add(elb('span').txt(renderLocation(person)).el());
         break;
       case 'groups':
-        this.renderGroupsCell(td, person, groupsById);
+        // TODO: グループ表示はどうする？
+        this.renderRolesCell(td, person, groupsById);
+        break;
+      case 'roles':
+        this.renderRolesCell(td, person, groupsById);
         break;
       case 'zodiac':
         if (person.birth_date) {
@@ -304,14 +318,18 @@ export class PersonsList extends Component {
   }
 
   async renderList() {
-    const theadRow = el('tr');
-    this.columns.forEach((col) => {
-      elb('th').add(
-        elb('span').txt(col).data('label-text', COLUMN_LABELS[col]).el(),
-      ).attach(theadRow);
+    const theadRow = el('tr', {
+      children: this.columns.map((col) => {
+        return elb('span', { dataset: { 'label-text': COLUMN_LABELS[col] } }).root('th');
+      }),
     });
 
-    const [persons, groups] = await Promise.all([queryPersons(), queryGroups()]);
+    const [persons, groups, personTags, groupTags] = await Promise.all([
+      queryPersons(),
+      queryGroups(),
+      queryPersonTags(),
+      queryGroupTags(),
+    ]);
     const groupsById = new Map(groups.records.map((g) => [g.id, g]));
 
     const filteredPersons = this.selectedGroupIds.size > 0

@@ -9,6 +9,7 @@ labels:
   nouns.group: Group
   nouns.groups: Groups
   nouns.role: Role
+  nouns.roles: Roles
   nouns.member: Member
   nouns.leader: Leader
   nouns.subleader: Sub-leader
@@ -56,6 +57,12 @@ labels:
   message.person_not_found: No person was found.
   langs.en: English
   langs.ja: Japanese
+  roles.solo: Solo
+  roles.member: Member
+  roles.trainee: Trainee
+  roles.leader: Leader
+  roles.subleader: Sub-leader
+  roles.producer: Producer
   zodiacs.aries: Aries
   zodiacs.taurus: Taurus
   zodiacs.gemini: Gemini

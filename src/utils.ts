@@ -162,12 +162,12 @@ export class ElemBuilder {
     return elem;
   }
 
-  root(tag: string, init?: ElemBuilderInit): ElemBuilder {
+  rootb(tag: string, init?: ElemBuilderInit): ElemBuilder {
     return new ElemBuilder(tag, init).add(this.el());
   }
 
-  rootb(tag: string, init?: ElemBuilderInit): HTMLElement {
-    return this.root(tag, init).el();
+  root(tag: string, init?: ElemBuilderInit): HTMLElement {
+    return this.rootb(tag, init).el();
   }
 }
 

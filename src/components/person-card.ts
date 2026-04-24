@@ -70,7 +70,7 @@ export class PersonCard extends Component {
     return (this.getAttribute('person-id') || '').trim();
   }
 
-  private renderGroups(
+  private renderRoles(
     person: Person,
     groupsById: Map<string, Group>,
   ): HTMLElement {
@@ -82,7 +82,12 @@ export class PersonCard extends Component {
       const group = groupsById.get(role.group_id);
       if (!group) continue;
       el('div', {
-        children: [`${renderGroupName(group, this.date)} (${(role as GroupRole).role})`],
+        children: [
+          el('span', { children: [renderGroupName(group, this.date)] }),
+          ' (',
+          el('span', { dataset: { 'label-text': `roles.${(role as GroupRole).role}` } }),
+          ')',
+        ],
         attach: box,
       });
       for (const period of role.periods || []) {
@@ -228,7 +233,7 @@ export class PersonCard extends Component {
     fieldRows.push(
       el('div', {
         classes: ['person-field'],
-        children: [el('span', { dataset: { 'label-text': 'nouns.groups' } }), this.renderGroups(person, groupsById)],
+        children: [el('span', { dataset: { 'label-text': 'nouns.roles' } }), this.renderRoles(person, groupsById)],
       }),
     );
 
