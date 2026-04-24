@@ -6,6 +6,8 @@ end_id: 199
 groups:
   - name: 'ハロー！プロジェクト'
     name_kana: 'ハロープロジェクト'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1997-09-14'
   - names:
@@ -70,6 +72,8 @@ groups:
         name_kana: 'モーニングムスメツーシックス'
         periods:
           - start: '2026-01-01'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1997-09-14'
   - names:
@@ -83,6 +87,8 @@ groups:
         periods:
           - start: '2000-03-01'
             end: '2000-10-09'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1999-04-21'
         end: '2000-10-09'
@@ -97,21 +103,29 @@ groups:
         periods:
           - start: '2014-11-05'
             end: '2019-12-26'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1999-04-27'
         end: '2019-12-26'
   - name: 'ココナッツ娘。'
     name_kana: 'ココナッツムスメ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1999-07-23'
         end: '2008-04-30'
   - name: 'メロン記念日'
     name_kana: 'メロンキネンビ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '1999-08-10'
         end: '2010-05-03'
   - name: 'シェキドル'
     name_kana: 'シェキドル'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2000-01-01'
         end: '2002-01-31'
@@ -130,35 +144,49 @@ groups:
         name_kana: 'ハロプロケンシュウセイ'
         periods:
           - start: '2012-01-01'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2002-03-01'
   - name: 'Berryz工房'
     name_kana: 'ベリーズコウボウ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2004-01-14'
         end: '2015-03-03'
   - name: 'W'
     name_kana: 'ダブルユー'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2004-03-03'
         end: '2007-03-26'
   - name: '美勇伝'
     name_kana: 'ビユウデン'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2004-08-10'
         end: '2008-06-29'
   - name: '℃-ute'
     name_kana: 'キュート'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2005-06-11'
         end: '2017-06-12'
   - name: 'Buono!'
     name_kana: 'ボーノ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2007-07-21'
         end: '2017-05-22'
   - name: 'アイスクリー娘。'
     name_kana: 'アイスクリームスメ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2008-12-26'
         end: '2009-11-30'
@@ -172,50 +200,72 @@ groups:
         name_kana: 'アンジュルム'
         periods:
           - start: '2014-12-17'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2009-04-04'
   - name: 'Juice=Juice'
     name_kana: 'ジュースジュース'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2013-02-03'
   - name: 'こぶしファクトリー'
     name_kana: 'コブシファクトリー'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2015-01-02'
         end: '2020-03-30'
   - name: 'つばきファクトリー'
     name_kana: 'ツバキファクトリー'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2015-04-29'
   - name: 'ハロプロ研修生北海道'
     name_kana: 'ハロプロケンシュウセイホッカイドウ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2015-05-01'
   - name: 'BEYOOOOONDS'
     name_kana: 'ビヨーンズ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2018-10-19'
   - name: 'CHICA#TETSU'
     name_kana: 'チカ＃テツ'
     parent: 'BEYOOOOONDS'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2018-10-19'
   - name: '雨ノ森 川海'
     name_kana: 'アメノモリ カワウミ'
     parent: 'BEYOOOOONDS'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2018-10-19'
   - name: 'SeasoningS'
     name_kana: 'シーズニングス'
     parent: 'BEYOOOOONDS'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2018-10-19'
   - name: 'OCHA NORMA'
     name_kana: 'オチャノーマ'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2021-12-12'
   - name: 'ロージークロニクル'
     name_kana: 'ロージークロニクル'
+    tags:
+      - 'ハロー！プロジェクト'
     periods:
       - start: '2024-06-16'
 
@@ -225,6 +275,8 @@ groups:
   # つんく♂プロデュース
   - name: 'NICE GIRL プロジェクト!'
     name_kana: 'ナイスガールプロジェクト'
+    tags:
+      - 'つんく♂プロデュース'
     periods:
       - start: '2008-05-03'
         end: '2014-11-16'
@@ -239,15 +291,21 @@ groups:
         periods:
           - start: '2006-08-02'
             end: '2018-08-02'
+    tags:
+      - 'つんく♂プロデュース'
     periods:
       - start: '2006-08-02'
         end: '2018-08-02'
   - name: 'キャナァーリ倶楽部'
     name_kana: 'キャナァーリクラブ'
+    tags:
+      - 'つんく♂プロデュース'
     periods:
       - start: '2007-03-03'
   - name: 'NICE GIRL プロジェクト!研修生'
     name_kana: 'ナイスガールプロジェクトケンシュウセイ'
+    tags:
+      - 'つんく♂プロデュース'
     periods:
       - start: '2008-05-03'
         end: '2014-11-16'
