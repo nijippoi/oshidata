@@ -10,6 +10,7 @@ import {
   getNonEmptyAttrs,
   ns,
   parsePlainDate,
+  personUrl,
   renderGroupName,
   renderLocation,
   renderPersonName,
@@ -275,7 +276,7 @@ export class PersonsList extends Component {
     const td = elb('td').cls(`person-${col}`);
     switch (col) {
       case 'id':
-        td.txt(person.id);
+        td.add(el('a', { attributes: { href: personUrl(person.id).toString() }, children: [person.id] }));
         break;
       case 'name':
         td.txt(renderPersonName(person, this.date) || '');

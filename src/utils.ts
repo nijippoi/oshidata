@@ -1,3 +1,4 @@
+import { baseUrl } from './env.ts';
 import type { Group, GroupName, HasPeriods, Period, Person, PersonName } from './types.ts';
 
 export const NAMESPACE = 'oshidata';
@@ -498,4 +499,22 @@ export function nextMonthDay(date: Temporal.PlainDate): Temporal.PlainDate {
     });
   }
   return dateNow;
+}
+
+export function personUrl(id: string): URL {
+  const url = new URL(baseUrl);
+  const pathParts = url.pathname.split('/').filter(Boolean);
+  pathParts.push('person');
+  url.pathname = '/' + pathParts.join('/');
+  url.searchParams.set('id', id);
+  return url;
+}
+
+export function groupUrl(id: string): URL {
+  const url = new URL(baseUrl);
+  const pathParts = url.pathname.split('/').filter(Boolean);
+  pathParts.push('group');
+  url.pathname = '/' + pathParts.join('/');
+  url.searchParams.set('id', id);
+  return url;
 }
