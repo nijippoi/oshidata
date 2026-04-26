@@ -1,15 +1,10 @@
 ---
 source_type: 'groups'
 start_id: 1
-end_id: 199
+end_id: 99
 
+# ハロー！プロジェクト
 groups:
-  - name: 'ハロー！プロジェクト'
-    name_kana: 'ハロープロジェクト'
-    tags:
-      - 'ハロー！プロジェクト'
-    periods:
-      - start: '1997-09-14'
   - names:
       - name: 'モーニング娘。'
         name_kana: 'モーニングムスメ'
@@ -130,7 +125,7 @@ groups:
       - start: '2000-01-01'
         end: '2002-01-31'
   - names:
-      - name: 'ハロー!プロジェクト・キッズ'
+      - name: 'ハロー！プロジェクト・キッズ'
         name_kana: 'ハロープロジェクト キッズ'
         periods:
           - start: '2001-09-01'
@@ -268,47 +263,3 @@ groups:
       - 'ハロー！プロジェクト'
     periods:
       - start: '2024-06-16'
-
-  # END ハロー！プロジェクト関連
-  - reserve_id_until: 100
-
-  # つんく♂プロデュース
-  - name: 'NICE GIRL プロジェクト!'
-    name_kana: 'ナイスガールプロジェクト'
-    tags:
-      - 'つんく♂プロデュース'
-    periods:
-      - start: '2008-05-03'
-        end: '2014-11-16'
-  - names:
-      - name: 'THE ポッシボー'
-        name_kana: 'ザ ポッシボー'
-        periods:
-          - start: '2006-08-02'
-            end: '2015-06-11'
-      - name: 'チャオ ベッラ チンクエッティ'
-        name_kana: 'チャオ ベッラ チンクエッティ'
-        periods:
-          - start: '2006-08-02'
-            end: '2018-08-02'
-    tags:
-      - 'つんく♂プロデュース'
-    periods:
-      - start: '2006-08-02'
-        end: '2018-08-02'
-  - name: 'キャナァーリ倶楽部'
-    name_kana: 'キャナァーリクラブ'
-    tags:
-      - 'つんく♂プロデュース'
-    periods:
-      - start: '2007-03-03'
-  - name: 'NICE GIRL プロジェクト!研修生'
-    name_kana: 'ナイスガールプロジェクトケンシュウセイ'
-    tags:
-      - 'つんく♂プロデュース'
-    periods:
-      - start: '2008-05-03'
-        end: '2014-11-16'
-
-  # END つんく♂プロデュース
-  - reserve_id_until: 199

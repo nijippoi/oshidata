@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 500
-end_id: 549
+start_id: 450
+end_id: 499
 
 persons:
   - family_name: '橋田'
@@ -25,11 +25,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-02'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '吉田'
     family_name_kana: 'ヨシダ'
     given_name: '姫杷'
@@ -51,11 +48,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-08-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '小野田'
     family_name_kana: 'オノダ'
     given_name: '華凜'
@@ -77,11 +71,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2018-11-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '村越'
     family_name_kana: 'ムラコシ'
     given_name: '彩菜'
@@ -103,11 +94,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-02'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '植村'
     family_name_kana: 'ウエムラ'
     given_name: '葉純'
@@ -129,11 +117,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '松原'
     family_name_kana: 'マツバラ'
     given_name: 'ユリヤ'
@@ -155,11 +140,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-12-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '島川'
     family_name_kana: 'シマカワ'
     given_name: '波菜'
@@ -181,11 +163,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2024-02-07'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '上村'
     family_name_kana: 'カミムラ'
     given_name: '麗菜'
@@ -207,11 +186,8 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2022-08-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '相馬'
     family_name_kana: 'ソウマ'
     given_name: '優芽'
@@ -233,7 +209,5 @@ persons:
         group: 'ロージークロニクル'
         periods:
           - start: '2024-06-16'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2024-02-07'
+    tags:
+      - 'ハロー！プロジェクト'

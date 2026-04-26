@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 300
-end_id: 349
+start_id: 250
+end_id: 299
 
 persons:
   - family_name: '植村'
@@ -26,11 +26,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2024-06-14'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2013-02-25'
-            end: '2024-06-14'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '宮崎'
     family_name_kana: 'ミヤザキ'
     given_name: '由加'
@@ -48,11 +45,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2019-06-17'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2013-02-25'
-            end: '2019-06-17'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '金澤'
     family_name_kana: 'カナザワ'
     given_name: '朋子'
@@ -75,11 +69,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2021-11-24'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2012-11-01'
-            end: '2021-11-24'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '高木'
     family_name_kana: 'タカギ'
     given_name: '紗友希'
@@ -102,11 +93,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2021-02-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2013-02-25'
-            end: '2021-02-12'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '大塚'
     family_name_kana: 'オオツカ'
     given_name: '愛菜'
@@ -129,11 +117,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2013-07-05'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2011-07-01'
-            end: '2013-07-05'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '宮本'
     family_name_kana: 'ミヤモト'
     given_name: '佳林'
@@ -156,11 +141,8 @@ persons:
         periods:
           - start: '2013-02-25'
             end: '2020-12-10'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2013-02-25'
-            end: '2020-12-10'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '梁川'
     family_name_kana: 'ヤナガワ'
     given_name: '奈々美'
@@ -183,11 +165,8 @@ persons:
         periods:
           - start: '2017-06-26'
             end: '2019-03-11'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-06-26'
-            end: '2019-03-11'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '稲場'
     family_name_kana: 'イナバ'
     given_name: '愛香'
@@ -210,11 +189,8 @@ persons:
         periods:
           - start: '2018-06-13'
             end: '2022-05-30'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2018-06-13'
-            end: '2022-05-30'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '段原'
     family_name_kana: 'ダンバラ'
     given_name: '瑠々'
@@ -236,10 +212,8 @@ persons:
         group: 'Juice=Juice'
         periods:
           - start: '2017-06-26'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-06-26'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '工藤'
     family_name_kana: 'クドウ'
     given_name: '由愛'
@@ -261,10 +235,8 @@ persons:
         periods:
           - start: '2016-07-01'
             end: '2019-06-14'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-06-14'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '松永'
     family_name_kana: 'マツナガ'
     given_name: '里愛'
@@ -286,10 +258,8 @@ persons:
         periods:
           - start: '2017-03-01'
             end: '2019-06-14'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-03-01'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '有澤'
     family_name_kana: 'アリサワ'
     given_name: '一華'
@@ -311,10 +281,8 @@ persons:
         periods:
           - start: '2021-05-07'
             end: '2021-07-07'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-07-07'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '入江'
     family_name_kana: 'イリエ'
     given_name: '里咲'
@@ -331,10 +299,8 @@ persons:
         group: 'Juice=Juice'
         periods:
           - start: '2021-07-07'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-07-07'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '江端'
     family_name_kana: 'エバタ'
     given_name: '妃咲'
@@ -356,10 +322,8 @@ persons:
         group: 'Juice=Juice'
         periods:
           - start: '2021-07-07'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-01'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '石山'
     family_name_kana: 'イシヤマ'
     given_name: '咲良'
@@ -381,10 +345,8 @@ persons:
         periods:
           - start: '2020-11-04'
             end: '2022-06-29'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2022-06-29'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '遠藤'
     family_name_kana: 'エンドウ'
     given_name: '彩加里'
@@ -401,10 +363,8 @@ persons:
         group: 'Juice=Juice'
         periods:
           - start: '2022-06-29'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2022-06-29'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '川嶋'
     family_name_kana: 'カワシマ'
     given_name: '美楓'
@@ -426,10 +386,8 @@ persons:
         periods:
           - start: '2021-08-24'
             end: '2023-05-23'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2023-05-23'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '林'
     family_name_kana: 'ハヤシ'
     given_name: '仁愛'
@@ -451,7 +409,5 @@ persons:
         group: 'Juice=Juice'
         periods:
           - start: '2025-06-23'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2023-03-28'
+    tags:
+      - 'ハロー！プロジェクト'

@@ -1,0 +1,43 @@
+---
+source_type: 'groups'
+start_id: 101
+end_id: 199
+
+# つんく♂プロデュース
+groups:
+  - name: 'NICE GIRL プロジェクト!'
+    name_kana: 'ナイスガールプロジェクト'
+    tags:
+      - 'つんく♂プロデュース'
+    periods:
+      - start: '2008-05-03'
+        end: '2014-11-16'
+  - names:
+      - name: 'THE ポッシボー'
+        name_kana: 'ザ ポッシボー'
+        periods:
+          - start: '2006-08-02'
+            end: '2015-06-11'
+      - name: 'チャオ ベッラ チンクエッティ'
+        name_kana: 'チャオ ベッラ チンクエッティ'
+        periods:
+          - start: '2006-08-02'
+            end: '2018-08-02'
+    tags:
+      - 'つんく♂プロデュース'
+    periods:
+      - start: '2006-08-02'
+        end: '2018-08-02'
+  - name: 'キャナァーリ倶楽部'
+    name_kana: 'キャナァーリクラブ'
+    tags:
+      - 'つんく♂プロデュース'
+    periods:
+      - start: '2007-03-03'
+  - name: 'NICE GIRL プロジェクト!研修生'
+    name_kana: 'ナイスガールプロジェクトケンシュウセイ'
+    tags:
+      - 'つんく♂プロデュース'
+    periods:
+      - start: '2008-05-03'
+        end: '2014-11-16'

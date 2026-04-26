@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 450
-end_id: 499
+start_id: 400
+end_id: 449
 
 persons:
   - family_name: '斉藤'
@@ -25,11 +25,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2018-11-01'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '広本'
     family_name_kana: 'ヒロモト'
     given_name: '瑠璃'
@@ -51,11 +48,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-02'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '米村'
     family_name_kana: 'ヨネムラ'
     given_name: '姫良々'
@@ -77,11 +71,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2016-01-15'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '窪田'
     family_name_kana: 'クボタ'
     given_name: '七海'
@@ -103,11 +94,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-12-11'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '中山'
     family_name_kana: 'ナカヤマ'
     given_name: '夏月姫'
@@ -129,11 +117,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2017-03-06'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '西﨑'
     family_name_kana: 'ニシザキ'
     given_name: '美空'
@@ -155,11 +140,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2019-08-02'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '北原'
     family_name_kana: 'キタハラ'
     given_name: 'もも'
@@ -176,11 +158,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-12-13'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '筒井'
     family_name_kana: 'ツツイ'
     given_name: '澪心'
@@ -197,11 +176,8 @@ persons:
         group: 'OCHA NORMA'
         periods:
           - start: '2021-12-13'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-12-13'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '石栗'
     family_name_kana: 'イシグリ'
     given_name: '奏美'
@@ -216,12 +192,8 @@ persons:
         periods:
           - start: '2021-12-13'
             end: '2025-03-21'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-12-13'
-            end: '2025-03-21'
-
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '田代'
     family_name_kana: 'タシロ'
     given_name: 'すみれ'
@@ -236,8 +208,5 @@ persons:
         periods:
           - start: '2021-12-13'
             end: '2025-03-11'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2021-12-13'
-            end: '2025-03-11'
+    tags:
+      - 'ハロー！プロジェクト'

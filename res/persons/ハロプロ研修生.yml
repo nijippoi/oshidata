@@ -1,0 +1,439 @@
+---
+source_type: 'persons'
+start_id: 500
+end_id: 599
+
+persons:
+  - family_name: '能登'
+    family_name_kana: 'ノト'
+    given_name: '有沙'
+    given_name_kana: 'アリサ'
+    birth_date: '1988-12-26'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2007-07-01'
+            end: '2011-03-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '武藤'
+    family_name_kana: 'ムトウ'
+    given_name: '水華'
+    given_name_kana: 'ミカ'
+    birth_date: '1992-01-31'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2008-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '吉田'
+    family_name_kana: 'ヨシダ'
+    given_name: '光里'
+    given_name_kana: 'ヒカリ'
+    birth_date: '2011-10-01'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2024-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '宮越'
+    family_name_kana: 'ミヤコシ'
+    given_name: '千尋'
+    given_name_kana: 'チヒロ'
+    birth_date: '2010-08-27'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2024-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '大坪'
+    family_name_kana: 'オオツボ'
+    given_name: '茉乃'
+    given_name_kana: 'マノ'
+    birth_date: '2011-06-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2024-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '服部'
+    family_name_kana: 'ハットリ'
+    given_name: '琉愛'
+    given_name_kana: 'ルア'
+    birth_date: '2013-02-07'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2024-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '宮﨑'
+    family_name_kana: 'ミヤザキ'
+    given_name: '理帆'
+    given_name_kana: 'リホ'
+    birth_date: '2014-05-13'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '根本'
+    family_name_kana: 'ネモト'
+    given_name: '花凛'
+    given_name_kana: 'カリン'
+    birth_date: '2014-03-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '坂本'
+    family_name_kana: 'サカモト'
+    given_name: '葵花'
+    given_name_kana: 'アオイ'
+    birth_date: '2013-04-07'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '石川'
+    family_name_kana: 'イシカワ'
+    given_name: '華望'
+    given_name_kana: 'ハナノ'
+    birth_date: '2013-09-09'
+    birth_place:
+      country: 'JP'
+      state: '広島県'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '染谷'
+    family_name_kana: 'ソメヤ'
+    given_name: '彩良'
+    given_name_kana: 'サラ'
+    birth_date: '2015-02-12'
+    birth_place:
+      country: 'JP'
+      state: '茨城県'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '大野'
+    family_name_kana: 'オオノ'
+    given_name: '愛莉'
+    given_name_kana: 'アイリ'
+    birth_date: '2014-06-25'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '樋口'
+    family_name_kana: 'ヒグチ'
+    given_name: '愛海'
+    given_name_kana: 'アイカ'
+    birth_date: '2014-09-03'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '鈴木'
+    family_name_kana: 'スズキ'
+    given_name: 'もあ'
+    given_name_kana: 'モア'
+    birth_date: '2013-04-12'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-02-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '青木'
+    family_name_kana: 'アオキ'
+    given_name: '優奈'
+    given_name_kana: 'ユウナ'
+    birth_date: '2014-01-07'
+    birth_place:
+      country: 'JP'
+      state: '兵庫県'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2025-05-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '苅部'
+    family_name_kana: 'カリベ'
+    given_name: '咲良'
+    given_name_kana: 'サラ'
+    birth_date: '2015-03-16'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '岸田'
+    family_name_kana: 'キシダ'
+    given_name: '桃果'
+    given_name_kana: 'モモカ'
+    birth_date: '2014-03-08'
+    birth_place:
+      country: 'JP'
+      state: '広島県'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '佐藤'
+    family_name_kana: 'サトウ'
+    given_name: '絢音'
+    given_name_kana: 'アヤネ'
+    birth_date: '2015-02-12'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '佐伯'
+    family_name_kana: 'サエキ'
+    given_name: '詩春'
+    given_name_kana: 'シハル'
+    birth_date: '2015-03-27'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '斎藤'
+    family_name_kana: 'サイトウ'
+    given_name: 'ゆり夏'
+    given_name_kana: 'ユリカ'
+    birth_date: '2012-07-05'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '坂田'
+    family_name_kana: 'サカタ'
+    given_name: 'しおり'
+    given_name_kana: 'シオリ'
+    birth_date: '2014-11-04'
+    birth_place:
+      country: 'JP'
+      state: '茨城県'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '長井'
+    family_name_kana: 'ナガイ'
+    given_name: '莉依那'
+    given_name_kana: 'リイナ'
+    birth_date: '2014-09-18'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '田村'
+    family_name_kana: 'タムラ'
+    given_name: '梛々'
+    given_name_kana: 'ナナ'
+    birth_date: '2014-07-03'
+    birth_place:
+      country: 'JP'
+      state: '宮城県'
+    hometown:
+      country: 'JP'
+      state: '宮城県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '鈴木'
+    family_name_kana: 'スズキ'
+    given_name: '琴美'
+    given_name_kana: 'コトミ'
+    birth_date: '2011-05-09'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2026-04-01'
+    tags:
+      - 'ハロー！プロジェクト'

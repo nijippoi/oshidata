@@ -21,11 +21,8 @@ persons:
         periods:
           - start: '2000-02-19'
             end: '2010-05-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '1999-08-10'
-            end: '2009-03-31'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '大谷'
     family_name_kana: 'オオタニ'
     given_name: '雅恵'
@@ -43,11 +40,8 @@ persons:
         periods:
           - start: '2000-02-19'
             end: '2010-05-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '1999-08-10'
-            end: '2009-03-31'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '柴田'
     family_name_kana: 'シバタ'
     given_name: 'あゆみ'
@@ -65,11 +59,8 @@ persons:
         periods:
           - start: '2000-02-19'
             end: '2010-05-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '1999-08-10'
-            end: '2009-03-31'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '斉藤'
     family_name_kana: 'サイトウ'
     given_name: '瞳'
@@ -88,8 +79,5 @@ persons:
         periods:
           - start: '2000-02-19'
             end: '2010-05-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '1999-08-10'
-            end: '2009-03-31'
+    tags:
+      - 'ハロー！プロジェクト'

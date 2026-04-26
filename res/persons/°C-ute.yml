@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 260
-end_id: 269
+start_id: 215
+end_id: 224
 
 persons:
   - family_name: '梅田'
@@ -17,7 +17,7 @@ persons:
       state: '神奈川県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -26,11 +26,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2009-10-25'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2009-10-25'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '村上'
     family_name_kana: 'ムラカミ'
     given_name: '愛'
@@ -44,7 +41,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -53,11 +50,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2006-10-31'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2006-10-31'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '矢島'
     family_name_kana: 'ヤジマ'
     given_name: '舞美'
@@ -71,7 +65,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -80,11 +74,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2017-06-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2017-06-12'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '鈴木'
     family_name_kana: 'スズキ'
     given_name: '愛理'
@@ -98,7 +89,7 @@ persons:
       state: '千葉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -107,11 +98,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2017-06-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2017-06-12'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '中島'
     family_name_kana: 'ナカジマ'
     given_name: '早貴'
@@ -125,7 +113,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -134,11 +122,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2017-06-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2017-06-12'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '岡井'
     family_name_kana: 'オカイ'
     given_name: '千聖'
@@ -152,7 +137,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -161,11 +146,8 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2017-06-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2017-06-12'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '有原'
     family_name_kana: 'アリハラ'
     given_name: '栞菜'
@@ -188,11 +170,8 @@ persons:
         periods:
           - start: '2006-01-02'
             end: '2009-07-09'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2004-06-01'
-            end: '2009-07-09'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '萩原'
     family_name_kana: 'ハギワラ'
     given_name: '舞'
@@ -206,7 +185,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-06-30'
             end: '2005-06-11'
@@ -215,8 +194,5 @@ persons:
         periods:
           - start: '2005-06-11'
             end: '2017-06-12'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-06-30'
-            end: '2017-06-12'
+    tags:
+      - 'ハロー！プロジェクト'

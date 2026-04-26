@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 250
-end_id: 259
+start_id: 205
+end_id: 214
 
 persons:
   - family_name: '清水'
@@ -17,7 +17,7 @@ persons:
       state: '神奈川県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -26,11 +26,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '嗣永'
     family_name_kana: 'ツグナガ'
     given_name: '桃子'
@@ -44,7 +41,7 @@ persons:
       state: '千葉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -53,11 +50,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '徳永'
     family_name_kana: 'トクナガ'
     given_name: '千奈美'
@@ -71,7 +65,7 @@ persons:
       state: '神奈川県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -80,11 +74,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '須藤'
     family_name_kana: 'スドウ'
     given_name: '茉麻'
@@ -98,7 +89,7 @@ persons:
       state: '東京都'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -107,11 +98,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '夏焼'
     family_name_kana: 'ナツヤキ'
     given_name: '雅'
@@ -125,7 +113,7 @@ persons:
       state: '埼玉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -134,11 +122,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '熊井'
     family_name_kana: 'クマイ'
     given_name: '友理奈'
@@ -152,7 +137,7 @@ persons:
       state: '神奈川県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -161,11 +146,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '菅谷'
     family_name_kana: 'スガヤ'
     given_name: '梨沙子'
@@ -179,7 +161,7 @@ persons:
       state: '神奈川県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -188,11 +170,8 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2015-03-03'
+    tags:
+      - 'ハロー！プロジェクト'
   - family_name: '石村'
     family_name_kana: 'イシムラ'
     given_name: '舞波'
@@ -206,7 +185,7 @@ persons:
       state: '千葉県'
     roles:
       - role: 'trainee'
-        group: 'ハロー!プロジェクト・キッズ'
+        group: 'ハロー！プロジェクト・キッズ'
         periods:
           - start: '2002-01-01'
             end: '2004-01-14'
@@ -215,8 +194,5 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2005-10-02'
-      - role: 'member'
-        group: 'ハロー！プロジェクト'
-        periods:
-          - start: '2002-01-01'
-            end: '2005-10-02'
+    tags:
+      - 'ハロー！プロジェクト'
