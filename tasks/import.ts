@@ -177,6 +177,9 @@ function processGroups(groupsData: any[]): {
         gid = ++item['reserve_id_until'];
         continue;
       }
+      if (data.end_id && gid > data.end_id) {
+        throw new Error(`Group id ${gid} is out of range ${data.start_id}..${data.end_id}`);
+      }
       const group: any = { id: gid.toString() };
       if (item.names) {
         group.names = structuredClone(item.names);
@@ -275,6 +278,9 @@ function processPersons(
       if (item.reserve_id_until) {
         pid = ++item['reserve_id_until'];
         continue;
+      }
+      if (data.end_id && pid > data.end_id) {
+        throw new Error(`Person id ${pid} is out of range ${data.start_id}..${data.end_id}`);
       }
       const person: Person = { id: pid.toString(), names: [] };
       if (item.names) {
