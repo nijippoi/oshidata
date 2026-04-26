@@ -28,6 +28,7 @@ export type ColumnTypes =
   | 'hometown'
   | 'groups'
   | 'roles'
+  | 'tags'
   | 'zodiac';
 
 const COLUMN_LABELS: Record<ColumnTypes, string> = {
@@ -38,6 +39,7 @@ const COLUMN_LABELS: Record<ColumnTypes, string> = {
   'hometown': 'nouns.hometown',
   'groups': 'nouns.groups',
   'roles': 'nouns.roles',
+  'tags': 'nouns.tags',
   'zodiac': 'nouns.zodiac',
 };
 
@@ -307,6 +309,9 @@ export class PersonsList extends Component {
       case 'roles':
         this.renderRolesCell(td, person, groupsById);
         break;
+      case 'tags':
+        el('span', { children: [person.tags?.join(', ') || ''], attach: td });
+        break;
       case 'zodiac':
         if (person.birth_date) {
           const sign = zodiac(parsePlainDate(person.birth_date));
@@ -318,12 +323,6 @@ export class PersonsList extends Component {
   }
 
   async renderList() {
-    const theadRow = el('tr', {
-      children: this.columns.map((col) => {
-        return elb('span', { dataset: { 'label-text': COLUMN_LABELS[col] } }).root('th');
-      }),
-    });
-
     const [persons, groups, personTags, groupTags] = await Promise.all([
       queryPersons(),
       queryGroups(),
@@ -341,6 +340,12 @@ export class PersonsList extends Component {
       )
       : persons.records;
 
+    const thead = elb('tr', {
+      children: this.columns.map((col) => {
+        return elb('span', { dataset: { 'label-text': COLUMN_LABELS[col] } }).root('th');
+      }),
+    }).root('thead');
+
     const tbody = el('tbody');
     for (const person of personsInGroups) {
       const tr = elb('tr');
@@ -349,7 +354,7 @@ export class PersonsList extends Component {
     }
 
     const tbl = this.shadow.querySelector('.persons-table')!;
-    clear(tbl).append(elb('thead').add(theadRow).el(), tbody);
+    clear(tbl).append(thead, tbody);
   }
 
   async init(): Promise<void> {
