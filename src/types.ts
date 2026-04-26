@@ -113,9 +113,29 @@ export interface BaseRole extends HasPeriods {
 }
 
 /**
+ * ソロロール（ソロアーティストに関連する役職）
+ */
+export interface SoloRole extends BaseRole {
+  /** 役職のタイプ */
+  role: 'solo';
+}
+
+/**
  * グループロール（グループに関連する役職）
  */
 export interface GroupRole extends BaseRole {
+  /** 役職のタイプ */
+  role:
+    | 'member'
+    | 'trainee'
+    | 'leader'
+    | 'subleader'
+    | 'vocal'
+    | 'dancer'
+    | 'producer'
+    | 'drummer'
+    | 'guitarist'
+    | 'keyboardist';
   /** グループID */
   group_id: Id;
 }
@@ -124,6 +144,8 @@ export interface GroupRole extends BaseRole {
  * アーティストロール（アーティストに関連する役職）
  */
 export interface PersonRole extends BaseRole {
+  /** 役職のタイプ */
+  role: 'vocal' | 'dancer' | 'producer' | 'drummer' | 'guitarist' | 'keyboardist';
   /** アーティストID */
   person_id: Id;
 }
@@ -131,7 +153,7 @@ export interface PersonRole extends BaseRole {
 /**
  * 役割と活動期間（グループまたはアーティストいずれか一方に関連）
  */
-export type Role = GroupRole | PersonRole;
+export type Role = SoloRole | GroupRole | PersonRole;
 
 /**
  * 役職定義（利用可能な役職についてのメタデータ）

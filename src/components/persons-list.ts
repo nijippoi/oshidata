@@ -332,10 +332,9 @@ export class PersonsList extends Component {
     ]);
     const groupsById = new Map(groups.records.map((g) => [g.id, g]));
 
-    const filteredPersons = this.selectedGroupIds.size > 0
+    const personsInGroups = this.selectedGroupIds.size > 0
       ? persons.records.filter((person) =>
         person.roles?.some((role) =>
-          role.role === 'member' &&
           (role as GroupRole).group_id &&
           this.selectedGroupIds.has((role as GroupRole).group_id)
         )
@@ -343,7 +342,7 @@ export class PersonsList extends Component {
       : persons.records;
 
     const tbody = el('tbody');
-    for (const person of filteredPersons) {
+    for (const person of personsInGroups) {
       const tr = elb('tr');
       this.columns.forEach((col) => tr.add(this.renderCell(col, person, groupsById).el()));
       tbody.append(tr.el());
