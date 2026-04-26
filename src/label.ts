@@ -19,7 +19,12 @@ async function load(
   langKey: string,
 ): Promise<Labels> {
   console.log(`Fetching label ${langKey}`);
-  return await fetch(`${baseUrl}${LABELS_PATH}/${langKey}.json`).then((res) => res.json());
+  return await fetch(`${baseUrl}${LABELS_PATH}/${langKey}.json`)
+    .then((res) => res.json())
+    .catch((error) => {
+      console.error(`Failed to fetch labels for ${langKey}: ${error}`);
+      return {};
+    });
 }
 
 export async function label(
