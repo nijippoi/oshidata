@@ -1,0 +1,144 @@
+---
+source_type: 'persons'
+start_id: 205
+end_id: 213
+
+persons:
+  - family_name: 'トッド'
+    family_name_kana: 'トッド'
+    given_name: 'ミカ'
+    given_name_kana: 'ミカ'
+    birth_date: '1984-05-28'
+    birth_place:
+      country: 'US'
+      state: 'ハワイ州'
+    hometown:
+      country: 'US'
+      state: 'ハワイ州'
+    roles:
+      - role: 'member'
+        group: 'ココナッツ娘。'
+        periods:
+          - start: '1999-07-23'
+            end: '2004-05-02'
+      - role: 'member'
+        group: 'ミニモニ。'
+        periods:
+          - start: '2000-10-01'
+            end: '2004-05-02'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '長手'
+    family_name_kana: 'ナガテ'
+    given_name: '絢香'
+    given_name_kana: 'アヤカ'
+    birth_date: '1981-10-30'
+    birth_place:
+      country: 'JP'
+      state: '兵庫県'
+      city: '神戸市東灘区'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+      city: '神戸市東灘区'
+    roles:
+      - role: 'member'
+        group: 'ココナッツ娘。'
+        periods:
+          - start: '1999-07-23'
+            end: '2008-04-30'
+      - role: 'member'
+        group: 'プッチモニ'
+        periods:
+          - start: '2002-07-01'
+            end: '2008-04-30'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '松浦'
+    family_name_kana: 'マツウラ'
+    given_name: '亜弥'
+    given_name_kana: 'アヤ'
+    birth_date: '1986-06-25'
+    birth_place:
+      country: 'JP'
+      state: '兵庫県'
+      city: '姫路市'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+      city: '姫路市'
+    roles:
+      - role: 'solo'
+        periods:
+          - start: '2000-10-01'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '真野'
+    family_name_kana: 'マノ'
+    given_name: '恵里菜'
+    given_name_kana: 'エリナ'
+    birth_date: '1991-04-11'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロエッグ'
+        periods:
+          - start: '2006-06-04'
+            end: '2008-03-29'
+      - role: 'solo'
+        periods:
+          - start: '2008-06-29'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '三好'
+    family_name_kana: 'ミヨシ'
+    given_name: '絵梨香'
+    given_name_kana: 'エリカ'
+    birth_date: '1984-11-08'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+      city: '札幌市'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+      city: '札幌市'
+    roles:
+      - role: 'member'
+        group: '美勇伝'
+        periods:
+          - start: '2004-08-10'
+            end: '2008-06-29'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '岡田'
+    family_name_kana: 'オカダ'
+    given_name: '唯'
+    given_name_kana: 'ユイ'
+    birth_date: '1987-12-28'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+      city: '八尾市'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+      city: '八尾市'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロエッグ'
+        periods:
+          - start: '2004-06-01'
+            end: '2004-08-10'
+      - role: 'member'
+        group: '美勇伝'
+        periods:
+          - start: '2004-08-10'
+            end: '2008-06-29'
+    tags:
+      - 'ハロー！プロジェクト'

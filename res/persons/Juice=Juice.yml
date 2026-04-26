@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 250
-end_id: 299
+start_id: 300
+end_id: 349
 
 persons:
   - family_name: '植村'
@@ -165,6 +165,11 @@ persons:
         periods:
           - start: '2017-06-26'
             end: '2019-03-11'
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2015-11-05'
+            end: '2019-03-11'
     tags:
       - 'ハロー！プロジェクト'
   - family_name: '稲場'
@@ -189,6 +194,11 @@ persons:
         periods:
           - start: '2018-06-13'
             end: '2022-05-30'
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2014-11-05'
+            end: '2016-08-04'
     tags:
       - 'ハロー！プロジェクト'
   - family_name: '段原'

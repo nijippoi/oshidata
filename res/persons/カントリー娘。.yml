@@ -1,0 +1,177 @@
+---
+source_type: 'persons'
+start_id: 214
+end_id: 223
+
+persons:
+  - family_name: '里田'
+    family_name_kana: 'サトダ'
+    given_name: 'まい'
+    given_name_kana: 'マイ'
+    birth_date: '1984-03-29'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '2002-01-02'
+            end: '2014-11-05'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '木村'
+    family_name_kana: 'キムラ'
+    given_name: '麻美'
+    given_name_kana: 'アサミ'
+    birth_date: '1984-07-17'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '2000-05-30'
+            end: '2007-01-28'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '斎藤'
+    family_name_kana: 'サイトウ'
+    given_name: '美海'
+    given_name_kana: 'ミウナ'
+    birth_date: '1987-02-12'
+    birth_place:
+      country: 'JP'
+      state: '静岡県'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '2003-04-27'
+            end: '2007-01-28'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '戸田'
+    family_name_kana: 'トダ'
+    given_name: '鈴音'
+    given_name_kana: 'スズネ'
+    birth_date: '1981-02-06'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '1999-04-27'
+            end: '2002-10-13'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '小林'
+    family_name_kana: 'コバヤシ'
+    given_name: '梓'
+    given_name_kana: 'アズサ'
+    birth_date: '1977-01-30'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '1999-04-27'
+            end: '1999-08-23'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '柳原'
+    family_name_kana: 'ヤナギハラ'
+    given_name: '尋美'
+    given_name_kana: 'ヒロミ'
+    birth_date: '1979-10-19'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'カントリー娘。'
+        periods:
+          - start: '1999-04-27'
+            end: '1999-07-16'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '山木'
+    family_name_kana: 'ヤマキ'
+    given_name: '梨沙'
+    given_name_kana: 'リサ'
+    birth_date: '1997-10-14'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2014-11-05'
+            end: '2019-12-26'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '島村'
+    family_name_kana: 'シマムラ'
+    given_name: '嬉唄'
+    given_name_kana: 'ウタ'
+    birth_date: '2000-06-24'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2014-11-05'
+            end: '2015-06-12'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '小関'
+    family_name_kana: 'オゼキ'
+    given_name: '舞'
+    given_name_kana: 'マイ'
+    birth_date: '2002-02-10'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2014-11-05'
+            end: '2019-12-26'
+    tags:
+      - 'ハロー！プロジェクト'

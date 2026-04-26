@@ -1,0 +1,488 @@
+---
+source_type: 'persons'
+start_id: 250
+end_id: 299
+
+persons:
+  - family_name: '小川'
+    family_name_kana: 'オガワ'
+    given_name: '紗季'
+    given_name_kana: 'サキ'
+    birth_date: '1996-11-18'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2009-04-04'
+            end: '2011-08-27'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '前田'
+    family_name_kana: 'マエダ'
+    given_name: '憂佳'
+    given_name_kana: 'ユウカ'
+    birth_date: '1994-12-28'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2009-04-04'
+            end: '2011-12-31'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '福田'
+    family_name_kana: 'カンナギ'
+    given_name: '花音'
+    given_name_kana: 'マロ'
+    birth_date: '1995-03-12'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+      city: '川越市'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+      city: '川越市'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2009-04-04'
+            end: '2015-11-29'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '和田'
+    family_name_kana: 'ワダ'
+    given_name: '彩花'
+    given_name_kana: 'アヤカ'
+    birth_date: '1994-08-01'
+    birth_place:
+      country: 'JP'
+      state: '群馬県'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2009-04-04'
+            end: '2019-06-18'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '田村'
+    family_name_kana: 'タムラ'
+    given_name: '芽実'
+    given_name_kana: 'メイミ'
+    birth_date: '1998-10-30'
+    birth_place:
+      country: 'JP'
+      state: '群馬県'
+      city: '伊勢崎市'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+      city: '伊勢崎市'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2011-08-14'
+            end: '2016-05-30'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '勝田'
+    family_name_kana: 'カツタ'
+    given_name: '里奈'
+    given_name_kana: 'リナ'
+    birth_date: '1998-04-06'
+    birth_place:
+      country: 'JP'
+      state: '東京都'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2011-08-14'
+            end: '2019-09-25'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '中西'
+    family_name_kana: 'ナカニシ'
+    given_name: '香菜'
+    given_name_kana: 'カナ'
+    birth_date: '1997-06-04'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+      city: '八尾市'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+      city: '八尾市'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2011-08-14'
+            end: '2019-12-10'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '竹内'
+    family_name_kana: 'タケウチ'
+    given_name: '朱莉'
+    given_name_kana: 'アカリ'
+    birth_date: '1997-11-23'
+    birth_place:
+      country: 'JP'
+      state: '埼玉県'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2011-08-14'
+            end: '2023-06-21'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '相川'
+    family_name_kana: 'アイカワ'
+    given_name: '茉穂'
+    given_name_kana: 'マホ'
+    birth_date: '1999-03-26'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2014-04-01'
+            end: '2014-10-04'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2014-10-04'
+            end: '2017-12-31'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '室田'
+    family_name_kana: 'ムロタ'
+    given_name: '瑞希'
+    given_name_kana: 'ミズキ'
+    birth_date: '1998-06-12'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2021-03-01'
+            end: '2014-10-04'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2014-10-04'
+            end: '2020-03-22'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '佐々'
+    family_name_kana: 'ササキ'
+    given_name: '木莉佳子'
+    given_name_kana: 'リカコ'
+    birth_date: '2001-05-28'
+    birth_place:
+      country: 'JP'
+      state: '宮城県'
+      city: '気仙沼市'
+    hometown:
+      country: 'JP'
+      state: '宮城県'
+      city: '気仙沼市'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2024-07-01'
+            end: '2014-10-04'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2014-10-04'
+            end: '2024-06-19'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '上國'
+    family_name_kana: 'カミコクリョウ'
+    given_name: '料萌衣'
+    given_name_kana: 'モエ'
+    birth_date: '1999-10-24'
+    birth_place:
+      country: 'JP'
+      state: '鹿児島県・熊本県'
+    hometown:
+      country: 'JP'
+      state: '鹿児島県・熊本県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2015-11-11'
+            end: '2025-06-18'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '笠原'
+    family_name_kana: 'カサハラ'
+    given_name: '桃奈'
+    given_name_kana: 'モモナ'
+    birth_date: '2003-10-22'
+    birth_place:
+      country: 'JP'
+      state: '神奈川県'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2017-10-01'
+            end: '2016-07-16'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2016-07-16'
+            end: '2021-11-15'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '船木'
+    family_name_kana: 'フナキ'
+    given_name: '結'
+    given_name_kana: 'ムスブ'
+    birth_date: '2002-05-10'
+    birth_place:
+      country: 'JP'
+      state: '大阪府'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2020-12-01'
+            end: '2017-06-26'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2017-06-26'
+            end: '2020-12-09'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '川村'
+    family_name_kana: 'カワムラ'
+    given_name: '文乃'
+    given_name_kana: 'アヤノ'
+    birth_date: '1999-07-07'
+    birth_place:
+      country: 'JP'
+      state: '高知県'
+      city: '高知市'
+    hometown:
+      country: 'JP'
+      state: '高知県'
+      city: '高知市'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2011-04-01'
+            end: '2017-06-26'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2017-06-26'
+            end: '2024-11-28'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '伊勢'
+    family_name_kana: 'イセ'
+    given_name: '鈴蘭'
+    given_name_kana: 'レイラ'
+    birth_date: '2004-01-19'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2018-11-23'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '太田'
+    family_name_kana: 'オオタ'
+    given_name: '遥香'
+    given_name_kana: 'ハルカ'
+    birth_date: '2003-10-21'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2018-11-23'
+            end: '2020-10-13'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '橋迫'
+    family_name_kana: 'ハシサコ'
+    given_name: '鈴'
+    given_name_kana: 'リン'
+    birth_date: '2005-10-06'
+    birth_place:
+      country: 'JP'
+      state: '愛知県'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2016-08-01'
+            end: '2019-07-03'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2019-07-03'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '為永'
+    family_name_kana: 'タメナガ'
+    given_name: '幸音'
+    given_name_kana: 'シオン'
+    birth_date: '2004-02-09'
+    birth_place:
+      country: 'JP'
+      state: '長野県'
+      city: '長野市'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+      city: '長野市'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2020-11-02'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '川名'
+    family_name_kana: 'カワナ'
+    given_name: '凜'
+    given_name_kana: 'リン'
+    birth_date: '2003-12-06'
+    birth_place:
+      country: 'JP'
+      state: '千葉県'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2020-11-02'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '平山'
+    family_name_kana: 'ヒラヤマ'
+    given_name: '遊季'
+    given_name_kana: 'ユキ'
+    birth_date: '2006-07-25'
+    birth_place:
+      country: 'JP'
+      state: '北海道'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'ハロプロ研修生'
+        periods:
+          - start: '2021-03-01'
+            end: '2021-12-30'
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2021-12-30'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '下井'
+    family_name_kana: 'シモイタニ'
+    given_name: '谷幸穂'
+    given_name_kana: 'ユキホ'
+    birth_date: '2006-08-04'
+    birth_place:
+      country: 'JP'
+      state: '岡山県'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2023-05-23'
+    tags:
+      - 'ハロー！プロジェクト'
+  - family_name: '長野'
+    family_name_kana: 'ナガノ'
+    given_name: '桃羽'
+    given_name_kana: 'モモハ'
+    birth_date: '2010-05-13'
+    birth_place:
+      country: 'JP'
+      state: '福岡県'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'アンジュルム'
+        periods:
+          - start: '2025-08-16'
+    tags:
+      - 'ハロー！プロジェクト'

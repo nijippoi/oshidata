@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 500
-end_id: 599
+start_id: 800
+end_id: 899
 
 persons:
   - family_name: '能登'
@@ -21,6 +21,11 @@ persons:
         periods:
           - start: '2007-07-01'
             end: '2011-03-01'
+      - role: 'member'
+        group: '音楽ガッタス'
+        periods:
+          - start: '2007-07-12'
+            end: '2011-10-31'
     tags:
       - 'ハロー！プロジェクト'
   - family_name: '武藤'
@@ -39,6 +44,11 @@ persons:
         group: 'ハロプロ研修生'
         periods:
           - start: '2008-04-01'
+      - role: 'member'
+        group: '音楽ガッタス'
+        periods:
+          - start: '2007-07-12'
+            end: '2008-04-30'
     tags:
       - 'ハロー！プロジェクト'
   - family_name: '吉田'

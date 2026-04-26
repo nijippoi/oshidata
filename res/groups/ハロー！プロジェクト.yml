@@ -117,6 +117,27 @@ groups:
     periods:
       - start: '1999-08-10'
         end: '2010-05-03'
+  - name: 'タンポポ'
+    name_kana: 'タンポポ'
+    tags:
+      - 'ハロー！プロジェクト'
+    periods:
+      - start: '1998-10-01'
+        end: '2009-03-31'
+  - name: 'プッチモニ'
+    name_kana: 'プッチモニ'
+    tags:
+      - 'ハロー！プロジェクト'
+    periods:
+      - start: '1999-01-01'
+        end: '2009-03-31'
+  - name: 'ミニモニ。'
+    name_kana: 'ミニモニ'
+    tags:
+      - 'ハロー！プロジェクト'
+    periods:
+      - start: '2000-06-01'
+        end: '2004-05-02'
   - name: 'シェキドル'
     name_kana: 'シェキドル'
     tags:
@@ -178,6 +199,13 @@ groups:
     periods:
       - start: '2007-07-21'
         end: '2017-05-22'
+  - name: '音楽ガッタス'
+    name_kana: 'オンガクガッタス'
+    tags:
+      - 'ハロー！プロジェクト'
+    periods:
+      - start: '2007-06-19'
+        end: '2013-12-31'
   - name: 'アイスクリー娘。'
     name_kana: 'アイスクリームスメ'
     tags:

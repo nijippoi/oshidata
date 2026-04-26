@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 205
-end_id: 214
+start_id: 224
+end_id: 231
 
 persons:
   - family_name: '清水'
@@ -50,6 +50,11 @@ persons:
         periods:
           - start: '2004-01-14'
             end: '2015-03-03'
+      - role: 'member'
+        group: 'カントリー・ガールズ'
+        periods:
+          - start: '2014-11-05'
+            end: '2017-06-30'
     tags:
       - 'ハロー！プロジェクト'
   - family_name: '徳永'
