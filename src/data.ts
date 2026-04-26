@@ -11,11 +11,15 @@ class RawData {
 
   static async getPersons(): Promise<Persons> {
     if (RawData.persons === undefined) {
-      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+      const url = `${baseUrl}${DATA_PATH}/${PERSONS_FILE}`;
+      return await navigator.locks.request(url, { mode: 'exclusive' }, async () => {
         if (RawData.persons === undefined) {
-          RawData.persons = await fetch(`${baseUrl}${DATA_PATH}/${PERSONS_FILE}`).then((res) => res.json()) as Persons;
+          RawData.persons = await fetch(url).then((res) => res.json()) as Persons;
         }
         return RawData.persons;
+      }).catch((error) => {
+        console.error(`Failed to fetch persons from ${url}: ${error}`);
+        throw error;
       });
     }
     return RawData.persons;
@@ -23,11 +27,15 @@ class RawData {
 
   static async getGroups(): Promise<Groups> {
     if (RawData.groups === undefined) {
-      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+      const url = `${baseUrl}${DATA_PATH}/${GROUPS_FILE}`;
+      return await navigator.locks.request(url, { mode: 'exclusive' }, async () => {
         if (RawData.groups === undefined) {
-          RawData.groups = await fetch(`${baseUrl}${DATA_PATH}/${GROUPS_FILE}`).then((res) => res.json()) as Groups;
+          RawData.groups = await fetch(url).then((res) => res.json()) as Groups;
         }
         return RawData.groups;
+      }).catch((error) => {
+        console.error(`Failed to fetch groups from ${url}: ${error}`);
+        throw error;
       });
     }
     return RawData.groups;
@@ -35,11 +43,15 @@ class RawData {
 
   static async getTags(): Promise<Tags> {
     if (RawData.tags === undefined) {
-      return await navigator.locks.request(DATA_PATH, { mode: 'shared' }, async () => {
+      const url = `${baseUrl}${DATA_PATH}/${TAGS_FILE}`;
+      return await navigator.locks.request(url, { mode: 'exclusive' }, async () => {
         if (RawData.tags === undefined) {
-          RawData.tags = await fetch(`${baseUrl}${DATA_PATH}/${TAGS_FILE}`).then((res) => res.json()) as Tags;
+          RawData.tags = await fetch(url).then((res) => res.json()) as Tags;
         }
         return RawData.tags;
+      }).catch((error) => {
+        console.error(`Failed to fetch tags from ${url}: ${error}`);
+        throw error;
       });
     }
     return RawData.tags;
