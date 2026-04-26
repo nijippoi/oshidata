@@ -38,7 +38,7 @@ jobs:
       - name: deno-bundle
         run: deno task bundle --baseurl "${{ steps.pages.outputs.base_url }}" --basepath "${{ steps.pages.outputs.base_path }}"
       - name: upload-pages-artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: 'dist/'
       - name: deploy
