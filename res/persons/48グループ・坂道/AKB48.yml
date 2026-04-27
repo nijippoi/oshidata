@@ -4556,27 +4556,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 14期'
-  - family_name: '石田'
-    given_name: '安奈'
-    family_name_kana: 'イシダ'
-    given_name_kana: 'アンナ'
-    birth_date: '1996-05-27'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-08-24'
-            end: '2013-05-21'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-08-24'
-            end: '2013-05-21'
-    tags:
-      - '48グループ'
   - family_name: '飯野'
     given_name: '雅'
     family_name_kana: 'イイノ'
@@ -4957,32 +4936,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 15期'
-  - family_name: '古畑'
-    given_name: '奈和'
-    family_name_kana: 'フルハタ'
-    given_name_kana: 'ナオ'
-    birth_date: '1996-09-15'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-04-28'
-            end: '2015-05-29'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2013-04-28'
-            end: '2014-02-24'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2014-02-24'
-            end: '2015-05-29'
-    tags:
-      - '48グループ'
   - family_name: '野澤'
     given_name: '玲奈'
     family_name_kana: 'ノザワ'
@@ -4992,6 +4945,11 @@ persons:
       country: 'JP'
       state: '東京都'
     roles:
+      - role: 'member'
+        group: 'JKT48'
+        periods:
+          - start: '2011-11-02'
+            end: '2014-04-24'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -5016,6 +4974,7 @@ persons:
             end: '2017-12-08'
     tags:
       - '48グループ'
+      - 'JKT48 1期'
   - family_name: '川本'
     given_name: '紗矢'
     family_name_kana: 'カワモト'
@@ -5178,6 +5137,11 @@ persons:
       state: '秋田県'
     roles:
       - role: 'member'
+        group: '乃木坂46'
+        periods:
+          - start: '2011-08-21'
+            end: '2018-05-06'
+      - role: 'member'
         group: 'AKB48'
         periods:
           - start: '2014-02-24'
@@ -5189,6 +5153,7 @@ persons:
             end: '2015-05-14'
     tags:
       - '48グループ'
+      - '乃木坂46 1期'
   - family_name: '阿部'
     given_name: '芽唯'
     family_name_kana: 'アベ'
@@ -6422,32 +6387,6 @@ persons:
             end: '2014-09-01'
     tags:
       - '48グループ'
-  - family_name: '木﨑'
-    given_name: 'ゆりあ'
-    family_name_kana: 'キザキ'
-    given_name_kana: 'ユリア'
-    birth_date: '1996-02-11'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2014-04-22'
-            end: '2017-09-30'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2014-04-22'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2015-03-26'
-            end: '2017-09-30'
-    tags:
-      - '48グループ'
   - family_name: '小笠原'
     given_name: '茉由'
     family_name_kana: 'オガサワラ'
@@ -6542,6 +6481,7 @@ persons:
             end: '2015-02-28'
     tags:
       - '48グループ'
+      - 'AKB48 ドラフト 2期'
   - family_name: '柴田'
     given_name: '優衣'
     family_name_kana: 'シバタ'
@@ -6563,6 +6503,7 @@ persons:
             end: '2015-02-28'
     tags:
       - '48グループ'
+      - 'AKB48 ドラフト 2期'
   - family_name: '日下部'
     given_name: '愛菜'
     family_name_kana: 'クサカベ'
@@ -6584,8 +6525,9 @@ persons:
             end: '2015-02-28'
     tags:
       - '48グループ'
-  - family_name: '松岡は'
-    given_name: 'な'
+      - 'バイトAKB 1期'
+  - family_name: '松岡'
+    given_name: 'はな'
     family_name_kana: 'マツオカ'
     given_name_kana: 'ハナ'
     birth_date: '2000-01-19'
@@ -6605,6 +6547,7 @@ persons:
             end: '2015-02-28'
     tags:
       - '48グループ'
+      - 'AKB48 ドラフト 2期'
   - family_name: '髙橋'
     given_name: '彩香'
     family_name_kana: 'タカハシ'
@@ -6636,8 +6579,8 @@ persons:
             end: '2023-08-17'
     tags:
       - '48グループ'
-  - family_name: '西潟茉'
-    given_name: '莉奈'
+  - family_name: '西潟'
+    given_name: '茉莉奈'
     family_name_kana: 'ニシガタ'
     given_name_kana: 'マリナ'
     birth_date: '1995-10-16'
@@ -6657,48 +6600,7 @@ persons:
             end: '2015-02-28'
     tags:
       - '48グループ'
-  - family_name: '北川'
-    given_name: '綾巴'
-    family_name_kana: 'キタガワ'
-    given_name_kana: 'リョウハ'
-    birth_date: '1998-10-09'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2015-03-26'
-            end: '2018-04-01'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2015-03-26'
-            end: '2018-04-01'
-    tags:
-      - '48グループ'
-  - family_name: '矢吹'
-    given_name: '奈子'
-    family_name_kana: 'ヤブキ'
-    given_name_kana: 'ナコ'
-    birth_date: '2001-06-18'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2015-03-26'
-            end: '2018-04-01'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2015-03-26'
-            end: '2018-04-01'
-    tags:
-      - '48グループ'
+      - 'AKB48 ドラフト 2期'
   - family_name: '吉田'
     given_name: '朱里'
     family_name_kana: 'ヨシダ'
