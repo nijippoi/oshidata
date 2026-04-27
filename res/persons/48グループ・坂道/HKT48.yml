@@ -93,7 +93,7 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2012-03-04'
-            end: '2018-07-31'
+            end: '2019-07-31'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
@@ -103,7 +103,7 @@ persons:
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-01-11'
-            end: '2018-07-31'
+            end: '2019-07-31'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -243,7 +243,7 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2012-03-04'
-            end: '2018-12-10'
+            end: '2022-12-10'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
@@ -253,7 +253,7 @@ persons:
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-01-11'
-            end: '2018-12-10'
+            end: '2022-12-10'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -417,12 +417,12 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2014-02-24'
-            end: '2015-02-22'
+            end: '2020-02-22'
       - role: 'member'
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-02-24'
-            end: '2015-02-22'
+            end: '2020-02-22'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -444,12 +444,12 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2012-03-04'
-            end: '2024-09-04'
+            end: '2022-09-04'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
           - start: '2012-03-04'
-            end: '2024-09-04'
+            end: '2022-09-04'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -513,7 +513,7 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2012-03-04'
-            end: '2022-12-27'
+            end: '2021-12-27'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
@@ -523,7 +523,7 @@ persons:
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-01-11'
-            end: '2022-12-27'
+            end: '2021-12-27'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -577,7 +577,7 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2012-03-04'
-            end: '2019-06-13'
+            end: '2021-05-29'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
@@ -587,7 +587,7 @@ persons:
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-01-11'
-            end: '2019-06-13'
+            end: '2021-05-29'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -715,12 +715,12 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2014-03-21'
-            end: '2015-06-21'
+            end: '2019-06-21'
       - role: 'member'
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-03-21'
-            end: '2015-06-21'
+            end: '2019-06-21'
     tags:
       - '48グループ'
       - 'HKT48 2期'
@@ -877,12 +877,12 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2014-02-24'
-            end: '2014-04-30'
+            end: '2015-04-30'
       - role: 'member'
         group: 'HKT48 チームKIV'
         periods:
           - start: '2014-02-24'
-            end: '2014-04-30'
+            end: '2015-04-30'
     tags:
       - '48グループ'
       - 'HKT48 2期'
@@ -958,12 +958,12 @@ persons:
         group: 'HKT48'
         periods:
           - start: '2014-01-11'
-            end: '2016-06-17'
+            end: '2019-06-17'
       - role: 'member'
         group: 'HKT48 チームH'
         periods:
           - start: '2014-01-11'
-            end: '2016-06-17'
+            end: '2019-06-17'
     tags:
       - '48グループ'
       - 'HKT48 2期'
