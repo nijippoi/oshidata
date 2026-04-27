@@ -156,6 +156,48 @@ persons:
     tags:
       - '48グループ'
       - 'HKT48 1期'
+  - family_name: '兒玉'
+    given_name: '遥'
+    family_name_kana: 'コダマ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1996-09-19'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2019-06-09'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2019-06-09'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-04-28'
+            end: '2018-04-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-04-28'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-02-24'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 1期'
   - family_name: '古森'
     given_name: '結衣'
     family_name_kana: 'コモリ'
@@ -313,6 +355,50 @@ persons:
     tags:
       - '48グループ'
       - 'HKT48 1期'
+  - family_name: '中西'
+    given_name: '智代梨'
+    family_name_kana: 'ナカニシ'
+    given_name_kana: 'チヨリ'
+    birth_date: '1995-05-12'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-04-17'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-04-17'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-04-25'
+            end: '2023-08-28'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2014-04-25'
+            end: '2017-12-08'
+          - start: '2021-12-08'
+            end: '2023-08-28'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-12-08'
+            end: '2021-12-08'
+    tags:
+      - '48グループ'
+      - 'HKT48 1期'
   - family_name: '深川'
     given_name: '舞子'
     family_name_kana: 'フカガワ'
@@ -364,6 +450,48 @@ persons:
         periods:
           - start: '2012-03-04'
             end: '2024-09-04'
+    tags:
+      - '48グループ'
+      - 'HKT48 1期'
+  - family_name: '宮脇'
+    given_name: '咲良'
+    family_name_kana: 'ミヤワキ'
+    given_name_kana: 'サクラ'
+    birth_date: '1998-03-19'
+    hometown:
+      country: 'JP'
+      state: '鹿児島県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2021-06-19'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-01-11'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2014-01-11'
+            end: '2021-06-19'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2018-04-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2014-02-24'
+            end: '2018-04-01'
     tags:
       - '48グループ'
       - 'HKT48 1期'
@@ -974,6 +1102,48 @@ persons:
     tags:
       - '48グループ'
       - 'HKT48 2期'
+  - family_name: '朝長'
+    given_name: '美桜'
+    family_name_kana: 'トモナガ'
+    given_name_kana: 'ミオ'
+    birth_date: '1998-05-17'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2012-09-23'
+            end: '2014-01-11'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2014-01-11'
+            end: '2020-01-15'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2014-01-11'
+            end: '2020-01-15'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2018-04-01'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2015-03-26'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 2期'
   - family_name: '渕上'
     given_name: '舞'
     family_name_kana: 'フチガミ'
@@ -1026,3 +1196,1928 @@ persons:
     tags:
       - '48グループ'
       - 'HKT48 2期'
+  - family_name: '荒巻'
+    given_name: '美咲'
+    family_name_kana: 'アラマキ'
+    given_name_kana: 'ミサキ'
+    birth_date: '2001-01-28'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2024-12-27'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+            end: '2024-12-27'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '栗原'
+    given_name: '紗英'
+    family_name_kana: 'クリハラ'
+    given_name_kana: 'サエ'
+    birth_date: '1996-06-20'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '坂本'
+    given_name: '愛玲菜'
+    family_name_kana: 'サカモト'
+    given_name_kana: 'エレナ'
+    birth_date: '2000-09-12'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2025-04-27'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2025-04-27'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '田中'
+    given_name: '美久'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ミク'
+    birth_date: '2001-09-12'
+    hometown:
+      country: 'JP'
+      state: '熊本県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2014-02-24'
+            end: '2023-12-29'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2014-02-24'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-12-29'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '筒井'
+    given_name: '莉子'
+    family_name_kana: 'ツツイ'
+    given_name_kana: 'リコ'
+    birth_date: '2000-02-22'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2017-05-29'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2017-05-29'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '外薗'
+    given_name: '葉月'
+    family_name_kana: 'ホカゾノ'
+    given_name_kana: 'ハヅキ'
+    birth_date: '1999-01-17'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-12-17'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-12-17'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '矢吹'
+    given_name: '奈子'
+    family_name_kana: 'ヤブキ'
+    given_name_kana: 'ナコ'
+    birth_date: '2001-06-18'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2014-02-24'
+            end: '2023-04-01'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2014-02-24'
+            end: '2023-04-01'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2015-03-26'
+            end: '2018-04-01'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2015-03-26'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '山内'
+    given_name: '祐奈'
+    family_name_kana: 'ヤマウチ'
+    given_name_kana: 'ユウナ'
+    birth_date: '1999-07-06'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '山下'
+    given_name: 'エミリー'
+    family_name_kana: 'ヤマシタ'
+    given_name_kana: 'エミリー'
+    birth_date: '1998-12-19'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2013-11-02'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2024-07-21'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2024-07-21'
+    tags:
+      - '48グループ'
+      - 'HKT48 3期'
+  - family_name: '今村'
+    given_name: '麻莉愛'
+    family_name_kana: 'イマムラ'
+    given_name_kana: 'マリア'
+    birth_date: '2003-09-14'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2015-06-27'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト2期'
+  - family_name: '運上'
+    given_name: '弘菜'
+    family_name_kana: 'ウンジョウ'
+    given_name_kana: 'ヒロナ'
+    birth_date: '1998-08-09'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2023-10-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-10-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '小田'
+    given_name: '彩加'
+    family_name_kana: 'オダ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1999-02-09'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2023-08-08'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-08-08'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '音嶋'
+    given_name: '莉沙'
+    family_name_kana: 'オトシマ'
+    given_name_kana: 'リサ'
+    birth_date: '1998-08-11'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2016-07-21'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '堺'
+    given_name: '萌香'
+    family_name_kana: 'サカイ'
+    given_name_kana: 'モエカ'
+    birth_date: '1998-08-25'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2024-05-11'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+            end: '2024-05-11'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '清水'
+    given_name: '梨央'
+    family_name_kana: 'シミズ'
+    given_name_kana: 'リオ'
+    birth_date: '2003-10-11'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2021-12-20'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2021-12-20'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '武田'
+    given_name: '智加'
+    family_name_kana: 'タケダ'
+    given_name_kana: 'トモカ'
+    birth_date: '2003-02-25'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2023-10-20'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-10-20'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '地頭江'
+    given_name: '音々'
+    family_name_kana: 'ヂトウエ'
+    given_name_kana: 'ネネ'
+    birth_date: '2000-09-27'
+    hometown:
+      country: 'JP'
+      state: '宮崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2026-03-08'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2017-11-26'
+            end: '2026-03-08'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '月足'
+    given_name: '天音'
+    family_name_kana: 'ツキアシ'
+    given_name_kana: 'アマネ'
+    birth_date: '1999-10-26'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2020-03-30'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2020-03-30'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '豊永'
+    given_name: '阿紀'
+    family_name_kana: 'トヨナガ'
+    given_name_kana: 'アキ'
+    birth_date: '1999-10-25'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2017-11-26'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '松岡'
+    given_name: 'はな'
+    family_name_kana: 'マツオカ'
+    given_name_kana: 'ハナ'
+    birth_date: '2000-01-19'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2015-06-27'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2024-09-28'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2024-09-28'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト2期'
+  - family_name: '松本'
+    given_name: '日向'
+    family_name_kana: 'マツモト'
+    given_name_kana: 'ヒナタ'
+    birth_date: '2000-12-11'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-06-27'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-06-27'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '宮﨑'
+    given_name: '想乃'
+    family_name_kana: 'ミヤザキ'
+    given_name_kana: 'ソノ'
+    birth_date: '2000-10-30'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2016-07-12'
+            end: '2017-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-12-26'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2017-11-26'
+            end: '2022-12-26'
+    tags:
+      - '48グループ'
+      - 'HKT48 4期'
+  - family_name: '村川'
+    given_name: '緋杏'
+    family_name_kana: 'ムラカワ'
+    given_name_kana: 'ビビアン'
+    birth_date: '1999-12-03'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2015-06-27'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-11-01'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-11-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト2期'
+  - family_name: '石橋'
+    given_name: '颯'
+    family_name_kana: 'イシバシ'
+    given_name_kana: 'イブキ'
+    birth_date: '2005-07-22'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2021-04-09'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '市村'
+    given_name: '愛里'
+    family_name_kana: 'イチムラ'
+    given_name_kana: 'アイリ'
+    birth_date: '2001-02-13'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-01-13'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '伊藤'
+    given_name: '優絵瑠'
+    family_name_kana: 'イトウ'
+    given_name_kana: 'ユエル'
+    birth_date: '2003-10-24'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-03-31'
+            end: '2018-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2025-03-08'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2018-11-26'
+            end: '2025-03-08'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト3期'
+  - family_name: '小川'
+    given_name: '紗奈'
+    family_name_kana: 'オガワ'
+    given_name_kana: 'サナ'
+    birth_date: '2002-06-20'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2021-03-22'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '上島'
+    given_name: '楓'
+    family_name_kana: 'カミジマ'
+    given_name_kana: 'カエデ'
+    birth_date: '2001-08-22'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2021-04-09'
+            end: '2022-01-09'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2021-04-09'
+            end: '2022-01-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '川平'
+    given_name: '聖'
+    family_name_kana: 'カワヒラ'
+    given_name_kana: 'ヒジリ'
+    birth_date: '2004-06-27'
+    hometown:
+      country: 'JP'
+      state: '沖縄県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+            end: '2025-03-22'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-01-13'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-10-16'
+            end: '2025-03-22'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '工藤'
+    given_name: '陽香'
+    family_name_kana: 'クドウ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2006-04-21'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2020-10-12'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '栗山'
+    given_name: '梨奈'
+    family_name_kana: 'クリヤマ'
+    given_name_kana: 'リナ'
+    birth_date: '2000-12-30'
+    hometown:
+      country: 'JP'
+      state: '大分県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-01-13'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '後藤'
+    given_name: '陽菜乃'
+    family_name_kana: 'ゴトウ'
+    given_name_kana: 'ヒナノ'
+    birth_date: '2005-03-08'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+            end: '2023-07-09'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2022-01-13'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-07-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '坂本'
+    given_name: 'りの'
+    family_name_kana: 'サカモト'
+    given_name_kana: 'リノ'
+    birth_date: '2002-06-10'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+            end: '2026-04-19'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-01-13'
+            end: '2026-04-19'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '石'
+    given_name: '安伊'
+    family_name_kana: 'セキ'
+    given_name_kana: 'アイ'
+    birth_date: '2000-12-31'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-03-31'
+            end: '2018-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-09-09'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-09-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト3期'
+  - family_name: '竹本'
+    given_name: 'くるみ'
+    family_name_kana: 'タケモト'
+    given_name_kana: 'クルミ'
+    birth_date: '2004-02-22'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2021-04-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '田中'
+    given_name: '伊桜莉'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'イオリ'
+    birth_date: '2002-08-31'
+    hometown:
+      country: 'JP'
+      state: '熊本県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-01-13'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '長野'
+    given_name: '雅'
+    family_name_kana: 'ナガノ'
+    given_name_kana: 'ミヤビ'
+    birth_date: '1999-10-03'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+            end: '2023-08-01'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-01-13'
+            end: '2023-08-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '馬場'
+    given_name: '彩華'
+    family_name_kana: 'ババ'
+    given_name_kana: 'サヤカ'
+    birth_date: '2004-05-02'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-03-31'
+            end: '2018-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2023-07-09'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2018-11-26'
+            end: '2023-07-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト3期'
+  - family_name: '松田'
+    given_name: '祐実'
+    family_name_kana: 'マツダ'
+    given_name_kana: 'ユミ'
+    birth_date: '2002-05-13'
+    hometown:
+      country: 'JP'
+      state: '福井県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-03-31'
+            end: '2018-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2018-12-27'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2018-11-26'
+            end: '2018-12-27'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト3期'
+  - family_name: '水上'
+    given_name: '凜巳花'
+    family_name_kana: 'ミズカミ'
+    given_name_kana: 'リミカ'
+    birth_date: '2003-07-10'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2021-04-09'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2021-04-09'
+            end: '2022-04-03'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2021-04-09'
+            end: '2022-04-03'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '村上'
+    given_name: '和叶'
+    family_name_kana: 'ムラカミ'
+    given_name_kana: 'ワカナ'
+    birth_date: '2003-03-30'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2022-01-13'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2022-01-13'
+            end: '2023-03-26'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2022-01-13'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2023-03-26'
+    tags:
+      - '48グループ'
+      - 'HKT48 5期'
+  - family_name: '渡部'
+    given_name: '愛加里'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'アカリ'
+    birth_date: '2004-10-18'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2018-03-31'
+            end: '2018-11-26'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2018-11-26'
+            end: '2023-03-26'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2018-11-26'
+            end: '2023-03-26'
+    tags:
+      - '48グループ'
+      - 'HKT48 ドラフト3期'
+  - family_name: '最上'
+    given_name: '奈那華'
+    family_name_kana: 'モガミ'
+    given_name_kana: 'ナナカ'
+    birth_date: '2001-01-28'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2023-02-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2023-02-01'
+            end: '2025-01-27'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2023-02-01'
+            end: '2025-01-27'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '川島'
+    given_name: '夕奈'
+    family_name_kana: 'カワシマ'
+    given_name_kana: 'ユウナ'
+    birth_date: '2008-08-09'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2023-03-19'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '井澤'
+    given_name: '美優'
+    family_name_kana: 'イザワ'
+    given_name_kana: 'ミユ'
+    birth_date: '2006-08-14'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2023-08-02'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '江口'
+    given_name: '心々華'
+    family_name_kana: 'エグチ'
+    given_name_kana: 'ココハ'
+    birth_date: '2007-04-24'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2023-08-02'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '梁瀬'
+    given_name: '鈴雅'
+    family_name_kana: 'ヤナセ'
+    given_name_kana: 'レイア'
+    birth_date: '2006-06-29'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2023-08-02'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2023-08-02'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '生野'
+    given_name: '莉奈'
+    family_name_kana: 'イクノ'
+    given_name_kana: 'リナ'
+    birth_date: '2010-08-03'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '大庭'
+    given_name: '凜咲'
+    family_name_kana: 'オオバ'
+    given_name_kana: 'リサキ'
+    birth_date: '2005-04-23'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '北川'
+    given_name: '陽彩'
+    family_name_kana: 'キタガワ'
+    given_name_kana: 'ヒイロ'
+    birth_date: '2004-01-23'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '渋井'
+    given_name: '美奈'
+    family_name_kana: 'シブイ'
+    given_name_kana: 'ミナ'
+    birth_date: '2009-03-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '立花'
+    given_name: '心良'
+    family_name_kana: 'タチバナ'
+    given_name_kana: 'ココロ'
+    birth_date: '2009-06-24'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '福井'
+    given_name: '可憐'
+    family_name_kana: 'フクイ'
+    given_name_kana: 'カレン'
+    birth_date: '2006-12-04'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '森﨑'
+    given_name: '冴彩'
+    family_name_kana: 'モリサキ'
+    given_name_kana: 'サアヤ'
+    birth_date: '2005-01-16'
+    hometown:
+      country: 'JP'
+      state: '熊本県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-01-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '猪原'
+    given_name: '絆愛'
+    family_name_kana: 'イハラ'
+    given_name_kana: 'ハンナ'
+    birth_date: '2011-02-27'
+    hometown:
+      country: 'JP'
+      state: '大分県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-05-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '大内'
+    given_name: '梨果'
+    family_name_kana: 'オオウチ'
+    given_name_kana: 'リンカ'
+    birth_date: '2007-07-28'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-05-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '藤野'
+    given_name: '心葉'
+    family_name_kana: 'フジノ'
+    given_name_kana: 'ココハ'
+    birth_date: '2008-05-25'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-01'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2024-05-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '石松'
+    given_name: '結菜'
+    family_name_kana: 'イシマツ'
+    given_name_kana: 'ユイナ'
+    birth_date: '2012-01-28'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-07-23'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-07-23'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2024-07-23'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '安井'
+    given_name: '妃奈'
+    family_name_kana: 'ヤスイ'
+    given_name_kana: 'ヒナ'
+    birth_date: '2011-02-09'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2024-07-23'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2024-07-23'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2024-07-23'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '松本'
+    given_name: '羽麗'
+    family_name_kana: 'マツモト'
+    given_name_kana: 'ウララ'
+    birth_date: '2004-05-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2022-05-07'
+            end: '2025-07-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 6期'
+  - family_name: '片平'
+    given_name: '紗麗'
+    family_name_kana: 'カタヒラ'
+    given_name_kana: 'サラ'
+    birth_date: '2009-05-01'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2024-08-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '江浦'
+    given_name: '優香'
+    family_name_kana: 'エウラ'
+    given_name_kana: 'ユウカ'
+    birth_date: '2011-05-03'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2025-08-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '中野'
+    given_name: '南実'
+    family_name_kana: 'ナカノ'
+    given_name_kana: 'ミナミ'
+    birth_date: '2008-12-29'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2025-08-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '龍頭'
+    given_name: '綺音'
+    family_name_kana: 'リュウトウ'
+    given_name_kana: 'アヤネ'
+    birth_date: '2010-06-30'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2025-08-01'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2025-08-01'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '堤'
+    given_name: '楓夏'
+    family_name_kana: 'ツツミ'
+    given_name_kana: 'フウカ'
+    birth_date: '2006-11-17'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2025-08-16'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '石井'
+    given_name: '彩音'
+    family_name_kana: 'イシイ'
+    given_name_kana: 'アヤネ'
+    birth_date: '2006-11-27'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2026-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2026-01-05'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2026-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '松永'
+    given_name: '悠良'
+    family_name_kana: 'マツナガ'
+    given_name_kana: 'ユイ'
+    birth_date: '2009-11-13'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+            end: '2026-01-05'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2026-01-05'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2026-01-05'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '青木'
+    given_name: '日菜子'
+    family_name_kana: 'アオキ'
+    given_name_kana: 'ヒナコ'
+    birth_date: '2008-07-16'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '石川'
+    given_name: '歩実優'
+    family_name_kana: 'イシカワ'
+    given_name_kana: 'アミユ'
+    birth_date: '2011-12-15'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '猪島'
+    given_name: '莉玲亜'
+    family_name_kana: 'イジマ'
+    given_name_kana: 'リリア'
+    birth_date: '2011-05-07'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '呉'
+    given_name: '優菜'
+    family_name_kana: 'クレ'
+    given_name_kana: 'ユウナ'
+    birth_date: '2012-02-13'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '靏川'
+    given_name: '那智'
+    family_name_kana: 'ツルカワ'
+    given_name_kana: 'ナチ'
+    birth_date: '2010-12-07'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '長野'
+    given_name: 'らら'
+    family_name_kana: 'ナガノ'
+    given_name_kana: 'ララ'
+    birth_date: '2010-11-06'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '松本'
+    given_name: '苺花'
+    family_name_kana: 'マツモト'
+    given_name_kana: 'モカ'
+    birth_date: '2008-11-22'
+    hometown:
+      country: 'JP'
+      state: '熊本県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '山川'
+    given_name: '万里愛'
+    family_name_kana: 'ヤマカワ'
+    given_name_kana: 'マリア'
+    birth_date: '2005-10-25'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
+  - family_name: '吉田'
+    given_name: 'めい'
+    family_name_kana: 'ヨシダ'
+    given_name_kana: 'メイ'
+    birth_date: '2009-05-07'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2024-05-09'
+    tags:
+      - '48グループ'
+      - 'HKT48 7期'
