@@ -455,11 +455,80 @@ export function formatDayDuration(
   return inclusive ? dayDurationFormat().format(dur.add(PT1D)) : dayDurationFormat().format(dur);
 }
 
+const ageDurationFormats: Map<string, Intl.DurationFormat> = new Map();
+
+export function ageDurationFormat(localeKey: string = locale(), options: {
+  largestUnit?: 'year' | 'month' | 'day';
+  smallestUnit?: 'year' | 'month' | 'day';
+} = {
+  largestUnit: 'year',
+  smallestUnit: 'year',
+}) {
+  const key = `${localeKey}:${options.largestUnit}:${options.smallestUnit}`;
+  return ageDurationFormats.getOrInsertComputed(
+    key,
+    (key) =>
+      new Intl.DurationFormat(localeKey, {
+        ...(options.largestUnit === 'year' ? { years: 'long', yearsDisplay: 'always' } : {}),
+        ...(options.largestUnit === 'month' ? { months: 'long', monthsDisplay: 'always' } : {}),
+        ...(options.largestUnit === 'day' ? { days: 'long', daysDisplay: 'always' } : {}),
+        ...(options.smallestUnit === 'year' ? { years: 'long', yearsDisplay: 'always' } : {}),
+        ...(options.smallestUnit === 'month' ? { months: 'long', monthsDisplay: 'always' } : {}),
+        ...(options.smallestUnit === 'day' ? { days: 'long', daysDisplay: 'always' } : {}),
+      }),
+  );
+}
+
+const intFormats: Map<string, Intl.NumberFormat> = new Map();
+
+export function intFormat(localeKey: string = locale()) {
+  return intFormats.getOrInsertComputed(
+    localeKey,
+    (key) => new Intl.NumberFormat(key),
+  );
+}
+
 export function formatAge(
   date: Temporal.PlainDate,
   baseDate: Temporal.PlainDate = currentPlainDate(),
+  options: {
+    largestUnit?: 'year' | 'month' | 'day';
+    smallestUnit?: 'year' | 'month' | 'day';
+  } = {
+    largestUnit: 'year',
+    smallestUnit: 'year',
+  },
 ): string {
-  return formatYearMonthDuration(date, baseDate);
+  const dur = baseDate.since(date, {
+    largestUnit: options.largestUnit,
+    smallestUnit: options.smallestUnit,
+  });
+  switch (lang()) {
+    case 'ja':
+      {
+        const fmt = intFormat();
+        if (options.largestUnit === 'year') {
+          if (options.smallestUnit === 'year') {
+            return `${fmt.format(dur.years)}才`;
+          } else if (options.smallestUnit === 'month') {
+            return `${fmt.format(dur.years)}才${fmt.format(dur.months)}ヶ月`;
+          } else if (options.smallestUnit === 'day') {
+            return `${fmt.format(dur.years)}才${fmt.format(dur.months)}ヶ月${fmt.format(dur.days)}日`;
+          }
+        } else if (options.largestUnit === 'month') {
+          if (options.smallestUnit === 'month') {
+            return `${fmt.format(dur.months)}ヶ月`;
+          } else if (options.smallestUnit === 'day') {
+            return `${fmt.format(dur.months)}ヶ月${fmt.format(dur.days)}日`;
+          }
+        } else if (options.largestUnit === 'day') {
+          return `${fmt.format(dur.days)}日`;
+        }
+      }
+      break;
+    default:
+  }
+  return ageDurationFormat(locale(), options).format(dur);
 }
 
 export function countryFlagEmoji(code: string): string {
