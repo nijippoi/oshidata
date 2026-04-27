@@ -509,6 +509,11 @@ persons:
         periods:
           - start: '2015-03-26'
             end: '2015-05-28'
+      - role: 'member'
+        group: '吉本坂46'
+        periods:
+          - start: '2018-08-20'
+            end: '2020-03-31'
     tags:
       - '48グループ'
       - 'NMB48 1期'
@@ -824,7 +829,7 @@ persons:
         group: 'NMB48'
         periods:
           - start: '2011-05-01'
-            end: '2012-02-17'
+            end: '2012-02-18'
     tags:
       - '48グループ'
       - 'NMB48 2期'
@@ -2454,7 +2459,7 @@ persons:
         group: 'NMB48'
         periods:
           - start: '2012-12-23'
-            end: '2015-03-15'
+            end: '2014-03-15'
     tags:
       - '48グループ'
       - 'NMB48 4期'

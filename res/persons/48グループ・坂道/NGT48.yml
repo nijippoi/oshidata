@@ -200,7 +200,7 @@ persons:
         group: 'NGT48'
         periods:
           - start: '2015-08-21'
-            end: '2020-03-23'
+            end: '2020-03-22'
       - role: 'member'
         group: 'NGT48 チームNIII'
         periods:
@@ -518,33 +518,6 @@ persons:
         periods:
           - start: '2015-05-24'
             end: '2021-11-08'
-      - role: 'member'
-        group: 'NGT48 チームNIII'
-        periods:
-          - start: '2016-01-10'
-            end: '2019-04-21'
-    tags:
-      - '48グループ'
-      - 'NGT48 ドラフト2期'
-
-  - family_name: '西潟'
-    given_name: '茉莉奈'
-    family_name_kana: 'ニシガタ'
-    given_name_kana: 'マリナ'
-    birth_date: '1995-10-16'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'NGT48'
-        periods:
-          - start: '2015-05-24'
-            end: '2016-01-09'
-      - role: 'member'
-        group: 'NGT48'
-        periods:
-          - start: '2016-01-10'
       - role: 'member'
         group: 'NGT48 チームNIII'
         periods:

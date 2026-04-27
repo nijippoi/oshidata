@@ -167,6 +167,11 @@ persons:
         periods:
           - start: '2005-12-08'
             end: '2008-11-23'
+      - role: 'member'
+        group: 'SDN48'
+        periods:
+          - start: '2009-08-01'
+            end: '2012-03-31'
     tags:
       - '48グループ'
       - 'AKB48 1期'
@@ -529,6 +534,16 @@ persons:
         periods:
           - start: '2012-08-24'
             end: '2014-04-23'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-03-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-03-31'
     tags:
       - '48グループ'
       - 'AKB48 2期'
@@ -573,6 +588,11 @@ persons:
         periods:
           - start: '2006-04-01'
             end: '2010-02-21'
+      - role: 'member'
+        group: 'SDN48'
+        periods:
+          - start: '2009-08-01'
+            end: '2012-03-31'
     tags:
       - '48グループ'
       - 'AKB48 2期'
@@ -761,6 +781,11 @@ persons:
         periods:
           - start: '2006-04-01'
             end: '2010-02-21'
+      - role: 'member'
+        group: 'SDN48'
+        periods:
+          - start: '2009-08-01'
+            end: '2012-03-31'
     tags:
       - '48グループ'
       - 'AKB48 2期'
@@ -865,6 +890,21 @@ persons:
             end: '2012-11-01'
           - start: '2013-04-28'
             end: '2013-06-24'
+      - role: 'member'
+        group: 'SNH48'
+        periods:
+          - start: '2012-11-01'
+            end: '2016-03-16'
+      - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2014-04-25'
+            end: '2016-03-31'
+      - role: 'member'
+        group: 'SKE48 チームS'
+        periods:
+          - start: '2014-04-25'
+            end: '2016-03-31'
     tags:
       - '48グループ'
       - 'AKB48 2期'
@@ -1184,6 +1224,11 @@ persons:
         periods:
           - start: '2010-07-27'
             end: '2012-11-01'
+      - role: 'member'
+        group: 'JKT48'
+        periods:
+          - start: '2012-11-01'
+            end: '2016-12-30'
     tags:
       - '48グループ'
       - 'AKB48 3期'
@@ -1605,6 +1650,11 @@ persons:
         periods:
           - start: '2007-05-27'
             end: '2008-08-26'
+      - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2012-08-24'
+            end: '2015-04-12'
     tags:
       - '48グループ'
       - 'AKB48 4期'
@@ -1762,6 +1812,11 @@ persons:
         periods:
           - start: '2012-11-01'
             end: '2014-04-23'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2017-05-27'
     tags:
       - '48グループ'
       - 'AKB48 4期'
@@ -1861,6 +1916,11 @@ persons:
           - start: '2012-11-01'
             end: '2015-08-26'
       - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2013-08-24'
+            end: '2014-04-28'
+      - role: 'member'
         group: 'NGT48'
         periods:
           - start: '2015-08-21'
@@ -1897,6 +1957,11 @@ persons:
         periods:
           - start: '2009-01-24'
             end: '2010-04-16'
+      - role: 'member'
+        group: 'SDN48'
+        periods:
+          - start: '2010-04-16'
+            end: '2012-03-31'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -1931,6 +1996,11 @@ persons:
         periods:
           - start: '2010-05-21'
             end: '2012-11-01'
+      - role: 'member'
+        group: 'JKT48'
+        periods:
+          - start: '2014-04-16'
+            end: '2018-03-25'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -2192,7 +2262,7 @@ persons:
           - start: '2008-12-29'
             end: '2012-12-23'
           - start: '2013-04-28'
-            end: '2016-02-23'
+            end: '2016-05-01'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
@@ -2207,7 +2277,12 @@ persons:
         group: 'AKB48 チームK'
         periods:
           - start: '2015-03-26'
-            end: '2016-02-23'
+            end: '2016-05-01'
+      - role: 'member'
+        group: 'JKT48'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-04-24'
     tags:
       - '48グループ'
       - 'AKB48 6期'
@@ -2453,6 +2528,11 @@ persons:
         periods:
           - start: '2012-11-01'
             end: '2014-02-24'
+      - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2014-02-24'
+            end: '2017-12-31'
     tags:
       - '48グループ'
       - 'AKB48 7期'
@@ -2511,7 +2591,7 @@ persons:
           - start: '2009-08-23'
             end: '2012-10-22'
           - start: '2013-04-28'
-            end: '2017-04-30'
+            end: '2017-06-10'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
@@ -2526,7 +2606,12 @@ persons:
         group: 'AKB48 チームK'
         periods:
           - start: '2014-02-24'
-            end: '2017-04-30'
+            end: '2017-06-10'
+      - role: 'member'
+        group: 'SNH48'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-06-10'
     tags:
       - '48グループ'
       - 'AKB48 7期'
@@ -2596,6 +2681,11 @@ persons:
         periods:
           - start: '2009-05-26'
             end: '2009-07-25'
+      - role: 'member'
+        group: '乃木坂46'
+        periods:
+          - start: '2011-08-21'
+            end: '2014-03-22'
     tags:
       - '48グループ'
       - 'AKB48 8期'
@@ -2662,6 +2752,11 @@ persons:
         periods:
           - start: '2012-08-24'
             end: '2014-04-23'
+      - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2014-04-28'
+            end: '2022-05-21'
     tags:
       - '48グループ'
       - 'AKB48 9期'
@@ -2956,6 +3051,11 @@ persons:
         periods:
           - start: '2012-11-01'
             end: '2014-04-23'
+      - role: 'member'
+        group: 'SKE48'
+        periods:
+          - start: '2014-02-24'
+            end: '2021-11-30'
     tags:
       - '48グループ'
       - 'AKB48 9期'
@@ -2992,6 +3092,11 @@ persons:
             end: '2014-02-24'
           - start: '2015-03-26'
             end: '2021-12-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-11-01'
+            end: '2013-05-20'
     tags:
       - '48グループ'
       - 'AKB48 9期'
@@ -3166,7 +3271,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2011-05-29'
-            end: '2014-04-23'
+            end: '2014-04-24'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
@@ -3176,7 +3281,12 @@ persons:
         group: 'AKB48 チームB'
         periods:
           - start: '2012-08-24'
-            end: '2014-04-23'
+            end: '2014-04-24'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2013-04-28'
+            end: '2018-05-01'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -3414,6 +3524,11 @@ persons:
         periods:
           - start: '2012-11-01'
             end: '2017-11-30'
+      - role: 'member'
+        group: 'AKB48 Team TP'
+        periods:
+          - start: '2017-11-30'
+            end: '2019-10-19'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -3435,7 +3550,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2012-06-24'
-            end: '2017-07-02'
+            end: '2017-06-29'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
@@ -3450,7 +3565,17 @@ persons:
         group: 'AKB48 チーム4'
         periods:
           - start: '2015-03-26'
-            end: '2017-07-02'
+            end: '2017-06-29'
+      - role: 'member'
+        group: 'BNK48'
+        periods:
+          - start: '2017-07-02'
+            end: '2019-08-27'
+      - role: 'member'
+        group: 'CGM48'
+        periods:
+          - start: '2019-07-10'
+            end: '2024-11-30'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -4771,7 +4896,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-02-24'
-            end: '2020-12-10'
+            end: '2020-12-11'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
@@ -4786,7 +4911,7 @@ persons:
         group: 'AKB48 チーム4'
         periods:
           - start: '2017-12-08'
-            end: '2020-12-10'
+            end: '2020-12-11'
     tags:
       - '48グループ'
       - 'AKB48 15期'
@@ -4845,12 +4970,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-02-24'
-            end: '2015-06-24'
+            end: '2015-08-09'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
           - start: '2014-02-24'
-            end: '2015-06-24'
+            end: '2015-08-09'
     tags:
       - '48グループ'
       - 'AKB48 15期'
@@ -4964,14 +5089,14 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2013-09-01'
-            end: '2019-02-03'
+            end: '2019-05-06'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
           - start: '2013-09-01'
             end: '2014-02-24'
           - start: '2017-12-08'
-            end: '2019-02-03'
+            end: '2019-05-06'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
@@ -4998,7 +5123,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2013-11-10'
-            end: '2020-08-30'
+            end: '2020-08-31'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
@@ -5008,7 +5133,12 @@ persons:
         group: 'AKB48 チーム4'
         periods:
           - start: '2015-03-26'
-            end: '2020-08-30'
+            end: '2020-08-31'
+      - role: 'member'
+        group: 'JKT48'
+        periods:
+          - start: '2018-09-15'
+            end: '2018-10-19'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 1期'
@@ -5091,7 +5221,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-01-25'
-            end: '2018-08-13'
+            end: '2019-08-13'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
@@ -5106,7 +5236,7 @@ persons:
         group: 'AKB48 チームA'
         periods:
           - start: '2017-12-08'
-            end: '2018-08-13'
+            end: '2019-08-13'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 1期'
@@ -5123,7 +5253,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-01-25'
-            end: '2022-02-26'
+            end: '2022-02-27'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
@@ -5133,7 +5263,7 @@ persons:
         group: 'AKB48 チームB'
         periods:
           - start: '2017-12-08'
-            end: '2022-02-26'
+            end: '2022-02-27'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 1期'
@@ -5534,17 +5664,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2021-03-28'
+            end: '2021-03-29'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2021-03-28'
+            end: '2021-03-29'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
           - start: '2017-12-08'
-            end: '2021-03-28'
+            end: '2021-03-29'
     tags:
       - '48グループ'
   - family_name: '佐藤'
@@ -5646,17 +5776,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2018-06-23'
+            end: '2018-08-10'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2018-06-23'
+            end: '2018-08-10'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
           - start: '2017-12-08'
-            end: '2018-06-23'
+            end: '2018-08-10'
     tags:
       - '48グループ'
   - family_name: '高岡'
@@ -5727,12 +5857,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2017-05-28'
+            end: '2017-06-24'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2017-05-28'
+            end: '2017-06-24'
     tags:
       - '48グループ'
   - family_name: '谷川'
@@ -5800,17 +5930,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2017-05-30'
+            end: '2019-05-30'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2017-05-30'
+            end: '2019-05-30'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
           - start: '2015-03-26'
-            end: '2017-05-30'
+            end: '2019-05-30'
     tags:
       - '48グループ'
   - family_name: '永野'
@@ -5936,17 +6066,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2018-04-29'
+            end: '2018-04-18'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2018-04-29'
+            end: '2018-04-18'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
           - start: '2017-12-08'
-            end: '2018-04-29'
+            end: '2018-04-18'
     tags:
       - '48グループ'
   - family_name: '左伴'
@@ -5962,7 +6092,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2023-07-24'
+            end: '2023-07-31'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
@@ -5977,7 +6107,7 @@ persons:
         group: 'AKB48 チームB'
         periods:
           - start: '2021-12-08'
-            end: '2023-07-24'
+            end: '2023-07-31'
     tags:
       - '48グループ'
   - family_name: '人見'
@@ -6040,12 +6170,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2016-05-06'
+            end: '2017-05-13'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2016-05-06'
+            end: '2017-05-13'
     tags:
       - '48グループ'
   - family_name: '藤村'
@@ -6113,17 +6243,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2021-07-27'
+            end: '2021-07-28'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2021-07-27'
+            end: '2021-07-28'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
           - start: '2017-12-08'
-            end: '2021-07-27'
+            end: '2021-07-28'
     tags:
       - '48グループ'
   - family_name: '舞木'
@@ -6139,12 +6269,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2018-02-17'
+            end: '2018-02-18'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2018-02-17'
+            end: '2018-02-18'
     tags:
       - '48グループ'
   - family_name: '森脇'
@@ -6238,12 +6368,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2016-05-01'
+            end: '2016-05-07'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2016-05-01'
+            end: '2016-05-07'
     tags:
       - '48グループ'
   - family_name: '山本'
@@ -6311,17 +6441,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-04-03'
-            end: '2021-11-29'
+            end: '2021-11-30'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2014-04-03'
-            end: '2021-11-29'
+            end: '2021-11-30'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
           - start: '2017-12-08'
-            end: '2021-11-29'
+            end: '2021-11-30'
     tags:
       - '48グループ'
   - family_name: '吉川'
@@ -6452,7 +6582,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2014-07-27'
-            end: '2023-05-30'
+            end: '2023-05-31'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
@@ -6467,7 +6597,7 @@ persons:
         group: 'AKB48 チームK'
         periods:
           - start: '2021-12-08'
-            end: '2023-05-30'
+            end: '2023-05-31'
     tags:
       - '48グループ'
   - family_name: '荻野'
@@ -6489,6 +6619,16 @@ persons:
         periods:
           - start: '2014-11-14'
             end: '2015-02-28'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-05-24'
+            end: '2021-11-08'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6511,6 +6651,11 @@ persons:
         periods:
           - start: '2014-11-21'
             end: '2015-02-28'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-05-10'
+            end: '2016-05-03'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6533,6 +6678,16 @@ persons:
         periods:
           - start: '2014-11-29'
             end: '2015-02-28'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-04-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
     tags:
       - '48グループ'
       - 'バイトAKB 1期'
@@ -6555,6 +6710,26 @@ persons:
         periods:
           - start: '2014-11-29'
             end: '2015-02-28'
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2015-06-27'
+            end: '2016-03-30'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2016-03-30'
+            end: '2024-09-28'
+      - role: 'member'
+        group: 'HKT48 チームTII'
+        periods:
+          - start: '2016-03-30'
+            end: '2022-10-16'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2022-10-16'
+            end: '2024-09-28'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6608,9 +6783,24 @@ persons:
         periods:
           - start: '2014-12-11'
             end: '2015-02-28'
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2015-05-24'
+            end: '2016-01-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2016-01-10'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
+      - 'NGT48 ドラフト2期'
   - family_name: '吉田'
     given_name: '朱里'
     family_name_kana: 'ヨシダ'
@@ -6689,12 +6879,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2015-05-10'
-            end: '2017-08-10'
+            end: '2017-08-13'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
           - start: '2015-05-10'
-            end: '2017-08-10'
+            end: '2017-08-13'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6765,7 +6955,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2017-09-27'
-            end: '2023-10-02'
+            end: '2023-10-28'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
@@ -6775,7 +6965,7 @@ persons:
         group: 'AKB48 チームK'
         periods:
           - start: '2021-12-08'
-            end: '2023-10-02'
+            end: '2023-10-28'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6915,7 +7105,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2016-06-25'
-            end: '2023-07-20'
+            end: '2023-07-30'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
@@ -6925,7 +7115,7 @@ persons:
         group: 'AKB48 チーム4'
         periods:
           - start: '2017-12-08'
-            end: '2023-07-20'
+            end: '2023-07-30'
     tags:
       - '48グループ'
   - family_name: '寺田'
@@ -6993,7 +7183,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2016-10-16'
-            end: '2017-03-31'
+            end: '2017-03-28'
     tags:
       - '48グループ'
       - 'AKB48 16期'
@@ -7251,17 +7441,17 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2017-09-10'
-            end: '2021-10-23'
+            end: '2021-10-24'
       - role: 'member'
         group: 'AKB48 チーム8'
         periods:
           - start: '2017-09-10'
-            end: '2021-10-23'
+            end: '2021-10-24'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
           - start: '2017-12-08'
-            end: '2021-10-23'
+            end: '2021-10-24'
     tags:
       - '48グループ'
   - family_name: '浅井'
@@ -7331,7 +7521,7 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2017-12-08'
-            end: '2018-11-11'
+            end: '2018-11-25'
     tags:
       - '48グループ'
       - 'AKB48 16期'
@@ -7447,12 +7637,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2017-12-08'
-            end: '2019-04-01'
+            end: '2019-04-07'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
           - start: '2017-12-08'
-            end: '2019-04-01'
+            end: '2019-04-07'
     tags:
       - '48グループ'
       - 'AKB48 16期'
@@ -7491,12 +7681,12 @@ persons:
         group: 'AKB48'
         periods:
           - start: '2020-12-08'
-            end: '2021-09-30'
+            end: '2021-10-01'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
           - start: '2020-12-08'
-            end: '2021-09-30'
+            end: '2021-10-01'
     tags:
       - '48グループ'
       - 'AKB48 16期'
