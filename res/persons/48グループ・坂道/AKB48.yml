@@ -1535,23 +1535,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 4期'
-  - family_name: '出口'
-    given_name: '陽'
-    family_name_kana: 'デグチ'
-    given_name_kana: 'アキ'
-    birth_date: '1988-03-14'
-    hometown:
-      country: 'JP'
-      state: '三重県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2007-11-26'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
   - family_name: '中田'
     given_name: 'ちさと'
     family_name_kana: 'ナカタ'
@@ -4357,27 +4340,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 13期'
-  - family_name: '松井'
-    given_name: '珠理奈'
-    family_name_kana: 'マツイ'
-    given_name_kana: 'ジュリナ'
-    birth_date: '1997-03-08'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2015-12-24'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-03-24'
-            end: '2015-12-24'
-    tags:
-      - '48グループ'
   - family_name: '渡辺'
     given_name: '美優紀'
     family_name_kana: 'ワタナベ'
