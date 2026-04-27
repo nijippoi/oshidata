@@ -936,6 +936,21 @@ persons:
         periods:
           - start: '2010-07-27'
             end: '2012-11-01'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-11-01'
+            end: '2017-04-10'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-01-11'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2014-01-11'
+            end: '2017-04-10'
     tags:
       - '48グループ'
       - 'AKB48 3期'
@@ -1974,6 +1989,16 @@ persons:
         periods:
           - start: '2010-07-27'
             end: '2012-06-16'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-06-16'
+            end: '2019-04-28'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-06-16'
+            end: '2019-04-28'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -5009,6 +5034,21 @@ persons:
       country: 'JP'
       state: '福岡県'
     roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2019-06-09'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2019-06-09'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -5026,6 +5066,7 @@ persons:
             end: '2018-04-01'
     tags:
       - '48グループ'
+      - 'HKT48 1期'
   - family_name: '古畑'
     given_name: '奈和'
     family_name_kana: 'フルハタ'
@@ -5309,6 +5350,21 @@ persons:
       country: 'JP'
       state: '福岡県'
     roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2012-09-23'
+            end: '2014-01-11'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2014-01-11'
+            end: '2020-01-15'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2014-01-11'
+            end: '2020-01-15'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -5326,6 +5382,7 @@ persons:
             end: '2018-04-01'
     tags:
       - '48グループ'
+      - 'HKT48 2期'
   - family_name: '宮脇'
     given_name: '咲良'
     family_name_kana: 'ミヤワキ'
@@ -5335,6 +5392,26 @@ persons:
       country: 'JP'
       state: '鹿児島県'
     roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2021-06-19'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-01-11'
+      - role: 'member'
+        group: 'HKT48 チームKIV'
+        periods:
+          - start: '2014-01-11'
+            end: '2021-06-19'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -5347,6 +5424,7 @@ persons:
             end: '2018-04-01'
     tags:
       - '48グループ'
+      - 'HKT48 1期'
   - family_name: '山本'
     given_name: '彩'
     family_name_kana: 'ヤマモト'
@@ -6636,6 +6714,21 @@ persons:
       country: 'JP'
       state: '福岡県'
     roles:
+      - role: 'trainee'
+        group: 'HKT48'
+        periods:
+          - start: '2011-10-23'
+            end: '2012-03-04'
+      - role: 'member'
+        group: 'HKT48'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-04-17'
+      - role: 'member'
+        group: 'HKT48 チームH'
+        periods:
+          - start: '2012-03-04'
+            end: '2014-04-17'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -6655,6 +6748,7 @@ persons:
             end: '2021-12-08'
     tags:
       - '48グループ'
+      - 'HKT48 1期'
   - family_name: '小笠原'
     given_name: '茉由'
     family_name_kana: 'オガサワラ'
