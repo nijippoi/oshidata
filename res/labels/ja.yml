@@ -63,15 +63,15 @@ labels:
   roles.leader: リーダー
   roles.subleader: サブリーダー
   roles.producer: プロデューサー
-  zodiacs.aries: 牡羊座
-  zodiacs.taurus: 牡牛座
-  zodiacs.gemini: 双子座
-  zodiacs.cancer: 蟹座
-  zodiacs.leo: 獅子座
-  zodiacs.virgo: 乙女座
-  zodiacs.libra: 天秤座
-  zodiacs.scorpio: 蠍座
-  zodiacs.sagittarius: 射手座
-  zodiacs.capricorn: 山羊座
-  zodiacs.aquarius: 水瓶座
-  zodiacs.pisces: 魚座
+  zodiacs.aries: おひつじ座
+  zodiacs.taurus: おうし座
+  zodiacs.gemini: ふたご座
+  zodiacs.cancer: かに座
+  zodiacs.leo: しし座
+  zodiacs.virgo: おとめ座
+  zodiacs.libra: てんびん座
+  zodiacs.scorpio: さそり座
+  zodiacs.sagittarius: いて座
+  zodiacs.capricorn: やぎ座
+  zodiacs.aquarius: みずがめ座
+  zodiacs.pisces: うお座
