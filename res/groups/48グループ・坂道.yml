@@ -1,0 +1,315 @@
+---
+source_type: 'groups'
+start_id: 200
+end_id: 299
+
+groups:
+  # 48グループ（国内）
+  - name: 'AKB48'
+    name_kana: 'エーケービーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2005-12-08'
+  - name: 'AKB48 チームA'
+    name_kana: 'エーケービーフォーティーエイト チームエー'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2005-12-08'
+  - name: 'AKB48 チームK'
+    name_kana: 'エーケービーフォーティーエイト チームケー'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2006-04-01'
+  - name: 'AKB48 チームB'
+    name_kana: 'エーケービーフォーティーエイト チームビー'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2007-04-08'
+  - name: 'AKB48 チーム4'
+    name_kana: 'エーケービーフォーティーエイト チームフォー'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2011-06-07'
+  - name: 'AKB48 チーム8'
+    name_kana: 'エーケービーフォーティーエイト チームエイト'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2014-04-03'
+  - name: 'バイトAKB'
+    name_kana: 'バイトエーケービー'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2014-08-01'
+        end: '2015-02-01'
+      - start: '2016-03-01'
+        end: '2015-08-01'
+  - name: 'SKE48'
+    name_kana: 'エスケーイーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2008-07-30'
+  - name: 'SKE48 チームS'
+    name_kana: 'エスケーイーフォーティーエイト チームエス'
+    parent: 'SKE48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2008-10-05'
+  - name: 'SKE48 チームKII'
+    name_kana: 'エスケーイーフォーティーエイト チームケーツー'
+    parent: 'SKE48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2009-05-25'
+  - name: 'SKE48 チームE'
+    name_kana: 'エスケーイーフォーティーエイト チームイー'
+    parent: 'SKE48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2010-12-06'
+  - name: 'SDN48'
+    name_kana: 'エスディーエヌフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2009-08-01'
+        end: '2012-03-31'
+  - name: 'NMB48'
+    name_kana: 'エヌエムビーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2010-10-09'
+  - name: 'NMB48 チームN'
+    name_kana: 'エヌエムビーフォーティーエイト チームエヌ'
+    parent: 'NMB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2011-03-10'
+  - name: 'NMB48 チームM'
+    name_kana: 'エヌエムビーフォーティーエイト チームエム'
+    parent: 'NMB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2012-01-26'
+  - name: 'NMB48 チームBII'
+    name_kana: 'エヌエムビーフォーティーエイト チームビーツー'
+    parent: 'NMB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2012-10-10'
+  - name: 'HKT48'
+    name_kana: 'エイチケーティーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2011-10-23'
+  - name: 'HKT48 チームH'
+    name_kana: 'エイチケーティーフォーティーエイト チームエイチ'
+    parent: 'HKT48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2012-03-04'
+  - name: 'HKT48 チームKIV'
+    name_kana: 'エイチケーティーフォーティーエイト チームケーフォー'
+    parent: 'HKT48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2014-01-11'
+  - name: 'HKT48 チームTII'
+    name_kana: 'エイチケーティーフォーティーエイト チームティーツー'
+    parent: 'HKT48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2016-03-30'
+  - name: 'NGT48'
+    name_kana: 'エヌジーティーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2015-01-25'
+  - name: 'NGT48 チームNIII'
+    name_kana: 'エヌジーティーフォーティーエイト チームエヌスリー'
+    parent: 'NGT48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2016-01-10'
+  - name: 'NGT48 チームG'
+    name_kana: 'エヌジーティーフォーティーエイト チームジー'
+    parent: 'NGT48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2018-04-13'
+  - name: 'STU48'
+    name_kana: 'エスティーユーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2017-03-31'
+
+  # 48グループ（海外/姉妹）
+  - name: 'JKT48'
+    name_kana: 'ジェーケーティーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2011-11-02'
+  - name: 'SNH48'
+    name_kana: 'エスエヌエイチフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2012-10-14'
+  - name: 'BNK48'
+    name_kana: 'ビーエヌケーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2017-02-12'
+  - name: 'MNL48'
+    name_kana: 'エムエヌエルフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2018-04-28'
+  - name: 'AKB48 Team TP'
+    name_kana: 'エーケービーフォーティーエイト チームティーピー'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2018-08-26'
+  - name: 'AKB48 Team SH'
+    name_kana: 'エーケービーフォーティーエイト チームエスエイチ'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2018-08-01'
+  - name: 'CGM48'
+    name_kana: 'シージーエムフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2019-06-02'
+  - name: 'SGO48'
+    name_kana: 'エスジーオーフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2018-12-22'
+        end: '2021-12-22'
+  - name: 'DEL48'
+    name_kana: 'デルフォーティーエイト'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2019-06-19'
+  - reserve_id_until: 249
+
+  # 48グループ（派生ユニット）
+  - names:
+      - name: '渡り廊下走り隊'
+        name_kana: 'ワタリロウカハシリタイ'
+        periods:
+          - start: '2008-10-01'
+            end: '2011-02-02'
+      - name: '渡り廊下走り隊7'
+        name_kana: 'ワタリロウカハシリタイセブン'
+        periods:
+          - start: '2011-02-02'
+            end: '2014-02-09'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2008-10-01'
+        end: '2014-02-09'
+  - name: 'ノースリーブス'
+    name_kana: 'ノースリーブス'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2008-11-26'
+  - name: 'フレンチ・キス'
+    name_kana: 'フレンチキス'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2010-06-28'
+        end: '2015-11-05'
+  - name: 'DiVA'
+    name_kana: 'ディーヴァ'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2011-02-27'
+        end: '2014-11-30'
+  - reserve_id_until: 279
+
+  # 坂道シリーズ
+  - name: '乃木坂46'
+    name_kana: 'ノギザカフォーティーシックス'
+    tags:
+      - '坂道シリーズ'
+    periods:
+      - start: '2011-08-21'
+  - names:
+      - name: '欅坂46'
+        name_kana: 'ケヤキザカフォーティーシックス'
+        periods:
+          - start: '2015-08-21'
+            end: '2020-10-14'
+      - name: '櫻坂46'
+        name_kana: 'サクラザカフォーティーシックス'
+        periods:
+          - start: '2020-10-14'
+    tags:
+      - '坂道シリーズ'
+    periods:
+      - start: '2015-08-21'
+  - names:
+      - name: 'けやき坂46'
+        name_kana: 'ケヤキザカフォーティーシックス'
+        periods:
+          - start: '2015-11-30'
+            end: '2019-02-11'
+      - name: '日向坂46'
+        name_kana: 'ヒナタザカフォーティーシックス'
+        periods:
+          - start: '2019-02-11'
+    tags:
+      - '坂道シリーズ'
+    periods:
+      - start: '2015-11-30'
+  - name: '吉本坂46'
+    name_kana: 'ヨシモトザカフォーティーシックス'
+    tags:
+      - '坂道シリーズ'
+    periods:
+      - start: '2018-02-21'
