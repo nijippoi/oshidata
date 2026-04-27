@@ -3,4 +3,5110 @@ source_type: 'persons'
 start_id: 3000
 end_id: 3499
 
-persons: []
+persons:
+  - family_name: '小笠原'
+    given_name: '茉由'
+    family_name_kana: 'オオガサワラ'
+    given_name_kana: 'マユ'
+    birth_date: '1994-04-11'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-09-20'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2014-04-28'
+            end: '2015-03-25'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2015-03-26'
+            end: '2016-12-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '太田'
+    given_name: '里織菜'
+    family_name_kana: 'オオタ'
+    given_name_kana: 'リオナ'
+    birth_date: '1996-12-31'
+    hometown:
+      country: 'JP'
+      state: '岐阜県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-09-20'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-10-28'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-10-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '沖田'
+    given_name: '彩華'
+    family_name_kana: 'オキタ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1995-10-11'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-05-30'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-05-31'
+            end: '2018-09-06'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-05-31'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-09-06'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '門脇'
+    given_name: '佳奈子'
+    family_name_kana: 'カドワキ'
+    given_name_kana: 'カナコ'
+    birth_date: '1996-10-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2016-02-29'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-02-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '上西'
+    given_name: '恵'
+    family_name_kana: 'カミニシ'
+    given_name_kana: 'ケイ'
+    birth_date: '1995-03-18'
+    hometown:
+      country: 'JP'
+      state: '滋賀県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2017-04-18'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2017-04-18'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '川上'
+    given_name: '礼奈'
+    family_name_kana: 'カワカミ'
+    given_name_kana: 'レイナ'
+    birth_date: '1995-09-16'
+    hometown:
+      country: 'JP'
+      state: '香川県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2019-10-30'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2019-10-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '岸野'
+    given_name: '里香'
+    family_name_kana: 'キシノ'
+    given_name_kana: 'リカ'
+    birth_date: '1994-06-04'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2016-10-15'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2016-10-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '木下'
+    given_name: '春奈'
+    family_name_kana: 'キノシタ'
+    given_name_kana: 'ハルナ'
+    birth_date: '1998-06-09'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2016-10-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-23'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '木下'
+    given_name: '百花'
+    family_name_kana: 'キノシタ'
+    given_name_kana: 'モモカ'
+    birth_date: '1997-02-06'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2017-09-27'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2017-09-27'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '小柳'
+    given_name: '有沙'
+    family_name_kana: 'コヤナギ'
+    given_name_kana: 'アリサ'
+    birth_date: '1995-04-28'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-09'
+            end: '2014-03-02'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-10-09'
+            end: '2014-03-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '近藤'
+    given_name: '里奈'
+    family_name_kana: 'コンドウ'
+    given_name_kana: 'リナ'
+    birth_date: '1997-02-23'
+    hometown:
+      country: 'JP'
+      state: '滋賀県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2016-01-27'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-01-27'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '篠原'
+    given_name: '栞那'
+    family_name_kana: 'シノハラ'
+    given_name_kana: 'カンナ'
+    birth_date: '1997-09-22'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2011-03-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-03-10'
+            end: '2013-04-12'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2013-04-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '白間'
+    given_name: '美瑠'
+    family_name_kana: 'シロマ'
+    given_name_kana: 'ミル'
+    birth_date: '1997-10-14'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2021-08-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-04-17'
+            end: '2021-08-31'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2015-03-26'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '原'
+    given_name: 'みづき'
+    family_name_kana: 'ハラ'
+    given_name_kana: 'ミヅキ'
+    birth_date: '1997-08-19'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-04-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '肥川'
+    given_name: '彩愛'
+    family_name_kana: 'ヒカワ'
+    given_name_kana: 'アヤメ'
+    birth_date: '1994-11-08'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-12-22'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-12-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '福本'
+    given_name: '愛菜'
+    family_name_kana: 'フクモト'
+    given_name_kana: 'マナ'
+    birth_date: '1993-03-25'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2013-07-01'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2013-07-01'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '松田'
+    given_name: '栞'
+    family_name_kana: 'マツダ'
+    given_name_kana: 'シオリ'
+    birth_date: '1995-06-18'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2012-10-24'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2012-10-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '三秋'
+    given_name: '里歩'
+    family_name_kana: 'ミアキ'
+    given_name_kana: 'リホ'
+    birth_date: '1994-08-24'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2011-03-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-03-10'
+            end: '2016-02-04'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2016-02-04'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2013-05-27'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2014-04-24'
+            end: '2015-05-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '森'
+    given_name: '彩華'
+    family_name_kana: 'モリ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1996-05-23'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2011-07-10'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2011-07-10'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '山岸'
+    given_name: '奈津美'
+    family_name_kana: 'ヤマギシ'
+    given_name_kana: 'ナツミ'
+    birth_date: '1994-09-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2015-03-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-03-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '山口'
+    given_name: '夕輝'
+    family_name_kana: 'ヤマグチ'
+    given_name_kana: 'ユウキ'
+    birth_date: '1993-10-17'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2011-06-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-06-14'
+            end: '2017-04-28'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-06-14'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2017-04-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '山田'
+    given_name: '菜々'
+    family_name_kana: 'ヤマダ'
+    given_name_kana: 'ナナ'
+    birth_date: '1992-04-03'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2015-04-03'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2013-05-20'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2013-05-30'
+            end: '2015-04-03'
+      - role: 'member'
+        group: 'SKE48 チームKII'
+        periods:
+          - start: '2014-04-30'
+            end: '2015-04-03'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '山本'
+    given_name: '彩'
+    family_name_kana: 'ヤマモト'
+    given_name_kana: 'サヤカ'
+    birth_date: '1993-07-14'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2018-11-04'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2018-11-04'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-05-07'
+            end: '2016-05-26'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '吉田'
+    given_name: '朱里'
+    family_name_kana: 'ヨシダ'
+    given_name_kana: 'アカリ'
+    birth_date: '1996-08-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2020-12-21'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2016-10-17'
+          - start: '2019-01-01'
+            end: '2020-12-21'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2017-03-01'
+            end: '2020-12-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '渡辺'
+    given_name: '美優紀'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'ミユキ'
+    birth_date: '1993-09-19'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2010-10-09'
+            end: '2010-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2011-01-01'
+            end: '2016-08-09'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2011-03-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-08-09'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-03-24'
+            end: '2014-04-23'
+          - start: '2015-05-22'
+            end: '2016-08-09'
+      - role: 'member'
+        group: 'SKE48 チームS'
+        periods:
+          - start: '2014-04-25'
+            end: '2015-05-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 1期'
+  - family_name: '石田'
+    given_name: '優美'
+    family_name_kana: 'イシダ'
+    given_name_kana: 'ユウミ'
+    birth_date: '1998-10-12'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2024-12-29'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+          - start: '2019-01-01'
+            end: '2024-12-29'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '鵜野'
+    given_name: 'みずき'
+    family_name_kana: 'ウノ'
+    given_name_kana: 'ミズキ'
+    birth_date: '1996-10-23'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2024-10-11'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2015-02-04'
+            end: '2024-10-11'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-12-11'
+            end: '2014-05-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '大谷'
+    given_name: '莉子'
+    family_name_kana: 'オオタニ'
+    given_name_kana: 'リコ'
+    birth_date: '1996-12-11'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '岡田'
+    given_name: '梨紗子'
+    family_name_kana: 'オカダ'
+    given_name_kana: 'リサコ'
+    birth_date: '1995-10-28'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-02-17'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '小鷹狩'
+    given_name: '佑香'
+    family_name_kana: 'コタカガリ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1997-08-05'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-05-06'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-05-06'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '古賀'
+    given_name: '成美'
+    family_name_kana: 'コガ'
+    given_name_kana: 'ナルミ'
+    birth_date: '1998-03-30'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2013-04-17'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2013-04-18'
+            end: '2019-12-02'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2013-04-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-12-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '佐藤'
+    given_name: '天彩'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'アヤ'
+    birth_date: '1998-07-04'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-12-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '島田'
+    given_name: '玲奈'
+    family_name_kana: 'シマダ'
+    given_name_kana: 'レナ'
+    birth_date: '1993-08-05'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2014-04-07'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2014-04-07'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '高野'
+    given_name: '祐衣'
+    family_name_kana: 'タカノ'
+    given_name_kana: 'ユイ'
+    birth_date: '1993-12-06'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2015-07-18'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2015-07-18'
+      - role: 'member'
+        group: '吉本坂46'
+        periods:
+          - start: '2018-08-20'
+            end: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '瀧山'
+    given_name: 'あかね'
+    family_name_kana: 'タキヤマ'
+    given_name_kana: 'アカネ'
+    birth_date: '1994-05-10'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '谷川'
+    given_name: '愛梨'
+    family_name_kana: 'タニガワ'
+    given_name_kana: 'アイリ'
+    birth_date: '1995-12-05'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2019-12-25'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2019-12-25'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '中川'
+    given_name: '紘美'
+    family_name_kana: 'ナカガワ'
+    given_name_kana: 'ヒロミ'
+    birth_date: '1994-11-19'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2014-03-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '西澤'
+    given_name: '瑠莉奈'
+    family_name_kana: 'ニシザワ'
+    given_name_kana: 'ルリナ'
+    birth_date: '1999-07-27'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2020-10-15'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+          - start: '2019-01-01'
+            end: '2020-10-15'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '林'
+    given_name: '萌々香'
+    family_name_kana: 'ハヤシ'
+    given_name_kana: 'モモカ'
+    birth_date: '1998-09-11'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2013-10-12'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2013-10-13'
+            end: '2019-02-24'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2013-10-13'
+            end: '2014-02-23'
+          - start: '2016-10-18'
+            end: '2019-02-24'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '三田'
+    given_name: '麻央'
+    family_name_kana: 'ミタ'
+    given_name_kana: 'マオ'
+    birth_date: '1995-09-09'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2019-02-24'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2019-02-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '村上'
+    given_name: '文香'
+    family_name_kana: 'ムラカミ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1993-06-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2015-03-22'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2015-03-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '村瀬'
+    given_name: '紗英'
+    family_name_kana: 'ムラセ'
+    given_name_kana: 'サエ'
+    birth_date: '1997-03-30'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2020-12-23'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-12-23'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '東'
+    given_name: '由樹'
+    family_name_kana: 'ヒガシ'
+    given_name_kana: 'ユキ'
+    birth_date: '1996-02-17'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-09'
+            end: '2021-02-21'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-10-09'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-02-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '藤田'
+    given_name: '留奈'
+    family_name_kana: 'フジタ'
+    given_name_kana: 'ルナ'
+    birth_date: '1997-11-25'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-10-03'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-10-03'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '山本'
+    given_name: 'ひとみ'
+    family_name_kana: 'ヤマモト'
+    given_name_kana: 'ヒトミ'
+    birth_date: '1998-11-08'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-09'
+            end: '2013-05-30'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-10-09'
+            end: '2013-05-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '矢倉'
+    given_name: '楓子'
+    family_name_kana: 'ヤグラ'
+    given_name_kana: 'フウコ'
+    birth_date: '1997-02-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2018-04-10'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-04-10'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-04-28'
+            end: '2015-05-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+  - family_name: '與儀'
+    given_name: 'ケイラ'
+    family_name_kana: 'ヨギ'
+    given_name_kana: 'ケイラ'
+    birth_date: '1999-10-18'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-05-01'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2014-07-02'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2014-07-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+
+  - family_name: '井尻'
+    given_name: '晏菜'
+    family_name_kana: 'イジリ'
+    given_name_kana: 'アンナ'
+    birth_date: '1995-01-20'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2020-12-27'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-12-27'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '加藤'
+    given_name: '夕夏'
+    family_name_kana: 'カトウ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1997-08-01'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2023-08-01'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2022-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-01-01'
+            end: '2023-08-01'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '河野'
+    given_name: '早紀'
+    family_name_kana: 'カワノ'
+    given_name_kana: 'サキ'
+    birth_date: '1994-06-18'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-04-30'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-04-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '久代'
+    given_name: '梨奈'
+    family_name_kana: 'クシロ'
+    given_name_kana: 'リナ'
+    birth_date: '1999-01-29'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2019-10-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-10-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '久田'
+    given_name: '莉子'
+    family_name_kana: 'クダ'
+    given_name_kana: 'リコ'
+    birth_date: '1997-10-11'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2013-03-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '高山'
+    given_name: '梨子'
+    family_name_kana: 'タカヤマ'
+    given_name_kana: 'リコ'
+    birth_date: '2000-01-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2014-07-19'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '黒川'
+    given_name: '葉月'
+    family_name_kana: 'クロカワ'
+    given_name_kana: 'ハヅキ'
+    birth_date: '1998-08-05'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2016-04-01'
+            end: '2016-12-24'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-02-03'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-04-01'
+            end: '2016-12-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '佐々木'
+    given_name: '七海'
+    family_name_kana: 'ササキ'
+    given_name_kana: 'ナナミ'
+    birth_date: '1998-09-26'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-07-07'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '三浦'
+    given_name: '亜莉沙'
+    family_name_kana: 'ミウラ'
+    given_name_kana: 'アリサ'
+    birth_date: '1996-07-20'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2014-03-19'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-03-20'
+            end: '2015-03-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-03-20'
+            end: '2015-03-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '山内'
+    given_name: 'つばさ'
+    family_name_kana: 'ヤマウチ'
+    given_name_kana: 'ツバサ'
+    birth_date: '2000-06-06'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-03-15'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-03-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '室'
+    given_name: '加奈子'
+    family_name_kana: 'ムロ'
+    given_name_kana: 'カナコ'
+    birth_date: '1996-11-20'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-06-21'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-06-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '小林'
+    given_name: '莉加子'
+    family_name_kana: 'コバヤシ'
+    given_name_kana: 'リカコ'
+    birth_date: '1996-05-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-04-20'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-04-20'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '上枝'
+    given_name: '恵美加'
+    family_name_kana: 'カミエダ'
+    given_name_kana: 'エミカ'
+    birth_date: '1994-07-13'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2015-04-12'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-09-29'
+            end: '2017-07-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2017-07-31'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-12-11'
+            end: '2014-05-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '植田'
+    given_name: '碧麗'
+    family_name_kana: 'ウエタ'
+    given_name_kana: 'ミーレ'
+    birth_date: '1999-02-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-10-02'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-10-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '杉本'
+    given_name: '香乃'
+    family_name_kana: 'スギモト'
+    given_name_kana: 'カノ'
+    birth_date: '1997-11-11'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-12-06'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '石川'
+    given_name: 'こころ'
+    family_name_kana: 'イシカワ'
+    given_name_kana: 'ココロ'
+    birth_date: '1998-02-19'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-04-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '石塚'
+    given_name: '朱莉'
+    family_name_kana: 'イシヅカ'
+    given_name_kana: 'シュリ'
+    birth_date: '1997-07-11'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2021-09-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-09-17'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '赤澤'
+    given_name: '萌乃'
+    family_name_kana: 'アカザワ'
+    given_name_kana: 'モエノ'
+    birth_date: '1997-01-29'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-04-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '太田'
+    given_name: '夢莉'
+    family_name_kana: 'オオタ'
+    given_name_kana: 'ユメリ'
+    birth_date: '1999-12-01'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2019-11-30'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-11-30'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-01-20'
+            end: '2018-12-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '東郷'
+    given_name: '青空'
+    family_name_kana: 'トウゴウ'
+    given_name_kana: 'アオゾラ'
+    birth_date: '1998-09-21'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '日下'
+    given_name: 'このみ'
+    family_name_kana: 'クサカ'
+    given_name_kana: 'コノミ'
+    birth_date: '1996-01-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2019-01-28'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2019-01-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '梅原'
+    given_name: '真子'
+    family_name_kana: 'ウメハラ'
+    given_name_kana: 'マコ'
+    birth_date: '1999-01-11'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-03-02'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2014-03-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '薮下'
+    given_name: '柊'
+    family_name_kana: 'ヤブシタ'
+    given_name_kana: 'シュウ'
+    birth_date: '1998-12-02'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-12-01'
+            end: '2012-10-09'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-10-10'
+            end: '2017-04-19'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2012-10-10'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2017-04-19'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-05-21'
+            end: '2014-08-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 3期'
+  - family_name: '山尾'
+    given_name: '梨奈'
+    family_name_kana: 'ヤマオ'
+    given_name_kana: 'リナ'
+    birth_date: '1995-12-10'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2020-01-29'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2015-02-04'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-01-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '渋谷'
+    given_name: '凪咲'
+    family_name_kana: 'シブヤ'
+    given_name_kana: 'ナギサ'
+    birth_date: '1996-08-25'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2023-12-27'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-12-27'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2014-04-24'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '小川'
+    given_name: '乃愛'
+    family_name_kana: 'オガワ'
+    given_name_kana: 'ノア'
+    birth_date: '1999-05-29'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2013-10-10'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '松岡'
+    given_name: '知穂'
+    family_name_kana: 'マツオカ'
+    given_name_kana: 'チホ'
+    birth_date: '1998-04-21'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-23'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-23'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '松村'
+    given_name: '芽久未'
+    family_name_kana: 'マツムラ'
+    given_name_kana: 'メグミ'
+    birth_date: '1995-06-26'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2017-12-24'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2017-12-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '照井'
+    given_name: '穂乃佳'
+    family_name_kana: 'テルイ'
+    given_name_kana: 'ホノカ'
+    birth_date: '1998-10-18'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2015-06-30'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2015-02-04'
+            end: '2015-06-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '森田'
+    given_name: '彩花'
+    family_name_kana: 'モリタ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1995-05-29'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2020-10-06'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-10-06'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '杉野'
+    given_name: '莉沙'
+    family_name_kana: 'スギノ'
+    given_name_kana: 'リサ'
+    birth_date: '1995-05-26'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2013-02-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '西村'
+    given_name: '愛華'
+    family_name_kana: 'ニシムラ'
+    given_name_kana: 'アイカ'
+    birth_date: '1998-01-12'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2014-04-17'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-04-18'
+            end: '2016-04-11'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-04-18'
+            end: '2016-04-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '石原'
+    given_name: '雅子'
+    family_name_kana: 'イシハラ'
+    given_name_kana: 'マサコ'
+    birth_date: '1995-09-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2013-06-27'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '川上'
+    given_name: '千尋'
+    family_name_kana: 'カワカミ'
+    given_name_kana: 'チヒロ'
+    birth_date: '1998-12-17'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2014-02-23'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-02-24'
+            end: '2025-12-26'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-12-26'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '大段'
+    given_name: '舞依'
+    family_name_kana: 'オオダン'
+    given_name_kana: 'マイ'
+    birth_date: '1994-10-04'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2019-10-13'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-10-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '中野'
+    given_name: '麗来'
+    family_name_kana: 'ナカノ'
+    given_name_kana: 'レイナ'
+    birth_date: '1999-08-24'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2018-05-02'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2015-02-04'
+            end: '2018-05-02'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '嶋崎'
+    given_name: '百萌香'
+    family_name_kana: 'シマザキ'
+    given_name_kana: 'モモカ'
+    birth_date: '2001-02-08'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-03-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '明石'
+    given_name: '奈津子'
+    family_name_kana: 'アカシ'
+    given_name_kana: 'ナツコ'
+    birth_date: '1999-08-17'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2020-06-28'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-06-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '廣瀬'
+    given_name: '聖七'
+    family_name_kana: 'ヒロセ'
+    given_name_kana: 'セナ'
+    birth_date: '1998-01-04'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2012-12-23'
+            end: '2013-02-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 4期'
+  - family_name: '磯'
+    given_name: '佳奈江'
+    family_name_kana: 'イソ'
+    given_name_kana: 'カナエ'
+    birth_date: '1993-08-09'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2019-09-12'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-01-25'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-09-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 ドラフト 1期'
+  - family_name: '内木'
+    given_name: '志'
+    family_name_kana: 'ナイキ'
+    given_name_kana: 'ココロ'
+    birth_date: '1997-04-06'
+    hometown:
+      country: 'JP'
+      state: '滋賀県'
+    roles:
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2019-08-19'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2014-01-25'
+            end: '2016-10-17'
+          - start: '2019-01-01'
+            end: '2019-08-19'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 ドラフト 1期'
+  - family_name: '須藤'
+    given_name: '凜々花'
+    family_name_kana: 'ストウ'
+    given_name_kana: 'リリカ'
+    birth_date: '1996-11-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2017-08-30'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2014-01-25'
+            end: '2017-08-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 ドラフト 1期'
+  - family_name: '武井'
+    given_name: '紗良'
+    family_name_kana: 'タケイ'
+    given_name_kana: 'サラ'
+    birth_date: '1998-10-06'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2019-10-16'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2014-01-25'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2019-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 ドラフト 1期'
+  - family_name: '城'
+    given_name: '恵理子'
+    family_name_kana: 'ジョウ'
+    given_name_kana: 'エリコ'
+    birth_date: '1998-11-27'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2011-06-05'
+            end: '2012-01-25'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-09-28'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2012-01-26'
+            end: '2012-09-28'
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2013-10-13'
+            end: '2015-02-03'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2015-02-04'
+            end: '2019-05-11'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2015-02-04'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2016-10-18'
+            end: '2019-05-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 2期'
+      - 'NMB48 4.5期'
+  - family_name: '岩田'
+    given_name: '桃夏'
+    family_name_kana: 'イワタ'
+    given_name_kana: 'モモカ'
+    birth_date: '2001-07-02'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2019-04-14'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2017-10-12'
+            end: '2019-04-14'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '溝川'
+    given_name: '実来'
+    family_name_kana: 'ミゾカワ'
+    given_name_kana: 'ミライ'
+    birth_date: '2004-05-13'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-03-27'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-03-27'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '山田'
+    given_name: '寿々'
+    family_name_kana: 'ヤマダ'
+    given_name_kana: 'スズ'
+    birth_date: '2001-12-11'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2020-12-22'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2020-12-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '山本'
+    given_name: '彩加'
+    family_name_kana: 'ヤマモト'
+    given_name_kana: 'アヤカ'
+    birth_date: '2002-08-06'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2016-10-17'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2016-10-18'
+            end: '2021-03-19'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2016-10-18'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-03-19'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '小嶋'
+    given_name: '花梨'
+    family_name_kana: 'コジマ'
+    given_name_kana: 'カリン'
+    birth_date: '1999-07-16'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2025-11-20'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-12-31'
+          - start: '2022-01-01'
+            end: '2025-11-20'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-12-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '上西'
+    given_name: '怜'
+    family_name_kana: 'ジョウニシ'
+    given_name_kana: 'レイ'
+    birth_date: '2001-05-28'
+    hometown:
+      country: 'JP'
+      state: '滋賀県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2025-04-10'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2017-10-12'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-02-18'
+          - start: '2023-11-09'
+            end: '2025-04-10'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-02-19'
+            end: '2023-03-30'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-03-31'
+            end: '2023-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '水田'
+    given_name: '詩織'
+    family_name_kana: 'ミズタ'
+    given_name_kana: 'シオリ'
+    birth_date: '1998-12-21'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2026-03-09'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-12-31'
+          - start: '2023-07-14'
+            end: '2026-03-09'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-12-31'
+          - start: '2022-01-01'
+            end: '2023-07-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '清水'
+    given_name: '里香'
+    family_name_kana: 'シミズ'
+    given_name_kana: 'リカ'
+    birth_date: '1998-09-15'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2021-06-15'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-06-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '中川'
+    given_name: '美音'
+    family_name_kana: 'ナカガワ'
+    given_name_kana: 'ミオン'
+    birth_date: '2002-11-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2022-07-04'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2017-10-12'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-01-01'
+            end: '2022-07-04'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '梅山'
+    given_name: '恋和'
+    family_name_kana: 'ウメヤマ'
+    given_name_kana: 'ココナ'
+    birth_date: '2003-08-07'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2016-06-28'
+            end: '2017-10-11'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2017-10-12'
+            end: '2022-04-04'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2017-10-12'
+            end: '2018-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-01-01'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-01-01'
+            end: '2022-04-04'
+    tags:
+      - '48グループ'
+      - 'NMB48 5期'
+  - family_name: '横野'
+    given_name: 'すみれ'
+    family_name_kana: 'ヨコノ'
+    given_name_kana: 'スミレ'
+    birth_date: '2000-12-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2021-05-23'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-07-24'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2020-01-01'
+            end: '2021-05-23'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '岡本'
+    given_name: '怜奈'
+    family_name_kana: 'オカモト'
+    given_name_kana: 'レナ'
+    birth_date: '2005-12-22'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2023-01-29'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-05-20'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-01-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '原'
+    given_name: 'かれん'
+    family_name_kana: 'ハラ'
+    given_name_kana: 'カレン'
+    birth_date: '2001-03-15'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2024-11-07'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-05-12'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-01-01'
+            end: '2024-11-07'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '三宅'
+    given_name: 'ゆりあ'
+    family_name_kana: 'ミヤケ'
+    given_name_kana: 'ユリア'
+    birth_date: '2005-05-16'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2020-08-27'
+          - start: '2021-04-01'
+            end: '2021-08-21'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2020-01-01'
+            end: '2020-08-27'
+          - start: '2021-04-01'
+            end: '2021-08-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '出口'
+    given_name: '結菜'
+    family_name_kana: 'デグチ'
+    given_name_kana: 'ユイナ'
+    birth_date: '2001-06-22'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2025-04-28'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-03-19'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-04-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '小川'
+    given_name: '結夏'
+    family_name_kana: 'オガワ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1998-06-24'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2021-04-28'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2020-01-01'
+            end: '2021-04-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '小林'
+    given_name: '莉奈'
+    family_name_kana: 'コバヤシ'
+    given_name_kana: 'リナ'
+    birth_date: '2001-04-20'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2020-06-29'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2020-01-01'
+            end: '2020-06-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '菖蒲'
+    given_name: 'まりん'
+    family_name_kana: 'ショウブ'
+    given_name_kana: 'マリン'
+    birth_date: '1999-12-29'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2021-12-12'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-03-10'
+            end: '2021-12-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '新澤'
+    given_name: '菜央'
+    family_name_kana: 'シンザワ'
+    given_name_kana: 'ナオ'
+    birth_date: '1998-08-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-09-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2019-09-09'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-09-09'
+            end: '2021-12-31'
+          - start: '2023-07-14'
+            end: '2025-10-16'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '大段'
+    given_name: '結愛'
+    family_name_kana: 'オオダン'
+    given_name_kana: 'ユア'
+    birth_date: '2004-11-30'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-09-24'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '貞野'
+    given_name: '遥香'
+    family_name_kana: 'サダノ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2002-06-30'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2020-01-01'
+            end: '2023-12-29'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2019-03-28'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2023-12-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '南波'
+    given_name: '陽向'
+    family_name_kana: 'ナンバ'
+    given_name_kana: 'ヒナタ'
+    birth_date: '2001-04-12'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-08-01'
+          - start: '2020-03-14'
+            end: '2020-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2021-01-01'
+            end: '2021-09-20'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2021-01-01'
+            end: '2021-09-20'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '北村'
+    given_name: '真菜'
+    family_name_kana: 'キタムラ'
+    given_name_kana: 'マナ'
+    birth_date: '2005-07-04'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2020-12-31'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2021-01-01'
+            end: '2021-06-11'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2019-05-20'
+            end: '2020-12-31'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2021-01-01'
+            end: '2021-06-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '堀ノ内'
+    given_name: '百香'
+    family_name_kana: 'ホリノウチ'
+    given_name_kana: 'モモカ'
+    birth_date: '2003-02-10'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2018-07-28'
+            end: '2019-09-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2019-09-09'
+            end: '2020-06-28'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2019-09-09'
+            end: '2020-06-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 6期'
+  - family_name: '隅野'
+    given_name: '和奏'
+    family_name_kana: 'スミノ'
+    given_name_kana: 'ワカナ'
+    birth_date: '2003-07-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2025-04-21'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-04-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '黒田'
+    given_name: '楓和'
+    family_name_kana: 'クロダ'
+    given_name_kana: 'フウワ'
+    birth_date: '2004-09-19'
+    hometown:
+      country: 'JP'
+      state: '鳥取県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-10-28'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2022-10-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-11-01'
+            end: '2023-10-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '佐月'
+    given_name: '愛果'
+    family_name_kana: 'サツキ'
+    given_name_kana: 'アイカ'
+    birth_date: '2002-04-30'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2024-11-28'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-07-14'
+            end: '2024-11-28'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '折坂'
+    given_name: '心春'
+    family_name_kana: 'オリサカ'
+    given_name_kana: 'コハル'
+    birth_date: '2002-03-06'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-01-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '浅尾'
+    given_name: '桃香'
+    family_name_kana: 'アサオ'
+    given_name_kana: 'モモカ'
+    birth_date: '2004-02-06'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2024-01-12'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2022-10-31'
+          - start: '2023-07-14'
+            end: '2024-01-12'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-11-02'
+            end: '2023-07-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '早川'
+    given_name: '夢菜'
+    family_name_kana: 'ハヤカワ'
+    given_name_kana: 'ユメナ'
+    birth_date: '2002-09-19'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2024-06-15'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2024-06-15'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '瓶野'
+    given_name: '神音'
+    family_name_kana: 'カメノ'
+    given_name_kana: 'ジオン'
+    birth_date: '2007-09-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2025-03-14'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-04-07'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-05-11'
+            end: '2022-07-15'
+          - start: '2023-07-14'
+            end: '2025-03-14'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-07-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '平山'
+    given_name: '真衣'
+    family_name_kana: 'ヒラヤマ'
+    given_name_kana: 'マイ'
+    birth_date: '2002-11-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2021-08-14'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2021-08-15'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-01-01'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '芳野'
+    given_name: '心咲'
+    family_name_kana: 'ヨシノ'
+    given_name_kana: 'ミサキ'
+    birth_date: '2008-01-13'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+            end: '2025-09-29'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2022-07-16'
+            end: '2025-09-29'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '和田'
+    given_name: '海佑'
+    family_name_kana: 'ワダ'
+    given_name_kana: 'ミユ'
+    birth_date: '1997-03-29'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2022-02-14'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-02-15'
+            end: '2025-11-26'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-02-15'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-11-26'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '眞鍋'
+    given_name: '杏樹'
+    family_name_kana: 'マナベ'
+    given_name_kana: 'アンジュ'
+    birth_date: '2002-06-10'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2020-09-12'
+            end: '2021-08-14'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2021-08-15'
+            end: '2025-08-12'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-01-01'
+            end: '2024-01-27'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-01-28'
+            end: '2025-08-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 7期'
+  - family_name: '高橋'
+    given_name: '紗恵'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'サエ'
+    birth_date: '2003-10-31'
+    hometown:
+      country: 'JP'
+      state: '大分県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2022-05-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '黒島'
+    given_name: '咲花'
+    family_name_kana: 'クロシマ'
+    given_name_kana: 'サクハナ'
+    birth_date: '2009-04-07'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '坂下'
+    given_name: '真心'
+    family_name_kana: 'サカシタ'
+    given_name_kana: 'マコ'
+    birth_date: '2005-08-02'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-06-01'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-06-02'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-06-02'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '坂田'
+    given_name: '心咲'
+    family_name_kana: 'サカタ'
+    given_name_kana: 'ミサキ'
+    birth_date: '2005-11-08'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2022-07-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2022-07-16'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-07-16'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '坂本'
+    given_name: '理紗'
+    family_name_kana: 'サカモト'
+    given_name_kana: 'リサ'
+    birth_date: '2008-12-24'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '桜田'
+    given_name: '彩叶'
+    family_name_kana: 'サクラダ'
+    given_name_kana: 'アヤカ'
+    birth_date: '2002-03-25'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-06-01'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-06-02'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-06-02'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '山本'
+    given_name: '光'
+    family_name_kana: 'ヤマモト'
+    given_name_kana: 'ヒカリ'
+    birth_date: '2006-05-23'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-12-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-12-16'
+            end: '2024-04-26'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-12-16'
+            end: '2024-04-26'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '松岡'
+    given_name: 'さくら'
+    family_name_kana: 'マツオカ'
+    given_name_kana: 'サクラ'
+    birth_date: '2003-06-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '松本'
+    given_name: '海日菜'
+    family_name_kana: 'マツモト'
+    given_name_kana: 'カイヒナ'
+    birth_date: '2008-05-22'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '松野'
+    given_name: '美桜'
+    family_name_kana: 'マツノ'
+    given_name_kana: 'ミオ'
+    birth_date: '2001-04-04'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-03-06'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-03-06'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '池'
+    given_name: '帆乃香'
+    family_name_kana: 'イケ'
+    given_name_kana: 'ホノカ'
+    birth_date: '2003-12-16'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '田中'
+    given_name: '雪乃'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ユキノ'
+    birth_date: '2007-11-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-06-01'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-06-02'
+            end: '2026-03-27'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2022-04-29'
+            end: '2023-06-01'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2022-08-02'
+            end: '2023-06-01'
+          - start: '2023-07-14'
+            end: '2026-03-27'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-06-02'
+            end: '2023-07-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '福野'
+    given_name: '杏実'
+    family_name_kana: 'フクノ'
+    given_name_kana: 'アミ'
+    birth_date: '2005-05-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-07-13'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-07-14'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-07-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '龍本'
+    given_name: '弥生'
+    family_name_kana: 'タツモト'
+    given_name_kana: 'ヤヨイ'
+    birth_date: '2005-03-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-01-01'
+            end: '2023-06-01'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-06-02'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-06-02'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 8期'
+  - family_name: '衣笠'
+    given_name: '彩実'
+    family_name_kana: 'キヌガサ'
+    given_name_kana: 'アヤミ'
+    birth_date: '2010-11-03'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-12-06'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '吉見'
+    given_name: '純音'
+    family_name_kana: 'ヨシミ'
+    given_name_kana: 'アヤネ'
+    birth_date: '2007-10-18'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-06-04'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-06-05'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-01-19'
+            end: '2025-10-16'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-02-23'
+            end: '2024-06-04'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '宮本'
+    given_name: '杏海'
+    family_name_kana: 'ミヤモト'
+    given_name_kana: 'アミ'
+    birth_date: '2010-07-01'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-11-20'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '古川'
+    given_name: '雪乃'
+    family_name_kana: 'フルカワ'
+    given_name_kana: 'ユキノ'
+    birth_date: '2006-12-16'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-11-20'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '阪本'
+    given_name: '玲央'
+    family_name_kana: 'サカモト'
+    given_name_kana: 'レイオ'
+    birth_date: '2006-03-01'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-09-13'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '舟橋'
+    given_name: '礼菜'
+    family_name_kana: 'フナハシ'
+    given_name_kana: 'レイナ'
+    birth_date: '2008-04-01'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+            end: '2026-02-25'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-01-06'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '渋谷'
+    given_name: '紗雪'
+    family_name_kana: 'シブヤ'
+    given_name_kana: 'サユキ'
+    birth_date: '2007-01-29'
+    hometown:
+      country: 'JP'
+      state: '富山県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-28'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '西田'
+    given_name: '帆花'
+    family_name_kana: 'ニシダ'
+    given_name_kana: 'ホノカ'
+    birth_date: '2005-03-10'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-08-23'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-11-21'
+            end: '2025-10-16'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-01-09'
+            end: '2024-10-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '西島'
+    given_name: '梨央'
+    family_name_kana: 'ニシジマ'
+    given_name_kana: 'リオ'
+    birth_date: '2004-11-08'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-06-12'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '西'
+    given_name: '由真'
+    family_name_kana: 'ニシ'
+    given_name_kana: 'ユマ'
+    birth_date: '2006-03-25'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-03-23'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-11-18'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '青原'
+    given_name: '優花'
+    family_name_kana: 'アオバラ'
+    given_name_kana: 'ユカ'
+    birth_date: '2007-07-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2023-12-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-12-16'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-11-30'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '青原'
+    given_name: '和花'
+    family_name_kana: 'アオバラ'
+    given_name_kana: 'ワカ'
+    birth_date: '2004-01-06'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2023-12-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-12-16'
+            end: '2026-03-26'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2023-12-16'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '池田'
+    given_name: '典愛'
+    family_name_kana: 'イケダ'
+    given_name_kana: 'テンナ'
+    birth_date: '2005-10-05'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-04-17'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-10-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '田中'
+    given_name: '美空'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ミソラ'
+    birth_date: '2004-08-24'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-10-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-10-09'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-11-18'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '二瓶'
+    given_name: '愛美'
+    family_name_kana: 'ニヘイ'
+    given_name_kana: 'マナミ'
+    birth_date: '2005-08-06'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2023-12-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-12-16'
+            end: '2024-11-12'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-12-16'
+            end: '2024-11-12'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '板垣'
+    given_name: '心和'
+    family_name_kana: 'イタガキ'
+    given_name_kana: 'コヨリ'
+    birth_date: '2005-05-23'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2024-06-04'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2024-06-05'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2023-11-17'
+            end: '2024-06-04'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-01-18'
+            end: '2024-06-04'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-03-06'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '芳賀'
+    given_name: '礼'
+    family_name_kana: 'ハガ'
+    given_name_kana: 'レイ'
+    birth_date: '2006-03-29'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2022-12-19'
+            end: '2023-12-15'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2023-12-16'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2023-12-16'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 9期'
+  - family_name: '宮原'
+    given_name: '心音'
+    family_name_kana: 'ミヤハラ'
+    given_name_kana: 'コノン'
+    birth_date: '2010-04-19'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2026-04-21'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2026-04-22'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-12-09'
+            end: '2026-04-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '宮崎'
+    given_name: '紗衣'
+    family_name_kana: 'ミヤザキ'
+    given_name_kana: 'サエ'
+    birth_date: '2010-12-29'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '高橋'
+    given_name: 'ことね'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'コトネ'
+    birth_date: '2003-04-20'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2025-08-30'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '三鴨'
+    given_name: 'くるみ'
+    family_name_kana: 'ミカモ'
+    given_name_kana: 'クルミ'
+    birth_date: '2001-10-31'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2025-04-08'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2025-04-09'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2024-09-06'
+            end: '2025-04-08'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2025-04-09'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '山口'
+    given_name: '美桜'
+    family_name_kana: 'ヤマグチ'
+    given_name_kana: 'ミオ'
+    birth_date: '2007-09-27'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '石山'
+    given_name: '千尋'
+    family_name_kana: 'イシヤマ'
+    given_name_kana: 'チヒロ'
+    birth_date: '2008-05-24'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2025-08-30'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '村井'
+    given_name: '悠莉'
+    family_name_kana: 'ムライ'
+    given_name_kana: 'ユウリ'
+    birth_date: '2005-03-05'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2026-04-21'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2026-04-22'
+      - role: 'member'
+        group: 'NMB48 チームM'
+        periods:
+          - start: '2024-10-31'
+            end: '2026-04-21'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '竹田'
+    given_name: '京加'
+    family_name_kana: 'タケダ'
+    given_name_kana: 'キョウカ'
+    birth_date: '2012-09-13'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2025-09-12'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2025-09-13'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2024-12-14'
+            end: '2025-10-16'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '中川'
+    given_name: '朋香'
+    family_name_kana: 'ナカガワ'
+    given_name_kana: 'トモカ'
+    birth_date: '2006-01-02'
+    hometown:
+      country: 'JP'
+      state: '和歌山県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2025-08-30'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2025-08-31'
+      - role: 'member'
+        group: 'NMB48 チームN'
+        periods:
+          - start: '2025-01-09'
+            end: '2025-08-30'
+      - role: 'member'
+        group: 'NMB48 チームBII'
+        periods:
+          - start: '2025-05-15'
+            end: '2025-08-30'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '田中'
+    given_name: 'ミリア'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ミリア'
+    birth_date: '2010-12-09'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '内田'
+    given_name: '愛彩'
+    family_name_kana: 'ウチダ'
+    given_name_kana: 'アイサ'
+    birth_date: '2004-06-12'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2026-04-21'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2026-04-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '木根'
+    given_name: '彩呂花'
+    family_name_kana: 'キネ'
+    given_name_kana: 'イロハ'
+    birth_date: '2010-10-25'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+            end: '2026-04-21'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2026-04-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '澁谷'
+    given_name: '愛紗南'
+    family_name_kana: 'シブタニ'
+    given_name_kana: 'アサナ'
+    birth_date: '2006-10-27'
+    hometown:
+      country: 'JP'
+      state: '宮城県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2024-07-11'
+    tags:
+      - '48グループ'
+      - 'NMB48 10期'
+  - family_name: '岡腰'
+    given_name: '星来'
+    family_name_kana: 'オカゴシ'
+    given_name_kana: 'セイラ'
+    birth_date: '2006-11-10'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+            end: '2026-04-21'
+      - role: 'member'
+        group: 'NMB48'
+        periods:
+          - start: '2026-04-22'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '高橋'
+    given_name: '樹奈'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'ジュナ'
+    birth_date: '2009-10-07'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '桜井'
+    given_name: 'ひまり'
+    family_name_kana: 'サクライ'
+    given_name_kana: 'ヒマリ'
+    birth_date: '2008-08-02'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '西住'
+    given_name: '美咲妃'
+    family_name_kana: 'ニシズミ'
+    given_name_kana: 'ミサキ'
+    birth_date: '2012-11-27'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '赤松'
+    given_name: '昊'
+    family_name_kana: 'アカマツ'
+    given_name_kana: 'ソラ'
+    birth_date: '2010-04-15'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '善家'
+    given_name: '侑莉花'
+    family_name_kana: 'ゼンケ'
+    given_name_kana: 'ユリカ'
+    birth_date: '2004-12-09'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '谷口'
+    given_name: '詩乃'
+    family_name_kana: 'タニグチ'
+    given_name_kana: 'シノ'
+    birth_date: '2000-11-15'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '田中'
+    given_name: 'れい'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'レイ'
+    birth_date: '2006-11-01'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '福原'
+    given_name: '琴美'
+    family_name_kana: 'フクハラ'
+    given_name_kana: 'コトミ'
+    birth_date: '2005-09-26'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '和田'
+    given_name: '承子'
+    family_name_kana: 'ワダ'
+    given_name_kana: 'ショウコ'
+    birth_date: '2008-09-29'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
+  - family_name: '藪内'
+    given_name: '陽花'
+    family_name_kana: 'ヤブウチ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2008-05-20'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NMB48'
+        periods:
+          - start: '2025-11-08'
+    tags:
+      - '48グループ'
+      - 'NMB48 11期'
