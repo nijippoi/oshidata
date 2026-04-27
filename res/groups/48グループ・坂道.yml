@@ -11,6 +11,13 @@ groups:
       - '48グループ'
     periods:
       - start: '2005-12-08'
+  - name: 'AKB48研究性'
+    name_kana: 'エーケービーフォーティーエイトケンキュウセイ'
+    parent: 'AKB48'
+    tags:
+      - '48グループ'
+    periods:
+      - start: '2005-12-08'
   - name: 'AKB48 チームA'
     name_kana: 'エーケービーフォーティーエイト チームエー'
     parent: 'AKB48'

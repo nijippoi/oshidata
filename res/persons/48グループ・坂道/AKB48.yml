@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
 start_id: 1000
-end_id: 2999
+end_id: 1999
 
 persons:
   - family_name: '板野'
@@ -868,11 +868,11 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 2期'
-  - family_name: '菊地'
-    given_name: 'あやか'
-    family_name_kana: 'キクチ'
-    given_name_kana: 'アヤカ'
-    birth_date: '1993-06-30'
+  - family_name: '磯'
+    given_name: '怜奈'
+    family_name_kana: 'イソ'
+    given_name_kana: 'レイナ'
+    birth_date: '1992-08-10'
     hometown:
       country: 'JP'
       state: '東京都'
@@ -880,34 +880,16 @@ persons:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2008-12-13'
-            end: '2009-08-23'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
           - start: '2006-12-03'
-            end: '2008-08-14'
-          - start: '2009-08-23'
-            end: '2014-09-23'
+            end: '2006-12-19'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
-          - start: '2007-04-08'
-            end: '2008-08-14'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2009-08-23'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-09-23'
+          - start: '2006-12-03'
+            end: '2006-12-19'
     tags:
       - '48グループ'
       - 'AKB48 3期'
-      - 'AKB48 7期'
   - family_name: '井上'
     given_name: '奈瑠'
     family_name_kana: 'イノウエ'
@@ -954,6 +936,28 @@ persons:
         periods:
           - start: '2010-07-27'
             end: '2012-11-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
+  - family_name: '大塚'
+    given_name: '亜季'
+    family_name_kana: 'オオツカ'
+    given_name_kana: 'アキ'
+    birth_date: '1989-02-07'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
     tags:
       - '48グループ'
       - 'AKB48 3期'
@@ -1005,6 +1009,90 @@ persons:
         periods:
           - start: '2010-07-27'
             end: '2012-11-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
+  - family_name: '菊地'
+    given_name: 'あやか'
+    family_name_kana: 'キクチ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1993-06-30'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-13'
+            end: '2009-08-23'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2008-08-14'
+          - start: '2009-08-23'
+            end: '2014-09-23'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2007-04-08'
+            end: '2008-08-14'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2009-08-23'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-09-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
+      - 'AKB48 7期'
+  - family_name: '早乙女'
+    given_name: '美樹'
+    family_name_kana: 'サオトメ'
+    given_name_kana: 'ミキ'
+    birth_date: '1991-06-22'
+    hometown:
+      country: 'JP'
+      state: '栃木県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2009-04-18'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2007-04-08'
+            end: '2009-04-18'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
+  - family_name: '坂田'
+    given_name: '涼'
+    family_name_kana: 'サカタ'
+    given_name_kana: 'リョウ'
+    birth_date: '1990-03-18'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
     tags:
       - '48グループ'
       - 'AKB48 3期'
@@ -1118,6 +1206,50 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 3期'
+  - family_name: '藤島'
+    given_name: 'マリアチカ'
+    family_name_kana: 'フジシマ'
+    given_name_kana: 'マリアチカ'
+    birth_date: '1990-04-28'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
+  - family_name: '堀江'
+    given_name: '聖夏'
+    family_name_kana: 'ホリエ'
+    given_name_kana: 'ミナ'
+    birth_date: '1993-07-14'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2006-12-03'
+            end: '2006-12-19'
+    tags:
+      - '48グループ'
+      - 'AKB48 3期'
   - family_name: '松岡'
     given_name: '由紀'
     family_name_kana: 'マツオカ'
@@ -1210,6 +1342,64 @@ persons:
         periods:
           - start: '2007-05-27'
             end: '2007-11-15'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+  - family_name: '瓜屋'
+    given_name: '茜'
+    family_name_kana: 'ウリヤ'
+    given_name_kana: 'アカネ'
+    birth_date: '1992-08-24'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2009-04-26'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2007-10-29'
+            end: '2009-04-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+  - family_name: '大家'
+    given_name: '志津香'
+    family_name_kana: 'オオヤ'
+    given_name_kana: 'シヅカ'
+    birth_date: '1991-12-28'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2010-07-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-27'
+            end: '2021-12-29'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2010-07-27'
+            end: '2012-11-01'
+          - start: '2015-03-26'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-11-01'
+            end: '2015-03-26'
+          - start: '2017-12-08'
+            end: '2021-12-29'
     tags:
       - '48グループ'
       - 'AKB48 4期'
@@ -1313,6 +1503,93 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 4期'
+  - family_name: '鈴木'
+    given_name: '菜絵'
+    family_name_kana: 'スズキ'
+    given_name_kana: 'ナエ'
+    birth_date: '1992-12-18'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2009-01-18'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+  - family_name: '出口'
+    given_name: '陽'
+    family_name_kana: 'デグチ'
+    given_name_kana: 'アキ'
+    birth_date: '1988-03-14'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2007-11-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+  - family_name: '中田'
+    given_name: 'ちさと'
+    family_name_kana: 'ナカタ'
+    given_name_kana: 'チサト'
+    birth_date: '1990-10-08'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2008-10-19'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2008-10-19'
+            end: '2017-04-24'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2008-10-19'
+            end: '2012-11-01'
+          - start: '2014-02-24'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-02-24'
+          - start: '2015-03-26'
+            end: '2017-04-24'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+  - family_name: '中西'
+    given_name: '優香'
+    family_name_kana: 'ナカニシ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1989-01-24'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2008-08-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
   - family_name: '成瀬'
     given_name: '理沙'
     family_name_kana: 'ナルセ'
@@ -1335,6 +1612,26 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 4期'
+  - family_name: '藤本'
+    given_name: '紗羅'
+    family_name_kana: 'フジモト'
+    given_name_kana: 'サラ'
+    birth_date: '1997-03-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-05-27'
+            end: '2009-01-23'
+          - start: '2009-09-20'
+            end: '2010-06-20'
+    tags:
+      - '48グループ'
+      - 'AKB48 4期'
+      - 'AKB48 9期'
   - family_name: '村中'
     given_name: '聡美'
     family_name_kana: 'ムラナカ'
@@ -1450,38 +1747,33 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 4期'
-  - family_name: '野中'
-    given_name: '美郷'
-    family_name_kana: 'ノナカ'
-    given_name_kana: 'ミサト'
-    birth_date: '1991-04-20'
+  - family_name: '有馬'
+    given_name: '優茄'
+    family_name_kana: 'アリマ'
+    given_name_kana: 'ユカ'
+    birth_date: '1991-02-18'
     hometown:
       country: 'JP'
-      state: '福岡県'
+      state: '神奈川県'
     roles:
-      - role: 'member'
+      - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2008-03-30'
-            end: '2014-09-23'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2010-03-12'
-            end: '2012-11-01'
+          - start: '2007-10-06'
+            end: '2009-01-18'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
-          - start: '2012-11-01'
-            end: '2014-09-23'
+          - start: '2008-05-17'
+            end: '2009-01-18'
     tags:
       - '48グループ'
-      - 'AKB48 6期'
-  - family_name: '宮崎'
-    given_name: '美穂'
-    family_name_kana: 'ミヤザキ'
-    given_name_kana: 'ミホ'
-    birth_date: '1993-07-30'
+      - 'AKB48 5期'
+  - family_name: '畑山'
+    given_name: '亜梨紗'
+    family_name_kana: 'ハタヤマ'
+    given_name_kana: 'アリサ'
+    birth_date: '1991-02-11'
     hometown:
       country: 'JP'
       state: '東京都'
@@ -1489,30 +1781,30 @@ persons:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2007-12-26'
-            end: '2008-07-13'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2008-07-13'
-            end: '2022-04-15'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2008-07-13'
-            end: '2010-05-21'
-          - start: '2015-03-26'
-            end: '2022-04-15'
+          - start: '2007-10-06'
+            end: '2009-01-19'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
-          - start: '2010-05-21'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームK'
+          - start: '2008-03-20'
+            end: '2009-01-19'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
+  - family_name: '山田'
+    given_name: 'みずき'
+    family_name_kana: 'ヤマダ'
+    given_name_kana: 'ミズキ'
+    birth_date: '1988-07-28'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
         periods:
-          - start: '2012-11-01'
-            end: '2015-03-26'
+          - start: '2007-10-06'
+            end: '2007-12-08'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -1553,6 +1845,106 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 5期'
+  - family_name: '小原'
+    given_name: '春香'
+    family_name_kana: 'コハラ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1988-04-12'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-12-08'
+            end: '2009-01-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2009-01-24'
+            end: '2010-04-16'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2009-01-24'
+            end: '2010-04-16'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
+  - family_name: '近野'
+    given_name: '莉菜'
+    family_name_kana: 'チカノ'
+    given_name_kana: 'リナ'
+    birth_date: '1993-04-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-12-08'
+            end: '2009-03-26'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2009-03-26'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2009-03-26'
+            end: '2010-05-21'
+          - start: '2012-11-01'
+            end: '2014-04-16'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2010-05-21'
+            end: '2012-11-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
+  - family_name: '宮崎'
+    given_name: '美穂'
+    family_name_kana: 'ミヤザキ'
+    given_name_kana: 'ミホ'
+    birth_date: '1993-07-30'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2007-12-26'
+            end: '2008-07-13'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2008-07-13'
+            end: '2022-04-15'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2008-07-13'
+            end: '2010-05-21'
+          - start: '2015-03-26'
+            end: '2022-04-15'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2010-05-21'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-11-01'
+            end: '2015-03-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
   - family_name: '指原'
     given_name: '莉乃'
     family_name_kana: 'サシハラ'
@@ -1585,29 +1977,144 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 5期'
-  - family_name: '仁藤'
-    given_name: '萌乃'
-    family_name_kana: 'ニトウ'
-    given_name_kana: 'モエノ'
-    birth_date: '1992-07-22'
+  - family_name: '冨田'
+    given_name: '麻友'
+    family_name_kana: 'トミタ'
+    given_name_kana: 'マユ'
+    birth_date: '1993-01-25'
     hometown:
       country: 'JP'
-      state: '東京都'
+      state: '香川県'
     roles:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2008-04-28'
-            end: '2008-08-05'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2008-08-05'
-            end: '2013-04-28'
+          - start: '2008-03-01'
+            end: '2009-01-18'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
-          - start: '2008-08-05'
+          - start: '2008-03-01'
+            end: '2009-01-18'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
+  - family_name: '石田'
+    given_name: '晴香'
+    family_name_kana: 'イシダ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1993-12-02'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-03-08'
+            end: '2009-08-23'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2009-08-23'
+            end: '2016-06-05'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2009-08-23'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-02-24'
+            end: '2016-06-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 5期'
+  - family_name: '野中'
+    given_name: '美郷'
+    family_name_kana: 'ノナカ'
+    given_name_kana: 'ミサト'
+    birth_date: '1991-04-20'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2008-03-30'
+            end: '2014-09-23'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2010-03-12'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-09-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 6期'
+  - family_name: '片野'
+    given_name: '友里恵'
+    family_name_kana: 'カタノ'
+    given_name_kana: 'ユリエ'
+    birth_date: '1990-04-29'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-04-03'
+            end: '2008-08-31'
+    tags:
+      - '48グループ'
+      - 'AKB48 6期'
+  - family_name: '西澤'
+    given_name: '沙羅'
+    family_name_kana: 'ニシザワ'
+    given_name_kana: 'サラ'
+    birth_date: '1992-05-14'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-04-03'
+            end: '2008-07-31'
+    tags:
+      - '48グループ'
+      - 'AKB48 6期'
+  - family_name: '中塚'
+    given_name: '智実'
+    family_name_kana: 'ナカツカ'
+    given_name_kana: 'トモミ'
+    birth_date: '1993-06-18'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-04-21'
+            end: '2009-01-29'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2009-01-29'
+            end: '2013-07-07'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2009-01-29'
             end: '2010-03-12'
       - role: 'member'
         group: 'AKB48 チームK'
@@ -1618,46 +2125,10 @@ persons:
         group: 'AKB48 チームA'
         periods:
           - start: '2012-11-01'
-            end: '2013-04-28'
+            end: '2013-07-07'
     tags:
       - '48グループ'
       - 'AKB48 5期'
-  - family_name: '中田'
-    given_name: 'ちさと'
-    family_name_kana: 'ナカタ'
-    given_name_kana: 'チサト'
-    birth_date: '1990-10-08'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2008-10-19'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2008-10-19'
-            end: '2017-04-24'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2008-10-19'
-            end: '2012-11-01'
-          - start: '2014-02-24'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-02-24'
-          - start: '2015-03-26'
-            end: '2017-04-24'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
   - family_name: '高城'
     given_name: '亜樹'
     family_name_kana: 'タカジョウ'
@@ -1697,56 +2168,29 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 6期'
-  - family_name: '小原'
-    given_name: '春香'
-    family_name_kana: 'コハラ'
-    given_name_kana: 'ハルカ'
-    birth_date: '1988-04-12'
+  - family_name: '仁藤'
+    given_name: '萌乃'
+    family_name_kana: 'ニトウ'
+    given_name_kana: 'モエノ'
+    birth_date: '1992-07-22'
     hometown:
       country: 'JP'
-      state: '広島県'
+      state: '東京都'
     roles:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2007-12-08'
-            end: '2009-01-24'
+          - start: '2008-04-28'
+            end: '2008-08-05'
       - role: 'member'
         group: 'AKB48'
         periods:
-          - start: '2009-01-24'
-            end: '2010-04-16'
+          - start: '2008-08-05'
+            end: '2013-04-28'
       - role: 'member'
         group: 'AKB48 チームB'
         periods:
-          - start: '2009-01-24'
-            end: '2010-04-16'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '中塚'
-    given_name: '智実'
-    family_name_kana: 'ナカツカ'
-    given_name_kana: 'トモミ'
-    birth_date: '1993-06-18'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-04-21'
-            end: '2009-01-29'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2009-01-29'
-            end: '2013-07-07'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2009-01-29'
+          - start: '2008-08-05'
             end: '2010-03-12'
       - role: 'member'
         group: 'AKB48 チームK'
@@ -1757,73 +2201,7 @@ persons:
         group: 'AKB48 チームA'
         periods:
           - start: '2012-11-01'
-            end: '2013-07-07'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '近野'
-    given_name: '莉菜'
-    family_name_kana: 'チカノ'
-    given_name_kana: 'リナ'
-    birth_date: '1993-04-23'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-12-08'
-            end: '2009-03-26'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2009-03-26'
-            end: '2014-04-16'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2009-03-26'
-            end: '2010-05-21'
-          - start: '2012-11-01'
-            end: '2014-04-16'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2010-05-21'
-            end: '2012-11-01'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '石田'
-    given_name: '晴香'
-    family_name_kana: 'イシダ'
-    given_name_kana: 'ハルカ'
-    birth_date: '1993-12-02'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-03-08'
-            end: '2009-08-23'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2009-08-23'
-            end: '2016-06-05'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2009-08-23'
-            end: '2014-02-24'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2014-02-24'
-            end: '2016-06-05'
+            end: '2013-04-28'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -1952,6 +2330,124 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 7期'
+  - family_name: '石黒'
+    given_name: '莉美'
+    family_name_kana: 'イシグロ'
+    given_name_kana: 'レミ'
+    birth_date: '1991-05-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-20'
+            end: '2009-01-16'
+    tags:
+      - '48グループ'
+      - 'AKB48 7期'
+  - family_name: '上遠野'
+    given_name: '瑞穂'
+    family_name_kana: 'カトオノ'
+    given_name_kana: 'ミズホ'
+    birth_date: '1991-11-30'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-20'
+            end: '2009-06-09'
+    tags:
+      - '48グループ'
+      - 'AKB48 7期'
+  - family_name: '林'
+    given_name: '彩乃'
+    family_name_kana: 'ハヤシ'
+    given_name_kana: 'アヤノ'
+    birth_date: '1993-05-31'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-20'
+            end: '2009-07-18'
+    tags:
+      - '48グループ'
+      - 'AKB48 7期'
+  - family_name: '佐藤'
+    given_name: 'すみれ'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'スミレ'
+    birth_date: '1993-11-20'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-21'
+            end: '2010-05-21'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-05-21'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2010-05-21'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-02-24'
+    tags:
+      - '48グループ'
+      - 'AKB48 7期'
+  - family_name: '鈴木'
+    given_name: '紫帆里'
+    family_name_kana: 'スズキ'
+    given_name_kana: 'シホリ'
+    birth_date: '1994-02-17'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2008-12-21'
+            end: '2009-09-20'
+          - start: '2010-09-30'
+            end: '2011-05-21'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2011-05-21'
+            end: '2015-05-30'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2011-05-21'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-11-01'
+            end: '2015-05-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 7期'
+      - 'AKB48 11期'
   - family_name: '鈴木'
     given_name: 'まりや'
     family_name_kana: 'スズキ'
@@ -2030,6 +2526,53 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 7期'
+  - family_name: '小松'
+    given_name: '瑞希'
+    family_name_kana: 'コマツ'
+    given_name_kana: 'ミズキ'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-05-26'
+            end: '2009-07-14'
+    tags:
+      - '48グループ'
+      - 'AKB48 8期'
+  - family_name: '西川'
+    given_name: '七海'
+    family_name_kana: 'ニシカワ'
+    given_name_kana: 'ナナミ'
+    birth_date: '1993-07-03'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-05-26'
+            end: '2009-07-25'
+    tags:
+      - '48グループ'
+      - 'AKB48 8期'
+  - family_name: '石黒'
+    given_name: '貴己'
+    family_name_kana: 'イシグロ'
+    given_name_kana: 'アツキ'
+    birth_date: '1993-09-24'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-09-20'
+            end: '2010-06-20'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
   - family_name: '伊藤'
     given_name: '彩夏'
     family_name_kana: 'イトウ'
@@ -2044,6 +2587,60 @@ persons:
         periods:
           - start: '2009-09-20'
             end: '2010-01-06'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
+  - family_name: '大場'
+    given_name: '美奈'
+    family_name_kana: 'オオバ'
+    given_name_kana: 'ミナ'
+    birth_date: '1992-04-03'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-09-20'
+            end: '2010-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-12-08'
+            end: '2014-04-23'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2011-06-06'
+            end: '2012-08-24'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-08-24'
+            end: '2014-04-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
+  - family_name: '絹本'
+    given_name: '桃子'
+    family_name_kana: 'キヌモト'
+    given_name_kana: 'モモコ'
+    birth_date: '1995-03-28'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-09-20'
+            end: '2010-06-20'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2010-06-18'
+            end: '2010-06-20'
     tags:
       - '48グループ'
       - 'AKB48 9期'
@@ -2204,6 +2801,23 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 9期'
+  - family_name: '植木'
+    given_name: 'あさ香'
+    family_name_kana: 'ウエキ'
+    given_name_kana: 'アサカ'
+    birth_date: '1995-05-17'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-11-15'
+            end: '2010-07-06'
+    tags:
+      - '48グループ'
+      - 'AKB48 8期'
   - family_name: '今井'
     given_name: '悠理枝'
     family_name_kana: 'イマイ'
@@ -2221,6 +2835,123 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 8期'
+  - family_name: '佐野'
+    given_name: '友里子'
+    family_name_kana: 'サノ'
+    given_name_kana: 'ユリコ'
+    birth_date: '1992-01-22'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-11-30'
+            end: '2010-10-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 8期'
+  - family_name: '永尾'
+    given_name: 'まりや'
+    family_name_kana: 'ナガオ'
+    given_name_kana: 'マリヤ'
+    birth_date: '1994-03-10'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-11-30'
+            end: '2010-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-12-08'
+            end: '2016-05-01'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2011-06-06'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-11-01'
+            end: '2016-05-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
+  - family_name: '山内'
+    given_name: '鈴蘭'
+    family_name_kana: 'ヤマウチ'
+    given_name_kana: 'スズラン'
+    birth_date: '1994-12-08'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-11-30'
+            end: '2010-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-12-08'
+            end: '2014-04-23'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2011-06-06'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-04-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
+  - family_name: '横山'
+    given_name: '由依'
+    family_name_kana: 'ヨコヤマ'
+    given_name_kana: 'ユイ'
+    birth_date: '1992-12-08'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2009-11-30'
+            end: '2010-10-10'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2010-10-10'
+            end: '2021-12-09'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2010-10-10'
+            end: '2012-08-24'
+          - start: '2014-02-24'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-08-24'
+            end: '2014-02-24'
+          - start: '2015-03-26'
+            end: '2021-12-09'
+    tags:
+      - '48グループ'
+      - 'AKB48 9期'
   - family_name: '浅居'
     given_name: '円'
     family_name_kana: 'アサイ'
@@ -2374,273 +3105,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 8期'
-  - family_name: '佐藤'
-    given_name: 'すみれ'
-    family_name_kana: 'サトウ'
-    given_name_kana: 'スミレ'
-    birth_date: '1993-11-20'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-12-21'
-            end: '2010-05-21'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-05-21'
-            end: '2014-02-24'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2010-05-21'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-02-24'
-    tags:
-      - '48グループ'
-      - 'AKB48 7期'
-  - family_name: '大家'
-    given_name: '志津香'
-    family_name_kana: 'オオヤ'
-    given_name_kana: 'シヅカ'
-    birth_date: '1991-12-28'
-    hometown:
-      country: 'JP'
-      state: '福岡県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2010-07-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-27'
-            end: '2021-12-29'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2010-07-27'
-            end: '2012-11-01'
-          - start: '2015-03-26'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-11-01'
-            end: '2015-03-26'
-          - start: '2017-12-08'
-            end: '2021-12-29'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-  - family_name: '横山'
-    given_name: '由依'
-    family_name_kana: 'ヨコヤマ'
-    given_name_kana: 'ユイ'
-    birth_date: '1992-12-08'
-    hometown:
-      country: 'JP'
-      state: '京都府'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-11-30'
-            end: '2010-10-10'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-10-10'
-            end: '2021-12-09'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2010-10-10'
-            end: '2012-08-24'
-          - start: '2014-02-24'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-08-24'
-            end: '2014-02-24'
-          - start: '2015-03-26'
-            end: '2021-12-09'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '大場'
-    given_name: '美奈'
-    family_name_kana: 'オオバ'
-    given_name_kana: 'ミナ'
-    birth_date: '1992-04-03'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-09-20'
-            end: '2010-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-12-08'
-            end: '2014-04-23'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2011-06-06'
-            end: '2012-08-24'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-08-24'
-            end: '2014-04-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '永尾'
-    given_name: 'まりや'
-    family_name_kana: 'ナガオ'
-    given_name_kana: 'マリヤ'
-    birth_date: '1994-03-10'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-11-30'
-            end: '2010-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-12-08'
-            end: '2016-05-01'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2011-06-06'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-11-01'
-            end: '2016-05-01'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '山内'
-    given_name: '鈴蘭'
-    family_name_kana: 'ヤマウチ'
-    given_name_kana: 'スズラン'
-    birth_date: '1994-12-08'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-11-30'
-            end: '2010-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2010-12-08'
-            end: '2014-04-23'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2011-06-06'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-04-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '仲俣'
-    given_name: '汐里'
-    family_name_kana: 'ナカマタ'
-    given_name_kana: 'シオリ'
-    birth_date: '1992-07-25'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-03-21'
-            end: '2011-02-12'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2011-02-12'
-            end: '2013-09-23'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2011-06-06'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2013-09-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 10期'
-  - family_name: '鈴木'
-    given_name: '紫帆里'
-    family_name_kana: 'スズキ'
-    given_name_kana: 'シホリ'
-    birth_date: '1994-02-17'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-12-21'
-            end: '2009-09-20'
-          - start: '2010-09-30'
-            end: '2011-05-21'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2011-05-21'
-            end: '2015-05-30'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2011-05-21'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-11-01'
-            end: '2015-05-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 7期'
-      - 'AKB48 11期'
   - family_name: '市川'
     given_name: '美織'
     family_name_kana: 'イチカワ'
@@ -2705,35 +3169,20 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 10期'
-  - family_name: '阿部'
-    given_name: 'マリア'
-    family_name_kana: 'アベ'
-    given_name_kana: 'マリア'
-    birth_date: '1995-11-29'
+  - family_name: '岩崎'
+    given_name: '仁美'
+    family_name_kana: 'イワサキ'
+    given_name_kana: 'ヒトミ'
+    birth_date: '1996-03-19'
     hometown:
       country: 'JP'
-      state: '神奈川県'
+      state: '埼玉県'
     roles:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2010-06-12'
-            end: '2011-07-23'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2011-07-23'
-            end: '2017-11-30'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2011-07-23'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-11-01'
-            end: '2017-11-30'
+          - start: '2010-03-21'
+            end: '2010-10-05'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -2778,194 +3227,23 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 10期'
-  - family_name: '川栄'
-    given_name: '李奈'
-    family_name_kana: 'カワエイ'
-    given_name_kana: 'リナ'
-    birth_date: '1995-02-12'
+  - family_name: '金沢'
+    given_name: '有希'
+    family_name_kana: 'カナザワ'
+    given_name_kana: 'ユウキ'
+    birth_date: '1993-05-01'
     hometown:
       country: 'JP'
-      state: '神奈川県'
+      state: '北海道'
     roles:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2010-07-24'
-            end: '2012-03-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2015-08-04'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2012-03-24'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2015-08-04'
+          - start: '2010-03-21'
+            end: '2011-02-20'
     tags:
       - '48グループ'
-      - 'AKB48 11期'
-  - family_name: '岩田'
-    given_name: '華怜'
-    family_name_kana: 'イワタ'
-    given_name_kana: 'カレン'
-    birth_date: '1998-05-13'
-    hometown:
-      country: 'JP'
-      state: '宮城県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-04-03'
-            end: '2012-03-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2016-05-21'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2012-03-24'
-            end: '2012-11-02'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-02'
-            end: '2016-05-21'
-    tags:
-      - '48グループ'
-      - 'AKB48 12期'
-  - family_name: '高橋'
-    given_name: '朱里'
-    family_name_kana: 'タカハシ'
-    given_name_kana: 'ジュリ'
-    birth_date: '1997-10-03'
-    hometown:
-      country: 'JP'
-      state: '茨城県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-04-03'
-            end: '2012-03-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2019-05-06'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2012-03-24'
-            end: '2012-11-01'
-          - start: '2015-08-27'
-            end: '2018-09-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-04-28'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2014-04-28'
-            end: '2015-08-27'
-          - start: '2018-09-08'
-            end: '2019-05-06'
-    tags:
-      - '48グループ'
-      - 'AKB48 12期'
-  - family_name: '田野'
-    given_name: '優花'
-    family_name_kana: 'タノ'
-    given_name_kana: 'ユウカ'
-    birth_date: '1997-03-07'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-04-03'
-            end: '2012-03-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2018-08-12'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2012-03-24'
-            end: '2012-11-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-05-07'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2014-05-07'
-            end: '2018-08-12'
-    tags:
-      - '48グループ'
-      - 'AKB48 12期'
-  - family_name: '松井'
-    given_name: '珠理奈'
-    family_name_kana: 'マツイ'
-    given_name_kana: 'ジュリナ'
-    birth_date: '1997-03-08'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2015-12-24'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-03-24'
-            end: '2015-12-24'
-    tags:
-      - '48グループ'
-  - family_name: '渡辺'
-    given_name: '美優紀'
-    family_name_kana: 'ワタナベ'
-    given_name_kana: 'ミユキ'
-    birth_date: '1993-09-19'
-    hometown:
-      country: 'JP'
-      state: '奈良県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-03-24'
-            end: '2014-04-23'
-          - start: '2015-03-26'
-            end: '2016-08-09'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-03-24'
-            end: '2014-04-23'
-          - start: '2015-03-26'
-            end: '2016-08-09'
-    tags:
-      - '48グループ'
+      - 'AKB48 10期'
   - family_name: '小林'
     given_name: '茉里奈'
     family_name_kana: 'コバヤシ'
@@ -2995,6 +3273,38 @@ persons:
         periods:
           - start: '2014-02-24'
             end: '2015-08-09'
+    tags:
+      - '48グループ'
+      - 'AKB48 10期'
+  - family_name: '仲俣'
+    given_name: '汐里'
+    family_name_kana: 'ナカマタ'
+    given_name_kana: 'シオリ'
+    birth_date: '1992-07-25'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-03-21'
+            end: '2011-02-12'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2011-02-12'
+            end: '2013-09-23'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2011-06-06'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2013-09-23'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -3029,6 +3339,38 @@ persons:
         periods:
           - start: '2014-02-24'
             end: '2015-03-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 10期'
+  - family_name: '阿部'
+    given_name: 'マリア'
+    family_name_kana: 'アベ'
+    given_name_kana: 'マリア'
+    birth_date: '1995-11-29'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-06-12'
+            end: '2011-07-23'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2011-07-23'
+            end: '2017-11-30'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2011-07-23'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-11-01'
+            end: '2017-11-30'
     tags:
       - '48グループ'
       - 'AKB48 10期'
@@ -3069,6 +3411,123 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 10期'
+  - family_name: '牛窪'
+    given_name: '紗良'
+    family_name_kana: 'ウシクボ'
+    given_name_kana: 'サラ'
+    birth_date: '1995-02-15'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2011-06-19'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
+  - family_name: '岡﨑'
+    given_name: 'ちなみ'
+    family_name_kana: 'オカザキ'
+    given_name_kana: 'チナミ'
+    birth_date: '1992-05-28'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2010-10-27'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
+  - family_name: '川栄'
+    given_name: '李奈'
+    family_name_kana: 'カワエイ'
+    given_name_kana: 'リナ'
+    birth_date: '1995-02-12'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2012-03-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-03-24'
+            end: '2015-08-04'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2012-03-24'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2015-08-04'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
+  - family_name: '川上'
+    given_name: '麻里奈'
+    family_name_kana: 'カワカミ'
+    given_name_kana: 'マリナ'
+    birth_date: '1996-05-21'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2010-12-03'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
+  - family_name: '豊田'
+    given_name: '早姫'
+    family_name_kana: 'トヨダ'
+    given_name_kana: 'サキ'
+    birth_date: '1993-09-08'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2010-10-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
+  - family_name: '山口'
+    given_name: '菜有'
+    family_name_kana: 'ヤマグチ'
+    given_name_kana: 'ナウ'
+    birth_date: '1994-01-19'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2010-07-24'
+            end: '2011-06-19'
+    tags:
+      - '48グループ'
+      - 'AKB48 11期'
   - family_name: '小嶋'
     given_name: '菜月'
     family_name_kana: 'コジマ'
@@ -3160,11 +3619,11 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 11期'
-  - family_name: '武藤'
-    given_name: '十夢'
-    family_name_kana: 'ムトウ'
-    given_name_kana: 'トム'
-    birth_date: '1994-11-25'
+  - family_name: 'サイード横田'
+    given_name: '絵玲奈'
+    family_name_kana: 'サイードヨコタ'
+    given_name_kana: 'エレナ'
+    birth_date: '1997-04-15'
     hometown:
       country: 'JP'
       state: '東京都'
@@ -3172,116 +3631,65 @@ persons:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2011-04-03'
-            end: '2012-08-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-08-24'
-            end: '2023-03-08'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2012-11-01'
-            end: '2014-04-25'
-          - start: '2015-08-23'
-            end: '2023-03-08'
+          - start: '2011-02-20'
+            end: '2012-10-06'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
-          - start: '2014-04-25'
-            end: '2015-08-23'
+          - start: '2011-05-05'
+            end: '2012-10-06'
     tags:
       - '48グループ'
       - 'AKB48 12期'
-  - family_name: '大島'
-    given_name: '涼花'
-    family_name_kana: 'オオシマ'
-    given_name_kana: 'リョウカ'
-    birth_date: '1998-10-21'
+  - family_name: '鈴木'
+    given_name: '里香'
+    family_name_kana: 'スズキ'
+    given_name_kana: 'リカ'
+    birth_date: '1997-01-10'
     hometown:
       country: 'JP'
-      state: '神奈川県'
+      state: '東京都'
     roles:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2011-12-08'
-            end: '2012-08-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2012-08-24'
-            end: '2017-06-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2012-08-24'
-            end: '2014-04-28'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2014-04-28'
-            end: '2017-06-08'
+          - start: '2011-02-20'
+            end: '2012-03-31'
     tags:
       - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '石田'
-    given_name: '安奈'
-    family_name_kana: 'イシダ'
-    given_name_kana: 'アンナ'
-    birth_date: '1996-05-27'
+      - 'AKB48 12期'
+  - family_name: '岩田'
+    given_name: '華怜'
+    family_name_kana: 'イワタ'
+    given_name_kana: 'カレン'
+    birth_date: '1998-05-13'
     hometown:
       country: 'JP'
-      state: '愛知県'
+      state: '宮城県'
     roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-04-03'
+            end: '2012-03-24'
       - role: 'member'
         group: 'AKB48'
         periods:
-          - start: '2012-08-24'
-            end: '2013-05-21'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2012-08-24'
-            end: '2013-05-21'
-    tags:
-      - '48グループ'
-  - names:
-      - family_name: '三秋'
-        family_name_kana: 'ミアキ'
-        given_name: '里歩'
-        given_name_kana: 'リホ'
-        periods:
-          - start: '2025-04-18'
-      - family_name: '宮本'
-        family_name_kana: 'ミヤモト'
-        given_name: '里歩'
-        given_name_kana: 'リホ'
-        periods:
-          - start: '2025-04-18'
-    birth_date: '1994-08-24'
-    hometown:
-      country: 'JP'
-      state: '京都府'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2013-05-27'
-            end: '2014-02-24'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-05-27'
-            end: '2015-05-28'
+          - start: '2012-03-24'
+            end: '2016-05-21'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
-          - start: '2015-03-26'
-            end: '2015-05-28'
+          - start: '2012-03-24'
+            end: '2012-11-02'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-02'
+            end: '2016-05-21'
     tags:
       - '48グループ'
+      - 'AKB48 12期'
   - family_name: '大森'
     given_name: '美優'
     family_name_kana: 'オオモリ'
@@ -3355,6 +3763,84 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 12期'
+  - family_name: '高橋'
+    given_name: '朱里'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'ジュリ'
+    birth_date: '1997-10-03'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-04-03'
+            end: '2012-03-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-03-24'
+            end: '2019-05-06'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2012-03-24'
+            end: '2012-11-01'
+          - start: '2015-08-27'
+            end: '2018-09-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-04-28'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2014-04-28'
+            end: '2015-08-27'
+          - start: '2018-09-08'
+            end: '2019-05-06'
+    tags:
+      - '48グループ'
+      - 'AKB48 12期'
+  - family_name: '田野'
+    given_name: '優花'
+    family_name_kana: 'タノ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1997-03-07'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-04-03'
+            end: '2012-03-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-03-24'
+            end: '2018-08-12'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2012-03-24'
+            end: '2012-11-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-11-01'
+            end: '2014-05-07'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-05-07'
+            end: '2018-08-12'
+    tags:
+      - '48グループ'
+      - 'AKB48 12期'
   - family_name: '平田'
     given_name: '梨奈'
     family_name_kana: 'ヒラタ'
@@ -3392,79 +3878,57 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 12期'
-  - family_name: '兒玉'
-    given_name: '遥'
-    family_name_kana: 'コダマ'
-    given_name_kana: 'ハルカ'
-    birth_date: '1996-09-19'
+  - family_name: '武藤'
+    given_name: '十夢'
+    family_name_kana: 'ムトウ'
+    given_name_kana: 'トム'
+    birth_date: '1994-11-25'
     hometown:
       country: 'JP'
-      state: '福岡県'
+      state: '東京都'
     roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-04-03'
+            end: '2012-08-24'
       - role: 'member'
         group: 'AKB48'
         periods:
-          - start: '2013-04-28'
-            end: '2018-04-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2013-04-28'
-            end: '2014-02-24'
+          - start: '2012-08-24'
+            end: '2023-03-08'
       - role: 'member'
         group: 'AKB48 チームK'
         periods:
-          - start: '2014-02-24'
-            end: '2018-04-01'
-    tags:
-      - '48グループ'
-  - family_name: '古畑'
-    given_name: '奈和'
-    family_name_kana: 'フルハタ'
-    given_name_kana: 'ナオ'
-    birth_date: '1996-09-15'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-04-28'
-            end: '2015-05-29'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2013-04-28'
-            end: '2014-02-24'
+          - start: '2012-11-01'
+            end: '2014-04-25'
+          - start: '2015-08-23'
+            end: '2023-03-08'
       - role: 'member'
         group: 'AKB48 チームA'
         periods:
-          - start: '2014-02-24'
-            end: '2015-05-29'
+          - start: '2014-04-25'
+            end: '2015-08-23'
     tags:
       - '48グループ'
-  - family_name: '矢倉'
-    given_name: '楓子'
-    family_name_kana: 'ヤグラ'
-    given_name_kana: 'フウコ'
-    birth_date: '1997-02-24'
+      - 'AKB48 12期'
+  - family_name: '雨宮'
+    given_name: '舞夏'
+    family_name_kana: 'アメミヤ'
+    given_name_kana: 'マイカ'
+    birth_date: '1997-06-29'
     hometown:
       country: 'JP'
-      state: '大阪府'
+      state: '東京都'
     roles:
-      - role: 'member'
+      - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2013-04-28'
-            end: '2015-05-29'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2013-04-28'
-            end: '2015-05-29'
+          - start: '2011-09-24'
+            end: '2012-08-05'
     tags:
       - '48グループ'
+      - 'AKB48 13期'
   - family_name: '岩立'
     given_name: '沙穂'
     family_name_kana: 'イワタテ'
@@ -3497,6 +3961,74 @@ persons:
         group: 'AKB48 チームA'
         periods:
           - start: '2021-12-08'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '北'
+    given_name: '汐莉'
+    family_name_kana: 'キタ'
+    given_name_kana: 'シオリ'
+    birth_date: '1998-12-01'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-09-24'
+            end: '2012-08-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '長谷川'
+    given_name: '晴奈'
+    family_name_kana: 'ハセガワ'
+    given_name_kana: 'ハルナ'
+    birth_date: '1997-07-01'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-09-24'
+            end: '2012-08-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '森山'
+    given_name: 'さくら'
+    family_name_kana: 'モリヤマ'
+    given_name_kana: 'サクラ'
+    birth_date: '1998-04-14'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-09-24'
+            end: '2012-08-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '渡邊'
+    given_name: '寧々'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'ネネ'
+    birth_date: '1998-01-30'
+    hometown:
+      country: 'JP'
+      state: '福島県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-09-24'
+            end: '2012-08-05'
     tags:
       - '48グループ'
       - 'AKB48 13期'
@@ -3561,6 +4093,65 @@ persons:
         periods:
           - start: '2014-04-15'
             end: '2017-03-22'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '大島'
+    given_name: '涼花'
+    family_name_kana: 'オオシマ'
+    given_name_kana: 'リョウカ'
+    birth_date: '1998-10-21'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-12-08'
+            end: '2012-08-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-08-24'
+            end: '2017-06-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2012-08-24'
+            end: '2014-04-28'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2014-04-28'
+            end: '2017-06-08'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
+  - family_name: '岡田'
+    given_name: '彩花'
+    family_name_kana: 'オカダ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1998-11-06'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-12-08'
+            end: '2013-08-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-08-27'
+            end: '2017-06-22'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2013-08-27'
+            end: '2017-06-22'
     tags:
       - '48グループ'
       - 'AKB48 13期'
@@ -3665,6 +4256,23 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 13期'
+  - family_name: '光宗'
+    given_name: '薫'
+    family_name_kana: 'ミツムネ'
+    given_name_kana: 'カオル'
+    birth_date: '1993-04-26'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2011-12-08'
+            end: '2012-10-24'
+    tags:
+      - '48グループ'
+      - 'AKB48 13期'
   - family_name: '村山'
     given_name: '彩希'
     family_name_kana: 'ムラヤマ'
@@ -3724,6 +4332,52 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 13期'
+  - family_name: '松井'
+    given_name: '珠理奈'
+    family_name_kana: 'マツイ'
+    given_name_kana: 'ジュリナ'
+    birth_date: '1997-03-08'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-03-24'
+            end: '2015-12-24'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2012-03-24'
+            end: '2015-12-24'
+    tags:
+      - '48グループ'
+  - family_name: '渡辺'
+    given_name: '美優紀'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'ミユキ'
+    birth_date: '1993-09-19'
+    hometown:
+      country: 'JP'
+      state: '奈良県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-03-24'
+            end: '2014-04-23'
+          - start: '2015-03-26'
+            end: '2016-08-09'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-03-24'
+            end: '2014-04-23'
+          - start: '2015-03-26'
+            end: '2016-08-09'
+    tags:
+      - '48グループ'
   - family_name: '内山'
     given_name: '奈月'
     family_name_kana: 'ウチヤマ'
@@ -3910,11 +4564,67 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 14期'
-  - family_name: '岡田'
-    given_name: '彩花'
-    family_name_kana: 'オカダ'
-    given_name_kana: 'アヤカ'
-    birth_date: '1998-11-06'
+  - family_name: '石田'
+    given_name: '安奈'
+    family_name_kana: 'イシダ'
+    given_name_kana: 'アンナ'
+    birth_date: '1996-05-27'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2012-08-24'
+            end: '2013-05-21'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2012-08-24'
+            end: '2013-05-21'
+    tags:
+      - '48グループ'
+  - names:
+      - family_name: '三秋'
+        family_name_kana: 'ミアキ'
+        given_name: '里歩'
+        given_name_kana: 'リホ'
+        periods:
+          - start: '2025-04-18'
+      - family_name: '宮本'
+        family_name_kana: 'ミヤモト'
+        given_name: '里歩'
+        given_name_kana: 'リホ'
+        periods:
+          - start: '2025-04-18'
+    birth_date: '1994-08-24'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-05-27'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-05-27'
+            end: '2015-05-28'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2015-03-26'
+            end: '2015-05-28'
+    tags:
+      - '48グループ'
+  - family_name: '飯野'
+    given_name: '雅'
+    family_name_kana: 'イイノ'
+    given_name_kana: 'ミヤビ'
+    birth_date: '1997-09-29'
     hometown:
       country: 'JP'
       state: '東京都'
@@ -3922,206 +4632,26 @@ persons:
       - role: 'trainee'
         group: 'AKB48'
         periods:
-          - start: '2011-12-08'
-            end: '2013-08-27'
+          - start: '2013-01-19'
+            end: '2014-10-03'
       - role: 'member'
         group: 'AKB48'
         periods:
-          - start: '2013-08-27'
-            end: '2017-06-22'
+          - start: '2014-10-03'
+            end: '2018-01-22'
       - role: 'member'
-        group: 'AKB48 チーム4'
+        group: 'AKB48 チームA'
         periods:
-          - start: '2013-08-27'
-            end: '2017-06-22'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '野澤'
-    given_name: '玲奈'
-    family_name_kana: 'ノザワ'
-    given_name_kana: 'レナ'
-    birth_date: '1998-05-06'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-09-01'
-            end: '2019-02-03'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2013-09-01'
-            end: '2014-02-24'
-          - start: '2017-12-08'
-            end: '2019-02-03'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2014-02-24'
+          - start: '2014-10-03'
             end: '2015-03-26'
       - role: 'member'
         group: 'AKB48 チーム4'
         periods:
           - start: '2015-03-26'
-            end: '2017-12-08'
+            end: '2018-01-22'
     tags:
       - '48グループ'
-  - family_name: '川本'
-    given_name: '紗矢'
-    family_name_kana: 'カワモト'
-    given_name_kana: 'サヤ'
-    birth_date: '1998-08-31'
-    hometown:
-      country: 'JP'
-      state: '北海道'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-11-10'
-            end: '2020-08-30'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2013-11-10'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2015-03-26'
-            end: '2020-08-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
-  - family_name: '下口'
-    given_name: 'ひなな'
-    family_name_kana: 'シモグチ'
-    given_name_kana: 'ヒナナ'
-    birth_date: '2001-07-19'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-11-10'
-            end: '2024-02-25'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2013-11-10'
-            end: '2024-02-25'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
-  - family_name: '西山'
-    given_name: '怜那'
-    family_name_kana: 'ニシヤマ'
-    given_name_kana: 'レナ'
-    birth_date: '2001-01-14'
-    hometown:
-      country: 'JP'
-      state: '青森県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-11-10'
-            end: '2015-12-23'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2013-11-10'
-            end: '2015-12-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
-  - family_name: '横島'
-    given_name: '亜衿'
-    family_name_kana: 'ヨコシマ'
-    given_name_kana: 'アエリ'
-    birth_date: '1999-12-17'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2013-11-10'
-            end: '2017-06-05'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2013-11-10'
-            end: '2017-06-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
-  - family_name: '後藤'
-    given_name: '萌咲'
-    family_name_kana: 'ゴトウ'
-    given_name_kana: 'モエ'
-    birth_date: '2001-05-20'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2014-01-25'
-            end: '2018-08-13'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2014-02-24'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2015-03-26'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2017-12-08'
-            end: '2018-08-13'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
-  - family_name: '田北'
-    given_name: '香世子'
-    family_name_kana: 'タキタ'
-    given_name_kana: 'カヨコ'
-    birth_date: '1997-02-13'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2014-01-25'
-            end: '2022-02-26'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2014-02-24'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2017-12-08'
-            end: '2022-02-26'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 1期'
+      - 'AKB48 15期'
   - family_name: '市川'
     given_name: '愛美'
     family_name_kana: 'イチカワ'
@@ -4314,6 +4844,43 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 15期'
+  - family_name: '谷口'
+    given_name: 'めぐ'
+    family_name_kana: 'タニグチ'
+    given_name_kana: 'メグ'
+    birth_date: '1998-11-12'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2013-01-19'
+            end: '2014-10-03'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-10-03'
+            end: '2024-05-30'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2014-10-03'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2021-12-08'
+            end: '2024-05-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 15期'
   - family_name: '土保'
     given_name: '瑞希'
     family_name_kana: 'ツチヤス'
@@ -4433,6 +5000,264 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 15期'
+  - family_name: '兒玉'
+    given_name: '遥'
+    family_name_kana: 'コダマ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1996-09-19'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-04-28'
+            end: '2018-04-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-04-28'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-02-24'
+            end: '2018-04-01'
+    tags:
+      - '48グループ'
+  - family_name: '古畑'
+    given_name: '奈和'
+    family_name_kana: 'フルハタ'
+    given_name_kana: 'ナオ'
+    birth_date: '1996-09-15'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-04-28'
+            end: '2015-05-29'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2013-04-28'
+            end: '2014-02-24'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-05-29'
+    tags:
+      - '48グループ'
+  - family_name: '矢倉'
+    given_name: '楓子'
+    family_name_kana: 'ヤグラ'
+    given_name_kana: 'フウコ'
+    birth_date: '1997-02-24'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-04-28'
+            end: '2015-05-29'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-04-28'
+            end: '2015-05-29'
+    tags:
+      - '48グループ'
+  - family_name: '野澤'
+    given_name: '玲奈'
+    family_name_kana: 'ノザワ'
+    given_name_kana: 'レナ'
+    birth_date: '1998-05-06'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-09-01'
+            end: '2019-02-03'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2013-09-01'
+            end: '2014-02-24'
+          - start: '2017-12-08'
+            end: '2019-02-03'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2015-03-26'
+            end: '2017-12-08'
+    tags:
+      - '48グループ'
+  - family_name: '川本'
+    given_name: '紗矢'
+    family_name_kana: 'カワモト'
+    given_name_kana: 'サヤ'
+    birth_date: '1998-08-31'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-11-10'
+            end: '2020-08-30'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2013-11-10'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2015-03-26'
+            end: '2020-08-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
+  - family_name: '下口'
+    given_name: 'ひなな'
+    family_name_kana: 'シモグチ'
+    given_name_kana: 'ヒナナ'
+    birth_date: '2001-07-19'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-11-10'
+            end: '2024-02-25'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2013-11-10'
+            end: '2024-02-25'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
+  - family_name: '西山'
+    given_name: '怜那'
+    family_name_kana: 'ニシヤマ'
+    given_name_kana: 'レナ'
+    birth_date: '2001-01-14'
+    hometown:
+      country: 'JP'
+      state: '青森県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-11-10'
+            end: '2015-12-23'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2013-11-10'
+            end: '2015-12-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
+  - family_name: '横島'
+    given_name: '亜衿'
+    family_name_kana: 'ヨコシマ'
+    given_name_kana: 'アエリ'
+    birth_date: '1999-12-17'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2013-11-10'
+            end: '2017-06-05'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2013-11-10'
+            end: '2017-06-05'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
+  - family_name: '後藤'
+    given_name: '萌咲'
+    family_name_kana: 'ゴトウ'
+    given_name_kana: 'モエ'
+    birth_date: '2001-05-20'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2018-08-13'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2014-02-24'
+            end: '2015-03-26'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2015-03-26'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2017-12-08'
+            end: '2018-08-13'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
+  - family_name: '田北'
+    given_name: '香世子'
+    family_name_kana: 'タキタ'
+    given_name_kana: 'カヨコ'
+    birth_date: '1997-02-13'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2014-01-25'
+            end: '2022-02-26'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2014-02-24'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-12-08'
+            end: '2022-02-26'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 1期'
   - family_name: '生駒'
     given_name: '里奈'
     family_name_kana: 'イコマ'
@@ -5887,75 +6712,6 @@ persons:
             end: '2023-05-30'
     tags:
       - '48グループ'
-  - family_name: '飯野'
-    given_name: '雅'
-    family_name_kana: 'イイノ'
-    given_name_kana: 'ミヤビ'
-    birth_date: '1997-09-29'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2013-01-19'
-            end: '2014-10-03'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2014-10-03'
-            end: '2018-01-22'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2014-10-03'
-            end: '2015-03-26'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2015-03-26'
-            end: '2018-01-22'
-    tags:
-      - '48グループ'
-      - 'AKB48 15期'
-  - family_name: '谷口'
-    given_name: 'めぐ'
-    family_name_kana: 'タニグチ'
-    given_name_kana: 'メグ'
-    birth_date: '1998-11-12'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2013-01-19'
-            end: '2014-10-03'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2014-10-03'
-            end: '2024-05-30'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2014-10-03'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2017-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2021-12-08'
-            end: '2024-05-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 15期'
   - family_name: '荻野'
     given_name: '由佳'
     family_name_kana: 'オギノ'
@@ -6208,6 +6964,117 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
+  - family_name: '高橋'
+    given_name: '希良'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'キラ'
+    birth_date: '2001-01-14'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2015-06-22'
+            end: '2017-04-11'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 2期'
+  - family_name: '西川'
+    given_name: '怜'
+    family_name_kana: 'ニシカワ'
+    given_name_kana: 'レイ'
+    birth_date: '2003-10-25'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2015-06-22'
+            end: '2017-09-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2017-09-27'
+            end: '2022-03-30'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-09-27'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2017-12-08'
+            end: '2022-03-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 2期'
+  - family_name: '山邊'
+    given_name: '歩夢'
+    family_name_kana: 'ヤマベ'
+    given_name_kana: 'アユ'
+    birth_date: '2002-02-03'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2015-06-22'
+            end: '2017-09-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2017-09-27'
+            end: '2023-10-02'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-09-27'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2021-12-08'
+            end: '2023-10-02'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 2期'
+  - family_name: '千葉'
+    given_name: '恵里'
+    family_name_kana: 'チバ'
+    given_name_kana: 'エリイ'
+    birth_date: '2003-10-27'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2015-06-23'
+            end: '2017-09-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2017-09-27'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2017-09-27'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2021-12-08'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 2期'
   - family_name: '樋渡'
     given_name: '結依'
     family_name_kana: 'ヒワタシ'
@@ -6237,6 +7104,38 @@ persons:
         periods:
           - start: '2017-12-08'
             end: '2019-11-28'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 2期'
+  - family_name: '久保'
+    given_name: '怜音'
+    family_name_kana: 'クボ'
+    given_name_kana: 'サトネ'
+    birth_date: '2003-11-20'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2015-06-29'
+            end: '2017-09-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2017-09-27'
+            end: '2022-03-27'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2017-09-27'
+            end: '2017-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2017-12-08'
+            end: '2022-03-27'
     tags:
       - '48グループ'
       - 'AKB48 ドラフト 2期'
@@ -6347,6 +7246,23 @@ persons:
             end: '2019-05-05'
     tags:
       - '48グループ'
+  - family_name: '野口'
+    given_name: '菜々美'
+    family_name_kana: 'ノグチ'
+    given_name_kana: 'ナナミ'
+    birth_date: '2003-09-17'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2016-10-16'
+            end: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
   - family_name: '奥原'
     given_name: '妃奈子'
     family_name_kana: 'オクハラ'
@@ -6378,6 +7294,97 @@ persons:
             end: '2023-09-08'
     tags:
       - '48グループ'
+  - family_name: '黒須'
+    given_name: '遥香'
+    family_name_kana: 'クロス'
+    given_name_kana: 'ハルカ'
+    birth_date: '2001-02-28'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2016-12-08'
+            end: '2019-05-13'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-05-13'
+            end: '2024-06-01'
+          - start: '2026-03-01'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2019-05-13'
+            end: '2024-06-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '長友'
+    given_name: '彩海'
+    family_name_kana: 'ナガトモ'
+    given_name_kana: 'アヤミ'
+    birth_date: '2000-11-02'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2016-12-08'
+            end: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2018-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2021-12-08'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '山根'
+    given_name: '涼羽'
+    family_name_kana: 'ヤマネ'
+    given_name_kana: 'スズハ'
+    birth_date: '2000-08-11'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2016-12-08'
+            end: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-12-08'
+            end: '2024-06-01'
+          - start: '2026-03-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2018-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2021-12-08'
+            end: '2024-06-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
   - family_name: '平野'
     given_name: 'ひかる'
     family_name_kana: 'ヒラノ'
@@ -6523,132 +7530,6 @@ persons:
             end: '2021-10-23'
     tags:
       - '48グループ'
-  - family_name: '西川'
-    given_name: '怜'
-    family_name_kana: 'ニシカワ'
-    given_name_kana: 'レイ'
-    birth_date: '2003-10-25'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2015-06-22'
-            end: '2017-09-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2017-09-27'
-            end: '2022-03-30'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2017-09-27'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2017-12-08'
-            end: '2022-03-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 2期'
-  - family_name: '山邊'
-    given_name: '歩夢'
-    family_name_kana: 'ヤマベ'
-    given_name_kana: 'アユ'
-    birth_date: '2002-02-03'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2015-06-22'
-            end: '2017-09-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2017-09-27'
-            end: '2023-10-02'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2017-09-27'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2021-12-08'
-            end: '2023-10-02'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 2期'
-  - family_name: '千葉'
-    given_name: '恵里'
-    family_name_kana: 'チバ'
-    given_name_kana: 'エリイ'
-    birth_date: '2003-10-27'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2015-06-23'
-            end: '2017-09-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2017-09-27'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2017-09-27'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2021-12-08'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 2期'
-  - family_name: '久保'
-    given_name: '怜音'
-    family_name_kana: 'クボ'
-    given_name_kana: 'サトネ'
-    birth_date: '2003-11-20'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2015-06-29'
-            end: '2017-09-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2017-09-27'
-            end: '2022-03-27'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2017-09-27'
-            end: '2017-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2017-12-08'
-            end: '2022-03-27'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 2期'
   - family_name: '浅井'
     given_name: '七海'
     family_name_kana: 'アサイ'
@@ -6700,6 +7581,72 @@ persons:
         periods:
           - start: '2021-12-08'
             end: '2022-12-27'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '梅本'
+    given_name: '和泉'
+    family_name_kana: 'ウメモト'
+    given_name_kana: 'イズミ'
+    birth_date: '1998-10-16'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2018-11-11'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '佐藤'
+    given_name: '美波'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'ミナミ'
+    birth_date: '2003-08-03'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2019-09-12'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-09-12'
+            end: '2024-07-01'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2019-09-12'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2021-12-08'
+            end: '2024-07-01'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '庄司'
+    given_name: 'なぎさ'
+    family_name_kana: 'ショウジ'
+    given_name_kana: 'ナギサ'
+    birth_date: '2000-10-29'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2018-11-04'
     tags:
       - '48グループ'
       - 'AKB48 16期'
@@ -6775,6 +7722,50 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 16期'
+  - family_name: '播磨'
+    given_name: '七海'
+    family_name_kana: 'ハリマ'
+    given_name_kana: 'ナナミ'
+    birth_date: '2004-08-02'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2019-05-11'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '本間'
+    given_name: '麻衣'
+    family_name_kana: 'ホンマ'
+    given_name_kana: 'マイ'
+    birth_date: '2002-09-06'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-09-30'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-09-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
   - family_name: '前田'
     given_name: '彩佳'
     family_name_kana: 'マエダ'
@@ -6794,6 +7785,33 @@ persons:
         periods:
           - start: '2017-12-08'
             end: '2021-03-31'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
+  - family_name: '道枝'
+    given_name: '咲'
+    family_name_kana: 'ミチエダ'
+    given_name_kana: 'サキ'
+    birth_date: '2003-12-20'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2019-09-12'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-09-12'
+            end: '2023-09-14'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2019-09-12'
+            end: '2023-09-14'
     tags:
       - '48グループ'
       - 'AKB48 16期'
@@ -6822,6 +7840,33 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 16期'
+  - family_name: '安田'
+    given_name: '叶'
+    family_name_kana: 'ヤスダ'
+    given_name_kana: 'カナ'
+    birth_date: '2002-03-11'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2017-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2021-12-08'
+            end: '2022-03-24'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2021-12-08'
+            end: '2022-03-24'
+    tags:
+      - '48グループ'
+      - 'AKB48 16期'
   - family_name: '山内'
     given_name: '瑞葵'
     family_name_kana: 'ヤマウチ'
@@ -6847,6 +7892,472 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 16期'
+  - family_name: '石綿'
+    given_name: '星南'
+    family_name_kana: 'イシワタ'
+    given_name_kana: 'セナ'
+    birth_date: '2002-02-22'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2023-08-07'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2021-12-08'
+            end: '2023-08-07'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '大竹'
+    given_name: 'ひとみ'
+    family_name_kana: 'オオタケ'
+    given_name_kana: 'ヒトミ'
+    birth_date: '1999-06-27'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-09-07'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-09-07'
+            end: '2024-01-21'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2019-09-07'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2021-12-08'
+            end: '2024-01-21'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '大盛'
+    given_name: '真歩'
+    family_name_kana: 'オオモリ'
+    given_name_kana: 'マホ'
+    birth_date: '1999-12-05'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-12-08'
+            end: '2026-06-30'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2018-12-08'
+            end: '2026-06-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '岡田'
+    given_name: '梨奈'
+    family_name_kana: 'オカダ'
+    given_name_kana: 'リナ'
+    birth_date: '1999-07-27'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-07-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-07-27'
+            end: '2023-10-31'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2019-07-27'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2021-12-08'
+            end: '2023-10-31'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '勝又'
+    given_name: '彩央里'
+    family_name_kana: 'カツマタ'
+    given_name_kana: 'サオリ'
+    birth_date: '2000-10-31'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-06-28'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '神山'
+    given_name: '莉穂'
+    family_name_kana: 'カミヤマ'
+    given_name_kana: 'リホ'
+    birth_date: '2003-08-20'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2018-10-20'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '蔵本'
+    given_name: '美結'
+    family_name_kana: 'クラモト'
+    given_name_kana: 'ミユウ'
+    birth_date: '2001-05-21'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2022-03-23'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2020-12-08'
+            end: '2022-03-23'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '小林'
+    given_name: '蘭'
+    family_name_kana: 'コバヤシ'
+    given_name_kana: 'ラン'
+    birth_date: '2003-10-07'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-07-27'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-07-27'
+            end: '2023-05-21'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2019-07-27'
+            end: '2023-05-21'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '齋藤'
+    given_name: '陽菜'
+    family_name_kana: 'サイトウ'
+    given_name_kana: 'ハルナ'
+    birth_date: '2004-05-24'
+    hometown:
+      country: 'JP'
+      state: '栃木県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-09-07'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2019-09-07'
+            end: '2024-01-10'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2019-09-07'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2021-12-08'
+            end: '2024-01-10'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '佐藤'
+    given_name: '詩識'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'シオリ'
+    birth_date: '2001-07-22'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-11-27'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '末永'
+    given_name: '祐月'
+    family_name_kana: 'スエナガ'
+    given_name_kana: 'ユヅキ'
+    birth_date: '2005-11-03'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-11-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '多田'
+    given_name: '京加'
+    family_name_kana: 'タダ'
+    given_name_kana: 'キョウカ'
+    birth_date: '1999-08-19'
+    hometown:
+      country: 'JP'
+      state: '福井県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-12-08'
+            end: '2023-09-10'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2018-12-08'
+            end: '2023-09-10'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '永野'
+    given_name: '恵'
+    family_name_kana: 'ナガノ'
+    given_name_kana: 'メグミ'
+    birth_date: '2004-03-22'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2023-03-22'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2021-12-08'
+            end: '2023-03-22'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '原澤'
+    given_name: '音妃'
+    family_name_kana: 'ハラサワ'
+    given_name_kana: 'オトヒ'
+    birth_date: '2001-10-12'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2018-08-22'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '古川'
+    given_name: '夏凪'
+    family_name_kana: 'フルカワ'
+    given_name_kana: 'ナヅナ'
+    birth_date: '2003-08-21'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2022-03-21'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2020-12-08'
+            end: '2022-03-21'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '本田'
+    given_name: 'そら'
+    family_name_kana: 'ホンダ'
+    given_name_kana: 'ソラ'
+    birth_date: '1999-02-26'
+    hometown:
+      country: 'JP'
+      state: '熊本県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-05-27'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-05-27'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '矢作'
+    given_name: '萌夏'
+    family_name_kana: 'ヤハギ'
+    given_name_kana: 'モエカ'
+    birth_date: '2002-07-05'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2018-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2018-12-08'
+            end: '2020-02-04'
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2018-12-08'
+            end: '2020-02-04'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
+  - family_name: '吉橋'
+    given_name: '柚花'
+    family_name_kana: 'ヨシハシ'
+    given_name_kana: 'ユズカ'
+    birth_date: '1999-12-29'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2018-03-03'
+            end: '2020-12-08'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2020-12-08'
+            end: '2023-12-29'
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2020-12-08'
+            end: '2021-12-08'
+      - role: 'member'
+        group: 'AKB48 チームA'
+        periods:
+          - start: '2021-12-08'
+            end: '2023-12-29'
+    tags:
+      - '48グループ'
+      - 'AKB48 ドラフト 3期'
   - family_name: '伊藤'
     given_name: 'きらら'
     family_name_kana: 'イトウ'
@@ -6941,360 +8452,6 @@ persons:
             end: '2023-05-17'
     tags:
       - '48グループ'
-  - family_name: '長友'
-    given_name: '彩海'
-    family_name_kana: 'ナガトモ'
-    given_name_kana: 'アヤミ'
-    birth_date: '2000-11-02'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2016-12-08'
-            end: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2018-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2021-12-08'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '山根'
-    given_name: '涼羽'
-    family_name_kana: 'ヤマネ'
-    given_name_kana: 'スズハ'
-    birth_date: '2000-08-11'
-    hometown:
-      country: 'JP'
-      state: '兵庫県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2016-12-08'
-            end: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2018-12-08'
-            end: '2024-06-01'
-          - start: '2026-03-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2018-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2021-12-08'
-            end: '2024-06-01'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '大盛'
-    given_name: '真歩'
-    family_name_kana: 'オオモリ'
-    given_name_kana: 'マホ'
-    birth_date: '1999-12-05'
-    hometown:
-      country: 'JP'
-      state: '茨城県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2018-12-08'
-            end: '2026-06-30'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2018-12-08'
-            end: '2026-06-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '多田'
-    given_name: '京加'
-    family_name_kana: 'タダ'
-    given_name_kana: 'キョウカ'
-    birth_date: '1999-08-19'
-    hometown:
-      country: 'JP'
-      state: '福井県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2018-12-08'
-            end: '2023-09-10'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2018-12-08'
-            end: '2023-09-10'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '矢作'
-    given_name: '萌夏'
-    family_name_kana: 'ヤハギ'
-    given_name_kana: 'モエカ'
-    birth_date: '2002-07-05'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2018-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2018-12-08'
-            end: '2020-02-04'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2018-12-08'
-            end: '2020-02-04'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '黒須'
-    given_name: '遥香'
-    family_name_kana: 'クロス'
-    given_name_kana: 'ハルカ'
-    birth_date: '2001-02-28'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2016-12-08'
-            end: '2019-05-13'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-05-13'
-            end: '2024-06-01'
-          - start: '2026-03-01'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2019-05-13'
-            end: '2024-06-01'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '岡田'
-    given_name: '梨奈'
-    family_name_kana: 'オカダ'
-    given_name_kana: 'リナ'
-    birth_date: '1999-07-27'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-07-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-07-27'
-            end: '2023-10-31'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2019-07-27'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2021-12-08'
-            end: '2023-10-31'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '小林'
-    given_name: '蘭'
-    family_name_kana: 'コバヤシ'
-    given_name_kana: 'ラン'
-    birth_date: '2003-10-07'
-    hometown:
-      country: 'JP'
-      state: '大阪府'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-07-27'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-07-27'
-            end: '2023-05-21'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2019-07-27'
-            end: '2023-05-21'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '大竹'
-    given_name: 'ひとみ'
-    family_name_kana: 'オオタケ'
-    given_name_kana: 'ヒトミ'
-    birth_date: '1999-06-27'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-09-07'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-09-07'
-            end: '2024-01-21'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2019-09-07'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2021-12-08'
-            end: '2024-01-21'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '齋藤'
-    given_name: '陽菜'
-    family_name_kana: 'サイトウ'
-    given_name_kana: 'ハルナ'
-    birth_date: '2004-05-24'
-    hometown:
-      country: 'JP'
-      state: '栃木県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-09-07'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-09-07'
-            end: '2024-01-10'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2019-09-07'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2021-12-08'
-            end: '2024-01-10'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '佐藤'
-    given_name: '美波'
-    family_name_kana: 'サトウ'
-    given_name_kana: 'ミナミ'
-    birth_date: '2003-08-03'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2019-09-12'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-09-12'
-            end: '2024-07-01'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2019-09-12'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2021-12-08'
-            end: '2024-07-01'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '道枝'
-    given_name: '咲'
-    family_name_kana: 'ミチエダ'
-    given_name_kana: 'サキ'
-    birth_date: '2003-12-20'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2019-09-12'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2019-09-12'
-            end: '2023-09-14'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2019-09-12'
-            end: '2023-09-14'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
   - family_name: '蒲地'
     given_name: '志奈'
     family_name_kana: 'カマチ'
@@ -7563,237 +8720,6 @@ persons:
           - start: '2021-12-08'
     tags:
       - '48グループ'
-  - family_name: '本間'
-    given_name: '麻衣'
-    family_name_kana: 'ホンマ'
-    given_name_kana: 'マイ'
-    birth_date: '2002-09-06'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-09-30'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-09-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '石綿'
-    given_name: '星南'
-    family_name_kana: 'イシワタ'
-    given_name_kana: 'セナ'
-    birth_date: '2002-02-22'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2023-08-07'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2021-12-08'
-            end: '2023-08-07'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '蔵本'
-    given_name: '美結'
-    family_name_kana: 'クラモト'
-    given_name_kana: 'ミユウ'
-    birth_date: '2001-05-21'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2022-03-23'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2020-12-08'
-            end: '2022-03-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '永野'
-    given_name: '恵'
-    family_name_kana: 'ナガノ'
-    given_name_kana: 'メグミ'
-    birth_date: '2004-03-22'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2023-03-22'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2021-12-08'
-            end: '2023-03-22'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '古川'
-    given_name: '夏凪'
-    family_name_kana: 'フルカワ'
-    given_name_kana: 'ナヅナ'
-    birth_date: '2003-08-21'
-    hometown:
-      country: 'JP'
-      state: '北海道'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2022-03-21'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2020-12-08'
-            end: '2022-03-21'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '本田'
-    given_name: 'そら'
-    family_name_kana: 'ホンダ'
-    given_name_kana: 'ソラ'
-    birth_date: '1999-02-26'
-    hometown:
-      country: 'JP'
-      state: '熊本県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-05-27'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-05-27'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '吉橋'
-    given_name: '柚花'
-    family_name_kana: 'ヨシハシ'
-    given_name_kana: 'ユズカ'
-    birth_date: '1999-12-29'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2020-12-08'
-            end: '2023-12-29'
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2020-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2021-12-08'
-            end: '2023-12-29'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '安田'
-    given_name: '叶'
-    family_name_kana: 'ヤスダ'
-    given_name_kana: 'カナ'
-    birth_date: '2002-03-11'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2021-12-08'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2021-12-08'
-            end: '2022-03-24'
-      - role: 'member'
-        group: 'AKB48 チームK'
-        periods:
-          - start: '2021-12-08'
-            end: '2022-03-24'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
   - family_name: '小濱'
     given_name: '心音'
     family_name_kana: 'コハマ'
@@ -7813,6 +8739,23 @@ persons:
         periods:
           - start: '2024-03-17'
             end: '2024-09-30'
+    tags:
+      - '48グループ'
+      - 'AKB48 17期'
+  - family_name: '長谷川'
+    given_name: '新奈'
+    family_name_kana: 'ハセガワ'
+    given_name_kana: 'ニイナ'
+    birth_date: '2001-08-08'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'AKB48'
+        periods:
+          - start: '2022-05-04'
+            end: '2022-08-28'
     tags:
       - '48グループ'
       - 'AKB48 17期'
@@ -7846,83 +8789,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 17期'
-  - family_name: '太田'
-    given_name: '有紀'
-    family_name_kana: 'オオタ'
-    given_name_kana: 'ユキ'
-    birth_date: '2004-03-27'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2024-03-17'
-    tags:
-      - '48グループ'
-      - 'AKB48 17期'
-  - family_name: '佐藤'
-    given_name: '綺星'
-    family_name_kana: 'サトウ'
-    given_name_kana: 'アイリ'
-    birth_date: '2004-06-24'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2024-03-17'
-    tags:
-      - '48グループ'
-      - 'AKB48 17期'
-  - family_name: '橋本'
-    given_name: '恵理子'
-    family_name_kana: 'ハシモト'
-    given_name_kana: 'エリコ'
-    birth_date: '2006-04-16'
-    hometown:
-      country: 'JP'
-      state: '大阪府'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チーム4'
-        periods:
-          - start: '2022-06-06'
-            end: '2023-02-01'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2023-02-01'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2024-03-17'
-    tags:
-      - '48グループ'
-      - 'AKB48 17期'
-  - family_name: '畠山'
-    given_name: '希美'
-    family_name_kana: 'ハタケヤマ'
-    given_name_kana: 'ノゾミ'
-    birth_date: '2008-01-25'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2022-06-05'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2024-03-17'
-    tags:
-      - '48グループ'
-      - 'AKB48 17期'
   - family_name: '平田'
     given_name: '侑希'
     family_name_kana: 'ヒラタ'
@@ -7948,15 +8814,19 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 17期'
-  - family_name: '布袋'
-    given_name: '百椛'
-    family_name_kana: 'ホテイ'
-    given_name_kana: 'モカ'
-    birth_date: '2004-12-01'
+  - family_name: '山﨑'
+    given_name: '空'
+    family_name_kana: 'ヤマザキ'
+    given_name_kana: 'ソラ'
+    birth_date: '2004-05-13'
     hometown:
       country: 'JP'
-      state: '兵庫県'
+      state: '東京都'
     roles:
+      - role: 'member'
+        group: 'AKB48 チームK'
+        periods:
+          - start: '2022-06-02'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -7989,19 +8859,44 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 17期'
-  - family_name: '山﨑'
-    given_name: '空'
-    family_name_kana: 'ヤマザキ'
-    given_name_kana: 'ソラ'
-    birth_date: '2004-05-13'
+  - family_name: '畠山'
+    given_name: '希美'
+    family_name_kana: 'ハタケヤマ'
+    given_name_kana: 'ノゾミ'
+    birth_date: '2008-01-25'
     hometown:
       country: 'JP'
-      state: '東京都'
+      state: '埼玉県'
     roles:
       - role: 'member'
-        group: 'AKB48 チームK'
+        group: 'AKB48 チームB'
         periods:
-          - start: '2022-06-02'
+          - start: '2022-06-05'
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2024-03-17'
+    tags:
+      - '48グループ'
+      - 'AKB48 17期'
+  - family_name: '橋本'
+    given_name: '恵理子'
+    family_name_kana: 'ハシモト'
+    given_name_kana: 'エリコ'
+    birth_date: '2006-04-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'AKB48 チーム4'
+        periods:
+          - start: '2022-06-06'
+            end: '2023-02-01'
+      - role: 'member'
+        group: 'AKB48 チームB'
+        periods:
+          - start: '2023-02-01'
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -8049,54 +8944,6 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 18期'
-  - family_name: '工藤'
-    given_name: '華純'
-    family_name_kana: 'クドウ'
-    given_name_kana: 'カスミ'
-    birth_date: '2005-06-15'
-    hometown:
-      country: 'JP'
-      state: '大分県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2025-04-02'
-    tags:
-      - '48グループ'
-      - 'AKB48 18期'
-  - family_name: '久保'
-    given_name: '姫菜乃'
-    family_name_kana: 'クボ'
-    given_name_kana: 'ヒナノ'
-    birth_date: '2006-02-02'
-    hometown:
-      country: 'JP'
-      state: '長野県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2025-04-02'
-    tags:
-      - '48グループ'
-      - 'AKB48 18期'
-  - family_name: '迫'
-    given_name: '由芽実'
-    family_name_kana: 'サコ'
-    given_name_kana: 'ユメミ'
-    birth_date: '2006-02-05'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2025-04-02'
-    tags:
-      - '48グループ'
-      - 'AKB48 18期'
   - family_name: '成田'
     given_name: '香姫奈'
     family_name_kana: 'ナリタ'
@@ -8110,22 +8957,6 @@ persons:
         group: 'AKB48 チーム4'
         periods:
           - start: '2023-04-14'
-      - role: 'member'
-        group: 'AKB48'
-        periods:
-          - start: '2025-04-02'
-    tags:
-      - '48グループ'
-      - 'AKB48 18期'
-  - family_name: '八木'
-    given_name: '愛月'
-    family_name_kana: 'ヤギ'
-    given_name_kana: 'アヅキ'
-    birth_date: '2005-03-22'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
       - role: 'member'
         group: 'AKB48'
         periods:
@@ -8174,6 +9005,22 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 19期'
+  - family_name: '太田'
+    given_name: '有紀'
+    family_name_kana: 'オオタ'
+    given_name_kana: 'ユキ'
+    birth_date: '2004-03-27'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2024-03-17'
+    tags:
+      - '48グループ'
+      - 'AKB48 17期'
   - family_name: '奥本'
     given_name: 'カイリ'
     family_name_kana: 'オクモト'
@@ -8216,6 +9063,22 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 19期'
+  - family_name: '佐藤'
+    given_name: '綺星'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'アイリ'
+    birth_date: '2004-06-24'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2024-03-17'
+    tags:
+      - '48グループ'
+      - 'AKB48 17期'
   - family_name: '白鳥'
     given_name: '沙怜'
     family_name_kana: 'シラトリ'
@@ -8259,858 +9122,19 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 19期'
-  - family_name: '磯'
-    given_name: '怜奈'
-    family_name_kana: 'イソ'
-    given_name_kana: 'レイナ'
-    birth_date: '1992-08-10'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '大塚'
-    given_name: '亜季'
-    family_name_kana: 'オオツカ'
-    given_name_kana: 'アキ'
-    birth_date: '1989-02-07'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '早乙女'
-    given_name: '美樹'
-    family_name_kana: 'サオトメ'
-    given_name_kana: 'ミキ'
-    birth_date: '1991-06-22'
-    hometown:
-      country: 'JP'
-      state: '栃木県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2009-04-18'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2007-04-08'
-            end: '2009-04-18'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '坂田'
-    given_name: '涼'
-    family_name_kana: 'サカタ'
-    given_name_kana: 'リョウ'
-    birth_date: '1990-03-18'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '藤島'
-    given_name: 'マリアチカ'
-    family_name_kana: 'フジシマ'
-    given_name_kana: 'マリアチカ'
-    birth_date: '1990-04-28'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '堀江'
-    given_name: '聖夏'
-    family_name_kana: 'ホリエ'
-    given_name_kana: 'ミナ'
-    birth_date: '1993-07-14'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2006-12-03'
-            end: '2006-12-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 3期'
-  - family_name: '鈴木'
-    given_name: '菜絵'
-    family_name_kana: 'スズキ'
-    given_name_kana: 'ナエ'
-    birth_date: '1992-12-18'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2009-01-18'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-  - family_name: '出口'
-    given_name: '陽'
-    family_name_kana: 'デグチ'
-    given_name_kana: 'アキ'
-    birth_date: '1988-03-14'
-    hometown:
-      country: 'JP'
-      state: '三重県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2007-11-26'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-  - family_name: '中西'
-    given_name: '優香'
-    family_name_kana: 'ナカニシ'
-    given_name_kana: 'ユウカ'
-    birth_date: '1989-01-24'
-    hometown:
-      country: 'JP'
-      state: '愛知県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2008-08-26'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-  - family_name: '藤本'
-    given_name: '紗羅'
-    family_name_kana: 'フジモト'
-    given_name_kana: 'サラ'
-    birth_date: '1997-03-23'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-05-27'
-            end: '2009-01-23'
-          - start: '2009-09-20'
-            end: '2010-06-20'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-      - 'AKB48 9期'
-  - family_name: '山田'
-    given_name: 'みずき'
-    family_name_kana: 'ヤマダ'
-    given_name_kana: 'ミズキ'
-    birth_date: '1988-07-28'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2007-10-06'
-            end: '2007-12-08'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '冨田'
-    given_name: '麻友'
-    family_name_kana: 'トミタ'
-    given_name_kana: 'マユ'
-    birth_date: '1993-01-25'
-    hometown:
-      country: 'JP'
-      state: '香川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-03-01'
-            end: '2009-01-18'
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2008-03-01'
-            end: '2009-01-18'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '片野'
-    given_name: '友里恵'
-    family_name_kana: 'カタノ'
-    given_name_kana: 'ユリエ'
-    birth_date: '1990-04-29'
-    hometown:
-      country: 'JP'
-      state: '茨城県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-04-03'
-            end: '2008-08-31'
-    tags:
-      - '48グループ'
-      - 'AKB48 6期'
-  - family_name: '西澤'
-    given_name: '沙羅'
-    family_name_kana: 'ニシザワ'
-    given_name_kana: 'サラ'
-    birth_date: '1992-05-14'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-04-03'
-            end: '2008-07-31'
-    tags:
-      - '48グループ'
-      - 'AKB48 6期'
-  - family_name: '石黒'
-    given_name: '莉美'
-    family_name_kana: 'イシグロ'
-    given_name_kana: 'レミ'
-    birth_date: '1991-05-23'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-12-20'
-            end: '2009-01-16'
-    tags:
-      - '48グループ'
-      - 'AKB48 7期'
-  - family_name: '上遠野'
-    given_name: '瑞穂'
-    family_name_kana: 'カトオノ'
-    given_name_kana: 'ミズホ'
-    birth_date: '1991-11-30'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-12-20'
-            end: '2009-06-09'
-    tags:
-      - '48グループ'
-      - 'AKB48 7期'
-  - family_name: '林'
-    given_name: '彩乃'
-    family_name_kana: 'ハヤシ'
-    given_name_kana: 'アヤノ'
-    birth_date: '1993-05-31'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2008-12-20'
-            end: '2009-07-18'
-    tags:
-      - '48グループ'
-      - 'AKB48 7期'
-  - family_name: '小松'
-    given_name: '瑞希'
-    family_name_kana: 'コマツ'
-    given_name_kana: 'ミズキ'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-05-26'
-            end: '2009-07-14'
-    tags:
-      - '48グループ'
-      - 'AKB48 8期'
-  - family_name: '西川'
-    given_name: '七海'
-    family_name_kana: 'ニシカワ'
-    given_name_kana: 'ナナミ'
-    birth_date: '1993-07-03'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-05-26'
-            end: '2009-07-25'
-    tags:
-      - '48グループ'
-      - 'AKB48 8期'
-  - family_name: '石黒'
-    given_name: '貴己'
-    family_name_kana: 'イシグロ'
-    given_name_kana: 'アツキ'
-    birth_date: '1993-09-24'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-09-20'
-            end: '2010-06-20'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '植木'
-    given_name: 'あさ香'
-    family_name_kana: 'ウエキ'
-    given_name_kana: 'アサカ'
-    birth_date: '1995-05-17'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-11-15'
-            end: '2010-07-06'
-    tags:
-      - '48グループ'
-      - 'AKB48 8期'
-  - family_name: '佐野'
-    given_name: '友里子'
-    family_name_kana: 'サノ'
-    given_name_kana: 'ユリコ'
-    birth_date: '1992-01-22'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2009-11-30'
-            end: '2010-10-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 8期'
-  - family_name: '岩崎'
-    given_name: '仁美'
-    family_name_kana: 'イワサキ'
-    given_name_kana: 'ヒトミ'
-    birth_date: '1996-03-19'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-03-21'
-            end: '2010-10-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 10期'
-  - family_name: '金沢'
-    given_name: '有希'
-    family_name_kana: 'カナザワ'
-    given_name_kana: 'ユウキ'
-    birth_date: '1993-05-01'
-    hometown:
-      country: 'JP'
-      state: '北海道'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-03-21'
-            end: '2011-02-20'
-    tags:
-      - '48グループ'
-      - 'AKB48 10期'
-  - family_name: '牛窪'
-    given_name: '紗良'
-    family_name_kana: 'ウシクボ'
-    given_name_kana: 'サラ'
-    birth_date: '1995-02-15'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-24'
-            end: '2011-06-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 11期'
-  - family_name: '岡﨑'
-    given_name: 'ちなみ'
-    family_name_kana: 'オカザキ'
-    given_name_kana: 'チナミ'
-    birth_date: '1992-05-28'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-24'
-            end: '2010-10-27'
-    tags:
-      - '48グループ'
-      - 'AKB48 11期'
-  - family_name: '川上'
-    given_name: '麻里奈'
-    family_name_kana: 'カワカミ'
-    given_name_kana: 'マリナ'
-    birth_date: '1996-05-21'
-    hometown:
-      country: 'JP'
-      state: '大阪府'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-24'
-            end: '2010-12-03'
-    tags:
-      - '48グループ'
-      - 'AKB48 11期'
-  - family_name: '豊田'
-    given_name: '早姫'
-    family_name_kana: 'トヨダ'
-    given_name_kana: 'サキ'
-    birth_date: '1993-09-08'
-    hometown:
-      country: 'JP'
-      state: '埼玉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-24'
-            end: '2010-10-23'
-    tags:
-      - '48グループ'
-      - 'AKB48 11期'
-  - family_name: '山口'
-    given_name: '菜有'
-    family_name_kana: 'ヤマグチ'
-    given_name_kana: 'ナウ'
-    birth_date: '1994-01-19'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2010-07-24'
-            end: '2011-06-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 11期'
-  - family_name: 'サイード横田'
-    given_name: '絵玲奈'
-    family_name_kana: 'サイードヨコタ'
-    given_name_kana: 'エレナ'
-    birth_date: '1997-04-15'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-02-20'
-            end: '2012-10-06'
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2011-05-05'
-            end: '2012-10-06'
-    tags:
-      - '48グループ'
-      - 'AKB48 12期'
-  - family_name: '鈴木'
-    given_name: '里香'
-    family_name_kana: 'スズキ'
-    given_name_kana: 'リカ'
-    birth_date: '1997-01-10'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-02-20'
-            end: '2012-03-31'
-    tags:
-      - '48グループ'
-      - 'AKB48 12期'
-  - family_name: '雨宮'
-    given_name: '舞夏'
-    family_name_kana: 'アメミヤ'
-    given_name_kana: 'マイカ'
-    birth_date: '1997-06-29'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-09-24'
-            end: '2012-08-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '北'
-    given_name: '汐莉'
-    family_name_kana: 'キタ'
-    given_name_kana: 'シオリ'
-    birth_date: '1998-12-01'
+  - family_name: '布袋'
+    given_name: '百椛'
+    family_name_kana: 'ホテイ'
+    given_name_kana: 'モカ'
+    birth_date: '2004-12-01'
     hometown:
       country: 'JP'
       state: '兵庫県'
     roles:
-      - role: 'trainee'
+      - role: 'member'
         group: 'AKB48'
         periods:
-          - start: '2011-09-24'
-            end: '2012-08-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '長谷川'
-    given_name: '晴奈'
-    family_name_kana: 'ハセガワ'
-    given_name_kana: 'ハルナ'
-    birth_date: '1997-07-01'
-    hometown:
-      country: 'JP'
-      state: '茨城県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-09-24'
-            end: '2012-08-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '森山'
-    given_name: 'さくら'
-    family_name_kana: 'モリヤマ'
-    given_name_kana: 'サクラ'
-    birth_date: '1998-04-14'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-09-24'
-            end: '2012-08-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '渡邊'
-    given_name: '寧々'
-    family_name_kana: 'ワタナベ'
-    given_name_kana: 'ネネ'
-    birth_date: '1998-01-30'
-    hometown:
-      country: 'JP'
-      state: '福島県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-09-24'
-            end: '2012-08-05'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '光宗'
-    given_name: '薫'
-    family_name_kana: 'ミツムネ'
-    given_name_kana: 'カオル'
-    birth_date: '1993-04-26'
-    hometown:
-      country: 'JP'
-      state: '大阪府'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2011-12-08'
-            end: '2012-10-24'
-    tags:
-      - '48グループ'
-      - 'AKB48 13期'
-  - family_name: '高橋'
-    given_name: '希良'
-    family_name_kana: 'タカハシ'
-    given_name_kana: 'キラ'
-    birth_date: '2001-01-14'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2015-06-22'
-            end: '2017-04-11'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 2期'
-  - family_name: '野口'
-    given_name: '菜々美'
-    family_name_kana: 'ノグチ'
-    given_name_kana: 'ナナミ'
-    birth_date: '2003-09-17'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2016-10-16'
-            end: '2017-03-31'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '梅本'
-    given_name: '和泉'
-    family_name_kana: 'ウメモト'
-    given_name_kana: 'イズミ'
-    birth_date: '1998-10-16'
-    hometown:
-      country: 'JP'
-      state: '山口県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2018-11-11'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '庄司'
-    given_name: 'なぎさ'
-    family_name_kana: 'ショウジ'
-    given_name_kana: 'ナギサ'
-    birth_date: '2000-10-29'
-    hometown:
-      country: 'JP'
-      state: '北海道'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2018-11-04'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '播磨'
-    given_name: '七海'
-    family_name_kana: 'ハリマ'
-    given_name_kana: 'ナナミ'
-    birth_date: '2004-08-02'
-    hometown:
-      country: 'JP'
-      state: '千葉県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2017-12-08'
-            end: '2019-05-11'
-    tags:
-      - '48グループ'
-      - 'AKB48 16期'
-  - family_name: '勝又'
-    given_name: '彩央里'
-    family_name_kana: 'カツマタ'
-    given_name_kana: 'サオリ'
-    birth_date: '2000-10-31'
-    hometown:
-      country: 'JP'
-      state: '静岡県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-06-28'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '神山'
-    given_name: '莉穂'
-    family_name_kana: 'カミヤマ'
-    given_name_kana: 'リホ'
-    birth_date: '2003-08-20'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2018-10-20'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '佐藤'
-    given_name: '詩識'
-    family_name_kana: 'サトウ'
-    given_name_kana: 'シオリ'
-    birth_date: '2001-07-22'
-    hometown:
-      country: 'JP'
-      state: '北海道'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2019-11-27'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '末永'
-    given_name: '祐月'
-    family_name_kana: 'スエナガ'
-    given_name_kana: 'ユヅキ'
-    birth_date: '2005-11-03'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2020-11-30'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '原澤'
-    given_name: '音妃'
-    family_name_kana: 'ハラサワ'
-    given_name_kana: 'オトヒ'
-    birth_date: '2001-10-12'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2018-03-03'
-            end: '2018-08-22'
-    tags:
-      - '48グループ'
-      - 'AKB48 ドラフト 3期'
-  - family_name: '長谷川'
-    given_name: '新奈'
-    family_name_kana: 'ハセガワ'
-    given_name_kana: 'ニイナ'
-    birth_date: '2001-08-08'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'trainee'
-        group: 'AKB48'
-        periods:
-          - start: '2022-05-04'
-            end: '2022-08-28'
+          - start: '2024-03-17'
     tags:
       - '48グループ'
       - 'AKB48 17期'
@@ -9162,6 +9186,70 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 20期'
+  - family_name: '工藤'
+    given_name: '華純'
+    family_name_kana: 'クドウ'
+    given_name_kana: 'カスミ'
+    birth_date: '2005-06-15'
+    hometown:
+      country: 'JP'
+      state: '大分県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2025-04-02'
+    tags:
+      - '48グループ'
+      - 'AKB48 18期'
+  - family_name: '久保'
+    given_name: '姫菜乃'
+    family_name_kana: 'クボ'
+    given_name_kana: 'ヒナノ'
+    birth_date: '2006-02-02'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2025-04-02'
+    tags:
+      - '48グループ'
+      - 'AKB48 18期'
+  - family_name: '迫'
+    given_name: '由芽実'
+    family_name_kana: 'サコ'
+    given_name_kana: 'ユメミ'
+    birth_date: '2006-02-05'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2025-04-02'
+    tags:
+      - '48グループ'
+      - 'AKB48 18期'
+  - family_name: '八木'
+    given_name: '愛月'
+    family_name_kana: 'ヤギ'
+    given_name_kana: 'アヅキ'
+    birth_date: '2005-03-22'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'AKB48'
+        periods:
+          - start: '2025-04-02'
+    tags:
+      - '48グループ'
+      - 'AKB48 18期'
   - family_name: '髙橋'
     given_name: '舞桜'
     family_name_kana: 'タカハシ'
@@ -9243,71 +9331,3 @@ persons:
     tags:
       - '48グループ'
       - 'AKB48 21期'
-  - family_name: '有馬'
-    given_name: '優茄'
-    family_name_kana: 'アリマ'
-    given_name_kana: 'ユカ'
-    birth_date: '1991-02-18'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2008-05-17'
-            end: '2009-01-18'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
-  - family_name: '瓜屋'
-    given_name: '茜'
-    family_name_kana: 'ウリヤ'
-    given_name_kana: 'アカネ'
-    birth_date: '1992-08-24'
-    hometown:
-      country: 'JP'
-      state: '神奈川県'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2007-10-29'
-            end: '2009-04-26'
-    tags:
-      - '48グループ'
-      - 'AKB48 4期'
-  - family_name: '絹本'
-    given_name: '桃子'
-    family_name_kana: 'キヌモト'
-    given_name_kana: 'モモコ'
-    birth_date: '1995-03-28'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームA'
-        periods:
-          - start: '2010-06-18'
-            end: '2010-06-20'
-    tags:
-      - '48グループ'
-      - 'AKB48 9期'
-  - family_name: '畑山'
-    given_name: '亜梨紗'
-    family_name_kana: 'ハタヤマ'
-    given_name_kana: 'アリサ'
-    birth_date: '1991-02-11'
-    hometown:
-      country: 'JP'
-      state: '東京都'
-    roles:
-      - role: 'member'
-        group: 'AKB48 チームB'
-        periods:
-          - start: '2008-03-20'
-            end: '2009-01-19'
-    tags:
-      - '48グループ'
-      - 'AKB48 5期'
