@@ -1,7 +1,7 @@
 ---
 source_type: 'persons'
-start_id: 2500
-end_id: 2999
+start_id: 2000
+end_id: 2499
 
 persons:
   - family_name: '稲垣'
