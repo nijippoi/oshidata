@@ -1,0 +1,1679 @@
+---
+source_type: 'persons'
+start_id: 3500
+end_id: 3749
+
+persons:
+  - family_name: '大滝'
+    given_name: '友梨亜'
+    family_name_kana: 'オオタキ'
+    given_name_kana: 'ユリア'
+    birth_date: '1995-04-21'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2017-10-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '小熊'
+    given_name: '倫実'
+    family_name_kana: 'オグマ'
+    given_name_kana: 'ツグミ'
+    birth_date: '2002-12-15'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-12-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '角'
+    given_name: 'ゆりあ'
+    family_name_kana: 'カド'
+    given_name_kana: 'ユリア'
+    birth_date: '2000-06-22'
+    hometown:
+      country: 'JP'
+      state: '石川県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-03-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '加藤'
+    given_name: '美南'
+    family_name_kana: 'カトウ'
+    given_name_kana: 'ミナミ'
+    birth_date: '1999-01-15'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2021-01-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '日下'
+    given_name: '部愛菜'
+    family_name_kana: 'クサカベ'
+    given_name_kana: 'アイナ'
+    birth_date: '2002-02-06'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-04-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '佐藤'
+    given_name: '杏樹'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'アンジュ'
+    birth_date: '2001-11-05'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-09-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '菅原'
+    given_name: 'りこ'
+    family_name_kana: 'スガハラ'
+    given_name_kana: 'リコ'
+    birth_date: '2000-11-23'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-05-19'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '清司'
+    given_name: '麗菜'
+    family_name_kana: 'セイジ'
+    given_name_kana: 'レイナ'
+    birth_date: '2001-04-19'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2018-06-29'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-30'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '高倉'
+    given_name: '萌香'
+    family_name_kana: 'タカクラ'
+    given_name_kana: 'モエカ'
+    birth_date: '2001-04-23'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2020-03-23'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '髙橋'
+    given_name: '真生'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'マウ'
+    birth_date: '2001-06-03'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2018-10-06'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2018-10-06'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '太'
+    given_name: '野彩香'
+    family_name_kana: 'タノ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1997-07-20'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2020-10-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '中井'
+    given_name: 'りか'
+    family_name_kana: 'ナカイ'
+    given_name_kana: 'リカ'
+    birth_date: '1997-08-23'
+    hometown:
+      country: 'JP'
+      state: '富山県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2023-08-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '中村'
+    given_name: '歩加'
+    family_name_kana: 'ナカムラ'
+    given_name_kana: 'アユカ'
+    birth_date: '1998-07-28'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-06-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '奈'
+    given_name: '良未遥'
+    family_name_kana: 'ナラ'
+    given_name_kana: 'ミハル'
+    birth_date: '1998-03-20'
+    hometown:
+      country: 'JP'
+      state: '青森県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2024-11-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '西村'
+    given_name: '菜那子'
+    family_name_kana: 'ニシムラ'
+    given_name_kana: 'ナナコ'
+    birth_date: '1997-08-11'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-09-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '長谷川'
+    given_name: '玲奈'
+    family_name_kana: 'ハセガワ'
+    given_name_kana: 'レナ'
+    birth_date: '2001-03-15'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-05-19'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '本間'
+    given_name: '日陽'
+    family_name_kana: 'ホンマ'
+    given_name_kana: 'ヒナタ'
+    birth_date: '1999-11-10'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2024-04-13'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '水澤'
+    given_name: '彩佳'
+    family_name_kana: 'ミズサワ'
+    given_name_kana: 'アヤカ'
+    birth_date: '1994-11-05'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '宮島'
+    given_name: '亜弥'
+    family_name_kana: 'ミヤジマ'
+    given_name_kana: 'アヤ'
+    birth_date: '1997-11-27'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2018-08-07'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2018-08-07'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '村雲'
+    given_name: '颯香'
+    family_name_kana: 'ムラクモ'
+    given_name_kana: 'フウカ'
+    birth_date: '1997-07-05'
+    hometown:
+      country: 'JP'
+      state: '秋田県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-09-01'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '山口'
+    given_name: '真帆'
+    family_name_kana: 'ヤマグチ'
+    given_name_kana: 'マホ'
+    birth_date: '1995-09-17'
+    hometown:
+      country: 'JP'
+      state: '青森県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-05-19'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '山田野'
+    given_name: '絵'
+    family_name_kana: 'ヤマダ'
+    given_name_kana: 'ノエ'
+    birth_date: '1999-10-07'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2022-02-28'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 1期'
+
+  - family_name: '荻野'
+    given_name: '由佳'
+    family_name_kana: 'オギノ'
+    given_name_kana: 'ユカ'
+    birth_date: '1999-02-16'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-05-24'
+            end: '2021-11-08'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト2期'
+
+  - family_name: '西潟'
+    given_name: '茉莉奈'
+    family_name_kana: 'ニシガタ'
+    given_name_kana: 'マリナ'
+    birth_date: '1995-10-16'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2015-05-24'
+            end: '2016-01-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2016-01-10'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト2期'
+
+  - family_name: '安藤'
+    given_name: '千伽奈'
+    family_name_kana: 'アンドウ'
+    given_name_kana: 'チカナ'
+    birth_date: '2001-01-13'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-02-25'
+            end: '2023-02-28'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-02-25'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト3期'
+
+  - family_name: '佐藤'
+    given_name: '海里'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'カイリ'
+    birth_date: '2000-08-05'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-02-25'
+            end: '2020-12-24'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2020-12-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト3期'
+
+  - family_name: '高橋'
+    given_name: '七実'
+    family_name_kana: 'タカハシ'
+    given_name_kana: 'ナナミ'
+    birth_date: '2001-07-07'
+    hometown:
+      country: 'JP'
+      state: '宮城県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-02-25'
+            end: '2020-03-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト3期'
+
+  - family_name: '對馬'
+    given_name: '優菜子'
+    family_name_kana: 'ツシマ'
+    given_name_kana: 'ユナコ'
+    birth_date: '2001-08-20'
+    hometown:
+      country: 'JP'
+      state: '青森県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-02-25'
+            end: '2022-09-27'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-02-25'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト3期'
+
+  - family_name: '藤崎'
+    given_name: '未夢'
+    family_name_kana: 'フジサキ'
+    given_name_kana: 'ミユ'
+    birth_date: '2000-11-17'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-02-25'
+            end: '2020-12-24'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2020-12-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 ドラフト3期'
+
+  - family_name: '大塚'
+    given_name: '七海'
+    family_name_kana: 'オオツカ'
+    given_name_kana: 'ナナミ'
+    birth_date: '2000-11-07'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2020-12-24'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2020-12-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '小越'
+    given_name: '春花'
+    family_name_kana: 'オゴエ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2004-06-26'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2024-12-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '川越'
+    given_name: '紗彩'
+    family_name_kana: 'カワゴエ'
+    given_name_kana: 'サアヤ'
+    birth_date: '2000-10-14'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2024-02-29'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '小見山'
+    given_name: '沙空'
+    family_name_kana: 'コミヤマ'
+    given_name_kana: 'サラ'
+    birth_date: '2004-07-27'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2021-12-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '曽我部'
+    given_name: '優芽'
+    family_name_kana: 'ソガベ'
+    given_name_kana: 'ユメ'
+    birth_date: '2002-03-16'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2024-02-29'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '高沢'
+    given_name: '朋花'
+    family_name_kana: 'タカザワ'
+    given_name_kana: 'トモカ'
+    birth_date: '2003-06-01'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-06-30'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '寺田'
+    given_name: '陽菜'
+    family_name_kana: 'テラダ'
+    given_name_kana: 'ヒナ'
+    birth_date: '2004-03-13'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2022-08-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '富永'
+    given_name: '夢有'
+    family_name_kana: 'トミナガ'
+    given_name_kana: 'ユウ'
+    birth_date: '2002-07-16'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2022-08-16'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '羽切'
+    given_name: '瑠菜'
+    family_name_kana: 'ハギリ'
+    given_name_kana: 'ルナ'
+    birth_date: '1999-11-29'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-03-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '古澤'
+    given_name: '愛'
+    family_name_kana: 'フルサワ'
+    given_name_kana: 'マナ'
+    birth_date: '2000-10-01'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2024-01-27'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '古舘'
+    given_name: '葵'
+    family_name_kana: 'フルタテ'
+    given_name_kana: 'アオイ'
+    birth_date: '2004-08-10'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2023-03-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '真下'
+    given_name: '華穂'
+    family_name_kana: 'マシモ'
+    given_name_kana: 'カホ'
+    birth_date: '1999-11-08'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2024-06-30'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '三村'
+    given_name: '妃乃'
+    family_name_kana: 'ミムラ'
+    given_name_kana: 'ヒノ'
+    birth_date: '2002-06-15'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2020-12-24'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2020-12-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '諸橋'
+    given_name: '姫向'
+    family_name_kana: 'モロハシ'
+    given_name_kana: 'ヒナタ'
+    birth_date: '2003-01-04'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2022-10-31'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-04-21'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '山崎'
+    given_name: '美里衣'
+    family_name_kana: 'ヤマザキ'
+    given_name_kana: 'ミリイ'
+    birth_date: '2000-11-21'
+    hometown:
+      country: 'JP'
+      state: '北海道'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-06-12'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '渡邉'
+    given_name: '歩咲'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'アユサ'
+    birth_date: '2001-03-09'
+    hometown:
+      country: 'JP'
+      state: '山形県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2018-06-12'
+            end: '2019-06-30'
+    tags:
+      - '48グループ'
+      - 'NGT48 2期'
+
+  - family_name: '新井'
+    given_name: 'りりの'
+    family_name_kana: 'アライ'
+    given_name_kana: 'リリノ'
+    birth_date: '2004-07-15'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-02-29'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '磯部'
+    given_name: '瑠紅'
+    family_name_kana: 'イソベ'
+    given_name_kana: 'ルア'
+    birth_date: '2007-05-07'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-12-13'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2024-12-14'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '喜'
+    given_name: '多花恵'
+    family_name_kana: 'キタ'
+    given_name_kana: 'ハナエ'
+    birth_date: '2003-09-09'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-12-13'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2024-12-14'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '北村'
+    given_name: '優羽'
+    family_name_kana: 'キタムラ'
+    given_name_kana: 'ユウハ'
+    birth_date: '2004-09-22'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2023-12-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '木本'
+    given_name: '優菜'
+    family_name_kana: 'キモト'
+    given_name_kana: 'ユウナ'
+    birth_date: '2003-06-17'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-12-13'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2024-12-14'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '柴野'
+    given_name: '夕葵'
+    family_name_kana: 'シバノ'
+    given_name_kana: 'ユキ'
+    birth_date: '2003-12-04'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2023-04-16'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '水津'
+    given_name: '菜月'
+    family_name_kana: 'スイヅ'
+    given_name_kana: 'ナツキ'
+    birth_date: '2004-04-27'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2023-12-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '杉本'
+    given_name: '萌'
+    family_name_kana: 'スギモト'
+    given_name_kana: 'モエ'
+    birth_date: '2005-07-17'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2023-12-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '鈴木'
+    given_name: '凛々花'
+    family_name_kana: 'スズキ'
+    given_name_kana: 'リリカ'
+    birth_date: '2008-09-30'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2025-10-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '中島'
+    given_name: '光里'
+    family_name_kana: 'ナカジマ'
+    given_name_kana: 'ヒカリ'
+    birth_date: '2004-09-08'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2022-07-01'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '長'
+    given_name: '谷朱桃'
+    family_name_kana: 'ハセ'
+    given_name_kana: 'スモモ'
+    birth_date: '2006-02-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-01-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '南川'
+    given_name: '遥香'
+    family_name_kana: 'ミナミカワ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2004-12-04'
+    hometown:
+      country: 'JP'
+      state: '千葉県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2022-06-01'
+            end: '2024-07-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 3期'
+
+  - family_name: '浅生'
+    given_name: '珠菜'
+    family_name_kana: 'アソウ'
+    given_name_kana: 'ジュナ'
+    birth_date: '2006-04-20'
+    hometown:
+      country: 'JP'
+      state: '富山県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2025-12-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '磯崎'
+    given_name: '菜々'
+    family_name_kana: 'イソザキ'
+    given_name_kana: 'ナナ'
+    birth_date: '2006-07-12'
+    hometown:
+      country: 'JP'
+      state: '神奈川県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2026-01-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2026-01-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '大竹'
+    given_name: '琴真'
+    family_name_kana: 'オオタケ'
+    given_name_kana: 'コマ'
+    birth_date: '2008-08-10'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2024-12-15'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '奥村'
+    given_name: '百花'
+    family_name_kana: 'オクムラ'
+    given_name_kana: 'モモカ'
+    birth_date: '2003-08-28'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '木本'
+    given_name: '杏菜'
+    family_name_kana: 'キモト'
+    given_name_kana: 'アンナ'
+    birth_date: '2007-10-16'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2026-01-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2026-01-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '佐藤'
+    given_name: '広花'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'ヒロカ'
+    birth_date: '2006-08-08'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2026-01-09'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2026-01-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '新沢'
+    given_name: '葵唯'
+    family_name_kana: 'シンザワ'
+    given_name_kana: 'アオイ'
+    birth_date: '2008-07-24'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '関野山'
+    given_name: '凪'
+    family_name_kana: 'セキノヤマ'
+    given_name_kana: 'ナギ'
+    birth_date: '2005-07-09'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2025-07-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '高島'
+    given_name: '柚愛'
+    family_name_kana: 'タカシマ'
+    given_name_kana: 'ユア'
+    birth_date: '2010-01-21'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '西川'
+    given_name: '晴菜'
+    family_name_kana: 'ニシカワ'
+    given_name_kana: 'ハルナ'
+    birth_date: '2003-05-17'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '原'
+    given_name: '愛実'
+    family_name_kana: 'ハラ'
+    given_name_kana: 'アユミ'
+    birth_date: '2009-02-01'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2026-03-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '松坂'
+    given_name: '紗帆'
+    family_name_kana: 'マツザカ'
+    given_name_kana: 'サホ'
+    birth_date: '2006-08-07'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2025-04-30'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '吉原'
+    given_name: '愛里衣'
+    family_name_kana: 'ヨシハラ'
+    given_name_kana: 'メリイ'
+    birth_date: '2004-04-16'
+    hometown:
+      country: 'JP'
+      state: '富山県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2023-12-10'
+            end: '2025-12-31'
+    tags:
+      - '48グループ'
+      - 'NGT48 4期'
+
+  - family_name: '安座'
+    given_name: '間結'
+    family_name_kana: 'アザマ'
+    given_name_kana: 'ユイ'
+    birth_date: '2012-01-07'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '阿'
+    given_name: '達夢'
+    family_name_kana: 'アダチ'
+    given_name_kana: 'ユメ'
+    birth_date: '2007-09-05'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '大町'
+    given_name: '佑香'
+    family_name_kana: 'オオマチ'
+    given_name_kana: 'ユウカ'
+    birth_date: '2006-10-06'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '甲'
+    given_name: '斐瑞季'
+    family_name_kana: 'カイ'
+    given_name_kana: 'ミズキ'
+    birth_date: '2008-06-10'
+    hometown:
+      country: 'JP'
+      state: '茨城県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '北澤'
+    given_name: '百音'
+    family_name_kana: 'キタザワ'
+    given_name_kana: 'モネ'
+    birth_date: '2008-08-05'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '佐藤'
+    given_name: '柚花'
+    family_name_kana: 'サトウ'
+    given_name_kana: 'ユウカ'
+    birth_date: '2008-10-16'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '須藤'
+    given_name: '凜華'
+    family_name_kana: 'ストウ'
+    given_name_kana: 'リンカ'
+    birth_date: '2011-09-09'
+    hometown:
+      country: 'JP'
+      state: '群馬県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '谷口'
+    given_name: '陽香'
+    family_name_kana: 'タニグチ'
+    given_name_kana: 'ハルカ'
+    birth_date: '2006-02-23'
+    hometown:
+      country: 'JP'
+      state: '富山県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '辻田'
+    given_name: '季音'
+    family_name_kana: 'ツジタ'
+    given_name_kana: 'トキネ'
+    birth_date: '2008-01-09'
+    hometown:
+      country: 'JP'
+      state: '京都府'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+            end: '2026-03-08'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '中田'
+    given_name: '麻実'
+    family_name_kana: 'ナカタ'
+    given_name_kana: 'アサミ'
+    birth_date: '2006-07-07'
+    hometown:
+      country: 'JP'
+      state: '長野県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'
+
+  - family_name: '皆川'
+    given_name: '日和'
+    family_name_kana: 'ミナガワ'
+    given_name_kana: 'ヒヨリ'
+    birth_date: '2010-08-31'
+    hometown:
+      country: 'JP'
+      state: '新潟県'
+    roles:
+      - role: 'trainee'
+        group: 'NGT48'
+        periods:
+          - start: '2025-01-25'
+    tags:
+      - '48グループ'
+      - 'NGT48 5期'

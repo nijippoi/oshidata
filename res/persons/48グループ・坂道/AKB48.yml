@@ -995,6 +995,16 @@ persons:
         periods:
           - start: '2007-04-08'
             end: '2024-04-30'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2019-04-21'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2019-04-21'
     tags:
       - '48グループ'
       - 'AKB48 3期'
@@ -1840,6 +1850,16 @@ persons:
         periods:
           - start: '2012-11-01'
             end: '2015-08-26'
+      - role: 'member'
+        group: 'NGT48'
+        periods:
+          - start: '2015-08-21'
+            end: '2018-04-18'
+      - role: 'member'
+        group: 'NGT48 チームNIII'
+        periods:
+          - start: '2016-01-10'
+            end: '2018-04-18'
     tags:
       - '48グループ'
       - 'AKB48 5期'
