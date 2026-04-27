@@ -2012,6 +2012,11 @@ persons:
         periods:
           - start: '2012-06-16'
             end: '2019-04-28'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-02-22'
+            end: '2017-11-25'
     tags:
       - '48グループ'
       - 'AKB48 5期'
@@ -4431,6 +4436,11 @@ persons:
         periods:
           - start: '2021-12-08'
             end: '2023-04-02'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-02-22'
+            end: '2022-03-18'
     tags:
       - '48グループ'
       - 'AKB48 14期'

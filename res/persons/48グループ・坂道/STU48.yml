@@ -1,0 +1,1678 @@
+---
+source_type: 'persons'
+start_id: 3750
+end_id: 3999
+
+persons:
+  - family_name: '石田'
+    given_name: '千穂'
+    family_name_kana: 'イシダ'
+    given_name_kana: 'チホ'
+    birth_date: '2002-03-17'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '石田'
+    given_name: 'みなみ'
+    family_name_kana: 'イシダ'
+    given_name_kana: 'ミナミ'
+    birth_date: '1998-10-11'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2024-04-06'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '磯貝'
+    given_name: '花音'
+    family_name_kana: 'イソガイ'
+    given_name_kana: 'カノン'
+    birth_date: '2000-06-01'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2020-05-10'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '市岡'
+    given_name: '愛弓'
+    family_name_kana: 'イチオカ'
+    given_name_kana: 'アユミ'
+    birth_date: '2003-08-21'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-08-11'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '今村'
+    given_name: '美月'
+    family_name_kana: 'イマムラ'
+    given_name_kana: 'ミツキ'
+    birth_date: '2000-02-19'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2024-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '岩田'
+    given_name: '陽菜'
+    family_name_kana: 'イワタ'
+    given_name_kana: 'ヒナ'
+    birth_date: '2003-02-21'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2024-05-01'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '大谷'
+    given_name: '満理奈'
+    family_name_kana: 'オオタニ'
+    given_name_kana: 'マリナ'
+    birth_date: '2004-02-14'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2021-06-05'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '尾﨑'
+    given_name: '舞美'
+    family_name_kana: 'オザキ'
+    given_name_kana: 'マミ'
+    birth_date: '2000-12-18'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2018-03-25'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '甲斐'
+    given_name: '心愛'
+    family_name_kana: 'カイ'
+    given_name_kana: 'ココア'
+    birth_date: '2003-11-28'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2024-05-31'
+          - start: '2026-03-01'
+      - role: 'member'
+        group: 'KLP48'
+        periods:
+          - start: '2024-06-01'
+            end: '2026-02-28'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '門田'
+    given_name: '桃奈'
+    family_name_kana: 'カドタ'
+    given_name_kana: 'モモナ'
+    birth_date: '1999-08-26'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-08-11'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '門脇'
+    given_name: '実優菜'
+    family_name_kana: 'カドワキ'
+    given_name_kana: 'ミユナ'
+    birth_date: '2003-03-11'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2021-11-18'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '黒岩'
+    given_name: '唯'
+    family_name_kana: 'クロイワ'
+    given_name_kana: 'ユイ'
+    birth_date: '2002-08-11'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2017-11-18'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '榊'
+    given_name: '美優'
+    family_name_kana: 'サカキ'
+    given_name_kana: 'ミユ'
+    birth_date: '2002-04-28'
+    hometown:
+      country: 'JP'
+      state: '香川県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2021-12-28'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '佐野'
+    given_name: '遥'
+    family_name_kana: 'サノ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1995-08-16'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-04-13'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '塩井'
+    given_name: '日奈子'
+    family_name_kana: 'シオイ'
+    given_name_kana: 'ヒナコ'
+    birth_date: '2000-01-07'
+    hometown:
+      country: 'JP'
+      state: '高知県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2018-07-22'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '新谷'
+    given_name: '野々花'
+    family_name_kana: 'シンタニ'
+    given_name_kana: 'ノノカ'
+    birth_date: '2004-05-23'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2020-07-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '菅原'
+    given_name: '早記'
+    family_name_kana: 'スガハラ'
+    given_name_kana: 'サキ'
+    birth_date: '2001-11-14'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-05-06'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '瀧野'
+    given_name: '由美子'
+    family_name_kana: 'タキノ'
+    given_name_kana: 'ユミコ'
+    birth_date: '1997-09-24'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2023-11-30'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '田中'
+    given_name: '皓子'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'コウコ'
+    birth_date: '1996-06-16'
+    hometown:
+      country: 'JP'
+      state: '佐賀県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2021-03-21'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '谷口'
+    given_name: '茉妃菜'
+    family_name_kana: 'タニグチ'
+    given_name_kana: 'マヒナ'
+    birth_date: '2000-02-03'
+    hometown:
+      country: 'JP'
+      state: '徳島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '張'
+    given_name: '織慧'
+    family_name_kana: 'チョウ'
+    given_name_kana: 'オリエ'
+    birth_date: '2001-10-18'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2018-04-15'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '土路生'
+    given_name: '優里'
+    family_name_kana: 'トロブ'
+    given_name_kana: 'ユリ'
+    birth_date: '1999-03-24'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-10-30'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '兵頭'
+    given_name: '葵'
+    family_name_kana: 'ヒョウドウ'
+    given_name_kana: 'アオイ'
+    birth_date: '2001-01-18'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '福田'
+    given_name: '朱里'
+    family_name_kana: 'フクダ'
+    given_name_kana: 'アカリ'
+    birth_date: '1999-03-29'
+    hometown:
+      country: 'JP'
+      state: '香川県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '藤原'
+    given_name: 'あずさ'
+    family_name_kana: 'フジワラ'
+    given_name_kana: 'アズサ'
+    birth_date: '1998-05-10'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2020-03-10'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '三島'
+    given_name: '遥香'
+    family_name_kana: 'ミシマ'
+    given_name_kana: 'ハルカ'
+    birth_date: '1998-04-18'
+    hometown:
+      country: 'JP'
+      state: '島根県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-12-08'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '峯吉'
+    given_name: '愛梨沙'
+    family_name_kana: 'ミネヨシ'
+    given_name_kana: 'アリサ'
+    birth_date: '2004-09-02'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2025-03-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '森'
+    given_name: '香穂'
+    family_name_kana: 'モリ'
+    given_name_kana: 'カホ'
+    birth_date: '1997-06-01'
+    hometown:
+      country: 'JP'
+      state: '三重県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2019-12-12'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '森下'
+    given_name: '舞羽'
+    family_name_kana: 'モリシタ'
+    given_name_kana: 'マイハ'
+    birth_date: '2004-10-04'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2024-07-31'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '矢野'
+    given_name: '帆夏'
+    family_name_kana: 'ヤノ'
+    given_name_kana: 'ホノカ'
+    birth_date: '1999-08-06'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2022-09-23'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '薮下'
+    given_name: '楓'
+    family_name_kana: 'ヤブシタ'
+    given_name_kana: 'フウ'
+    birth_date: '2000-10-07'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2017-03-31'
+            end: '2021-08-08'
+    tags:
+      - '48グループ'
+      - 'STU48 1期'
+  - family_name: '溝口'
+    given_name: '亜以子'
+    family_name_kana: 'ミゾグチ'
+    given_name_kana: 'アイコ'
+    birth_date: '2001-08-20'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-03-10'
+    tags:
+      - '48グループ'
+      - 'STU48 ドラフト3期'
+  - family_name: '由良'
+    given_name: '朱合'
+    family_name_kana: 'ユラ'
+    given_name_kana: 'アカリ'
+    birth_date: '1999-03-12'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-08-11'
+    tags:
+      - '48グループ'
+      - 'STU48 ドラフト3期'
+  - family_name: '沖'
+    given_name: '侑果'
+    family_name_kana: 'オキ'
+    given_name_kana: 'ユウカ'
+    birth_date: '1999-12-01'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-08-02'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2019-08-03'
+            end: '2024-04-20'
+    tags:
+      - '48グループ'
+      - 'STU48 ドラフト3期'
+  - family_name: '信濃'
+    given_name: '宙花'
+    family_name_kana: 'シナノ'
+    given_name_kana: 'ソラハ'
+    birth_date: '2003-08-09'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-08-02'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2019-08-03'
+    tags:
+      - '48グループ'
+      - 'STU48 ドラフト3期'
+  - family_name: '中村'
+    given_name: '舞'
+    family_name_kana: 'ナカムラ'
+    given_name_kana: 'マイ'
+    birth_date: '1999-04-04'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2018-03-03'
+            end: '2019-08-02'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2019-08-03'
+    tags:
+      - '48グループ'
+      - 'STU48 ドラフト3期'
+  - family_name: '近藤'
+    given_name: 'ありす'
+    family_name_kana: 'コンドウ'
+    given_name_kana: 'アリス'
+    birth_date: '2003-02-13'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2019-12-21'
+            end: '2020-04-02'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '田村'
+    given_name: '菜月'
+    family_name_kana: 'タムラ'
+    given_name_kana: 'ナツキ'
+    birth_date: '2002-08-04'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2019-12-21'
+            end: '2021-07-25'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '池田'
+    given_name: '裕楽'
+    family_name_kana: 'イケダ'
+    given_name_kana: 'ユラ'
+    birth_date: '2004-02-08'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '今泉'
+    given_name: '美利愛'
+    family_name_kana: 'イマイズミ'
+    given_name_kana: 'ミリア'
+    birth_date: '2001-10-05'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2021-10-30'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '内海'
+    given_name: '里音'
+    family_name_kana: 'ウツミ'
+    given_name_kana: 'リネ'
+    birth_date: '2002-11-05'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '尾崎'
+    given_name: '世里花'
+    family_name_kana: 'オサキ'
+    given_name_kana: 'セリカ'
+    birth_date: '1997-11-16'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '川又'
+    given_name: 'あん奈'
+    family_name_kana: 'カワマタ'
+    given_name_kana: 'アンナ'
+    birth_date: '2002-11-04'
+    hometown:
+      country: 'JP'
+      state: '香川県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2023-11-05'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '川又'
+    given_name: '優菜'
+    family_name_kana: 'カワマタ'
+    given_name_kana: 'ユウナ'
+    birth_date: '2003-12-10'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '工藤'
+    given_name: '理子'
+    family_name_kana: 'クドウ'
+    given_name_kana: 'リコ'
+    birth_date: '2002-03-29'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '小島'
+    given_name: '愛子'
+    family_name_kana: 'コジマ'
+    given_name_kana: 'アイコ'
+    birth_date: '1997-12-07'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2024-11-30'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '迫'
+    given_name: '姫華'
+    family_name_kana: 'サコ'
+    given_name_kana: 'ヒメカ'
+    birth_date: '2007-03-14'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '清水'
+    given_name: '紗良'
+    family_name_kana: 'シミズ'
+    given_name_kana: 'サラ'
+    birth_date: '2006-02-12'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '鈴木'
+    given_name: '彩夏'
+    family_name_kana: 'スズキ'
+    given_name_kana: 'アヤカ'
+    birth_date: '2000-08-24'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2024-04-29'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '高雄'
+    given_name: 'さやか'
+    family_name_kana: 'タカオ'
+    given_name_kana: 'サヤカ'
+    birth_date: '1998-12-04'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '田口'
+    given_name: '玲佳'
+    family_name_kana: 'タグチ'
+    given_name_kana: 'レイカ'
+    birth_date: '2001-06-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2022-02-05'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '田中'
+    given_name: '美帆'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ミホ'
+    birth_date: '2002-09-03'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2023-03-26'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '中廣'
+    given_name: '弥生'
+    family_name_kana: 'ナカヒロ'
+    given_name_kana: 'ヤヨイ'
+    birth_date: '2002-03-29'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2021-10-30'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '原田'
+    given_name: '清花'
+    family_name_kana: 'ハラダ'
+    given_name_kana: 'サヤカ'
+    birth_date: '2001-06-19'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '南'
+    given_name: '有梨菜'
+    family_name_kana: 'ミナミ'
+    given_name_kana: 'ユリナ'
+    birth_date: '2002-12-18'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2021-10-30'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '宗雪'
+    given_name: '里香'
+    family_name_kana: 'ムネユキ'
+    given_name_kana: 'リカ'
+    birth_date: '2000-06-15'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '吉崎'
+    given_name: '凜子'
+    family_name_kana: 'ヨシザキ'
+    given_name_kana: 'リンコ'
+    birth_date: '2002-09-08'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2023-04-29'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '吉田'
+    given_name: '彩良'
+    family_name_kana: 'ヨシダ'
+    given_name_kana: 'サラ'
+    birth_date: '2002-02-19'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '立仙'
+    given_name: '百佳'
+    family_name_kana: 'リッセン'
+    given_name_kana: 'モモカ'
+    birth_date: '2004-11-30'
+    hometown:
+      country: 'JP'
+      state: '高知県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+            end: '2024-04-07'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '渡辺'
+    given_name: '菜月'
+    family_name_kana: 'ワタナベ'
+    given_name_kana: 'ナツキ'
+    birth_date: '2000-12-12'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2021-10-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2期'
+  - family_name: '岩﨑'
+    given_name: '春望'
+    family_name_kana: 'イワサキ'
+    given_name_kana: 'カスミ'
+    birth_date: '2006-04-07'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-06-30'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '梶原'
+    given_name: '未羽'
+    family_name_kana: 'カジワラ'
+    given_name_kana: 'ミウ'
+    birth_date: '2009-08-11'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-12-08'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '清水'
+    given_name: 'りさ子'
+    family_name_kana: 'シミズ'
+    given_name_kana: 'リサコ'
+    birth_date: '2005-01-15'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-02-25'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '長谷川'
+    given_name: '乃彩'
+    family_name_kana: 'ハセガワ'
+    given_name_kana: 'ノア'
+    birth_date: '2004-09-19'
+    hometown:
+      country: 'JP'
+      state: '愛知県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-06-14'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '藤井'
+    given_name: '里詠'
+    family_name_kana: 'フジイ'
+    given_name_kana: 'リエ'
+    birth_date: '2005-11-03'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-07-20'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '岡田'
+    given_name: 'あずみ'
+    family_name_kana: 'オカダ'
+    given_name_kana: 'アズミ'
+    birth_date: '2003-01-20'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2022-05-03'
+            end: '2024-03-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-04-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2.5期'
+  - family_name: '岡村'
+    given_name: '梨央'
+    family_name_kana: 'オカムラ'
+    given_name_kana: 'リオ'
+    birth_date: '2008-10-08'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2022-05-03'
+            end: '2024-03-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-04-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2.5期'
+  - family_name: '久留島'
+    given_name: '優果'
+    family_name_kana: 'クルシマ'
+    given_name_kana: 'ユウカ'
+    birth_date: '2005-09-24'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2022-05-03'
+            end: '2024-03-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-04-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2.5期'
+  - family_name: '諸葛'
+    given_name: '望愛'
+    family_name_kana: 'モロクズ'
+    given_name_kana: 'ノア'
+    birth_date: '2009-11-11'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2022-05-03'
+            end: '2024-03-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-04-01'
+    tags:
+      - '48グループ'
+      - 'STU48 2.5期'
+  - family_name: '新井'
+    given_name: '梨杏'
+    family_name_kana: 'アライ'
+    given_name_kana: 'リア'
+    birth_date: '2008-10-05'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-04-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-05-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '壁島'
+    given_name: '結華'
+    family_name_kana: 'カベシマ'
+    given_name_kana: 'ユイカ'
+    birth_date: '2003-12-23'
+    hometown:
+      country: 'JP'
+      state: '東京都'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-04-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-05-01'
+            end: '2024-10-31'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '曽川'
+    given_name: '咲葵'
+    family_name_kana: 'ソガワ'
+    given_name_kana: 'サキ'
+    birth_date: '2005-08-19'
+    hometown:
+      country: 'JP'
+      state: '山口県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-04-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-05-01'
+            end: '2026-04-11'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '石原'
+    given_name: '侑奈'
+    family_name_kana: 'イシハラ'
+    given_name_kana: 'ユウナ'
+    birth_date: '2004-08-07'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-11-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-12-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '井出'
+    given_name: '叶'
+    family_name_kana: 'イデ'
+    given_name_kana: 'カナウ'
+    birth_date: '2004-11-02'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-11-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-12-01'
+            end: '2025-04-20'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '森末'
+    given_name: '妃奈'
+    family_name_kana: 'モリスエ'
+    given_name_kana: 'ヒメナ'
+    birth_date: '2002-06-20'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2024-11-30'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2024-12-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '濵田'
+    given_name: '響'
+    family_name_kana: 'ハマダ'
+    given_name_kana: 'ヒビキ'
+    birth_date: '2003-01-23'
+    hometown:
+      country: 'JP'
+      state: '長崎県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2025-05-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2025-06-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '石松'
+    given_name: '陽菜'
+    family_name_kana: 'イシマツ'
+    given_name_kana: 'ハルナ'
+    birth_date: '2009-01-03'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '井上'
+    given_name: '久伶杏'
+    family_name_kana: 'イノウエ'
+    given_name_kana: 'クレア'
+    birth_date: '2010-03-28'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '蕪竹'
+    given_name: '真奈'
+    family_name_kana: 'カブタケ'
+    given_name_kana: 'マナ'
+    birth_date: '2005-04-04'
+    hometown:
+      country: 'JP'
+      state: '岡山県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '木原'
+    given_name: '姫花世'
+    family_name_kana: 'キハラ'
+    given_name_kana: 'ヒナヨ'
+    birth_date: '2012-10-12'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '小松'
+    given_name: '奈侑'
+    family_name_kana: 'コマツ'
+    given_name_kana: 'ナユ'
+    birth_date: '2005-12-08'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '坂木'
+    given_name: '叶愛'
+    family_name_kana: 'サカキ'
+    given_name_kana: 'トワナ'
+    birth_date: '2011-12-15'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '坂崎'
+    given_name: '愛'
+    family_name_kana: 'サカザキ'
+    given_name_kana: 'アイ'
+    birth_date: '2004-09-05'
+    hometown:
+      country: 'JP'
+      state: '福岡県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '島田'
+    given_name: '紗香'
+    family_name_kana: 'シマダ'
+    given_name_kana: 'サヤカ'
+    birth_date: '2007-06-02'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '曽我部'
+    given_name: 'あこ'
+    family_name_kana: 'ソガベ'
+    given_name_kana: 'アコ'
+    birth_date: '2009-03-27'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '髙村'
+    given_name: '栞里'
+    family_name_kana: 'タカムラ'
+    given_name_kana: 'シオリ'
+    birth_date: '2002-06-30'
+    hometown:
+      country: 'JP'
+      state: '埼玉県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '田中'
+    given_name: '奈菜子'
+    family_name_kana: 'タナカ'
+    given_name_kana: 'ナナコ'
+    birth_date: '2006-01-27'
+    hometown:
+      country: 'JP'
+      state: '大阪府'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '道保'
+    given_name: '琉南'
+    family_name_kana: 'ドウホ'
+    given_name_kana: 'ルナ'
+    birth_date: '2007-11-02'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '野中'
+    given_name: '莉央'
+    family_name_kana: 'ノナカ'
+    given_name_kana: 'リオ'
+    birth_date: '2012-10-26'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '濵田'
+    given_name: '美惟'
+    family_name_kana: 'ハマダ'
+    given_name_kana: 'ミイ'
+    birth_date: '2008-06-19'
+    hometown:
+      country: 'JP'
+      state: '愛媛県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '藤田'
+    given_name: '愛結'
+    family_name_kana: 'フジタ'
+    given_name_kana: 'アム'
+    birth_date: '2010-08-23'
+    hometown:
+      country: 'JP'
+      state: '香川県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '三好'
+    given_name: '真綺'
+    family_name_kana: 'ミヨシ'
+    given_name_kana: 'マアヤ'
+    birth_date: '2011-04-17'
+    hometown:
+      country: 'JP'
+      state: '広島県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '屋木'
+    given_name: '優菜'
+    family_name_kana: 'ヤギ'
+    given_name_kana: 'ユウナ'
+    birth_date: '2008-02-11'
+    hometown:
+      country: 'JP'
+      state: '兵庫県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '横井'
+    given_name: '結菜'
+    family_name_kana: 'ヨコイ'
+    given_name_kana: 'ユイナ'
+    birth_date: '2007-09-27'
+    hometown:
+      country: 'JP'
+      state: '静岡県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2025-08-31'
+    tags:
+      - '48グループ'
+      - 'STU48 4期'
+  - family_name: '奥田'
+    given_name: '唯菜'
+    family_name_kana: 'オクダ'
+    given_name_kana: 'ユイナ'
+    birth_date: '2006-07-07'
+    hometown:
+      country: 'JP'
+      state: '岐阜県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2025-10-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2025-11-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
+  - family_name: '北澤'
+    given_name: '苺'
+    family_name_kana: 'キタザワ'
+    given_name_kana: 'イチゴ'
+    birth_date: '2004-12-27'
+    hometown:
+      country: 'JP'
+      state: '山梨県'
+    roles:
+      - role: 'trainee'
+        group: 'STU48'
+        periods:
+          - start: '2023-04-09'
+            end: '2025-10-31'
+      - role: 'member'
+        group: 'STU48'
+        periods:
+          - start: '2025-11-01'
+    tags:
+      - '48グループ'
+      - 'STU48 3期'
