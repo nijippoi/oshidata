@@ -1709,12 +1709,12 @@ persons:
         group: 'NMB48'
         periods:
           - start: '2012-10-10'
-            end: '2015-04-20'
+            end: '2014-04-20'
       - role: 'member'
         group: 'NMB48 チームBII'
         periods:
           - start: '2012-10-10'
-            end: '2015-04-20'
+            end: '2014-04-20'
     tags:
       - '48グループ'
       - 'NMB48 3期'
@@ -3185,12 +3185,12 @@ persons:
         group: 'NMB48'
         periods:
           - start: '2020-01-01'
-            end: '2021-04-28'
+            end: '2021-05-31'
       - role: 'member'
         group: 'NMB48 チームBII'
         periods:
           - start: '2020-01-01'
-            end: '2021-04-28'
+            end: '2021-05-31'
     tags:
       - '48グループ'
       - 'NMB48 6期'
