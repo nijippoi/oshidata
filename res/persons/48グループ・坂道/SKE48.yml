@@ -173,14 +173,14 @@ persons:
           - start: '2008-10-05'
             end: '2009-02-14'
           - start: '2009-05-25'
-            end: '2015-03-31'
+            end: '2015-04-12'
       - role: 'member'
         group: 'SKE48 チームS'
         periods:
           - start: '2008-10-05'
             end: '2009-02-14'
           - start: '2014-02-24'
-            end: '2015-03-31'
+            end: '2015-04-12'
       - role: 'member'
         group: 'SKE48 チームKII'
         periods:
@@ -1008,7 +1008,7 @@ persons:
           - start: '2009-05-25'
             end: '2010-12-06'
           - start: '2012-08-29'
-            end: '2024-12-31'
+            end: '2024-11-30'
       - role: 'member'
         group: 'SKE48 チームKII'
         periods:
@@ -1020,7 +1020,7 @@ persons:
           - start: '2012-08-29'
             end: '2013-04-13'
           - start: '2014-02-24'
-            end: '2024-12-31'
+            end: '2024-11-30'
       - role: 'member'
         group: 'SKE48 チームS'
         periods:
@@ -1313,12 +1313,12 @@ persons:
         group: 'SKE48'
         periods:
           - start: '2009-12-06'
-            end: '2012-07-31'
+            end: '2012-09-08'
       - role: 'member'
         group: 'SKE48 チームKII'
         periods:
           - start: '2009-12-06'
-            end: '2012-07-31'
+            end: '2012-09-08'
     tags:
       - '48グループ'
       - 'SKE48 2期'
@@ -1539,7 +1539,7 @@ persons:
         group: 'SKE48'
         periods:
           - start: '2010-02-27'
-            end: '2022-11-01'
+            end: '2022-09-30'
       - role: 'member'
         group: 'SKE48 チームS'
         periods:
@@ -1554,7 +1554,7 @@ persons:
         group: 'SKE48 チームE'
         periods:
           - start: '2014-02-24'
-            end: '2022-11-01'
+            end: '2022-09-30'
     tags:
       - '48グループ'
       - 'SKE48 3期'
@@ -1750,12 +1750,12 @@ persons:
         group: 'SKE48'
         periods:
           - start: '2010-12-06'
-            end: '2016-02-29'
+            end: '2016-03-21'
       - role: 'member'
         group: 'SKE48 チームE'
         periods:
           - start: '2010-12-06'
-            end: '2016-02-29'
+            end: '2016-03-21'
     tags:
       - '48グループ'
       - 'SKE48 4期'
@@ -1804,12 +1804,12 @@ persons:
         group: 'SKE48'
         periods:
           - start: '2010-12-06'
-            end: '2017-12-01'
+            end: '2017-11-30'
       - role: 'member'
         group: 'SKE48 チームE'
         periods:
           - start: '2010-12-06'
-            end: '2017-12-01'
+            end: '2017-11-30'
       - role: 'member'
         group: 'HKT48'
         periods:
@@ -2523,12 +2523,12 @@ persons:
         group: 'SKE48'
         periods:
           - start: '2013-10-26'
-            end: '2015-01-31'
+            end: '2015-02-28'
       - role: 'member'
         group: 'SKE48 チームKII'
         periods:
           - start: '2013-10-26'
-            end: '2015-01-31'
+            end: '2015-02-28'
     tags:
       - '48グループ'
       - 'SKE48 5期'
