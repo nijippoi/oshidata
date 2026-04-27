@@ -18,6 +18,7 @@ import {
 } from '../utils.ts';
 import { zodiac } from '../zodiac.ts';
 import Component from './component.ts';
+import Multiselect from './multiselect.ts';
 import Toolbar from './toolbar.ts';
 
 export type ColumnTypes =
@@ -55,17 +56,6 @@ const SHEET = cssRules(
   ':host { display: block; background-color: var(--bg-2-color); padding: 10px; }',
   '.persons-table { width: stretch; }',
   '.persons-table td.person-id, .persons-table td.person-birth-date, .persons-table td.person-age, .persons-table td.person-next-birthday, .persons-table td.person-zodiac { text-align: right; }',
-  '.group-filter { margin-bottom: 8px; }',
-  '.group-filter-chips { display: flex; flex-wrap: wrap; gap: 4px; min-height: 24px; margin-bottom: 4px; }',
-  '.group-filter-chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 6px; background-color: var(--bg-0-color); border: 1px solid var(--border-color); font-size: 0.85em; }',
-  '.group-filter-chip button { border: none; background: none; cursor: pointer; padding: 0 2px; color: var(--text-2-color); font-size: 1em; line-height: 1; }',
-  '.group-filter-chip button:hover { color: var(--text-0-color); }',
-  '.group-filter-input { width: 100%; box-sizing: border-box; padding: 4px 6px; border: 1px solid var(--border-color); background-color: var(--bg-0-color); color: var(--text-0-color); font-size: 1em; }',
-  '.group-filter-list { max-height: 180px; overflow-y: auto; border: 1px solid var(--border-color); border-top: none; background-color: var(--bg-0-color); }',
-  '.group-filter-list:empty { display: none; }',
-  '.group-filter-list label { display: flex; align-items: center; gap: 6px; padding: 4px 8px; cursor: pointer; }',
-  '.group-filter-list label:hover { background-color: var(--bg-1-color); }',
-  '.group-filter-list label input[type="checkbox"] { cursor: pointer; }',
 );
 
 export class PersonsList extends Component {
@@ -92,6 +82,7 @@ export class PersonsList extends Component {
   date: Temporal.PlainDate;
   selectedGroupIds: Set<string>;
   columns: ColumnTypes[];
+  private groupFilter: Multiselect | null = null;
 
   constructor() {
     super({ css: SHEET });
@@ -121,14 +112,6 @@ export class PersonsList extends Component {
         );
       }
     });
-  }
-
-  toggleSelectedGroupId(id: string, selected: boolean) {
-    if (selected) {
-      this.selectedGroupIds.add(id);
-    } else {
-      this.selectedGroupIds.delete(id);
-    }
   }
 
   async connectedCallback() {
@@ -163,6 +146,7 @@ export class PersonsList extends Component {
           newGroupIds.difference(this.selectedGroupIds).size > 0
         ) {
           this.selectedGroupIds = newGroupIds;
+          this.groupFilter?.setSelectedKeys(this.selectedGroupIds);
           updated = true;
         }
         break;
@@ -176,74 +160,22 @@ export class PersonsList extends Component {
   async renderFilter() {
     const groups = await queryGroups();
 
-    const filterContainer = el('div', { classes: ['group-filter'] });
-    const chipsContainer = el('div', { classes: ['group-filter-chips'] });
-    const groupList = el('div', { classes: ['group-filter-list'] });
-
-    const renderChips = () => {
-      clear(chipsContainer);
-      this.selectedGroupIds.forEach((id) => {
-        const group = groups.records.find((g) => g.id === id);
-        if (!group) return;
-        const chip = el('span', {
-          classes: ['group-filter-chip'],
-          children: [
-            renderGroupName(group, this.date),
-            el('button', {
-              children: ['×'],
-              listeners: {
-                'click': () => {
-                  this.toggleSelectedGroupId(id, false);
-                  renderOptions((searchInput as HTMLInputElement).value);
-                  renderChips();
-                  this.update();
-                },
-              },
-            }),
-          ],
-        });
-        chipsContainer.appendChild(chip);
-      });
-    };
-
-    const renderOptions = (filter: string) => {
-      clear(groupList);
-      const lowerFilter = filter.toLowerCase();
-      groups.records
-        .filter((g) => !filter || renderGroupName(g, this.date).toLowerCase().includes(lowerFilter))
-        .forEach((group) => {
-          const checkbox = el('input', {
-            attributes: { 'type': 'checkbox', 'value': group.id },
-            listeners: {
-              'change': (evt) => {
-                this.toggleSelectedGroupId(group.id, (evt.target as HTMLInputElement).checked);
-                renderChips();
-                this.update();
-              },
-            },
-          }) as HTMLInputElement;
-          checkbox.checked = this.selectedGroupIds.has(group.id);
-          groupList.appendChild(el('label', {
-            children: [checkbox, el('span', { children: [renderGroupName(group, this.date)] })],
-          }));
-        });
-    };
-
-    const searchInput = el('input', {
-      classes: ['group-filter-input'],
-      attributes: {
-        'name': 'group-filter-input',
-        'type': 'text',
-        'data-label-placeholder': 'message.type_to_filter_groups',
-      },
-      listeners: {
-        'input': (evt) => renderOptions((evt.target as HTMLInputElement | null)?.value || ''),
-      },
+    const ms = document.createElement(Multiselect.NAME) as Multiselect;
+    ms.setAttribute('placeholder-key', 'message.type_to_filter_groups');
+    ms.setItems(
+      groups.records.map((g) => ({
+        key: g.id,
+        label: renderGroupName(g, this.date),
+      })),
+    );
+    ms.setSelectedKeys(this.selectedGroupIds);
+    ms.addEventListener(Multiselect.EVENT_CHANGE, (evt) => {
+      const keys = (evt as CustomEvent<{ keys: string[] }>).detail.keys;
+      this.selectedGroupIds = new Set(keys);
+      void this.update();
     });
-
-    renderOptions('');
-    filterContainer.append(chipsContainer, searchInput, groupList);
-    this.shadow.appendChild(filterContainer);
+    this.groupFilter = ms;
+    this.shadow.appendChild(ms);
   }
 
   private renderRolesCell(
